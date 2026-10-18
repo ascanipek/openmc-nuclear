@@ -1,8 +1,8 @@
 {
-  "manifest.json": "c7572c1df0ee6456da0a2c880a46520cc7d14c58774fa8dbe85110b251ea77ac",
-  "01_calistir.ipynb": "a48a9b6010762336a17fd67161cec6df1616466332b2d5347a62b9f9a2b5606d",
+  "manifest.json": "423a21f867e9baf1583a98904b558c77f997f5fc1bdd70dd58a4b17aa2448ad7",
+  "01_calistir.ipynb": "b9e2ba696ea5175d508c7a73a8a0ee191f58f6380853c454113deb229424285f",
   "02_sonuclari_incele.ipynb": "8abe44df6d762a96b915c132dc8cfe0eba099420b969b9895a9127945d455ca4",
-  "README.md": "b36aedc60d29df8236f7d7ef967e7857d77529d53c3ec4fd8dad8eacd9938e65",
+  "README.md": "3a4dd69fe577f964676bc450e64c379a91ad17eac94cdb06705e0331b972a5b8",
   "src/reactor_pipeline/beavrs3d.py": "1a2fec4b89e7d6d023a8441cbe2479e4feab1041b2c3d18abe02b9b6834a521c",
   "src/reactor_pipeline/parameter_space.py": "c6387f53d318637f1e1c6ae34aacb8dbaaf649113b41ce6ba0d526f0df4b6270",
   "src/reactor_pipeline/v2_students.py": "6e00e5509737557d69d9257b649b5a15c5ad86de6faeef776c21ef350bb81f7d",

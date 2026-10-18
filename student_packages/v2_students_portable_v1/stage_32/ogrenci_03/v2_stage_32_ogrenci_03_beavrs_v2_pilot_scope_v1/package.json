@@ -11,7 +11,7 @@
   "profile_id": "beavrs_v2_pilot_80k_4h_v1",
   "reference_config_sha256": "834a783ce2ac14cebdc1579e87bd731f0899251e3113c28d46cec42b52c223a6",
   "manifest_sha256": "15ec1754c9c29c7951406a52f6a29991e452f242de73dc86ec15eb6a3a25557c",
-  "hashes_sha256": "8e9555452c9259687536dc819928b854527409c6e6570974a172f3f77eced627",
+  "hashes_sha256": "b779cede526b624edff4a944992df1d47cea1fbcb2f951568d4c0a2f317ce932",
   "owner": "ogrenci_03",
   "stage": "stage_32"
 }

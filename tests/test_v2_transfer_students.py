@@ -32,10 +32,17 @@ class StudentHandoffTests(unittest.TestCase):
         self.assertEqual(len(assignment["packages"]),12)  # one historical advisor + 11 new packages
         for entry in assignment["packages"].values():
             self.assertEqual(len(entry["scenario_ids"]),8 if entry["stage"]=="stage_32" else 24 if entry["stage"]=="stage_128" else 32)
-        with patch.object(v2_student_runner.subprocess,"Popen",side_effect=AssertionError("worker started")) as spawn:
-            with self.assertRaises((ValueError,FileNotFoundError)):
-                v2_student_runner.launch(PKG)
-            spawn.assert_not_called()
+        with tempfile.TemporaryDirectory() as temp:
+            with patch.object(v2_student_runner, "GROUPS", Path(temp) / "groups"), \
+                 patch.object(v2_student_runner, "verify_package",
+                              side_effect=ValueError("technical approval missing")) as gate, \
+                 patch.object(v2_student_runner.subprocess, "Popen",
+                              side_effect=AssertionError("worker started")) as spawn:
+                with self.assertRaisesRegex(ValueError, "technical approval missing"):
+                    v2_student_runner.launch(PKG)
+                gate.assert_called_once_with(PKG.resolve(), require_approval=True)
+                spawn.assert_not_called()
+                self.assertFalse((Path(temp) / "groups").exists())
 
     def fixture(self, root, *, missing_fields=False, controls=None, result_marker="A", run_id="run-one", seed=1, package_id="v2_stage_32_ogrenci_02_synthetic"):
         controls = controls or v2_students.load_space()["nominal"]

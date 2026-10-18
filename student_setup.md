@@ -424,4 +424,4 @@ python scripts/v2_transfer.py status --stage stage_32
 İçe aktarma; dosya bütünlüğü ve senaryo tutarlılığını denetler.
 Fiziksel/istatistiksel kabul veya eğitim verisi kabulü vermez.
 
-Sonraki aşama ancak inceleme ve gerekli paket onayları tamamlanınca açılır.
+Sonraki aşama ancak inceleme ve gerekli paket onayları tamamlanınca açılır. Danışmanın 2026-10-19 tarihli açık istisnası yalnız mevcut stage_128/ogrenci_01 paketinin 24 koşuluk kontrollü araştırma devamını, 43.200 saniyelik grup tavanıyla açar; diğer stage_128 ve stage_256 paketleri için geçerli değildir. Bu istisna fiziksel doğrulama veya eğitim verisi kabulü değildir.

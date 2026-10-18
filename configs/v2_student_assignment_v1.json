@@ -1637,8 +1637,8 @@
       "owner": "ogrenci_01",
       "stage": "stage_128",
       "package_path": "student_packages/v2_students_portable_v1/stage_128/ogrenci_01/v2_stage_128_ogrenci_01_beavrs_v2_pilot_scope_v1",
-      "package_sha256": "1b185208b7527d0d8ef28fb0917ead542d58f031c8badfed0e41b67bba129e23",
-      "manifest_sha256": "c7572c1df0ee6456da0a2c880a46520cc7d14c58774fa8dbe85110b251ea77ac",
+      "package_sha256": "1ed540312d3530f0d8865b8c262b2246954c576337ff51a6e975ec2ab436955e",
+      "manifest_sha256": "423a21f867e9baf1583a98904b558c77f997f5fc1bdd70dd58a4b17aa2448ad7",
       "scenario_ids": [
         "aabc4d8fad3ef6a575c08c3ba7702feebfbd503b036c93ecd87891c37ff51559",
         "9c6d179e329628d6c2fa96f0c07f020250b0488b3474f0ccfea87d01e7d4bf34",
@@ -1665,7 +1665,7 @@
         "8de21161c85990c020b6e87ac8f79dc9db26a6a1e6e264bed9b1baa168533171",
         "e2b16b924d05f49e6522786ec3f25f65827370f3f957a7977cfdea38b38f931a"
       ],
-      "approval": "separate_technical_review_required"
+      "approval": "controlled_research_exception_technical_approved_2026-10-19_only_this_package"
     },
     "v2_stage_128_ogrenci_02_beavrs_v2_pilot_scope_v1": {
       "owner": "ogrenci_02",

@@ -11,3 +11,7 @@ Bir öğrencinin paketi içinde `manifest.json` sabit deney listesidir. `01_cali
 Sonuç teslimi ve danışman toplaması [v2_transfer.py](scripts/v2_transfer.py) ile yapılır. Hafif ZIP statepoint dosyasını içermez; kaynak makinede tutulur. Teslim, checksum ve model/senaryo/atama kontrollerinden geçer; bozuk veya çelişen teslim reddedilir, eski sonuçların üzerine yazılmaz. Eğitim veri aktarımı ancak ayrı kabul kayıtlarından sonra [v2_dataset.py](src/reactor_pipeline/v2_dataset.py) ile yapılır.
 
 Tarihsel v1 kaynak ve doğrulama notları `docs/` altında korunur; önceki D2/D3/D4 sonuçları ve onaylı pilot koşuları değiştirilmedi. Testler gerçek taşıma başlatmadan `python -m unittest discover -s tests` ile çalıştırılır.
+
+## Güncel ilk 32 notebook dizini
+
+notebooks/01_deney_calistir.ipynb salt okunur dizindir. Danışmanın tamamlanmış sekiz pilotu ile diğer üç öğrenciye atanmış 24 yeni koşuyu ve mevcut notebook yollarını gösterir. İlk aşamada yalnız bu dizinin işaret ettiği notebook çiftlerini kullanın. v2_staged_draft_v1 eski, onaysız taslaktır; eski runner hashine ve farklı dağıtıma bağlıdır. Eski sonuçlar yeniden etiketlenmez veya yeniden çalıştırılmaz. İlk 32 aşamasında ogrenci_02–04 paketlerinin teknik approval.json kayıtları oluşturuldu; bu fiziksel veya eğitim verisi kabulü değildir. Sonraki aşamaların ayrı onayı gerekir.

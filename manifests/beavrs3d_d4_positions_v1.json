@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "model": "beavrs_derived_3d_assembly_v1",
+  "reference_config": "configs/beavrs_derived_3d_reference.json",
+  "reference_config_sha256": "834a783ce2ac14cebdc1579e87bd731f0899251e3113c28d46cec42b52c223a6",
+  "physical_acceptance": "review_required",
+  "group_id": "beavrs3d_d4_positions_v1",
+  "phase": "D4",
+  "title": "Preselected rod insertions",
+  "depends_on": [
+    "beavrs3d_d3_seeds_v1"
+  ],
+  "experiments": [
+    {
+      "experiment_id": "D4-P0",
+      "insertion_percent": 0,
+      "calculation": {
+        "batches": 150,
+        "inactive": 60,
+        "particles_per_generation": 40000,
+        "generations_per_batch": 1,
+        "threads": 6,
+        "seed": 45001
+      }
+    },
+    {
+      "experiment_id": "D4-P50",
+      "insertion_percent": 50,
+      "calculation": {
+        "batches": 150,
+        "inactive": 60,
+        "particles_per_generation": 40000,
+        "generations_per_batch": 1,
+        "threads": 6,
+        "seed": 46001
+      }
+    },
+    {
+      "experiment_id": "D4-P100",
+      "insertion_percent": 100,
+      "calculation": {
+        "batches": 150,
+        "inactive": 60,
+        "particles_per_generation": 40000,
+        "generations_per_batch": 1,
+        "threads": 6,
+        "seed": 47001
+      }
+    }
+  ],
+  "group_runtime_budget_seconds": 14400
+}

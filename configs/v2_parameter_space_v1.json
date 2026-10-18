@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "space_id": "beavrs_v2_eight_controls_proposed_v1",
+  "status": "draft_unapproved",
+  "model": "beavrs_derived_3d_assembly_v2_proposed",
+  "beavrs_source_commit": "1ccae04dc3830a5977f08ed7f5f7e1e51ded0d22",
+  "reference_config": "configs/beavrs_derived_3d_reference.json",
+  "nominal": {
+    "u235_enrichment_wt_percent": 1.6,
+    "fuel_temperature_K": 566.483,
+    "moderator_temperature_K": 566.483,
+    "coolant_pressure_MPa": 15.51320325,
+    "elemental_boron_ppm": 975.0,
+    "pin_pitch_cm": 1.25984,
+    "pellet_radius_cm": 0.39218,
+    "insertion_percent": 50.0
+  },
+  "ranges": {
+    "u235_enrichment_wt_percent": {"lower": 1.6, "upper": 3.1, "basis": "researcher_proposal; not an approved BEAVRS interval"},
+    "fuel_temperature_K": {"lower": null, "upper": null, "basis": "source interval missing; nominal only"},
+    "moderator_temperature_K": {"lower": null, "upper": null, "basis": "source interval missing; nominal only; IF97 guard is not a sampling interval"},
+    "coolant_pressure_MPa": {"lower": null, "upper": null, "basis": "general BEAVRS operating point; HZP-specific range missing"},
+    "elemental_boron_ppm": {"lower": 0.0, "upper": 975.0, "basis": "researcher_proposal; not an approved BEAVRS interval"},
+    "pin_pitch_cm": {"lower": null, "upper": null, "basis": "source interval missing; nominal only"},
+    "pellet_radius_cm": {"lower": null, "upper": null, "basis": "source interval missing; nominal only"},
+    "insertion_percent": {"lower": 0.0, "upper": 100.0, "basis": "active-height model definition; sampling interval not approved"}
+  },
+  "joint_constraints": [
+    "IF97 compressed-liquid water at requested temperature and absolute pressure",
+    "material nuclear-data temperature tables bracket requested temperatures",
+    "pellet radius strictly less than clad inner radius",
+    "pin pitch strictly greater than twice the largest pin/guide outer radius",
+    "assembly edge-water clearance preserved from source reference",
+    "rod insertion percentage between 0 and 100 over active height"
+  ],
+  "production_approval": null
+}

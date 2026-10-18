@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "distribution_id": "v2_staged_4_placeholder_students_v1",
+  "status": "draft_unapproved",
+  "students_are_placeholders": true,
+  "student_ids": ["ogrenci_01", "ogrenci_02", "ogrenci_03", "ogrenci_04"],
+  "stages": [32, 128, 256],
+  "allocation": "round_robin_over_new_scenarios_only; stage-prefixed package IDs prevent rerunning earlier stages"
+}

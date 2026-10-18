@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "name": "integration_smoke",
+  "physics": {
+    "model": "openmc_example_pwr_assembly_pilot",
+    "boron_ppm_mass": 977.3838734522203,
+    "water_density_g_cm3": 0.740582,
+    "temperature_K": 293.6,
+    "temperature_method": "nearest"
+  },
+  "calculation": {
+    "batches": 20,
+    "inactive": 5,
+    "particles": 1000,
+    "seed": 12345,
+    "threads": 2
+  }
+}
+

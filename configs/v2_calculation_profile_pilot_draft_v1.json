@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "profile_id": "beavrs_v2_pilot_b2_budget_draft_v1",
+  "status": "draft_not_production",
+  "purpose": "Proposed D2-B2 pilot starting point; no precision/convergence acceptance",
+  "calculation": {
+    "particles_per_generation": 80000,
+    "batches": 600,
+    "inactive": 300,
+    "generations_per_batch": 1,
+    "threads": 6
+  },
+  "seed_base": 71001,
+  "group_runtime_budget_seconds": null,
+  "production_approval": null
+}

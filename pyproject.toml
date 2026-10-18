@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reactor-pipeline"
+version = "0.1.0"
+description = "OpenMC PWR assembly pilot pipeline"
+requires-python = ">=3.10"
+dependencies = ["openmc>=0.16,<0.17", "numpy", "matplotlib"]
+
+[project.scripts]
+reactor-pipeline = "reactor_pipeline.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+

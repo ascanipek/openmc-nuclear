@@ -1,0 +1,42 @@
+# Local nuclear libraries and all transport/derived outputs
+/data/
+/runs/
+/deliveries/
+*.h5
+*.hdf5
+*.npz
+*.zip
+*.tar
+*.tar.gz
+*.tar.xz
+*.7z
+*.tallies.out
+
+# Local environments, build artifacts, caches
+.venv/
+venv/
+env/
+.conda/
+conda-env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+build/
+dist/
+
+# Historical executed notebooks remain local; portable student packages are clean.
+/notebooks/*.ipynb
+/scripts/*.ipynb
+/freezes/
+/student_packages/beavrs3d_d3_b1_repeats_v1/
+/student_packages/beavrs3d_d3_b1_repeats_v1_integrity_v2/
+/student_packages/beavrs3d_d4_b1_positions_v1/
+/student_packages/beavrs3d_d4_b1_positions_v1_integrity_v2/
+/student_packages/v2_advisor_pilot_v1/
+/student_packages/v2_draft_v1/
+/student_packages/v2_staged_draft_v1/

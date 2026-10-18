@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "space_id": "beavrs_v2_pilot_scope_proposed_v1",
+  "status": "draft_unapproved",
+  "model": "beavrs_derived_3d_assembly_v2_proposed",
+  "beavrs_source_commit": "1ccae04dc3830a5977f08ed7f5f7e1e51ded0d22",
+  "reference_config": "configs/beavrs_derived_3d_reference.json",
+  "nominal": {
+    "u235_enrichment_wt_percent": 1.6,
+    "fuel_temperature_K": 566.483,
+    "moderator_temperature_K": 566.483,
+    "coolant_pressure_MPa": 15.51320325,
+    "elemental_boron_ppm": 975.0,
+    "pin_pitch_cm": 1.25984,
+    "pellet_radius_cm": 0.39218,
+    "insertion_percent": 50.0
+  },
+  "ranges": {
+    "u235_enrichment_wt_percent": {
+      "lower": 1.6,
+      "upper": 3.1,
+      "basis": "Researcher proposal; BEAVRS endpoint labels are not validation of interpolation"
+    },
+    "fuel_temperature_K": {
+      "lower": 556.0,
+      "upper": 576.0,
+      "basis": "Researcher proposal around HZP nominal"
+    },
+    "moderator_temperature_K": {
+      "lower": 556.0,
+      "upper": 576.0,
+      "basis": "Researcher proposal; liquid phase and data guards apply"
+    },
+    "coolant_pressure_MPa": {
+      "lower": 15.0,
+      "upper": 16.0,
+      "basis": "Researcher proposal around general BEAVRS operating pressure"
+    },
+    "elemental_boron_ppm": {
+      "lower": 0.0,
+      "upper": 975.0,
+      "basis": "Researcher proposal; 975 ppm is sourced HZP point"
+    },
+    "pin_pitch_cm": {
+      "lower": 1.25,
+      "upper": 1.27,
+      "basis": "Researcher geometry perturbation; not design tolerance"
+    },
+    "pellet_radius_cm": {
+      "lower": 0.39,
+      "upper": 0.395,
+      "basis": "Researcher geometry perturbation; not design tolerance"
+    },
+    "insertion_percent": {
+      "lower": 0.0,
+      "upper": 100.0,
+      "basis": "Researcher active-height definition; not source step scale"
+    }
+  },
+  "joint_constraints": [
+    "IF97 compressed-liquid water at requested temperature and absolute pressure",
+    "material nuclear-data temperature tables bracket requested temperatures",
+    "pellet radius strictly less than clad inner radius",
+    "pin pitch strictly greater than twice the largest pin/guide outer radius",
+    "assembly edge-water clearance preserved from source reference",
+    "rod insertion percentage between 0 and 100 over active height"
+  ],
+  "production_approval": null
+}

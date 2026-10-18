@@ -1,0 +1,418 @@
+{
+  "schema": "beavrs_v2_scenario_list_v1",
+  "state": "held_for_post_initial_review",
+  "model": "beavrs_derived_3d_assembly_v2_proposed",
+  "space_id": "beavrs_v2_pilot_scope_v1",
+  "space_sha256": "637e3fc2fb7ec5eb9be4b152fdb247dd82757119b4551db72fa3e1f80abb3b8a",
+  "profile_id": "beavrs_v2_pilot_80k_4h_v1",
+  "profile_sha256": "d4345e47dec052e2ca30ec688439296549919f03b9fdeb70bd478208a015c3fd",
+  "reference_config_sha256": "834a783ce2ac14cebdc1579e87bd731f0899251e3113c28d46cec42b52c223a6",
+  "sampling_seed": 20261018,
+  "sampling_method": "legacy_8_then_OAT_endpoints_then_shifted_Halton_v1",
+  "sampling_parameters": {
+    "version": "legacy_8_OAT_shifted_Halton_v1",
+    "control_order": [
+      "u235_enrichment_wt_percent",
+      "fuel_temperature_K",
+      "moderator_temperature_K",
+      "coolant_pressure_MPa",
+      "elemental_boron_ppm",
+      "pin_pitch_cm",
+      "pellet_radius_cm",
+      "insertion_percent"
+    ],
+    "halton_bases": [
+      2,
+      3,
+      5,
+      7,
+      11,
+      13,
+      17,
+      19
+    ],
+    "halton_shifts": [
+      0.8567737771798308,
+      0.20089207835097245,
+      0.7809474771005647,
+      0.8635220934251879,
+      0.5023258920931539,
+      0.5450168310939334,
+      0.11557949209923313,
+      0.22080561426296574
+    ],
+    "scaling": "linear lower + (upper-lower) * shifted radical inverse",
+    "generator_sha256": "38697a76a5e0727679cf03482bfb329958610fa89273840cf710644ff1d9a3c7"
+  },
+  "requested_count": 24,
+  "scenario_count": 24,
+  "generation_status": "complete",
+  "scenarios": [
+    {
+      "scenario_id": "27e0e31b6192d93a8ad95eda19609101842f066d83e326f5d3f43ca6b0135a4a",
+      "controls": {
+        "u235_enrichment_wt_percent": 2.8851606657697464,
+        "fuel_temperature_K": 566.483,
+        "moderator_temperature_K": 566.483,
+        "coolant_pressure_MPa": 15.51320325,
+        "elemental_boron_ppm": 195.86977639219813,
+        "pin_pitch_cm": 1.25984,
+        "pellet_radius_cm": 0.39218,
+        "insertion_percent": 78.09474771005647
+      },
+      "sampling_stratum": "preserved_draft_2"
+    },
+    {
+      "scenario_id": "4e96d99396c8aa67b3305459faa338fc8cc3b175c791cf69b96defc8b038b09d",
+      "controls": {
+        "u235_enrichment_wt_percent": 2.895283140137782,
+        "fuel_temperature_K": 566.483,
+        "moderator_temperature_K": 566.483,
+        "coolant_pressure_MPa": 15.51320325,
+        "elemental_boron_ppm": 489.7677447908251,
+        "pin_pitch_cm": 1.25984,
+        "pellet_radius_cm": 0.39218,
+        "insertion_percent": 54.50168310939334
+      },
+      "sampling_stratum": "preserved_draft_3"
+    },
+    {
+      "scenario_id": "2752e5f89b2f852324739fc89de50764f32fea8925d5f03173668a398def6c98",
+      "controls": {
+        "u235_enrichment_wt_percent": 1.7733692381488497,
+        "fuel_temperature_K": 566.483,
+        "moderator_temperature_K": 566.483,
+        "coolant_pressure_MPa": 15.51320325,
+        "elemental_boron_ppm": 215.2854739063916,
+        "pin_pitch_cm": 1.25984,
+        "pellet_radius_cm": 0.39218,
+        "insertion_percent": 5.601387930998925
+      },
+      "sampling_stratum": "preserved_draft_4"
+    },
+    {
+      "scenario_id": "525b09992b1d5df1d9cbe2897ab054167deaed7de86cd8a7897a1a8ebdd16753",
+      "controls": {
+        "u235_enrichment_wt_percent": 2.0089650838386963,
+        "fuel_temperature_K": 566.483,
+        "moderator_temperature_K": 566.483,
+        "coolant_pressure_MPa": 15.51320325,
+        "elemental_boron_ppm": 561.3688905342166,
+        "pin_pitch_cm": 1.25984,
+        "pellet_radius_cm": 0.39218,
+        "insertion_percent": 85.08222842557738
+      },
+      "sampling_stratum": "preserved_draft_5"
+    },
+    {
+      "scenario_id": "3da1dc68147fa3ab269e774101d2c705dee1d268b464bb5c7e24de08b650a4c8",
+      "controls": {
+        "u235_enrichment_wt_percent": 1.8785408541373185,
+        "fuel_temperature_K": 566.483,
+        "moderator_temperature_K": 566.483,
+        "coolant_pressure_MPa": 15.51320325,
+        "elemental_boron_ppm": 526.1850148091687,
+        "pin_pitch_cm": 1.25984,
+        "pellet_radius_cm": 0.39218,
+        "insertion_percent": 92.26454798065086
+      },
+      "sampling_stratum": "preserved_draft_6"
+    },
+    {
+      "scenario_id": "bba74fd353347e2d78419207cb18a04ec95aef71aff7e19416d43c0c6de8a82d",
+      "controls": {
+        "u235_enrichment_wt_percent": 1.959368732548433,
+        "fuel_temperature_K": 566.483,
+        "moderator_temperature_K": 566.483,
+        "coolant_pressure_MPa": 15.51320325,
+        "elemental_boron_ppm": 777.7081208165366,
+        "pin_pitch_cm": 1.25984,
+        "pellet_radius_cm": 0.39218,
+        "insertion_percent": 89.76126360912943
+      },
+      "sampling_stratum": "preserved_draft_7"
+    },
+    {
+      "scenario_id": "5cda7589517017c792b54b0806a2c2be63717bb4b1a5f7b8d481dee067933e83",
+      "controls": {
+        "u235_enrichment_wt_percent": 1.76638206402938,
+        "fuel_temperature_K": 566.483,
+        "moderator_temperature_K": 566.483,
+        "coolant_pressure_MPa": 15.51320325,
+        "elemental_boron_ppm": 573.9239155799554,
+        "pin_pitch_cm": 1.25984,
+        "pellet_radius_cm": 0.39218,
+        "insertion_percent": 92.78630332812507
+      },
+      "sampling_stratum": "preserved_draft_8"
+    },
+    {
+      "scenario_id": "d85d1dab70910a3801da4913f8505834ece9711ad70a74e9178233b07b86037a",
+      "controls": {
+        "u235_enrichment_wt_percent": 2.35,
+        "fuel_temperature_K": 566.483,
+        "moderator_temperature_K": 566.483,
+        "coolant_pressure_MPa": 15.51320325,
+        "elemental_boron_ppm": 975.0,
+        "pin_pitch_cm": 1.25984,
+        "pellet_radius_cm": 0.39218,
+        "insertion_percent": 50.0
+      },
+      "sampling_stratum": "one_at_a_time_u235_enrichment_wt_percent_lower"
+    },
+    {
+      "scenario_id": "db66e4fa0c28438575b059aea60b48099c883f8abd79d6a532e13ab06dd084b8",
+      "controls": {
+        "u235_enrichment_wt_percent": 1.6,
+        "fuel_temperature_K": 556.0,
+        "moderator_temperature_K": 566.483,
+        "coolant_pressure_MPa": 15.51320325,
+        "elemental_boron_ppm": 975.0,
+        "pin_pitch_cm": 1.25984,
+        "pellet_radius_cm": 0.39218,
+        "insertion_percent": 50.0
+      },
+      "sampling_stratum": "one_at_a_time_fuel_temperature_K_lower"
+    },
+    {
+      "scenario_id": "89c2c3003613639255d99c24e117c13e1ea07a9f1e14a598d635d5708842ccd9",
+      "controls": {
+        "u235_enrichment_wt_percent": 1.6,
+        "fuel_temperature_K": 576.0,
+        "moderator_temperature_K": 566.483,
+        "coolant_pressure_MPa": 15.51320325,
+        "elemental_boron_ppm": 975.0,
+        "pin_pitch_cm": 1.25984,
+        "pellet_radius_cm": 0.39218,
+        "insertion_percent": 50.0
+      },
+      "sampling_stratum": "one_at_a_time_fuel_temperature_K_upper"
+    },
+    {
+      "scenario_id": "d70a0df933ca475bef85ebf871b933dc68e6ed480eaa222a7bd248b39d472bbb",
+      "controls": {
+        "u235_enrichment_wt_percent": 1.6,
+        "fuel_temperature_K": 566.483,
+        "moderator_temperature_K": 556.0,
+        "coolant_pressure_MPa": 15.51320325,
+        "elemental_boron_ppm": 975.0,
+        "pin_pitch_cm": 1.25984,
+        "pellet_radius_cm": 0.39218,
+        "insertion_percent": 50.0
+      },
+      "sampling_stratum": "one_at_a_time_moderator_temperature_K_lower"
+    },
+    {
+      "scenario_id": "2090c7675fa28a6b32316c8872a118d20a2d6120f7de74611b597acc7900d749",
+      "controls": {
+        "u235_enrichment_wt_percent": 1.6,
+        "fuel_temperature_K": 566.483,
+        "moderator_temperature_K": 566.483,
+        "coolant_pressure_MPa": 15.0,
+        "elemental_boron_ppm": 975.0,
+        "pin_pitch_cm": 1.25984,
+        "pellet_radius_cm": 0.39218,
+        "insertion_percent": 50.0
+      },
+      "sampling_stratum": "one_at_a_time_coolant_pressure_MPa_lower"
+    },
+    {
+      "scenario_id": "ef5a12809c1176b22b819c379e42aeab9a3884c37fb66df914646aa004f19b79",
+      "controls": {
+        "u235_enrichment_wt_percent": 1.6,
+        "fuel_temperature_K": 566.483,
+        "moderator_temperature_K": 566.483,
+        "coolant_pressure_MPa": 16.0,
+        "elemental_boron_ppm": 975.0,
+        "pin_pitch_cm": 1.25984,
+        "pellet_radius_cm": 0.39218,
+        "insertion_percent": 50.0
+      },
+      "sampling_stratum": "one_at_a_time_coolant_pressure_MPa_upper"
+    },
+    {
+      "scenario_id": "05096649e625515d590bbbae749d470897619017a5180d0d4e3f1230ff88ba76",
+      "controls": {
+        "u235_enrichment_wt_percent": 1.6,
+        "fuel_temperature_K": 566.483,
+        "moderator_temperature_K": 566.483,
+        "coolant_pressure_MPa": 15.51320325,
+        "elemental_boron_ppm": 487.5,
+        "pin_pitch_cm": 1.25984,
+        "pellet_radius_cm": 0.39218,
+        "insertion_percent": 50.0
+      },
+      "sampling_stratum": "one_at_a_time_elemental_boron_ppm_upper"
+    },
+    {
+      "scenario_id": "987e58b6e9fa205b127bca7b3908b9d0c36c226c4bea36bded89c383cd060ad5",
+      "controls": {
+        "u235_enrichment_wt_percent": 1.6,
+        "fuel_temperature_K": 566.483,
+        "moderator_temperature_K": 566.483,
+        "coolant_pressure_MPa": 15.51320325,
+        "elemental_boron_ppm": 975.0,
+        "pin_pitch_cm": 1.27,
+        "pellet_radius_cm": 0.39218,
+        "insertion_percent": 50.0
+      },
+      "sampling_stratum": "one_at_a_time_pin_pitch_cm_upper"
+    },
+    {
+      "scenario_id": "5f83681d03c4285c456595511fc2bcb29f28ba068f24a4d97307291db4edd4ed",
+      "controls": {
+        "u235_enrichment_wt_percent": 1.6,
+        "fuel_temperature_K": 566.483,
+        "moderator_temperature_K": 566.483,
+        "coolant_pressure_MPa": 15.51320325,
+        "elemental_boron_ppm": 975.0,
+        "pin_pitch_cm": 1.25984,
+        "pellet_radius_cm": 0.39,
+        "insertion_percent": 50.0
+      },
+      "sampling_stratum": "one_at_a_time_pellet_radius_cm_lower"
+    },
+    {
+      "scenario_id": "d4def36f5eec072bbbc55beb83e93e92c80283128a7d29343af485afd3ae7e43",
+      "controls": {
+        "u235_enrichment_wt_percent": 1.6,
+        "fuel_temperature_K": 566.483,
+        "moderator_temperature_K": 566.483,
+        "coolant_pressure_MPa": 15.51320325,
+        "elemental_boron_ppm": 975.0,
+        "pin_pitch_cm": 1.25984,
+        "pellet_radius_cm": 0.395,
+        "insertion_percent": 50.0
+      },
+      "sampling_stratum": "one_at_a_time_pellet_radius_cm_upper"
+    },
+    {
+      "scenario_id": "eabcb6c3fa8dd0062290353fa14dd9f5cedb42cb786b6968899e2fe2f0472d65",
+      "controls": {
+        "u235_enrichment_wt_percent": 1.7601606657697462,
+        "fuel_temperature_K": 573.3511749003528,
+        "moderator_temperature_K": 559.6189495420113,
+        "coolant_pressure_MPa": 15.149236379139474,
+        "elemental_boron_ppm": 667.0404720635524,
+        "pin_pitch_cm": 1.2639772596988017,
+        "pellet_radius_cm": 0.3911661327546138,
+        "insertion_percent": 32.60687721577026
+      },
+      "sampling_stratum": "multiparameter_halton_2"
+    },
+    {
+      "scenario_id": "c0c8fbdd88beed70c3deb62d598cb27aa0c5b092840d37b8df25802b11a67613",
+      "controls": {
+        "u235_enrichment_wt_percent": 2.510160665769746,
+        "fuel_temperature_K": 562.2400637892416,
+        "moderator_temperature_K": 563.6189495420113,
+        "coolant_pressure_MPa": 15.292093521996616,
+        "elemental_boron_ppm": 755.676835699916,
+        "pin_pitch_cm": 1.2655157212372632,
+        "pellet_radius_cm": 0.39146025040167265,
+        "insertion_percent": 37.8700351105071
+      },
+      "sampling_stratum": "multiparameter_halton_3"
+    },
+    {
+      "scenario_id": "e2484d64b235d5e7ed7dfaeee41d3c80c823eeed7f96cf122604ea67652f814c",
+      "controls": {
+        "u235_enrichment_wt_percent": 3.0726606657697464,
+        "fuel_temperature_K": 568.9067304559084,
+        "moderator_temperature_K": 567.6189495420113,
+        "coolant_pressure_MPa": 15.434950664853758,
+        "elemental_boron_ppm": 844.3131993362796,
+        "pin_pitch_cm": 1.267054182775725,
+        "pellet_radius_cm": 0.3917543680487315,
+        "insertion_percent": 43.13319300524394
+      },
+      "sampling_stratum": "multiparameter_halton_4"
+    },
+    {
+      "scenario_id": "c0eb72800da4157f8d58b897b2205f5a7bbbf6e5fddf7481ffed257c6f2395ab",
+      "controls": {
+        "u235_enrichment_wt_percent": 2.322660665769746,
+        "fuel_temperature_K": 575.573397122575,
+        "moderator_temperature_K": 572.4189495420113,
+        "coolant_pressure_MPa": 15.577807807710903,
+        "elemental_boron_ppm": 932.9495629726433,
+        "pin_pitch_cm": 1.2685926443141864,
+        "pellet_radius_cm": 0.3920484856957903,
+        "insertion_percent": 48.39635089998078
+      },
+      "sampling_stratum": "multiparameter_halton_5"
+    },
+    {
+      "scenario_id": "909cba37c92d6f455a65825e1e40d1a90496f980473e9e3e6231764ec906641c",
+      "controls": {
+        "u235_enrichment_wt_percent": 1.9476606657697462,
+        "fuel_temperature_K": 564.4622860114639,
+        "moderator_temperature_K": 556.4189495420113,
+        "coolant_pressure_MPa": 15.720664950568045,
+        "elemental_boron_ppm": 46.585926609006854,
+        "pin_pitch_cm": 1.2501311058526479,
+        "pellet_radius_cm": 0.3923426033428491,
+        "insertion_percent": 53.659508794717624
+      },
+      "sampling_stratum": "multiparameter_halton_6"
+    },
+    {
+      "scenario_id": "a321f9870f6a9b79e831d9d3caf9a56c675ff6e484b891ebafdbccbb0003bd09",
+      "controls": {
+        "u235_enrichment_wt_percent": 2.697660665769746,
+        "fuel_temperature_K": 571.1289526781305,
+        "moderator_temperature_K": 560.4189495420113,
+        "coolant_pressure_MPa": 15.883930256690494,
+        "elemental_boron_ppm": 135.2222902453704,
+        "pin_pitch_cm": 1.2516695673911094,
+        "pellet_radius_cm": 0.39263672098990793,
+        "insertion_percent": 58.92266668945447
+      },
+      "sampling_stratum": "multiparameter_halton_7"
+    },
+    {
+      "scenario_id": "64cdf9f37818ebefb80e1b2bb581c54f93d028aa4b36952efbe62798176f5a3d",
+      "controls": {
+        "u235_enrichment_wt_percent": 2.9789106657697464,
+        "fuel_temperature_K": 557.7956193447973,
+        "moderator_temperature_K": 564.4189495420113,
+        "coolant_pressure_MPa": 15.026787399547636,
+        "elemental_boron_ppm": 223.8586538817342,
+        "pin_pitch_cm": 1.253208028929571,
+        "pellet_radius_cm": 0.39293083863696676,
+        "insertion_percent": 64.18582458419131
+      },
+      "sampling_stratum": "multiparameter_halton_8"
+    }
+  ],
+  "rejected": [],
+  "calculation_profile_separate": true,
+  "parent_catalogue_sha256": "540b4c83f21cbb4231dff0561a2385571077d4e88cff83236531249fed8b5224",
+  "parent_indices_zero_based": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12,
+    14,
+    15,
+    17,
+    19,
+    20,
+    21,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "stage": "remaining_24"
+}

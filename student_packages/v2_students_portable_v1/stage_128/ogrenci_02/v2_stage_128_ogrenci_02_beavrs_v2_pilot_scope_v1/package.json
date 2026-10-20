@@ -1,17 +1,17 @@
 {
   "package_id": "v2_stage_128_ogrenci_02_beavrs_v2_pilot_scope_v1",
   "model": "beavrs_derived_3d_assembly_v2_proposed",
-  "state": "draft_unapproved",
+  "state": "production_ready",
   "project_root": ".",
   "package_path": "student_packages/v2_students_portable_v1/stage_128/ogrenci_02/v2_stage_128_ogrenci_02_beavrs_v2_pilot_scope_v1",
   "space_config": "configs/v2_parameter_space_pilot_scope_v1.json",
-  "profile_config": "configs/v2_calculation_profile_pilot_draft_v1.json",
+  "profile_config": "configs/v2_calculation_profile_128_students_80k_18h_research_v1.json",
   "notebook_hash_schema": "notebook-inputs-v1",
   "space_id": "beavrs_v2_pilot_scope_v1",
-  "profile_id": "beavrs_v2_pilot_b2_budget_draft_v1",
+  "profile_id": "beavrs_v2_stage_128_students_80k_18h_research_v1",
   "reference_config_sha256": "834a783ce2ac14cebdc1579e87bd731f0899251e3113c28d46cec42b52c223a6",
-  "manifest_sha256": "20e812f2fac01b3233422d961e62bba2266f448d9fba26b94329ad65fdfe2107",
-  "hashes_sha256": "94be47db164a1217ed9d2da79ac9c865cbbe48add297c06b965fc8f7681faf4d",
+  "manifest_sha256": "a1c5c7019e1b801ab9fcb9a1510a8834abfb465d05f6737ef5902d20a4a6eeeb",
+  "hashes_sha256": "b2406664e718a35bb289f8be1690e94402722f174f1fcc6ebd707da5f782f2a4",
   "owner": "ogrenci_02",
   "stage": "stage_128"
 }

@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "profile_id": "beavrs_v2_stage256_ogrenci01_80k_16h_research_v1",
+  "status": "approved",
+  "purpose": "Single existing stage_256/ogrenci_01 32-case controlled research run; no physical, convergence, or training-data acceptance",
+  "calculation": {
+    "particles_per_generation": 80000,
+    "batches": 600,
+    "inactive": 300,
+    "generations_per_batch": 1,
+    "threads": 6
+  },
+  "seed_base": 71001,
+  "group_runtime_budget_seconds": 57600,
+  "production_approval": "stage256_ogrenci01_32_case_research_only",
+  "decision_source": "Danisman explicit user decision, 2026-10-20: this existing package only"
+}

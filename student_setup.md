@@ -1,210 +1,117 @@
-# Öğrenci kurulum ve deney çalıştırma rehberi
+# Öğrenci kurulum ve deney rehberi
 
-Bu rehber, projeyi kendi bilgisayarınızda kurmanız, size atanmış
-deneyleri çalıştırmanız ve sonuçları danışmanınıza teslim etmeniz içindir.
+Bu rehber, projeyi **bir kez kurmak** ve danışmanınızın size atadığı deneyleri çalıştırıp teslim etmek içindir. Hesaplar Windows Python'unda değil, **WSL2 Ubuntu** içindeki `openmc-proje` Conda ortamında yapılır. Komut bloğunda “PowerShell” yazmıyorsa komutu **Ubuntu terminaline** yazın.
 
-> Kurulum bir kez yapılır. Her deney için yeniden kurulum yapılmaz.
-> Komutlarda aksi belirtilmedikçe Ubuntu terminalini kullanın.
+| Yol haritası | Ne yapacaksınız? |
+|---|---|
+| 1. Bir kez kurulum yap | Ubuntu, Conda, proje, OpenMC verisi ve notebook kernelini hazırla. |
+| 2. Kendi deney notebook'unu çalıştır | Yalnız atanmış, teknik onaylı pakette `01_calistir.ipynb` dosyasını aç. |
+| 3. Sonuçları incele | Durumu sorgula ve `02_sonuclari_incele.ipynb` dosyasını aç. |
+| 4. ZIP teslimini oluştur | Mevcut teslim betiğiyle ZIP üret ve danışmanına gönder. |
 
-## 1. Ne yapacağız?
+**Sizin değiştireceğiniz bilgiler:** Danışmanın verdiği GitHub adresi, varsa arşivin tam yolu, öğrenci kimliğiniz (`ogrenci_02` gibi), açmanıza izin verilen aşama (`stage_32` gibi) ve kendi paketinizin yolu. Manifestteki parametreleri, seed'leri, hesap profilini, hash ve onay dosyalarını değiştirmeyin.
 
-OpenMC, verilen yakıt, su ve geometri özellikleri için nötronların
-davranışını Monte Carlo yöntemiyle hesaplar.
+## Bir kez yapılacak kurulum
 
-Her senaryo için şunları kaydedeceğiz:
+### 1. WSL2 Ubuntu ve projeyi hazırla
 
-- Nötron çoğalma faktörü: **k**
-- Üç boyutlu fisyon ve fisyon enerjisi dağılımları
-- Hesapların Monte Carlo standart hataları
-- Hesap geçmişi ve çalışma süresi
-
-Bu sayısal veriler daha sonra hızlı bir yapay zekâ vekil modeli
-geliştirmekte kullanılacak.
-
-Modelimiz, BEAVRS kaynaklarından türetilmiş bir yakıt demeti araştırma
-modelidir. Gerçek bir santralin tamamını veya işletme güvenliğini
-doğrulayan bir sistem değildir.
-
-## 2. Bana kaç deney atanacak?
-
-Her öğrencinin kendi deney listesi ve çalıştırma notebook'u vardır.
-
-| Aşama | Kişi başına yeni deney | Ekipte biriken toplam |
-|---|---:|---:|
-| İlk aşama | 8 | 32 |
-| İkinci aşama | 24 | 128 |
-| Üçüncü aşama | 32 | 256 |
-
-Bu dağılım dört kişi içindir. `ogrenci_01` danışmandır; diğer kimlikleri
-danışmanınız size bildirecektir.
-
-Danışmanın ilk sekiz deneyi zaten tamamlanmıştır. Yeniden yapılmayacaktır.
-
-**Bir notebook birden fazla deneyi sırayla çalıştırır.**
-Örneğin ilk aşamada kendi notebook'unuzda bir kez Run All dediğinizde
-size atanmış sekiz deney sırayla hesaplanır.
-
-- Başka öğrencinin paketini çalıştırmayın.
-- Manifest, parametre, seed, hesap profili veya kodu değiştirmeyin.
-- Sonraki aşamaya danışmanınız haber vermeden geçmeyin.
-
-## 3. Windows'a WSL2 Ubuntu kurulumu
-
-Ubuntu zaten kuruluysa bu bölümü tekrar uygulamayın.
-
-Windows PowerShell'i yönetici olarak açın:
+Ubuntu zaten kuruluysa kurulumu tekrarlamayın. Gerekirse **Windows PowerShell'i yönetici olarak** açın:
 
 ```powershell
 wsl --install -d Ubuntu
-```
-
-İstenirse bilgisayarı yeniden başlatın. Ubuntu'yu açıp Linux kullanıcı
-adınızı ve parolanızı oluşturun.
-
-PowerShell'de kontrol edin:
-
-```powershell
 wsl --list --verbose
 ```
 
-Ubuntu satırındaki VERSION değeri `2` olmalıdır.
+Listede Ubuntu için `VERSION` değeri `2` olmalıdır. Kurulum yeniden başlatma isterse tamamlayın, sonra Ubuntu kullanıcı adınızı ve parolanızı oluşturun. [WSL kurulum yardımı](https://learn.microsoft.com/en-us/windows/wsl/install).
 
-Resmî yardım:
-https://learn.microsoft.com/en-us/windows/wsl/install
-
-**Bundan sonraki komutlar Ubuntu terminalinde çalıştırılacaktır.**
-
-## 4. Conda ve projeyi hazırlama
-
-Önce kontrol edin:
+Bundan sonraki komutları **Ubuntu terminalinde** çalıştırın:
 
 ```bash
 conda --version
 git --version
 ```
 
-Conda bulunamazsa Ubuntu içine Linux sürümü Miniconda kurulmalıdır.
-Windows'a kurulmuş Conda bu proje için yeterli değildir.
-
-Kurulum:
-https://docs.anaconda.com/miniconda/install/
-
-Git bulunamazsa:
+Conda yoksa Ubuntu için [Miniconda](https://docs.anaconda.com/miniconda/install/) kurun; Windows Conda yeterli değildir. Git yoksa:
 
 ```bash
 sudo apt update
 sudo apt install git
 ```
 
-Danışmanınızın verdiği GitHub adresini aşağıdaki yer tutucunun yerine
-yazarak projeyi indirin:
+Aşağıdaki `GITHUB_DEPO_ADRESI` alanını danışmanın verdiği gerçek adresle değiştirin:
 
 ```bash
 cd ~
 git clone GITHUB_DEPO_ADRESI openmc-proje
 cd ~/openmc-proje
-```
-
-> Projeyi Ubuntu kullanıcı klasöründe tutun.
-> Bu rehberde proje yolu `~/openmc-proje` olarak kabul edilmiştir.
-
-Deneylere başlamadan önce danışmanınızla aynı kod sürümünde olduğunuzu
-doğrulayın:
-
-```bash
 git rev-parse HEAD
 ```
 
-Çalışan bir deney sırasında kod güncellemesi yapmayın.
+Son komuttaki sürümü danışmanınızın bildirdiği sürümle karşılaştırın. Çalışan deney sırasında projeyi güncellemeyin. Bu rehber proje yolunu `~/openmc-proje` kabul eder; farklı yere kurduysanız sonraki `cd` komutlarını uyarlayın.
 
-## 5. OpenMC ortamını oluşturma
+### 2. Hesap ortamını ve notebook kernelini hazırla
 
-Mevcut ortamları kontrol edin:
-
-```bash
-conda env list
-```
-
-`openmc-proje` yoksa proje kökünde oluşturun:
+Proje kökünde önce mevcut Conda ortamlarını kontrol edin:
 
 ```bash
 cd ~/openmc-proje
+conda env list
+```
+
+Listede `openmc-proje` **yoksa** ortamı bir kez oluşturun:
+
+```bash
 conda env create -f environment.yml
 ```
 
-Ortam zaten varsa silmeyin veya yeniden oluşturmayın.
-Sürüm uyuşmazlığını danışmanınıza bildirin.
+`conda env list` içinde `openmc-proje` zaten varsa oluşturma komutunu **atlayın**; ortamı silmeyin. Sürüm uyuşmazlığını danışmanınıza bildirin. `environment.yml` OpenMC 0.16 ve Python 3.12 tanımlar. Temiz bir bilgisayarda baştan kurulum henüz sınanmadı.
 
-Ortamı etkinleştirin ve kontrol edin:
+Ortamı açıp kontrol edin:
 
 ```bash
 conda activate openmc-proje
-
 python -c "import sys, openmc, numpy, pandas, h5py, matplotlib; print('Python:', sys.executable); print('OpenMC:', openmc.__version__)"
 openmc --version
-```
-
-Python yolu `openmc-proje` ortamını göstermelidir.
-
-Notebook kernelini kaydedin:
-
-```bash
 python -m ipykernel install --user --name openmc-proje --display-name "Python (OpenMC Proje)"
 ```
 
-Bir paket eksikliği hatası alırsanız rastgele paket kurmayın.
-Hata metnini danışmanınıza gönderin.
+Python yolu `openmc-proje` ortamını göstermelidir. Eksik paket hatasında rastgele paket kurmayın; hata metnini danışmanınıza gönderin.
 
-## 6. OpenMC nükleer verisini indirme
+### 3. ENDF/B-VIII.0 nükleer verisini bağla
 
-Bu büyük veri kütüphanesi GitHub deposunda bulunmaz.
-Her bilgisayara ayrıca indirilir.
+Büyük HDF5 nükleer veri kütüphanesi Git deposunda bulunmaz. Danışmanın belirttiği **ENDF/B-VIII.0 HDF5** arşivini [OpenMC veri sayfasından](https://openmc.org/data/) edinin; başka sürüme sessizce geçmeyin.
 
-Resmî kaynak:
-https://openmc.org/data/
-
-Danışmanınızın belirttiği **ENDF/B-VIII.0 HDF5** arşivini indirin.
-Farklı bir kütüphane seçmeyin.
-
-Ubuntu terminalinde:
+`/ARSIVIN/TAM/YOLU.tar.xz` alanını indirdiğiniz gerçek dosyanın tam yoluyla değiştirin:
 
 ```bash
 cd ~/openmc-proje
 mkdir -p data/endfb-viii.0
-```
-
-Arşivi gerçek dosya yolunu yazarak açın:
-
-```bash
 tar -xf /ARSIVIN/TAM/YOLU.tar.xz -C data/endfb-viii.0
-```
-
-XML dosyasını bulun:
-
-```bash
 find "$HOME/openmc-proje/data/endfb-viii.0" -name cross_sections.xml -print
 ```
 
-Çıktıdaki tam yolu aşağıdaki yer tutucuya yazın:
+`find` çıktısındaki **tam XML dosya yolunu** aşağıdaki tırnaklar arasına yazın:
 
 ```bash
 conda env config vars set -n openmc-proje OPENMC_CROSS_SECTIONS="/XML/DOSYASININ/TAM/YOLU/cross_sections.xml"
 conda deactivate
 conda activate openmc-proje
-```
-
-Bu ayar `openmc-proje` ortamında kalıcıdır. Kontrol edin:
-
-```bash
 python -c "import os; from pathlib import Path; p=Path(os.environ['OPENMC_CROSS_SECTIONS']); assert p.is_file(), p; print('Veri XML:', p)"
 ```
 
-Birden fazla XML bulunduysa veya dosya bulunamadıysa danışmanınıza sorun.
+XML bulunmazsa veya birden çok XML çıkarsa danışmanınıza sorun. Notebook ön kontrolü ayrıca gerekli izotopları ve sıcaklık kapsamını denetler.
 
-XML'in bulunması ilk kontroldür. Deney notebook'u ayrıca gerekli
-izotopları ve sıcaklık kapsamını denetleyecektir.
+### 4. JupyterLab arayüzünü hazırla
 
-## 7. Bilgisayar kontrolü
+JupyterLab Ubuntu'da zaten çalışıyorsa **mevcut sunucuyu kullanın**; danışmanın `teknofest26` ortamını kopyalamanız gerekmez. JupyterLab yoksa, hesap ortamından ayrı arayüz ortamını **bir kez** kurun:
+
+```bash
+conda create -n openmc-jupyter -c conda-forge jupyterlab
+```
+
+Hesap kerneli yine **Python (OpenMC Proje)** kalır. Arayüz ve hesap ortamlarını birleştirmeyin.
+
+### 5. Bilgisayarını kontrol et
 
 Aşağıdaki çıktıları danışmanınıza gönderin:
 
@@ -215,213 +122,96 @@ df -h ~/openmc-proje
 du -sh ~/openmc-proje/data
 ```
 
-Mevcut deney profili koşu başına **6 thread** kullanır.
-Bilgisayarınıza uygunluğu danışmanınız değerlendirecektir.
-Hesap profilini kendiniz değiştirmeyin.
+Mevcut deney profili koşu başına **6 thread** kullanır; uygunluğu danışmanınız değerlendirsin. Uzun hesap sırasında bilgisayarı elektriğe bağlayın, otomatik uykuyu kapatın, WSL'yi kapatmayın ve aynı anda başka deney paketi başlatmayın. Laboratuvarda Deep Freeze varsa proje ile `runs/` sonuçlarının yeniden başlatmada silinmeyeceğini doğrulayın.
 
-- Bilgisayarın otomatik uykuya geçmesini engelleyin.
-- Dizüstü bilgisayarı elektriğe bağlayın.
-- Aynı anda birden fazla deney paketi başlatmayın.
-- Ubuntu'yu kapatmayın ve bilgisayarı yeniden başlatmayın.
-- Laboratuvarda Deep Freeze varsa proje ve sonuçların yeniden
-  başlatmada silinmeyecek konumda olduğunu doğrulayın.
+## Her deneyde yapılacaklar
 
-## 8. JupyterLab'i açma
+### 1. Kendi paketini bul ve JupyterLab'i aç
 
-JupyterLab zaten bir Ubuntu ortamında çalışıyorsa mevcut sunucuyu
-kullanabilirsiniz. Danışmanınızın `teknofest26` ortamını kurmanız gerekmez.
+Danışmanınız **öğrenci kimliğinizi ve açılacak aşamayı** bildirir. İlk aşamada yeni koşular `stage_32/ogrenci_02`, `ogrenci_03` ve `ogrenci_04` paketlerindedir. `ogrenci_01` danışmandır; ilk sekiz pilot koşusu tamamlanmıştır, yeniden çalıştırılmaz. Sonraki aşamalarda kişi başına 24, ardından 32 yeni koşu planlanmıştır; bu aşamalar yalnız ayrı izinle açılır. Danışmanın 19 Ekim 2026 istisnası yalnız mevcut `stage_128/ogrenci_01` paketine aittir.
 
-JupyterLab yoksa, hesap ortamından ayrı bir arayüz ortamını bir kez kurun:
-
-```bash
-conda create -n openmc-jupyter -c conda-forge jupyterlab
-```
-
-Her kullanımda Ubuntu terminalinde:
+Aşağıdaki **örnek** `ogrenci_02` ve `stage_32` içindir. Danışmanınız başka paket verdiyse `PAKET` satırını kendi paketinizin **gerçek klasör yoluyla** değiştirin; klasör adını tahmin etmeyin. Bu değişken yalnız açık olduğu terminalde kalır.
 
 ```bash
 conda activate openmc-proje
 cd ~/openmc-proje
+PAKET="student_packages/v2_students_portable_v1/stage_32/ogrenci_02/v2_stage_32_ogrenci_02_beavrs_v2_pilot_scope_v1"
+test -f "$PAKET/manifest.json" && test -f "$PAKET/01_calistir.ipynb" && echo "Paket bulundu"
+```
+
+`Paket bulundu` yazmıyorsa devam etmeyin; yolu danışmanınızla kontrol edin. Her pakette yalnız bir çalıştırma (`01_calistir.ipynb`) ve bir sonuç (`02_sonuclari_incele.ipynb`) notebook'u vardır.
+
+`openmc-jupyter` ortamını 4. adımda kurduysanız Ubuntu terminalinde:
+
+```bash
 conda run --no-capture-output -n openmc-jupyter jupyter lab --no-browser
 ```
 
-Terminalde gösterilen token içeren `http://localhost:...` adresini
-Windows tarayıcısında açın. Bu adresi başkalarıyla paylaşmayın.
+Başka bir JupyterLab kurulumunuz varsa onu mevcut yöntemiyle açın; `openmc-jupyter` komutunu kullanmayın. Zaten açık sunucu varsa yenisini açmayın. Terminaldeki token içeren `http://localhost:...` adresini Windows tarayıcısında açın; tokenı başkalarıyla paylaşmayın. Notebook kernelini **Python (OpenMC Proje)** seçin.
 
-Notebook açıldığında kernel olarak mutlaka:
+### 2. Atanmış deneyleri başlat
 
-**Python (OpenMC Proje)**
+JupyterLab dosya tarayıcısında kendi `$PAKET` klasörünü açıp `01_calistir.ipynb` dosyasında **Run All** seçin. Bu eylem uzun hesabı başlatabilir. Notebook önce paket bütünlüğünü, atanmış koşulları ve ön kontrolü gösterir; onaylı pakette son hücre bağımsız WSL işçisini başlatır.
 
-seçin. JupyterLab arayüzüyle hesap kerneli farklı ortamlarda olabilir.
+Çıktıdaki **grup kimliği, PID, log, durum ve sonuç yollarını** kaydedin. Notebook hücresinin bitmesi, bütün koşuların bittiği anlamına gelmez. Tarayıcı kapanabilir; **bilgisayar ve WSL açık kalmalıdır**. Aynı grubu ikinci kez başlatmayın. Tamamlanan grup tekrar çalıştırılmaz; başarısız veya durmuş grup kendiliğinden devam etmez.
 
-## 9. Kendi deney paketini açma
+Hash ya da teknik onay hatası görürseniz dosyaları düzeltmeye çalışmayın; hata metnini danışmanınıza gönderin. Eski taslak paketleri veya başka öğrencinin notebook'unu çalıştırmayın.
 
-İlk aşama için JupyterLab dosya tarayıcısında şu dizine gidin:
+### 3. Durumu ve sonuçları incele
 
-```text
-student_packages/
-  v2_students_portable_v1/
-    stage_32/
-      ogrenci_02/
-        paket_klasoru/
-```
-
-`ogrenci_02` yerine size atanmış kimliği kullanın.
-İçeride iki notebook vardır:
-
-| Dosya | Görevi |
-|---|---|
-| `01_calistir.ipynb` | Atanmış deneyleri başlatır |
-| `02_sonuclari_incele.ipynb` | Kaydedilmiş sonuçları gösterir |
-
-**İlk 32 aşamasında `ogrenci_01` yeni hesap başlatmaz;
-tamamlanmış danışman pilotu kullanılır.**
-
-Diğer taslak, eski veya danışman paketlerini çalıştırmayın.
-
-## 10. Deneyleri başlatma
-
-1. Kendi `01_calistir.ipynb` dosyanızı açın.
-2. Kernelin **Python (OpenMC Proje)** olduğunu kontrol edin.
-3. **Run All** seçin.
-4. Parametre tablosunu ve ön kontrol sonucunu okuyun.
-5. Başlatma çıktısındaki grup kimliği, PID, log ve durum yollarını kaydedin.
-
-Paketin teknik onayı eksikse hesap başlamaz.
-Onay veya hash dosyalarını değiştirmeyin; danışmanınıza bildirin.
-
-Hesap bağımsız işçide devam eder. Başlatma hücresinin bitmesi,
-bütün deneylerin bittiği anlamına gelmez.
-
-Tarayıcı kapanabilir; **bilgisayar ve WSL açık kalmalıdır.**
-
-## 11. İlerlemeyi izleme ve tamamlanma
-
-Yeni Ubuntu terminalinde:
-
-```bash
-conda activate openmc-proje
-cd ~/openmc-proje
-```
-
-Kendi paket yolunuzu bir değişkene atayın.
-`PAKET_KLASORU` yerine gerçek klasör adını yazın:
-
-```bash
-PAKET="student_packages/v2_students_portable_v1/stage_32/ogrenci_02/PAKET_KLASORU"
-```
-
-Durumu görüntüleyin:
+Aynı Ubuntu terminalinde `PAKET` değişkeni hâlâ tanımlıysa:
 
 ```bash
 python scripts/v2_student_production.py status "$PAKET"
 ```
 
-Ayrıca `02_sonuclari_incele.ipynb` dosyasında Run All yaparak
-kaydedilmiş sonuçları görebilirsiniz. Bu notebook hesap başlatmaz.
+Yeni terminal açtıysanız önce `conda activate openmc-proje`, `cd ~/openmc-proje` ve kendi `PAKET="..."` satırınızı tekrar yazın. `02_sonuclari_incele.ipynb` dosyasında **Run All** yalnız kaydedilmiş sonuçları okur; devam eden grubun tamamlanmış ara sonuçlarını da gösterebilir, yeni simülasyon başlatmaz.
 
-**Grup `completed` olduğunda atanmış hesaplar tamamlanmıştır.**
-Bu, fiziksel doğruluğun veya eğitim verisi kalitesinin kabul edildiği
-anlamına gelmez.
+`completed`, hesap çıktı dosyalarının tamamlandığını belirtir; **fiziksel doğrulama, kaynak yakınsaması, istatistiksel kalite veya eğitim verisi kabulü değildir**. MC standart hatası fiziksel doğruluk yüzdesi değildir. Sıfır tally gerçek üretimin kesin sıfır olduğu anlamına gelmez; `kappa-fission` fisyon enerjisi üretimi yaklaşımıdır, toplam ısı birikimi değildir.
 
-`failed`, `stopped` veya `budget_exhausted` görürseniz:
-- Hata metnini ve grup kimliğini danışmanınıza gönderin.
-- Kısmi çıktıları silmeyin.
-- Tekrar tekrar Run All yapmayın.
+Durum ile süreç bilgisi çelişirse (örneğin `running` yanında `process_alive=false`), yalnız bu bayrağa bakarak yeniden başlatmayın. Log ve sonuçları kontrol edip danışmanınıza bildirin. `failed`, `stopped` veya `budget_exhausted` durumunda kısmi çıktıları silmeyin.
 
-Durdurmanız gerekirse:
+Durdurma veya devam **yalnız danışman yönlendirmesiyle** yapılır. Yalnız gereken **tek komutu** seçin:
+
+Durdurmak için:
 
 ```bash
 python scripts/v2_student_production.py stop "$PAKET"
 ```
 
-Devam işlemini yalnız danışmanınız yönlendirdiğinde uygulayın:
+Danışmanınız açıkça devam etmenizi söylediyse:
 
 ```bash
 python scripts/v2_student_production.py resume "$PAKET"
 ```
 
-Süre tavanı paket bazındadır. Danışman pilotundaki 4 saat sınırını
-bütün öğrenci paketleri için geçerli kabul etmeyin.
+`stop` komutu sinyal gönderilmediğini bildirirse işletim sistemi sürecini kendiniz öldürmeyin; danışmanınıza sorun. Süre tavanı pakete özeldir; başka paketin 4 veya 12 saatlik tavanını kendi paketinize aktarmayın.
 
-## 12. Sonuçları okuma
+### 4. ZIP teslimini oluştur
 
-| Gösterge | Anlamı |
-|---|---|
-| `k` | Nötron çoğalma faktörünün tahmini |
-| MC standart hatası | Monte Carlo örnekleme belirsizliği |
-| `flux` | Nötron akısıyla ilgili sayısal ölçüm |
-| `kappa-fission` | Fisyon enerjisi üretimini temsil eden ölçüm |
-| Sıfır tally | O hücrede bu hesapta katkı ölçülmemesi |
-
-MC standart hatası fiziksel doğruluk yüzdesi değildir.
-Sıfır tally, gerçek üretimin kesin sıfır olduğunu göstermez.
-Grafikler doğrudan MW veya sıcaklık çıktısı değildir.
-
-Danışmanınıza şu kısa gözlemleri iletin:
-- En uzun ve en kısa hesap hangisiydi?
-- k ve MC hataları ne oldu?
-- Dağılımda nerede yoğunlaşma görüldü?
-- Sıfır veya düşük sinyalli bölgeler var mıydı?
-- Uyarı veya başarısız koşu oluştu mu?
-
-## 13. Sonuçları ZIP olarak teslim etme
-
-Grup tamamlandığında sonuç notebook'unu inceleyip kaydedin.
-
-Ubuntu terminalinde proje kökünden:
+Grup tamamlandığında sonuç notebook'unu inceleyin ve kaydedin. Ubuntu terminalinde `openmc-proje` ortamı açık, proje kökünde ve kendi `PAKET` değişkeniniz tanımlı olmalıdır:
 
 ```bash
-conda activate openmc-proje
-cd ~/openmc-proje
-
-PAKET="student_packages/v2_students_portable_v1/stage_32/ogrenci_02/PAKET_KLASORU"
-mkdir -p deliveries
-
 python scripts/v2_transfer.py export "$PAKET" "deliveries/$(basename "$PAKET").zip"
 ```
 
-Kendi öğrenci kimliğinizi ve gerçek paket klasörünü kullanın.
-Komut hata verirse eksik dosyaları gizleyerek elle ZIP oluşturmayın.
+Betik ZIP'i `deliveries/` içine oluşturur; mevcut ZIP'in üzerine yazmaz. Hata verirse dosyaları gizleyerek elle ZIP hazırlamayın. ZIP'i danışmanın belirttiği ortak konuma gönderin ve dosya adını değiştirmeyin.
 
-Oluşan ZIP'i danışmanınızın belirttiği ortak klasöre yükleyin.
-Dosya adını değiştirmeyin.
+Hafif teslim ZIP'i nükleer veri kütüphanesini ve büyük statepoint HDF5 dosyalarını içermez. Kaynak `runs/` sonuçlarını, logları ve statepoint dosyalarını danışmanınız arşivlendiğini söyleyene kadar **silmeyin**.
 
-**Teslim ZIP'i nükleer veri kütüphanesini içermez.**
-Varsayılan hafif teslim statepoint dosyalarını da içermez.
+## Bir sorun olduğunda
 
-`runs/` altındaki kaynak sonuçları ve statepoint dosyalarını
-danışmanınız arşivlendiğini bildirene kadar silmeyin.
+Danışmanınıza öğrenci kimliğinizi, paket/deney kimliğini, kullandığınız komutu veya hücreyi, **hata metninin tamamını** ve durum sorgusu çıktısını gönderin. Jupyter tokenını paylaşmayın. Kodu, manifesti, hesap profilini, seed'i, hash veya onay dosyasını kendi başınıza değiştirmeyin.
 
-## 14. Sorun bildirirken
+## Danışman için: teslimleri toplama
 
-Şunları birlikte gönderin:
-
-- Öğrenci kimliğiniz
-- Paket ve deney kimliği
-- Uyguladığınız komut veya notebook hücresi
-- Hata metninin tamamı
-- Durum sorgusu çıktısı
-
-Token içeren Jupyter adresini paylaşmayın.
-Sorunu çözmek için manifesti, onayı veya hash dosyalarını değiştirmeyin.
-
----
-
-## Danışman için: sonuçları toplama
-
-İndirilen ZIP'i Ubuntu içinden erişilebilir bir konuma alın.
-Proje kökünde:
+İndirilen ZIP'i Ubuntu içinden erişilebilir bir konuma alın. Proje kökünde:
 
 ```bash
 conda activate openmc-proje
 cd ~/openmc-proje
-
 python scripts/v2_transfer.py import /TESLIMIN/TAM/YOLU.zip
 python scripts/v2_transfer.py status --stage stage_32
 ```
 
-İçe aktarma; dosya bütünlüğü ve senaryo tutarlılığını denetler.
-Fiziksel/istatistiksel kabul veya eğitim verisi kabulü vermez.
-
-Sonraki aşama ancak inceleme ve gerekli paket onayları tamamlanınca açılır. Danışmanın 2026-10-19 tarihli açık istisnası yalnız mevcut stage_128/ogrenci_01 paketinin 24 koşuluk kontrollü araştırma devamını, 43.200 saniyelik grup tavanıyla açar; diğer stage_128 ve stage_256 paketleri için geçerli değildir. Bu istisna fiziksel doğrulama veya eğitim verisi kabulü değildir.
+İçe aktarma dosya bütünlüğünü ve senaryo atamasını doğrular; fiziksel/istatistiksel kabul veya eğitim verisi kabulü vermez. `--stage` değerini incelenen aşamaya göre seçin. Diğer aşamaların kapıları ayrı inceleme ve onay gerektirir.

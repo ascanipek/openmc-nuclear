@@ -1565,7 +1565,7 @@
       "owner": "ogrenci_02",
       "stage": "stage_32",
       "package_path": "student_packages/v2_students_portable_v1/stage_32/ogrenci_02/v2_stage_32_ogrenci_02_beavrs_v2_pilot_scope_v1",
-      "package_sha256": "5ea536fa7803ad1854aae5427840d4aca4d665018ec02e31430554dfe4f53953",
+      "package_sha256": "f7a17f79d03a7bd2e36a746f887ed43b3ddfebbb5bc3ec3a7193d97b8f2810df",
       "manifest_sha256": "ed5c5c2c397e26e4d7d1ec85d854238010549b9f7d92cbd21421f21e34d16baf",
       "scenario_ids": [
         "27e0e31b6192d93a8ad95eda19609101842f066d83e326f5d3f43ca6b0135a4a",
@@ -1577,13 +1577,13 @@
         "5cda7589517017c792b54b0806a2c2be63717bb4b1a5f7b8d481dee067933e83",
         "d85d1dab70910a3801da4913f8505834ece9711ad70a74e9178233b07b86037a"
       ],
-      "approval": "separate_technical_review_required"
+      "approval": "technical_approved_2026-10-19_registry_pin_reconciled_2026-10-20_after_85daedf_review"
     },
     "v2_stage_32_ogrenci_03_beavrs_v2_pilot_scope_v1": {
       "owner": "ogrenci_03",
       "stage": "stage_32",
       "package_path": "student_packages/v2_students_portable_v1/stage_32/ogrenci_03/v2_stage_32_ogrenci_03_beavrs_v2_pilot_scope_v1",
-      "package_sha256": "955b7a348b62ba24d51cfec4d04a839c9389e1a600493c874bfda502e8772918",
+      "package_sha256": "2d6faffdcca47d6d32157d0b21486b611e2ffdaf51d5ab23387f1de02f9adaba",
       "manifest_sha256": "15ec1754c9c29c7951406a52f6a29991e452f242de73dc86ec15eb6a3a25557c",
       "scenario_ids": [
         "db66e4fa0c28438575b059aea60b48099c883f8abd79d6a532e13ab06dd084b8",
@@ -1595,13 +1595,13 @@
         "987e58b6e9fa205b127bca7b3908b9d0c36c226c4bea36bded89c383cd060ad5",
         "5f83681d03c4285c456595511fc2bcb29f28ba068f24a4d97307291db4edd4ed"
       ],
-      "approval": "separate_technical_review_required"
+      "approval": "technical_approved_2026-10-19_registry_pin_reconciled_2026-10-20_after_85daedf_review"
     },
     "v2_stage_32_ogrenci_04_beavrs_v2_pilot_scope_v1": {
       "owner": "ogrenci_04",
       "stage": "stage_32",
       "package_path": "student_packages/v2_students_portable_v1/stage_32/ogrenci_04/v2_stage_32_ogrenci_04_beavrs_v2_pilot_scope_v1",
-      "package_sha256": "142ac13b22771c35fff3893219733591a28922dce86dd31291067df5fb487310",
+      "package_sha256": "63ea6572f3272e0f7a70682ab353a7847480ee005980e333d3d07cbda3d0c5cd",
       "manifest_sha256": "e4f80b7863b4bafb295e0ef0d4b5af1746bdfae213da1228416e5bcc7f60904b",
       "scenario_ids": [
         "d4def36f5eec072bbbc55beb83e93e92c80283128a7d29343af485afd3ae7e43",
@@ -1613,7 +1613,7 @@
         "a321f9870f6a9b79e831d9d3caf9a56c675ff6e484b891ebafdbccbb0003bd09",
         "64cdf9f37818ebefb80e1b2bb581c54f93d028aa4b36952efbe62798176f5a3d"
       ],
-      "approval": "separate_technical_review_required"
+      "approval": "technical_approved_2026-10-19_registry_pin_reconciled_2026-10-20_after_85daedf_review"
     },
     "v2_advisor_pilot8_beavrs_v2_pilot_scope_v1": {
       "owner": "ogrenci_01",
@@ -1671,8 +1671,8 @@
       "owner": "ogrenci_02",
       "stage": "stage_128",
       "package_path": "student_packages/v2_students_portable_v1/stage_128/ogrenci_02/v2_stage_128_ogrenci_02_beavrs_v2_pilot_scope_v1",
-      "package_sha256": "c05b0cfe853fa5bbce5280d3d83204a0229a6a7dfaba6cd68439e9a430113b8c",
-      "manifest_sha256": "20e812f2fac01b3233422d961e62bba2266f448d9fba26b94329ad65fdfe2107",
+      "package_sha256": "a081d3728de749c571c637cac09ab8585d90ff9c7e2f7bf49106a50ae4b3946a",
+      "manifest_sha256": "a1c5c7019e1b801ab9fcb9a1510a8834abfb465d05f6737ef5902d20a4a6eeeb",
       "scenario_ids": [
         "4424114f5de9cb17cc84b2bb33e86243e627f3e394270c830f0b09db41667c93",
         "554fe5553bff06a550f5c07ab326131c2f3e4b7de2cb86c007c45f94976de9f7",
@@ -1699,14 +1699,14 @@
         "c2197e6c43fd0100c234eebf06af869c58dd71567cf181b82135078f8d948efd",
         "471a11bdd0013695916822ed07a9d28886f10283d4c3fb63539050c80cadebc8"
       ],
-      "approval": "separate_technical_review_required"
+      "approval": "technical_approved_2026_10_20_research_only"
     },
     "v2_stage_128_ogrenci_03_beavrs_v2_pilot_scope_v1": {
       "owner": "ogrenci_03",
       "stage": "stage_128",
       "package_path": "student_packages/v2_students_portable_v1/stage_128/ogrenci_03/v2_stage_128_ogrenci_03_beavrs_v2_pilot_scope_v1",
-      "package_sha256": "dfd20309e9f7e93a9d3bdb6c0fbc1e4678446dc491da086af3c1feeed5479cc4",
-      "manifest_sha256": "6afbc8be8d2a5f137c74ff90394e2cd8778fa88aa2c35285fce71f6f4253d2b1",
+      "package_sha256": "05fb03a768553383bb6cc6face907dddd3c4fb217502a8933854994fddb7104e",
+      "manifest_sha256": "15fe0b9f355235f6495ea6096cbf11ce75e1b4f1646f528e195f75fe3cf71fc4",
       "scenario_ids": [
         "108c6b3781cc55338accf5bc49c58e50bcfad2f32039c8fdc6b7401a2eb34afe",
         "cd3e0b148cf8453aa5a8ede87331f084a01d1c47e9a597c1ec842d204051c53b",
@@ -1733,14 +1733,14 @@
         "185500ceeabbf36757f3cf695304043b7886f470ee2d0a75ea8dab39a3b1475c",
         "7940df094f3f8141f92e5236121992f6988fc48b9f92159f1e926942004c5a69"
       ],
-      "approval": "separate_technical_review_required"
+      "approval": "technical_approved_2026_10_20_research_only"
     },
     "v2_stage_128_ogrenci_04_beavrs_v2_pilot_scope_v1": {
       "owner": "ogrenci_04",
       "stage": "stage_128",
       "package_path": "student_packages/v2_students_portable_v1/stage_128/ogrenci_04/v2_stage_128_ogrenci_04_beavrs_v2_pilot_scope_v1",
-      "package_sha256": "1e73b4f945bcdf37cc057a5947bf3e40ecc8f505f24ff2acbd82eab087595ae8",
-      "manifest_sha256": "3ecb64ec7cff87caa7a9e6981efb987f8d19dcb80f9bb7addd0e9554d8c2cd2b",
+      "package_sha256": "427d01ae0e80d9320ed14a19d2796b685bf8ebda07b39f9a93617ffffe59917b",
+      "manifest_sha256": "cd481d9ebeee6974904b725d89d1b791e30420e97d078fb789352dac7a85f7f9",
       "scenario_ids": [
         "4283e9eab852b69aedfe68db62165850baba6407a7e84d158e8829e208c72d0b",
         "3562cfaeeb41b73276819a4ccaa177052cad099b03d010bc3d0eceb938838ee2",
@@ -1767,14 +1767,14 @@
         "340581cee6d024655f5ee52fec047a34768a64c2b895ff1469fa403274156989",
         "0754163f13668f8d90515c6cd99bf607c1018a859a1681e69602ed5531eb8d71"
       ],
-      "approval": "separate_technical_review_required"
+      "approval": "technical_approved_2026_10_20_research_only"
     },
     "v2_stage_256_ogrenci_01_beavrs_v2_pilot_scope_v1": {
       "owner": "ogrenci_01",
       "stage": "stage_256",
       "package_path": "student_packages/v2_students_portable_v1/stage_256/ogrenci_01/v2_stage_256_ogrenci_01_beavrs_v2_pilot_scope_v1",
-      "package_sha256": "86f045496bbfa9d6392f6e5e0a7e9bc3b894fe1476897cd8fbb3ee9718677341",
-      "manifest_sha256": "994d3046e0d8688afcf193594680fa5fcc4adfda808c9e7d4f49604521645e91",
+      "package_sha256": "2ce956aca17c689fa9c5d9cb086a2280f217ac767f1a8b26be84ca6e6191f741",
+      "manifest_sha256": "b8cc5c06621ab59d65e5d2d39e83986ea9668055ec2f58c95b2fa7ac0ef1fb01",
       "scenario_ids": [
         "29bd0bab7e91ae40ccb8f2bf9a926b87f6fa0736a426f00a72fab572d5e4c464",
         "dac3eee59f2053353688a84623edd83c4cec68cc88c93981b4591292589a5433",
@@ -1809,14 +1809,14 @@
         "b90f648cce8573d4f7c06787fac374736150310c776ff018b6ff64710d90f5ba",
         "3eca6a8cdd3b3a9b86e18a9ad784c11c779ef7ed5a2f51b5ace5152f04b1bd23"
       ],
-      "approval": "separate_technical_review_required"
+      "approval": "technical_approved_2026_10_20_research_only"
     },
     "v2_stage_256_ogrenci_02_beavrs_v2_pilot_scope_v1": {
       "owner": "ogrenci_02",
       "stage": "stage_256",
       "package_path": "student_packages/v2_students_portable_v1/stage_256/ogrenci_02/v2_stage_256_ogrenci_02_beavrs_v2_pilot_scope_v1",
-      "package_sha256": "e95042d691c928c4561b8666b3f663648735005a0907668e34c43a2e9e222aa8",
-      "manifest_sha256": "d7980b11582687d8c907a09027f978e4d8b1dacefa8e582f10938a21b5883689",
+      "package_sha256": "b352e096bf1ade3563f3dd4b8a4d50755ecde83741ed431000d22877c4d56d04",
+      "manifest_sha256": "7ff713a08fdf916cf1188467021eff4cb76965faaa111155dea5d247c7d4803d",
       "scenario_ids": [
         "0f7ac421e834150075810f1fb68fa24e1d6adc855e8758f0926de8f8d4867d4b",
         "a3357d68b194066eb5febdac7fe51f0238525ca8d22b56dcdd575368d3d34a15",
@@ -1851,14 +1851,14 @@
         "736e9db204f25235b7bff1678c98becd4ca0a2d4dbbe14dcf670d7845962c8ae",
         "8a3fa5cfc98e217386c821070e886c3d9d1b730a6ab052cec53f07e1f5ae45a1"
       ],
-      "approval": "separate_technical_review_required"
+      "approval": "technical_approved_2026_10_20_research_only"
     },
     "v2_stage_256_ogrenci_03_beavrs_v2_pilot_scope_v1": {
       "owner": "ogrenci_03",
       "stage": "stage_256",
       "package_path": "student_packages/v2_students_portable_v1/stage_256/ogrenci_03/v2_stage_256_ogrenci_03_beavrs_v2_pilot_scope_v1",
-      "package_sha256": "4282bf12c9148ff420716f5f6cbdc9f0aa8faca8ffaa6ee3d50981e800d2731c",
-      "manifest_sha256": "7ff87009a0ba417ede7e8f7cafa9e0ae2ebb1360fa94bd8b7d6f7b5d38328fa8",
+      "package_sha256": "6e6928323f4d593ef5fa2efc10d91319c7af854cb6716ab27e6176c98246f531",
+      "manifest_sha256": "7b9a0c6c371bd1a0a98ad6fb129134f460c66dce4cc752150f7ca9dc606f6c30",
       "scenario_ids": [
         "630796446363e5e0ed166e30ced9bb07965b8d04bc48516b9d5cbbeb1b4d76a7",
         "99e8f3f83961486deb426a48c8e27fc15b8be6716ed94cd8bb13b96a546c435d",
@@ -1893,14 +1893,14 @@
         "a5c8830eeed4d14e5a78c9e3a3679e1f2c582158fac0d50ee8cc488cd0b8765d",
         "b3b29d594fbe48c4fc9cd91a896fcfc192a604b4b7673681f49c49a769187d35"
       ],
-      "approval": "separate_technical_review_required"
+      "approval": "technical_approved_2026_10_20_research_only"
     },
     "v2_stage_256_ogrenci_04_beavrs_v2_pilot_scope_v1": {
       "owner": "ogrenci_04",
       "stage": "stage_256",
       "package_path": "student_packages/v2_students_portable_v1/stage_256/ogrenci_04/v2_stage_256_ogrenci_04_beavrs_v2_pilot_scope_v1",
-      "package_sha256": "bc93c357e6eb9f8d4a197166d24fb151f3d4a9e18f445334d37baaac07511d19",
-      "manifest_sha256": "be5dc68f1508b50c0a032dd15f53e911ef678771ecff968940824b1e764a339a",
+      "package_sha256": "8f100f50a6d5b41c51b14a0127841045140bccbb181e821820ceb4d23e07f31b",
+      "manifest_sha256": "2b14906c2cf6e624868c16071a668745fccbe8ebd2ce8d9999f6a9e179cb1c1f",
       "scenario_ids": [
         "a8a186e90182046cded9f433e6fd6854e26e73349d481cadcd4c2b1f57665ce8",
         "de3f180bd755e17a38bfce5d3aa86fc0e228a365fbbeed18ce1b70d855dca929",
@@ -1935,7 +1935,7 @@
         "7eb3c1ef999daba91702e7ca12fe9925fc4e51ff4f9e679b82e8b812916f3d29",
         "5cc2764d7758d739b5d4b0004c1e69d83bcaf3a869bdc4f6276a68fb90480b6e"
       ],
-      "approval": "separate_technical_review_required"
+      "approval": "technical_approved_2026_10_20_research_only"
     }
   },
   "stages": {

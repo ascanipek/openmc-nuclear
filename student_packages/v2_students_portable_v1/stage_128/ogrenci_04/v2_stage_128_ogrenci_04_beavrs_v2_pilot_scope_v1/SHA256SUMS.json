@@ -1,8 +1,8 @@
 {
-  "manifest.json": "3ecb64ec7cff87caa7a9e6981efb987f8d19dcb80f9bb7addd0e9554d8c2cd2b",
+  "manifest.json": "cd481d9ebeee6974904b725d89d1b791e30420e97d078fb789352dac7a85f7f9",
   "01_calistir.ipynb": "68cba801d408d1206cab23aae7316257ed54198e55bd99dfebcb2895f1a0786f",
   "02_sonuclari_incele.ipynb": "9d416370105bf365d2421301aeb06eaf9cefdabd5c053b1ff51ab8f28608d5d4",
-  "README.md": "c7d297cf070969127166522a158dea70a33af62e82d619dc4505aa846d541b1b",
+  "README.md": "4dec5583678370c1b74b6cd4b679a04b1f34507dc0141ce71ce415fc3ad25a5e",
   "src/reactor_pipeline/beavrs3d.py": "1a2fec4b89e7d6d023a8441cbe2479e4feab1041b2c3d18abe02b9b6834a521c",
   "src/reactor_pipeline/parameter_space.py": "c6387f53d318637f1e1c6ae34aacb8dbaaf649113b41ce6ba0d526f0df4b6270",
   "src/reactor_pipeline/v2_students.py": "6e00e5509737557d69d9257b649b5a15c5ad86de6faeef776c21ef350bb81f7d",

@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "profile_id": "beavrs_v2_pilot_80k_4h_v1",
+  "status": "approved",
+  "purpose": "Controlled first-eight pilot only; no convergence/physics/data acceptance",
+  "calculation": {
+    "particles_per_generation": 80000,
+    "batches": 600,
+    "inactive": 300,
+    "generations_per_batch": 1,
+    "threads": 6
+  },
+  "seed_base": 71001,
+  "group_runtime_budget_seconds": 14400,
+  "production_approval": "controlled_research_pilot_only",
+  "decision_source": "Danisman kullanici karari, 2026-10-18, bu gorev mesaji"
+}

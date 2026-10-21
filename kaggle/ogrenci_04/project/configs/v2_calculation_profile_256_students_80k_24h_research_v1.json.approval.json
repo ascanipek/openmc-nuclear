@@ -1,0 +1,9 @@
+{
+  "status": "approved",
+  "document_sha256": "fae6b97c12e5707c75f931bad83055a17730e868cbf4d9a541127c9349b1510c",
+  "reviewer": "danisman: explicit user decision 2026-10-20",
+  "scope": "only_existing_stage_256_ogrenci02_03_04_controlled_research",
+  "physical_acceptance": "not_assessed",
+  "statistical_convergence": "review_required",
+  "training_acceptance": "not_granted"
+}

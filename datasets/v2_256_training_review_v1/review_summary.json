@@ -1,0 +1,161 @@
+{
+  "schema": "v2_256_training_review_v1",
+  "source_preview_manifest_sha256": "db5ee990c6163264a3c5bb1980c7baa2479c89b30230876af844e185d9495a8c",
+  "source_split_sha256": "7017f569a8fb7610fe3919c83138bc380c73067801cc1c645508b78ccf967cbd",
+  "decision_policy": "ACCEPT requires documented source convergence and physical/model validation; no new numeric threshold applied. Existing valid but unreviewed records are REVIEW_REQUIRED, not REJECT.",
+  "decision_counts": {
+    "keff": {
+      "ACCEPT": 0,
+      "REVIEW_REQUIRED": 256,
+      "REJECT": 0,
+      "NOT_ASSESSED": 0
+    },
+    "field3d": {
+      "ACCEPT": 0,
+      "REVIEW_REQUIRED": 256,
+      "REJECT": 0,
+      "NOT_ASSESSED": 0
+    }
+  },
+  "split_counts": {
+    "train": {
+      "total": 208,
+      "keff_ACCEPT": 0,
+      "keff_REVIEW_REQUIRED": 208,
+      "field3d_ACCEPT": 0,
+      "field3d_REVIEW_REQUIRED": 208,
+      "statepoint_verified": 99,
+      "same_index": 200,
+      "no_low_signal_diagnostic": 27
+    },
+    "calibration": {
+      "total": 25,
+      "keff_ACCEPT": 0,
+      "keff_REVIEW_REQUIRED": 25,
+      "field3d_ACCEPT": 0,
+      "field3d_REVIEW_REQUIRED": 25,
+      "statepoint_verified": 10,
+      "same_index": 24,
+      "no_low_signal_diagnostic": 3
+    },
+    "test": {
+      "total": 23,
+      "keff_ACCEPT": 0,
+      "keff_REVIEW_REQUIRED": 23,
+      "field3d_ACCEPT": 0,
+      "field3d_REVIEW_REQUIRED": 23,
+      "statepoint_verified": 11,
+      "same_index": 21,
+      "no_low_signal_diagnostic": 3
+    }
+  },
+  "conditional_review_priority_counts": {
+    "same_index_and_statepoint": {
+      "train": 91,
+      "calibration": 9,
+      "test": 9
+    },
+    "same_index_statepoint_no_low_signal": {
+      "train": 11,
+      "calibration": 2,
+      "test": 1
+    }
+  },
+  "statepoints_verified_here": 120,
+  "statepoints_missing_here": 136,
+  "actual_threads": {
+    "6": 245,
+    "4": 11
+  },
+  "openmc_commits": {
+    "617d35a5063c57796b43428bc401e627d2011046": 256
+  },
+  "nuclear_index_paths": [
+    {
+      "sha256": "b47cef3ac4a48d66d75fa412b68d497d59c9daac52a403fe18133ad7ba683055",
+      "path": "/kaggle/working/cross_sections_kaggle.xml",
+      "count": 11
+    },
+    {
+      "sha256": "ba7f6d5a371b5a8de8157356f8ef5d1c17cb0ed60accccfbc3075f46ae13f489",
+      "path": "/home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/cross_sections.xml",
+      "count": 109
+    },
+    {
+      "sha256": "ba7f6d5a371b5a8de8157356f8ef5d1c17cb0ed60accccfbc3075f46ae13f489",
+      "path": "/home/aytunc/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/cross_sections.xml",
+      "count": 128
+    },
+    {
+      "sha256": "ba7f6d5a371b5a8de8157356f8ef5d1c17cb0ed60accccfbc3075f46ae13f489",
+      "path": "/home/halit/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/cross_sections.xml",
+      "count": 8
+    }
+  ],
+  "required_library_list_variants": 1,
+  "temperature_grid_variants": 1,
+  "nuclear_HDF5_byte_equivalence": "not_verified_across_source_machines",
+  "warning_signatures": {
+    "WARNING: Negative value(s) found on probability table for nuclide Zr96 at 294K": 256,
+    "WARNING: Negative value(s) found on probability table for nuclide Zr96 at 600K": 256,
+    "WARNING: Negative value(s) found on probability table for nuclide Cd106 at 294K": 256,
+    "WARNING: Negative value(s) found on probability table for nuclide Cd106 at 600K": 256
+  },
+  "k_mc_standard_error": {
+    "min": 0.00014036745790779444,
+    "median": 0.000184522622054207,
+    "p95": 0.0002001705509964754,
+    "max": 0.00020869182475435975
+  },
+  "fuel_voxels_per_scenario": {
+    "min": 5280.0,
+    "median": 5280.0,
+    "p95": 5280.0,
+    "max": 5280.0
+  },
+  "zero_fuel_voxels_total": 180434,
+  "low_signal_voxels_total": 380837,
+  "scenarios_with_any_zero_fuel_voxel": 171,
+  "scenarios_with_any_low_signal_voxel": 223,
+  "zero_fuel_fraction_per_scenario": {
+    "min": 0.0,
+    "median": 0.09715909090909092,
+    "p95": 0.3625,
+    "max": 0.4071969696969697
+  },
+  "low_signal_fraction_per_scenario": {
+    "min": 0.0,
+    "median": 0.2983901515151515,
+    "p95": 0.5648200757575758,
+    "max": 0.5979166666666667
+  },
+  "low_signal_measured_kappa_share": {
+    "min": 0.0,
+    "median": 8.149927502214696e-05,
+    "p95": 0.00016787851839785014,
+    "max": 0.0002613969196803456
+  },
+  "positive_kappa_relative_error_p95_per_scenario": {
+    "min": 0.02556416599306673,
+    "median": 0.8343382664506903,
+    "p95": 1.0,
+    "max": 1.0
+  },
+  "early_late_active_k_absolute_difference": {
+    "min": 1.3602773802023904e-05,
+    "median": 0.0006016521306201339,
+    "p95": 0.001783329566454439,
+    "max": 0.002915182492100765
+  },
+  "early_late_active_entropy_absolute_difference": {
+    "min": 3.808737345067925e-06,
+    "median": 0.003019686466916305,
+    "p95": 0.012753687984698558,
+    "max": 0.025023396705755374
+  },
+  "insertion_zero_fraction_pearson_descriptive": 0.7506162768000557,
+  "insertion_low_fraction_pearson_descriptive": 0.8353560843236264,
+  "top_four_slices_zero_fuel_fraction": 0.484375,
+  "no_low_signal_scenarios": 33,
+  "recommendation": "No production ML training acceptance. Review convergence, nuclear data provenance, model validity, and 3D target quality before approval."
+}

@@ -1,0 +1,121 @@
+{
+  "schema": "field3d_pca_surrogate_exploratory_v1",
+  "status": "PROVISIONAL_EXPLORATORY; field3d REVIEW_REQUIRED; no physical/statistical acceptance",
+  "warning": "PCA is on common [z,y,x] mesh indices; x/y coordinates vary with pitch. Normalized uncertainty covariance unavailable. Predictions are raw, without clipping or renormalization.",
+  "source_fields_sha256": "6eb99691d5ffd6dbc522a23d4fb5aa37881dcd7f91bd6aeb7a256e8f36d02bc0",
+  "source_scenarios_sha256": "74b368d1d770fe76680e5990b6c1b5d357248deca2fb3000a6128969d36fcdea",
+  "source_splits_sha256": "7017f569a8fb7610fe3919c83138bc380c73067801cc1c645508b78ccf967cbd",
+  "source_manifest_sha256": "db5ee990c6163264a3c5bb1980c7baa2479c89b30230876af844e185d9495a8c",
+  "source_pca_summary_sha256": "8068107e875e38731afe088b2b46653c888090b6ab4b1c9092d20d7762cca102",
+  "source_dataset_state": "preview_not_accepted_for_training",
+  "nuclear_index_hash_counts": {
+    "b47cef3ac4a48d66d75fa412b68d497d59c9daac52a403fe18133ad7ba683055": 11,
+    "ba7f6d5a371b5a8de8157356f8ef5d1c17cb0ed60accccfbc3075f46ae13f489": 245
+  },
+  "nuclear_hdf5_byte_equivalence": "not_assessed_for_alternate_index",
+  "split_counts": {
+    "train": 208,
+    "calibration_untouched": 25,
+    "test": 23
+  },
+  "feature_names": [
+    "u235_enrichment_wt_percent",
+    "fuel_temperature_K",
+    "moderator_temperature_K",
+    "coolant_pressure_MPa",
+    "elemental_boron_ppm",
+    "pin_pitch_cm",
+    "pellet_radius_cm",
+    "insertion_percent"
+  ],
+  "target": "target_normalized_kappa",
+  "axis_order": [
+    "sample",
+    "z",
+    "y",
+    "x"
+  ],
+  "mesh_shape": [
+    20,
+    17,
+    17
+  ],
+  "cv": {
+    "folds": 5,
+    "seed": 20261025,
+    "selection_metric": "mean total relative L2 on geometric fuel voxels",
+    "pca_fit": "each fold training subset only",
+    "scaling_fit": "each fold training subset only",
+    "gpr": "optimizer=None; RBF/Matern kernel chosen by CV",
+    "near_tie_policy": "np.isclose(rtol=1e-9, atol=1e-12), then smallest rank"
+  },
+  "selected": {
+    "rank": 12,
+    "model": "XGBoost",
+    "parameters": {
+      "learning_rate": 0.05,
+      "max_depth": 4,
+      "n_estimators": 120
+    },
+    "cv_total_relative_l2_mean": 0.06670823299432319,
+    "cv_pca_only_relative_l2_mean": 0.01439498683805219
+  },
+  "test": {
+    "pca_relative_l2_mean": 0.01474717999463816,
+    "pca_relative_l2_p95": 0.02036104610611211,
+    "ml_relative_l2_mean": 0.048522003708677534,
+    "ml_relative_l2_p95": 0.06618470825115266,
+    "ml_half_l1_share_error_mean": 0.02408918761831491,
+    "ml_axial_half_l1_share_error_mean": 0.023350656563444313,
+    "ml_upper4_low_signal_absolute_share_error_mean": 0.0009748336178155527,
+    "ml_upper4_low_signal_true_share_mean": 2.6617914799611306e-05,
+    "ml_negative_fuel_voxels_total": 24471,
+    "ml_negative_fuel_share_magnitude_total": 0.0593141840491161,
+    "ml_raw_predicted_fuel_sum_min": 0.9999999999999999,
+    "ml_raw_predicted_fuel_sum_max": 1.0000000000000002,
+    "post_relative_l2_mean": 0.04883537186980296,
+    "post_relative_l2_p95": 0.06676859240144413,
+    "post_half_l1_share_error_mean": 0.02332056559055075,
+    "post_axial_half_l1_share_error_mean": 0.022628221192982502,
+    "post_upper4_low_signal_absolute_share_error_mean": 0.00026375094977545245,
+    "post_negative_fuel_voxels_total": 0,
+    "post_predicted_fuel_sum_min": 0.9999999999999998,
+    "post_predicted_fuel_sum_max": 1.0000000000000002
+  },
+  "postprocessing": "Separate comparison only: max(raw_prediction,0) on geometric fuel, then divide by positive fuel sum; no tuning, raw CV model selection unchanged",
+  "test_by_insertion_band": [
+    {
+      "insertion_band": "low",
+      "count": 7,
+      "mean_total_relative_l2": 0.04400221882270063,
+      "mean_pca_relative_l2": 0.01847987303173557
+    },
+    {
+      "insertion_band": "middle",
+      "count": 10,
+      "mean_total_relative_l2": 0.04485842755536889,
+      "mean_pca_relative_l2": 0.0146415999008638
+    },
+    {
+      "insertion_band": "high",
+      "count": 6,
+      "mean_total_relative_l2": 0.05990104633116494,
+      "mean_pca_relative_l2": 0.010568338274315102
+    }
+  ],
+  "test_example_rows": [
+    77,
+    13,
+    132
+  ],
+  "runtime_seconds": 6.87559678600519,
+  "software": {
+    "python": "3.11.16",
+    "numpy": "2.1.3",
+    "scipy": "1.17.1",
+    "sklearn": "1.9.0",
+    "xgboost": "3.2.0",
+    "joblib": "1.6.0"
+  },
+  "xgboost_install": "temporary /tmp target; Conda environments unchanged"
+}

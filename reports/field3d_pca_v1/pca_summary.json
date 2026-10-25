@@ -1,0 +1,161 @@
+{
+  "schema": "openmc_field3d_pca_exploratory_v1",
+  "source_fields_sha256": "6eb99691d5ffd6dbc522a23d4fb5aa37881dcd7f91bd6aeb7a256e8f36d02bc0",
+  "source_splits_sha256": "7017f569a8fb7610fe3919c83138bc380c73067801cc1c645508b78ccf967cbd",
+  "source_manifest_sha256": "db5ee990c6163264a3c5bb1980c7baa2479c89b30230876af844e185d9495a8c",
+  "status": "PCA exploratory only; field3d REVIEW_REQUIRED; no regression, MC, physical acceptance",
+  "total_fuel_voxels": 1351680,
+  "total_zero_fuel_voxels": 180434,
+  "total_low_signal_fuel_voxels": 380837,
+  "top4_fuel_voxels": 270336,
+  "top4_zero_fuel_voxels": 130944,
+  "top4_low_signal_fuel_voxels": 203127,
+  "shape": [
+    256,
+    20,
+    17,
+    17
+  ],
+  "flatten_order": "C [z,y,x], x fastest",
+  "train_count": 208,
+  "calibration_count": 25,
+  "test_count": 23,
+  "examples": [
+    {
+      "row": 22,
+      "scenario_id": "32f89ffea9fdb0c2928dd97ef3cdc66c735bfd2b0e64f4ae65fc7f5d197f3c6a",
+      "insertion_percent": 0.0,
+      "zero_fuel_voxels": 0,
+      "low_signal_fuel_voxels": 0,
+      "top4_zero": 0,
+      "top4_low": 0
+    },
+    {
+      "row": 0,
+      "scenario_id": "a78b08c1951e6d40a5b9a88f81374e6a3670cd79a921b447a487f0a546690ee1",
+      "insertion_percent": 50.0,
+      "zero_fuel_voxels": 741,
+      "low_signal_fuel_voxels": 1648,
+      "top4_zero": 741,
+      "top4_low": 1056
+    },
+    {
+      "row": 23,
+      "scenario_id": "60986cdbbb72aa01f71cc14027d635efc45b2af20707e7fc31e2ef20838f0f0f",
+      "insertion_percent": 100.0,
+      "zero_fuel_voxels": 0,
+      "low_signal_fuel_voxels": 557,
+      "top4_zero": 0,
+      "top4_low": 557
+    }
+  ],
+  "mask_same_all": true,
+  "x_edges_same_all": false,
+  "negative_raw": 0,
+  "negative_normalized": 0,
+  "negative_reconstructed_example_voxels": 1882,
+  "negative_reconstructed_example_fuel_voxels": 1848,
+  "negative_reconstructed_example_mass": 0.027147811810421425,
+  "reconstructed_example_sums": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "normalized_sum_min_max": [
+    0.9999999999999997,
+    1.0000000000000004
+  ],
+  "variance_milestone_rank": {
+    "0.9": 3,
+    "0.95": 3,
+    "0.99": 6
+  },
+  "cv": [
+    {
+      "components": 1,
+      "explained_variance_full_train": 0.6847331525123648,
+      "cv_relative_l2_mean": 0.34815063431391996,
+      "cv_relative_l2_p95": 0.5906150040183383,
+      "cv_l1_share_mean": 0.41217618090764757
+    },
+    {
+      "components": 2,
+      "explained_variance_full_train": 0.8918310787945897,
+      "cv_relative_l2_mean": 0.20297795690024964,
+      "cv_relative_l2_p95": 0.3247252269140366,
+      "cv_l1_share_mean": 0.24940627878717955
+    },
+    {
+      "components": 4,
+      "explained_variance_full_train": 0.9791340861336352,
+      "cv_relative_l2_mean": 0.09129983491362278,
+      "cv_relative_l2_p95": 0.15049892200528125,
+      "cv_l1_share_mean": 0.10797310018415061
+    },
+    {
+      "components": 8,
+      "explained_variance_full_train": 0.9971931911776426,
+      "cv_relative_l2_mean": 0.03486633078061556,
+      "cv_relative_l2_p95": 0.05076668620359691,
+      "cv_l1_share_mean": 0.04048875517861121
+    },
+    {
+      "components": 12,
+      "explained_variance_full_train": 0.999594695707052,
+      "cv_relative_l2_mean": 0.014193408891569835,
+      "cv_relative_l2_p95": 0.02159732951081801,
+      "cv_l1_share_mean": 0.015186858377584166
+    },
+    {
+      "components": 16,
+      "explained_variance_full_train": 0.9998560183639968,
+      "cv_relative_l2_mean": 0.008909946747873338,
+      "cv_relative_l2_p95": 0.013509440832785572,
+      "cv_l1_share_mean": 0.008606927662470105
+    },
+    {
+      "components": 24,
+      "explained_variance_full_train": 0.9999002134093086,
+      "cv_relative_l2_mean": 0.007758810584357658,
+      "cv_relative_l2_p95": 0.010514180121118256,
+      "cv_l1_share_mean": 0.007044192196207591
+    },
+    {
+      "components": 32,
+      "explained_variance_full_train": 0.9999091005187299,
+      "cv_relative_l2_mean": 0.007698607829725919,
+      "cv_relative_l2_p95": 0.010412001339822495,
+      "cv_l1_share_mean": 0.00698108250181094
+    },
+    {
+      "components": 48,
+      "explained_variance_full_train": 0.9999223884174632,
+      "cv_relative_l2_mean": 0.007656722880554136,
+      "cv_relative_l2_p95": 0.01037539714444267,
+      "cv_l1_share_mean": 0.006979402460123222
+    },
+    {
+      "components": 64,
+      "explained_variance_full_train": 0.9999336963431892,
+      "cv_relative_l2_mean": 0.007626504056856827,
+      "cv_relative_l2_p95": 0.010351883392721473,
+      "cv_l1_share_mean": 0.006983120291317656
+    },
+    {
+      "components": 96,
+      "explained_variance_full_train": 0.9999532341025578,
+      "cv_relative_l2_mean": 0.0075729433864858715,
+      "cv_relative_l2_p95": 0.01027941517293167,
+      "cv_l1_share_mean": 0.006986525454168623
+    },
+    {
+      "components": 128,
+      "explained_variance_full_train": 0.9999698056528298,
+      "cv_relative_l2_mean": 0.007523085373729865,
+      "cv_relative_l2_p95": 0.010229062950748305,
+      "cv_l1_share_mean": 0.006979178912509132
+    }
+  ],
+  "illustrative_rank": 4,
+  "recommendation": "Use CV reconstruction and coefficient-regression CV together; variance milestone alone is not an acceptance threshold. Test remains untouched."
+}

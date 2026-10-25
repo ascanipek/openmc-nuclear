@@ -1,0 +1,66 @@
+{
+  "schema": "provisional_keff_ml_result_v1",
+  "scientific_status": "PROVISIONAL_EXPLORATORY; 256/256 keff REVIEW_REQUIRED; no physical/statistical training acceptance",
+  "selected_model": "XGBoost",
+  "selection_metric": "train_cv_rmse",
+  "seed": 20261025,
+  "train_count": 208,
+  "calibration_count": 25,
+  "test_count": 23,
+  "test_mae": 0.012307193176307763,
+  "test_rmse": 0.015662335680739117,
+  "calibration": {
+    "role": "uncertainty_description_only",
+    "count": 25,
+    "gpr_mae": 0.03432759289160435,
+    "gpr_mean_predictive_std": 0.0472502013561624,
+    "gpr_coverage_2sigma_descriptive": 0.92
+  },
+  "data_contract": {
+    "features_in_order": [
+      "u235_enrichment_wt_percent",
+      "fuel_temperature_K",
+      "moderator_temperature_K",
+      "coolant_pressure_MPa",
+      "elemental_boron_ppm",
+      "pin_pitch_cm",
+      "pellet_radius_cm",
+      "insertion_percent"
+    ],
+    "mc_error_column": "k_mc_standard_error",
+    "mc_error_meaning": "MC statistical standard error, not physical accuracy",
+    "row_order": "source scenarios.csv catalogue order",
+    "rows": 256,
+    "schema": "provisional_keff_ml_v1",
+    "scientific_status": "PROVISIONAL_EXPLORATORY; 256/256 keff REVIEW_REQUIRED; no physical/statistical training acceptance",
+    "source_preview_manifest_sha256": "db5ee990c6163264a3c5bb1980c7baa2479c89b30230876af844e185d9495a8c",
+    "source_review_summary_sha256": "aabadb799991d2bd810b2954fe91c8c48b88649ba68e355fa110c55d1695c94d",
+    "source_scenarios_csv_sha256": "74b368d1d770fe76680e5990b6c1b5d357248deca2fb3000a6128969d36fcdea",
+    "source_splits_json_sha256": "7017f569a8fb7610fe3919c83138bc380c73067801cc1c645508b78ccf967cbd",
+    "source_targets_keff_csv_sha256": "b8cc127180a39162b7000d9a40bc2257791c14c1bcb5f88da40a7402afa4c4a7",
+    "split_counts": {
+      "calibration": 25,
+      "test": 23,
+      "train": 208
+    },
+    "split_policy": "unchanged; train-only CV; calibration uncertainty; test once after selection",
+    "target": "k_mean",
+    "target_unit": "dimensionless"
+  },
+  "quality_warning": "11 alternate index cases require source library equivalence review. Completion and MC error do not establish physical validity or source convergence.",
+  "dataset_source": "/kaggle/input/datasets/ascanipek/openmc-keff-256-v1",
+  "dataset_zip_sha256": null,
+  "input_file_hashes": {
+    "README.md": "22157bbbf0a36cbac13c55953e6a4dc4dc3a068a33539cc262a192f85298cb03",
+    "data_contract.json": "53a7aa2440bbdd3113a3cec9a5e37d236b80def47ae44e1e841dd7e1182b5849",
+    "ml_keff.csv": "338fcf3b70e1b1923a00cdabc3c38b01a820086ccab16895c486732ca2890ce7",
+    "quality_summary.json": "4b9605399d709f77b97e88ee3ed8c3bb49349cd98c4383af01cb24de2abe2792",
+    "splits.json": "7017f569a8fb7610fe3919c83138bc380c73067801cc1c645508b78ccf967cbd"
+  },
+  "python": "3.13.15",
+  "numpy": "2.1.3",
+  "pandas": "2.3.3",
+  "scikit_learn": "1.6.1",
+  "xgboost": "3.4.1",
+  "threads_xgboost": 4
+}

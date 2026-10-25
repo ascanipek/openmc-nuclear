@@ -1,0 +1,6 @@
+{
+  "pid": 26516,
+  "launcher": "/home/ascanipek/openmc-proje/scripts/v2_student_production.py",
+  "worker_folder": "/home/ascanipek/openmc-proje/runs/beavrs_3d/v2_groups/v2_stage_256_ogrenci_04_beavrs_v2_pilot_scope_v1",
+  "start_ticks": 4222354
+}

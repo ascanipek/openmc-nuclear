@@ -1,0 +1,31 @@
+{
+  "selected_stage": "stage_128",
+  "package": "/kaggle/input/datasets/ascanipek/openmc-code-base/ogrenci_04_kod_dataset_128/project/student_packages/v2_students_portable_v1/stage_128/ogrenci_04/v2_stage_128_ogrenci_04_beavrs_v2_pilot_scope_v1",
+  "group": "/kaggle/working/v2_groups/v2_stage_128_ogrenci_04_beavrs_v2_pilot_scope_v1",
+  "code_bundle_files_verified": 64,
+  "nuclear_data": {
+    "original_index": "/kaggle/input/datasets/ascanipek/endfb-viii-0/endfb-viii.0-hdf5/cross_sections.xml",
+    "original_sha256": "ba7f6d5a371b5a8de8157356f8ef5d1c17cb0ed60accccfbc3075f46ae13f489",
+    "working_index": "/kaggle/working/cross_sections_kaggle.xml",
+    "working_sha256": "b47cef3ac4a48d66d75fa412b68d497d59c9daac52a403fe18133ad7ba683055",
+    "library_count": 690,
+    "remapped_paths": 690
+  },
+  "resources": {
+    "cpu_affinity_count": 4,
+    "cpu_quota_count": 4,
+    "visible_cpu_count": 4,
+    "memory_limit_bytes": 32212254720,
+    "selected_threads": 4
+  },
+  "openmc_environment": {
+    "python": "/tmp/openmc_016/bin/python",
+    "openmc_python": "/tmp/openmc_016/lib/python3.13/site-packages/openmc/__init__.py",
+    "openmc_executable": "/tmp/openmc_016/bin/openmc",
+    "openmc_version": "OpenMC version 0.16.0\nCommit hash: 617d35a5063c57796b43428bc401e627d2011046\nCopyright (c) 2011-2026 MIT, UChicago Argonne LLC, and contributors\nMIT/X license at <https://docs.openmc.org/en/latest/license.html>\nBuild type:            Release\nCompiler ID:           GNU 15.3.0\nMPI enabled:           no\nParallel HDF5 enabled: no\nPNG support:           yes\nDAGMC support:         yes\nlibMesh support:       no\nCoverage testing:      no\nProfiling flags:       no\nUWUW support:          no\nStrict FP:             no"
+  },
+  "observed_seconds_per_history": 0.0001505932805066875,
+  "approved_group_budget_seconds": 64800,
+  "last_observed_case_seconds": 6302.197519402998,
+  "last_observed_case_id": "V2-STAGE_128_OGRENCI_04-0005"
+}

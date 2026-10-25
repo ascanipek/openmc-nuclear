@@ -1,0 +1,10 @@
+{
+  "state": "running",
+  "group_id": "v2_stage_128_ogrenci_01_beavrs_v2_pilot_scope_v1",
+  "manifest_sha256": "423a21f867e9baf1583a98904b558c77f997f5fc1bdd70dd58a4b17aa2448ad7",
+  "physical_acceptance": "not_assessed",
+  "quality_status": "review_required",
+  "completed_experiments": [],
+  "budget_consumed_seconds": 0.0,
+  "error": null
+}

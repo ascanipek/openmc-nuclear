@@ -1,0 +1,20 @@
+{
+  "state": "completed",
+  "group_id": "v2_advisor_pilot8_beavrs_v2_pilot_scope_v1",
+  "manifest_sha256": "77891f42ab6924f020ba2b26fa3a0a44fb00222d47b149a1a85a11ff74be00a8",
+  "physical_acceptance": "not_assessed",
+  "quality_status": "review_required",
+  "completed_experiments": [
+    "V2-ADVISOR_PILOT8-0001",
+    "V2-ADVISOR_PILOT8-0002",
+    "V2-ADVISOR_PILOT8-0003",
+    "V2-ADVISOR_PILOT8-0004",
+    "V2-ADVISOR_PILOT8-0005",
+    "V2-ADVISOR_PILOT8-0006",
+    "V2-ADVISOR_PILOT8-0007",
+    "V2-ADVISOR_PILOT8-0008"
+  ],
+  "budget_consumed_seconds": 9396.788382743005,
+  "error": null,
+  "elapsed_seconds": 9396.788382743005
+}

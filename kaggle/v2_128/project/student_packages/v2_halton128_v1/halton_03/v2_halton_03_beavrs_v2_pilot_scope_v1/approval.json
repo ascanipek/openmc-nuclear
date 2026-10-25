@@ -1,0 +1,10 @@
+{
+  "status": "approved",
+  "authorization": "new_128_Halton_Kaggle_CPU_research_only",
+  "model": "beavrs_derived_3d_assembly_v2_proposed",
+  "group_id": "v2_halton_03_beavrs_v2_pilot_scope_v1",
+  "meaning": "Technical run preparation only; no physical, convergence or training acceptance",
+  "package_sha256": "eddfbb8749fadf658890af3617568fef2440d8d12aaf035257080b845acc9472",
+  "hashes_sha256": "b86883adf2cdbe05b7391a866d2122962b5ae0875ab0d6efa7631923dec9fa26",
+  "decision_source": "Advisor user request, 2026-10-24: four new 32-case Kaggle CPU groups"
+}

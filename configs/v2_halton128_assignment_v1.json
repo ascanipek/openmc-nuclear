@@ -1,0 +1,948 @@
+{
+  "schema": "v2_student_assignment_v1",
+  "status": "distribution_prepared_no_physics_acceptance",
+  "decision_source": "Current advisor request: local V2 execution of frozen Halton indices 233-360; no physical or training acceptance",
+  "source_catalogues": {
+    "halton_01": "scenarios/v2_halton128_v1/catalogue_halton_01.json",
+    "halton_02": "scenarios/v2_halton128_v1/catalogue_halton_02.json",
+    "halton_03": "scenarios/v2_halton128_v1/catalogue_halton_03.json",
+    "halton_04": "scenarios/v2_halton128_v1/catalogue_halton_04.json"
+  },
+  "packages": {
+    "v2_halton_01_beavrs_v2_pilot_scope_v1": {
+      "owner": "advisor_halton",
+      "stage": "halton_01",
+      "package_path": "student_packages/v2_halton128_v1/halton_01/v2_halton_01_beavrs_v2_pilot_scope_v1",
+      "scenario_ids": [
+        "5228e2093c1a5318dfb3d65897286a2a104f4155cd3563d547e78d93ea9daacd",
+        "5c399a73c8950621c8f5d182e776583be798def6407ef70ab833e92ce413961c",
+        "f59a6b46cdf74531a937587a96673e28e4e60991587a5ea6337eb40c1f389e45",
+        "bcf6ffa092bc07f27ebfcc48131a1b670a42f73a34ddf8bd47227b6c64962682",
+        "ee85c54df135852660a512683019bd87644f78b52558a026ee31a9892560bb48",
+        "3cbb1b2fab7c418a8f03df598d87fa43c7d796ab80e2ef951ce09c84e7cdd079",
+        "02aa46a7183f2ab10db95dadb20be2b8077461aa7c6faed1da41f333caeff671",
+        "4bc6e0cf6779944ca386083a54a49083c80d9e53d585787582389a46c70235ce",
+        "57940e656e41fc3ef4830086b205df173febd0a45a3f454bafe7e811f86c37b2",
+        "a7584518f64471b57acfa3313b6753776647af9b24e5ee99593c3114eab3a768",
+        "ea4f00e840d23778bc7ed980b8631ea80a257c5b2da09f2761c89154d9c2be0b",
+        "91e998ede07bb7012bff11cca289283571198047679f006dd6713deb134352df",
+        "12566fdfe62c7815c38ac11dd9b9f3fcb87a1cdf28202fc9298bb2143ad54ff1",
+        "0cad8c364945c3d967c9e79d70583d580e3c68f2d6ced860ad635e48f8807ee3",
+        "7f45295b7453d16896fecd0ba70db5163b7eba8f800a45e4682a29dfdceffad4",
+        "2a386cbf26d3708b55210a04a21adc673ca2df703502f6069385e23717e24be7",
+        "7c43cb4057eb8eb66fb38e9fd186edea0391799e5683322c42685dd014bd3d6b",
+        "ca17752e8bf259d85e2cc66e6b39e47f65be2773f4e6a7f486bf833a1d3ccdfa",
+        "70e106ad52d58824852bed107250670cf48d7874e5874953fb36656ceab6dfd0",
+        "a185dcd78d4446abbb29a2a45e35bc830d2455d0a7e5d4fa4584c829d2ba8c87",
+        "f530e40474b3d20b5226b8c53bb77cd7b0a98a095623816c270203e0757d502c",
+        "30f29c5575f27d5a697ac04be54d2e605b0fb1b5593ea4cbd8281b96ef5f5ec5",
+        "1e279f1f63a0f3620a2638cf9b8ec37b0ee6499e4de6bb87f3c7cbcf961a1f71",
+        "ed33c9faa8388fb07e0fef54d1d179b973221761e0e4495e8a713fb4799ed3e8",
+        "c663e066b9cfea6747ef2d9099d06faebcca5e6757f59fa353e7af0dd4f3ec26",
+        "a154c1b23722c8cfb578fd7d4a3c185212685896b3c40e8a90f1702bb2297e46",
+        "10a843937253cbfe7b1b9c08954522f24b456787a881cda6e4c31dde1ee5edff",
+        "1ed36148ae37a9f2f3efe87b5c1d7ecc6ba0435346d12323adcc12f4f8313837",
+        "d9a4d37cf6fe55dbdff82783eedd340beaacb3a12279360560b11cb38aca09ea",
+        "3573a1026e7d326a2085f150c123b77f181f18cbea16844403924fafe022ffde",
+        "db03275ca61e0a5da76cb0ef92451b79659599488ded26fe888d1cf934344320",
+        "03adf497462a8721daefbbad6cb1496301bcd6d78f6b54671335164985a15793"
+      ],
+      "package_sha256": "bf09d485c403e8f55262bdeb038a487d74fab6a241f6501c541cbb9a96c3709e",
+      "manifest_sha256": "416bb03b6d3d5a5097b00d554816f5dd26e142ed839e120172a5997bbab97519"
+    },
+    "v2_halton_02_beavrs_v2_pilot_scope_v1": {
+      "owner": "advisor_halton",
+      "stage": "halton_02",
+      "package_path": "student_packages/v2_halton128_v1/halton_02/v2_halton_02_beavrs_v2_pilot_scope_v1",
+      "scenario_ids": [
+        "679039b2f441f98ae947bc9c230f8cc45f371f6ce8f6e3163be53fecc1da429e",
+        "10a97412392d5c9eef444892403ccf1ea6bed75f114d775400f4e0c22324ad08",
+        "cbdfa2d0442a1eb70103d68d60312ac3d95f110b266d10f992326ae3f2dd3e35",
+        "fb52378ddd16772231e2afb2cf53a44271a4ac1e967a9729ee83d2827456a5dd",
+        "ff024c74f11bdfa0781ff746576e7a563f7039857c6b742eef8e15d0158058fc",
+        "e0acc66ba003861d1115aff2d44843cb6e4efbb986d4dae21a42d1725a0d81c3",
+        "42aa9a930a92e5fb89fe7694a5d8bb911b4e2c24d69975c41dadcb2474619e61",
+        "339adb47b899ec137a7a927e04f0aff5b039a6e21874376cd68a3c5b6e0fe2af",
+        "be1f628b2b0fa65ebc27ecce9ca234ebfd9930098416730aa0b10ab55a76a4dc",
+        "eb6bc6e027a5f42a6bae213d292a50a8d0d20346e0d01e45df83db4880ef297d",
+        "30ea04580e47db5d6fffa6199487e2f1678176b18af1dab4eeff69f746201628",
+        "778d5268dbaa083b958a5a89f37ff38acb3db35c72a84ade051ca8ee6bf562be",
+        "2977cfdf213c26c431e63ac327b52adb07c3c85881ccd8e0bb5d417ccbe65472",
+        "7102286fda75a6308db920110399df8a74a2819a814024f870bb70f65f415612",
+        "9d51ea6c3ec3cb5948883ad590dd605e17675b1106e5eee855a9be6a4c86ab32",
+        "ee34197e4ba1e41bdfcdb1e3ea491feb56fd3df3bb3316f63d7e5b684c51e234",
+        "b513ebb6efebf7e20f2e91e87a62424816fb63b45cc987940abdcc8bb702b059",
+        "d77b09f761afdaa974c2144677f299bf7cf030d13552a070fb6f1b47a3fb940b",
+        "61689c21fcd5e50b659f1315cf20ff60372bb5dca1cc20cf6e177bc72a5b4149",
+        "b4124d0971d140169881779a53ff24d9c1b4a27cf074a57f273f04e784b8a288",
+        "726deb9a5ec5f9df8af3d44f66d8297abdf9823a9ecd4cf26bf044dd3d1078b2",
+        "de7563ef6b923a0853af27728af64f0ddb3a92193c5b302d854ba9461dd68229",
+        "4e57d1ac7286fe96e727d761f332dfbcba888da10a0fd0400b525fcea16fcf50",
+        "a7eb2ac6c3c2318fbc54b6be0ea2963139aa84670ae4533b926fb12e26aa01bb",
+        "25d6e77f33ba6f8ce5e6c08722503b35eff8184d84ee9f0ef562f69c4dbf0270",
+        "4aa935d40ed28435abd4cd2841ef144f790bc210cfa35600195d53d4a8869d2a",
+        "9d4fd8757bee14261e3e17b62811718098da16b068115dcc926a841c30ee1ac8",
+        "220fde95d5ebffce7c41b37f4adb948ebe99cac17a26fef55fabcacce84cee79",
+        "1cb8ff0e7c5fbd64334f48aedea05c873c8ea7dd9603abdd0b7b6fd07024e89a",
+        "22254e424a8ab64f0d4afa2c622358055a74e5d26abc9b15f152d99ff8df46d0",
+        "9ccfacf54c2e14e00145454ce6fc8844817721b9bf731476bd1147cbefa692c7",
+        "38980df7398e6c594a130825c9654f795b53cc2adbf8659e6e2c6ca02c395d01"
+      ],
+      "package_sha256": "5259c3a3a0b21ff3a6cd8076233a5e0c36013e7ab6e7e7f5fed8da6877125420",
+      "manifest_sha256": "22702f4539f0c461a72f109d84c4ec99e3228fc2d0b5f7c74652785c75ee734b"
+    },
+    "v2_halton_03_beavrs_v2_pilot_scope_v1": {
+      "owner": "advisor_halton",
+      "stage": "halton_03",
+      "package_path": "student_packages/v2_halton128_v1/halton_03/v2_halton_03_beavrs_v2_pilot_scope_v1",
+      "scenario_ids": [
+        "8cae9b62575e9e9df8859d0fa1ca02d838518d096d55486efd7ba5d792958e71",
+        "7556d629a7449400dd70fb793030b93de5ae7ac2905886fd296d138e3594508b",
+        "7d34cbf9ea00c0efe6de7700528d40ec1ae9df1962c1ec1abaec5a386c745290",
+        "3a18d4c1f97cfc84e48eb5dc03c841ab9d05debffe22bd44ca532515b50f8395",
+        "74c181dfd24773e6bfda9ce4574ba5aa4ac44aa938843e38851e2bcfd7006666",
+        "3d997937aefb666a4de0eacd2be90f6057520e16f18504d7dab33f358c999243",
+        "02c8c8ba3c129ae2beb2fdee96e7e55da02e378163c23c667398c232cb5ef598",
+        "61959f6958a6f3983302d9695e91093815ad49f3c05c37d57d27f807bc0d181a",
+        "7b690be6466713cc86f27b80ac9ad196da101c93a39590f9697c4d6deec85c8f",
+        "45830445d3af9e330d53f7db09f16537c748b5ae01fd8ffd1e24fe26e45ab375",
+        "1d4b0009de3eb2fd9499907d207490db74796d1dc64d91175fd59b09eb55a1cb",
+        "8e677d14f96569fd667508b34bbdb0bd3158508c431245cc93c038c95fbf29d0",
+        "d32e787d4aa0555f9883c898b1598e4d8c2eac66a99e49541c3640ebe8709749",
+        "77197c0d005c286590e2cca257274e5012b81263e8c58ccc7f8a6144d5799862",
+        "8317a0e3d49d0b1a10a908cf5999fe0f5c1c704ba81205ea6910453f01e5c8dc",
+        "a00cc93ab91002d78f6108e9f0ceff7b4628797cc6409a94886a9060c9e1bc9b",
+        "948beaab4af7bf4e6effe4879430002bd07c1bba29cecc9bcc417732ad3a3ae6",
+        "17138d33df9e552702b8690ea5e9b225f50bdd12ddb37fd84cb71f66ecd46ba5",
+        "951e46a923af02f1f37d82cfc109829aaefa523f2ea8a4785246b402414be93f",
+        "24e7b1af9e222d8c06558db1b916b12e1f4f347b12ea0948429c627020ef3172",
+        "5f31d87a285351fbb8fe4df348dd5677846ad82e6e45e70593e6a71b91abaaf2",
+        "9e12c411cb76290525a9a5a9d2c1e292618a6004d18d204a615f5321d84c763e",
+        "509b026e01bebd31f784a86b30a27bcf84a6a5eace66c85f9191d5073476cbe3",
+        "73157ace179a495ec1cb7a6e1a4095cd71b974ed2a89e3254075ba2873fb4715",
+        "f6d989b5e28c4a78ecfc2963ee6703ea722a1fbc9c1455fe1275816615d245ef",
+        "6489d33f769ed918267f98f1d4ca6d0671c12978628e24de5a0e519a65a15086",
+        "310633c91018b70d50afd4b8c3ba6220df0eb72b74f530430215df16d7b8d4de",
+        "51174ce5c94e6723d4ca5e235cd4322166f0e20305a6f6b5fbfe6ef63c3a65a9",
+        "7ee860f6c1cd2072c63b53ebf2096c957382b64ac63d43b3eb4298c9aebfa918",
+        "5aa6a4f2cd14ac63101bea29f97548ee8883b3ef510726cb48bb5ece819ec563",
+        "95a4aba7cbc9e2d4e04bb41e612a4f2a1ddda3e0e2178948f1a6cf4aefe479c5",
+        "32740f7a0f2d5fb3f3989d6650997ccfc7416049d39fdb8a2b4de9d32a2f9bf4"
+      ],
+      "package_sha256": "cccb533bceb4875663ce5c80b81d7381dd074b44c7431a7b6cced29031e39940",
+      "manifest_sha256": "8f49aa365db061286f4b4b047c7723b5140f3bf1dc765299ba175912b83604fc"
+    },
+    "v2_halton_04_beavrs_v2_pilot_scope_v1": {
+      "owner": "advisor_halton",
+      "stage": "halton_04",
+      "package_path": "student_packages/v2_halton128_v1/halton_04/v2_halton_04_beavrs_v2_pilot_scope_v1",
+      "scenario_ids": [
+        "069b32b641becb2a81f38dc668020aa33efe47993e3f891ef5bd4b0a99a36a7e",
+        "c4bc0022fdcc263be87e3c9c4aa087b9915a32fe322a6d4ff36c3752efbdb9a8",
+        "29b25f14f9c0228a1b3da0313930fe712049e4dd2e0aca5810ff7ec5130a842a",
+        "1d6eaf703f875fd5e4e129d3a1abfb05b4191ec9a644a1710f83f577ba2ca078",
+        "ba609b9c876d11e8558e14ddb67bd12a39c80e82506d1c1d5c329fc41d97915f",
+        "af203b722df0ebdf2f2f33ec7b53a94b90eab37bb511eead154e132aa1ddb4cf",
+        "76ea969bbfa42beb81742185e00c05f1a388ff77adcb9fbb4c8745c57daf756d",
+        "558b3b6409db70c24bb1d5bf5f37666ba0717e264a33883e358167d788537e5c",
+        "1ae014d3d49e5b841886ec8cd2f7d86b50ee1356145e8c6d572e059f815988d8",
+        "56c36fa7fcdd5e74f71b7b7387b782e7d3e706a56780a9ab97877bf480428ba7",
+        "4edd9d37d7603d0d4a1e03f5c35b5b1e84794df25a61e02698a782b63cb38519",
+        "4de02dcaf1b52e2770a2030e4237952d7da8e7f3b5a9d4acf954612718330052",
+        "5272ba77fbe067d4ecb38a30ba5bf83894561b4861f65acb24dd77299509629f",
+        "60359b9a119762c93d096c0b5b25b0a5ebd909ab8b93e513f983d26a62237039",
+        "9280dd1a7ce7f33b046909dbfffbcbd1d5d087ca14fdebfe8f08320831b64a5d",
+        "5562d4b84fd0915423a5a77c59884738c6e7b0b6ee079f1cdc25bb3c9d2eaf43",
+        "d5729cc9d22383a2e7b877ccb990714a56fbbda96db67dd512265538cc5ac897",
+        "8262a5447aabcbb5b72d1991208088a9c371319cbb9b28f865cebff9ae14cc64",
+        "e0e887db323e77c15a0fec039a9fe8d6dba3fe6792e16aad7086e1cc016ee9ff",
+        "b8ffba4ab2e792fee6b9ee58307f06599a22df6cb5503ca7bec159f8a5b0dc70",
+        "5450e4b88cf9306dfc9d3719b9e2fad7d193bf6f7e5a7d4db3fdea376151f475",
+        "2a2434630d1245ae8b63836d3dead401f6706608cf0f7f217ad10f09f95daa2d",
+        "7f3147b8704bef5971155f950b3a72ccca28763acc15f4aedf8355ab76749483",
+        "f83c0214d0963887b305e092f710bac1d5df5f10c5232af18aca93e336d3cb32",
+        "7e76ee176cc48fc701827d96cc2596dd9993ad7def9dd0026d876f37df4fd521",
+        "8e1a06da4bb0e24b07344bdd3356da6a546d645e80888ba9d18949d04b2d7991",
+        "d876a40c40046b93e522c9f15aca8075f27be38e292c7537184f2593756880a7",
+        "7e4edef68f0113bb612707873ff6b55b60a2895d5dd67e565ed5bc63dea3cbbf",
+        "8314dc600121d18153d91d60f05cbf5f9ddde1c53a764cd1eeb9d9a5700b9d58",
+        "a0673c3ab073056540005873bef4264b39183a677d1d55437c02b64e99d8d6ac",
+        "b801366cedb249f245d319768bf154fc02d0ed9a9af00df13c3add63e20f8b9c",
+        "8f7c9423f55cc42145879d650f5130d25905b59c0939ba4c520d7d45b018b637"
+      ],
+      "package_sha256": "f2893efc5b18849bd42325d85c496d54c066ec1d512fe8f2bde66e33fccdc557",
+      "manifest_sha256": "8ad0ae58a33d4680b2789b3edb80d5fdb19590831b6067ec5469616c51fa016e"
+    }
+  },
+  "scenarios": {
+    "5228e2093c1a5318dfb3d65897286a2a104f4155cd3563d547e78d93ea9daacd": {
+      "owner": "advisor_halton",
+      "stage": "halton_01",
+      "source": "continuation_halton_233",
+      "quality": "not_assessed"
+    },
+    "5c399a73c8950621c8f5d182e776583be798def6407ef70ab833e92ce413961c": {
+      "owner": "advisor_halton",
+      "stage": "halton_01",
+      "source": "continuation_halton_234",
+      "quality": "not_assessed"
+    },
+    "f59a6b46cdf74531a937587a96673e28e4e60991587a5ea6337eb40c1f389e45": {
+      "owner": "advisor_halton",
+      "stage": "halton_01",
+      "source": "continuation_halton_235",
+      "quality": "not_assessed"
+    },
+    "bcf6ffa092bc07f27ebfcc48131a1b670a42f73a34ddf8bd47227b6c64962682": {
+      "owner": "advisor_halton",
+      "stage": "halton_01",
+      "source": "continuation_halton_236",
+      "quality": "not_assessed"
+    },
+    "ee85c54df135852660a512683019bd87644f78b52558a026ee31a9892560bb48": {
+      "owner": "advisor_halton",
+      "stage": "halton_01",
+      "source": "continuation_halton_237",
+      "quality": "not_assessed"
+    },
+    "3cbb1b2fab7c418a8f03df598d87fa43c7d796ab80e2ef951ce09c84e7cdd079": {
+      "owner": "advisor_halton",
+      "stage": "halton_01",
+      "source": "continuation_halton_238",
+      "quality": "not_assessed"
+    },
+    "02aa46a7183f2ab10db95dadb20be2b8077461aa7c6faed1da41f333caeff671": {
+      "owner": "advisor_halton",
+      "stage": "halton_01",
+      "source": "continuation_halton_239",
+      "quality": "not_assessed"
+    },
+    "4bc6e0cf6779944ca386083a54a49083c80d9e53d585787582389a46c70235ce": {
+      "owner": "advisor_halton",
+      "stage": "halton_01",
+      "source": "continuation_halton_240",
+      "quality": "not_assessed"
+    },
+    "57940e656e41fc3ef4830086b205df173febd0a45a3f454bafe7e811f86c37b2": {
+      "owner": "advisor_halton",
+      "stage": "halton_01",
+      "source": "continuation_halton_241",
+      "quality": "not_assessed"
+    },
+    "a7584518f64471b57acfa3313b6753776647af9b24e5ee99593c3114eab3a768": {
+      "owner": "advisor_halton",
+      "stage": "halton_01",
+      "source": "continuation_halton_242",
+      "quality": "not_assessed"
+    },
+    "ea4f00e840d23778bc7ed980b8631ea80a257c5b2da09f2761c89154d9c2be0b": {
+      "owner": "advisor_halton",
+      "stage": "halton_01",
+      "source": "continuation_halton_243",
+      "quality": "not_assessed"
+    },
+    "91e998ede07bb7012bff11cca289283571198047679f006dd6713deb134352df": {
+      "owner": "advisor_halton",
+      "stage": "halton_01",
+      "source": "continuation_halton_244",
+      "quality": "not_assessed"
+    },
+    "12566fdfe62c7815c38ac11dd9b9f3fcb87a1cdf28202fc9298bb2143ad54ff1": {
+      "owner": "advisor_halton",
+      "stage": "halton_01",
+      "source": "continuation_halton_245",
+      "quality": "not_assessed"
+    },
+    "0cad8c364945c3d967c9e79d70583d580e3c68f2d6ced860ad635e48f8807ee3": {
+      "owner": "advisor_halton",
+      "stage": "halton_01",
+      "source": "continuation_halton_246",
+      "quality": "not_assessed"
+    },
+    "7f45295b7453d16896fecd0ba70db5163b7eba8f800a45e4682a29dfdceffad4": {
+      "owner": "advisor_halton",
+      "stage": "halton_01",
+      "source": "continuation_halton_247",
+      "quality": "not_assessed"
+    },
+    "2a386cbf26d3708b55210a04a21adc673ca2df703502f6069385e23717e24be7": {
+      "owner": "advisor_halton",
+      "stage": "halton_01",
+      "source": "continuation_halton_248",
+      "quality": "not_assessed"
+    },
+    "7c43cb4057eb8eb66fb38e9fd186edea0391799e5683322c42685dd014bd3d6b": {
+      "owner": "advisor_halton",
+      "stage": "halton_01",
+      "source": "continuation_halton_249",
+      "quality": "not_assessed"
+    },
+    "ca17752e8bf259d85e2cc66e6b39e47f65be2773f4e6a7f486bf833a1d3ccdfa": {
+      "owner": "advisor_halton",
+      "stage": "halton_01",
+      "source": "continuation_halton_250",
+      "quality": "not_assessed"
+    },
+    "70e106ad52d58824852bed107250670cf48d7874e5874953fb36656ceab6dfd0": {
+      "owner": "advisor_halton",
+      "stage": "halton_01",
+      "source": "continuation_halton_251",
+      "quality": "not_assessed"
+    },
+    "a185dcd78d4446abbb29a2a45e35bc830d2455d0a7e5d4fa4584c829d2ba8c87": {
+      "owner": "advisor_halton",
+      "stage": "halton_01",
+      "source": "continuation_halton_252",
+      "quality": "not_assessed"
+    },
+    "f530e40474b3d20b5226b8c53bb77cd7b0a98a095623816c270203e0757d502c": {
+      "owner": "advisor_halton",
+      "stage": "halton_01",
+      "source": "continuation_halton_253",
+      "quality": "not_assessed"
+    },
+    "30f29c5575f27d5a697ac04be54d2e605b0fb1b5593ea4cbd8281b96ef5f5ec5": {
+      "owner": "advisor_halton",
+      "stage": "halton_01",
+      "source": "continuation_halton_254",
+      "quality": "not_assessed"
+    },
+    "1e279f1f63a0f3620a2638cf9b8ec37b0ee6499e4de6bb87f3c7cbcf961a1f71": {
+      "owner": "advisor_halton",
+      "stage": "halton_01",
+      "source": "continuation_halton_255",
+      "quality": "not_assessed"
+    },
+    "ed33c9faa8388fb07e0fef54d1d179b973221761e0e4495e8a713fb4799ed3e8": {
+      "owner": "advisor_halton",
+      "stage": "halton_01",
+      "source": "continuation_halton_256",
+      "quality": "not_assessed"
+    },
+    "c663e066b9cfea6747ef2d9099d06faebcca5e6757f59fa353e7af0dd4f3ec26": {
+      "owner": "advisor_halton",
+      "stage": "halton_01",
+      "source": "continuation_halton_257",
+      "quality": "not_assessed"
+    },
+    "a154c1b23722c8cfb578fd7d4a3c185212685896b3c40e8a90f1702bb2297e46": {
+      "owner": "advisor_halton",
+      "stage": "halton_01",
+      "source": "continuation_halton_258",
+      "quality": "not_assessed"
+    },
+    "10a843937253cbfe7b1b9c08954522f24b456787a881cda6e4c31dde1ee5edff": {
+      "owner": "advisor_halton",
+      "stage": "halton_01",
+      "source": "continuation_halton_259",
+      "quality": "not_assessed"
+    },
+    "1ed36148ae37a9f2f3efe87b5c1d7ecc6ba0435346d12323adcc12f4f8313837": {
+      "owner": "advisor_halton",
+      "stage": "halton_01",
+      "source": "continuation_halton_260",
+      "quality": "not_assessed"
+    },
+    "d9a4d37cf6fe55dbdff82783eedd340beaacb3a12279360560b11cb38aca09ea": {
+      "owner": "advisor_halton",
+      "stage": "halton_01",
+      "source": "continuation_halton_261",
+      "quality": "not_assessed"
+    },
+    "3573a1026e7d326a2085f150c123b77f181f18cbea16844403924fafe022ffde": {
+      "owner": "advisor_halton",
+      "stage": "halton_01",
+      "source": "continuation_halton_262",
+      "quality": "not_assessed"
+    },
+    "db03275ca61e0a5da76cb0ef92451b79659599488ded26fe888d1cf934344320": {
+      "owner": "advisor_halton",
+      "stage": "halton_01",
+      "source": "continuation_halton_263",
+      "quality": "not_assessed"
+    },
+    "03adf497462a8721daefbbad6cb1496301bcd6d78f6b54671335164985a15793": {
+      "owner": "advisor_halton",
+      "stage": "halton_01",
+      "source": "continuation_halton_264",
+      "quality": "not_assessed"
+    },
+    "679039b2f441f98ae947bc9c230f8cc45f371f6ce8f6e3163be53fecc1da429e": {
+      "owner": "advisor_halton",
+      "stage": "halton_02",
+      "source": "continuation_halton_265",
+      "quality": "not_assessed"
+    },
+    "10a97412392d5c9eef444892403ccf1ea6bed75f114d775400f4e0c22324ad08": {
+      "owner": "advisor_halton",
+      "stage": "halton_02",
+      "source": "continuation_halton_266",
+      "quality": "not_assessed"
+    },
+    "cbdfa2d0442a1eb70103d68d60312ac3d95f110b266d10f992326ae3f2dd3e35": {
+      "owner": "advisor_halton",
+      "stage": "halton_02",
+      "source": "continuation_halton_267",
+      "quality": "not_assessed"
+    },
+    "fb52378ddd16772231e2afb2cf53a44271a4ac1e967a9729ee83d2827456a5dd": {
+      "owner": "advisor_halton",
+      "stage": "halton_02",
+      "source": "continuation_halton_268",
+      "quality": "not_assessed"
+    },
+    "ff024c74f11bdfa0781ff746576e7a563f7039857c6b742eef8e15d0158058fc": {
+      "owner": "advisor_halton",
+      "stage": "halton_02",
+      "source": "continuation_halton_269",
+      "quality": "not_assessed"
+    },
+    "e0acc66ba003861d1115aff2d44843cb6e4efbb986d4dae21a42d1725a0d81c3": {
+      "owner": "advisor_halton",
+      "stage": "halton_02",
+      "source": "continuation_halton_270",
+      "quality": "not_assessed"
+    },
+    "42aa9a930a92e5fb89fe7694a5d8bb911b4e2c24d69975c41dadcb2474619e61": {
+      "owner": "advisor_halton",
+      "stage": "halton_02",
+      "source": "continuation_halton_271",
+      "quality": "not_assessed"
+    },
+    "339adb47b899ec137a7a927e04f0aff5b039a6e21874376cd68a3c5b6e0fe2af": {
+      "owner": "advisor_halton",
+      "stage": "halton_02",
+      "source": "continuation_halton_272",
+      "quality": "not_assessed"
+    },
+    "be1f628b2b0fa65ebc27ecce9ca234ebfd9930098416730aa0b10ab55a76a4dc": {
+      "owner": "advisor_halton",
+      "stage": "halton_02",
+      "source": "continuation_halton_273",
+      "quality": "not_assessed"
+    },
+    "eb6bc6e027a5f42a6bae213d292a50a8d0d20346e0d01e45df83db4880ef297d": {
+      "owner": "advisor_halton",
+      "stage": "halton_02",
+      "source": "continuation_halton_274",
+      "quality": "not_assessed"
+    },
+    "30ea04580e47db5d6fffa6199487e2f1678176b18af1dab4eeff69f746201628": {
+      "owner": "advisor_halton",
+      "stage": "halton_02",
+      "source": "continuation_halton_275",
+      "quality": "not_assessed"
+    },
+    "778d5268dbaa083b958a5a89f37ff38acb3db35c72a84ade051ca8ee6bf562be": {
+      "owner": "advisor_halton",
+      "stage": "halton_02",
+      "source": "continuation_halton_276",
+      "quality": "not_assessed"
+    },
+    "2977cfdf213c26c431e63ac327b52adb07c3c85881ccd8e0bb5d417ccbe65472": {
+      "owner": "advisor_halton",
+      "stage": "halton_02",
+      "source": "continuation_halton_277",
+      "quality": "not_assessed"
+    },
+    "7102286fda75a6308db920110399df8a74a2819a814024f870bb70f65f415612": {
+      "owner": "advisor_halton",
+      "stage": "halton_02",
+      "source": "continuation_halton_278",
+      "quality": "not_assessed"
+    },
+    "9d51ea6c3ec3cb5948883ad590dd605e17675b1106e5eee855a9be6a4c86ab32": {
+      "owner": "advisor_halton",
+      "stage": "halton_02",
+      "source": "continuation_halton_279",
+      "quality": "not_assessed"
+    },
+    "ee34197e4ba1e41bdfcdb1e3ea491feb56fd3df3bb3316f63d7e5b684c51e234": {
+      "owner": "advisor_halton",
+      "stage": "halton_02",
+      "source": "continuation_halton_280",
+      "quality": "not_assessed"
+    },
+    "b513ebb6efebf7e20f2e91e87a62424816fb63b45cc987940abdcc8bb702b059": {
+      "owner": "advisor_halton",
+      "stage": "halton_02",
+      "source": "continuation_halton_281",
+      "quality": "not_assessed"
+    },
+    "d77b09f761afdaa974c2144677f299bf7cf030d13552a070fb6f1b47a3fb940b": {
+      "owner": "advisor_halton",
+      "stage": "halton_02",
+      "source": "continuation_halton_282",
+      "quality": "not_assessed"
+    },
+    "61689c21fcd5e50b659f1315cf20ff60372bb5dca1cc20cf6e177bc72a5b4149": {
+      "owner": "advisor_halton",
+      "stage": "halton_02",
+      "source": "continuation_halton_283",
+      "quality": "not_assessed"
+    },
+    "b4124d0971d140169881779a53ff24d9c1b4a27cf074a57f273f04e784b8a288": {
+      "owner": "advisor_halton",
+      "stage": "halton_02",
+      "source": "continuation_halton_284",
+      "quality": "not_assessed"
+    },
+    "726deb9a5ec5f9df8af3d44f66d8297abdf9823a9ecd4cf26bf044dd3d1078b2": {
+      "owner": "advisor_halton",
+      "stage": "halton_02",
+      "source": "continuation_halton_285",
+      "quality": "not_assessed"
+    },
+    "de7563ef6b923a0853af27728af64f0ddb3a92193c5b302d854ba9461dd68229": {
+      "owner": "advisor_halton",
+      "stage": "halton_02",
+      "source": "continuation_halton_286",
+      "quality": "not_assessed"
+    },
+    "4e57d1ac7286fe96e727d761f332dfbcba888da10a0fd0400b525fcea16fcf50": {
+      "owner": "advisor_halton",
+      "stage": "halton_02",
+      "source": "continuation_halton_287",
+      "quality": "not_assessed"
+    },
+    "a7eb2ac6c3c2318fbc54b6be0ea2963139aa84670ae4533b926fb12e26aa01bb": {
+      "owner": "advisor_halton",
+      "stage": "halton_02",
+      "source": "continuation_halton_288",
+      "quality": "not_assessed"
+    },
+    "25d6e77f33ba6f8ce5e6c08722503b35eff8184d84ee9f0ef562f69c4dbf0270": {
+      "owner": "advisor_halton",
+      "stage": "halton_02",
+      "source": "continuation_halton_289",
+      "quality": "not_assessed"
+    },
+    "4aa935d40ed28435abd4cd2841ef144f790bc210cfa35600195d53d4a8869d2a": {
+      "owner": "advisor_halton",
+      "stage": "halton_02",
+      "source": "continuation_halton_290",
+      "quality": "not_assessed"
+    },
+    "9d4fd8757bee14261e3e17b62811718098da16b068115dcc926a841c30ee1ac8": {
+      "owner": "advisor_halton",
+      "stage": "halton_02",
+      "source": "continuation_halton_291",
+      "quality": "not_assessed"
+    },
+    "220fde95d5ebffce7c41b37f4adb948ebe99cac17a26fef55fabcacce84cee79": {
+      "owner": "advisor_halton",
+      "stage": "halton_02",
+      "source": "continuation_halton_292",
+      "quality": "not_assessed"
+    },
+    "1cb8ff0e7c5fbd64334f48aedea05c873c8ea7dd9603abdd0b7b6fd07024e89a": {
+      "owner": "advisor_halton",
+      "stage": "halton_02",
+      "source": "continuation_halton_293",
+      "quality": "not_assessed"
+    },
+    "22254e424a8ab64f0d4afa2c622358055a74e5d26abc9b15f152d99ff8df46d0": {
+      "owner": "advisor_halton",
+      "stage": "halton_02",
+      "source": "continuation_halton_294",
+      "quality": "not_assessed"
+    },
+    "9ccfacf54c2e14e00145454ce6fc8844817721b9bf731476bd1147cbefa692c7": {
+      "owner": "advisor_halton",
+      "stage": "halton_02",
+      "source": "continuation_halton_295",
+      "quality": "not_assessed"
+    },
+    "38980df7398e6c594a130825c9654f795b53cc2adbf8659e6e2c6ca02c395d01": {
+      "owner": "advisor_halton",
+      "stage": "halton_02",
+      "source": "continuation_halton_296",
+      "quality": "not_assessed"
+    },
+    "8cae9b62575e9e9df8859d0fa1ca02d838518d096d55486efd7ba5d792958e71": {
+      "owner": "advisor_halton",
+      "stage": "halton_03",
+      "source": "continuation_halton_297",
+      "quality": "not_assessed"
+    },
+    "7556d629a7449400dd70fb793030b93de5ae7ac2905886fd296d138e3594508b": {
+      "owner": "advisor_halton",
+      "stage": "halton_03",
+      "source": "continuation_halton_298",
+      "quality": "not_assessed"
+    },
+    "7d34cbf9ea00c0efe6de7700528d40ec1ae9df1962c1ec1abaec5a386c745290": {
+      "owner": "advisor_halton",
+      "stage": "halton_03",
+      "source": "continuation_halton_299",
+      "quality": "not_assessed"
+    },
+    "3a18d4c1f97cfc84e48eb5dc03c841ab9d05debffe22bd44ca532515b50f8395": {
+      "owner": "advisor_halton",
+      "stage": "halton_03",
+      "source": "continuation_halton_300",
+      "quality": "not_assessed"
+    },
+    "74c181dfd24773e6bfda9ce4574ba5aa4ac44aa938843e38851e2bcfd7006666": {
+      "owner": "advisor_halton",
+      "stage": "halton_03",
+      "source": "continuation_halton_301",
+      "quality": "not_assessed"
+    },
+    "3d997937aefb666a4de0eacd2be90f6057520e16f18504d7dab33f358c999243": {
+      "owner": "advisor_halton",
+      "stage": "halton_03",
+      "source": "continuation_halton_302",
+      "quality": "not_assessed"
+    },
+    "02c8c8ba3c129ae2beb2fdee96e7e55da02e378163c23c667398c232cb5ef598": {
+      "owner": "advisor_halton",
+      "stage": "halton_03",
+      "source": "continuation_halton_303",
+      "quality": "not_assessed"
+    },
+    "61959f6958a6f3983302d9695e91093815ad49f3c05c37d57d27f807bc0d181a": {
+      "owner": "advisor_halton",
+      "stage": "halton_03",
+      "source": "continuation_halton_304",
+      "quality": "not_assessed"
+    },
+    "7b690be6466713cc86f27b80ac9ad196da101c93a39590f9697c4d6deec85c8f": {
+      "owner": "advisor_halton",
+      "stage": "halton_03",
+      "source": "continuation_halton_305",
+      "quality": "not_assessed"
+    },
+    "45830445d3af9e330d53f7db09f16537c748b5ae01fd8ffd1e24fe26e45ab375": {
+      "owner": "advisor_halton",
+      "stage": "halton_03",
+      "source": "continuation_halton_306",
+      "quality": "not_assessed"
+    },
+    "1d4b0009de3eb2fd9499907d207490db74796d1dc64d91175fd59b09eb55a1cb": {
+      "owner": "advisor_halton",
+      "stage": "halton_03",
+      "source": "continuation_halton_307",
+      "quality": "not_assessed"
+    },
+    "8e677d14f96569fd667508b34bbdb0bd3158508c431245cc93c038c95fbf29d0": {
+      "owner": "advisor_halton",
+      "stage": "halton_03",
+      "source": "continuation_halton_308",
+      "quality": "not_assessed"
+    },
+    "d32e787d4aa0555f9883c898b1598e4d8c2eac66a99e49541c3640ebe8709749": {
+      "owner": "advisor_halton",
+      "stage": "halton_03",
+      "source": "continuation_halton_309",
+      "quality": "not_assessed"
+    },
+    "77197c0d005c286590e2cca257274e5012b81263e8c58ccc7f8a6144d5799862": {
+      "owner": "advisor_halton",
+      "stage": "halton_03",
+      "source": "continuation_halton_310",
+      "quality": "not_assessed"
+    },
+    "8317a0e3d49d0b1a10a908cf5999fe0f5c1c704ba81205ea6910453f01e5c8dc": {
+      "owner": "advisor_halton",
+      "stage": "halton_03",
+      "source": "continuation_halton_311",
+      "quality": "not_assessed"
+    },
+    "a00cc93ab91002d78f6108e9f0ceff7b4628797cc6409a94886a9060c9e1bc9b": {
+      "owner": "advisor_halton",
+      "stage": "halton_03",
+      "source": "continuation_halton_312",
+      "quality": "not_assessed"
+    },
+    "948beaab4af7bf4e6effe4879430002bd07c1bba29cecc9bcc417732ad3a3ae6": {
+      "owner": "advisor_halton",
+      "stage": "halton_03",
+      "source": "continuation_halton_313",
+      "quality": "not_assessed"
+    },
+    "17138d33df9e552702b8690ea5e9b225f50bdd12ddb37fd84cb71f66ecd46ba5": {
+      "owner": "advisor_halton",
+      "stage": "halton_03",
+      "source": "continuation_halton_314",
+      "quality": "not_assessed"
+    },
+    "951e46a923af02f1f37d82cfc109829aaefa523f2ea8a4785246b402414be93f": {
+      "owner": "advisor_halton",
+      "stage": "halton_03",
+      "source": "continuation_halton_315",
+      "quality": "not_assessed"
+    },
+    "24e7b1af9e222d8c06558db1b916b12e1f4f347b12ea0948429c627020ef3172": {
+      "owner": "advisor_halton",
+      "stage": "halton_03",
+      "source": "continuation_halton_316",
+      "quality": "not_assessed"
+    },
+    "5f31d87a285351fbb8fe4df348dd5677846ad82e6e45e70593e6a71b91abaaf2": {
+      "owner": "advisor_halton",
+      "stage": "halton_03",
+      "source": "continuation_halton_317",
+      "quality": "not_assessed"
+    },
+    "9e12c411cb76290525a9a5a9d2c1e292618a6004d18d204a615f5321d84c763e": {
+      "owner": "advisor_halton",
+      "stage": "halton_03",
+      "source": "continuation_halton_318",
+      "quality": "not_assessed"
+    },
+    "509b026e01bebd31f784a86b30a27bcf84a6a5eace66c85f9191d5073476cbe3": {
+      "owner": "advisor_halton",
+      "stage": "halton_03",
+      "source": "continuation_halton_319",
+      "quality": "not_assessed"
+    },
+    "73157ace179a495ec1cb7a6e1a4095cd71b974ed2a89e3254075ba2873fb4715": {
+      "owner": "advisor_halton",
+      "stage": "halton_03",
+      "source": "continuation_halton_320",
+      "quality": "not_assessed"
+    },
+    "f6d989b5e28c4a78ecfc2963ee6703ea722a1fbc9c1455fe1275816615d245ef": {
+      "owner": "advisor_halton",
+      "stage": "halton_03",
+      "source": "continuation_halton_321",
+      "quality": "not_assessed"
+    },
+    "6489d33f769ed918267f98f1d4ca6d0671c12978628e24de5a0e519a65a15086": {
+      "owner": "advisor_halton",
+      "stage": "halton_03",
+      "source": "continuation_halton_322",
+      "quality": "not_assessed"
+    },
+    "310633c91018b70d50afd4b8c3ba6220df0eb72b74f530430215df16d7b8d4de": {
+      "owner": "advisor_halton",
+      "stage": "halton_03",
+      "source": "continuation_halton_323",
+      "quality": "not_assessed"
+    },
+    "51174ce5c94e6723d4ca5e235cd4322166f0e20305a6f6b5fbfe6ef63c3a65a9": {
+      "owner": "advisor_halton",
+      "stage": "halton_03",
+      "source": "continuation_halton_324",
+      "quality": "not_assessed"
+    },
+    "7ee860f6c1cd2072c63b53ebf2096c957382b64ac63d43b3eb4298c9aebfa918": {
+      "owner": "advisor_halton",
+      "stage": "halton_03",
+      "source": "continuation_halton_325",
+      "quality": "not_assessed"
+    },
+    "5aa6a4f2cd14ac63101bea29f97548ee8883b3ef510726cb48bb5ece819ec563": {
+      "owner": "advisor_halton",
+      "stage": "halton_03",
+      "source": "continuation_halton_326",
+      "quality": "not_assessed"
+    },
+    "95a4aba7cbc9e2d4e04bb41e612a4f2a1ddda3e0e2178948f1a6cf4aefe479c5": {
+      "owner": "advisor_halton",
+      "stage": "halton_03",
+      "source": "continuation_halton_327",
+      "quality": "not_assessed"
+    },
+    "32740f7a0f2d5fb3f3989d6650997ccfc7416049d39fdb8a2b4de9d32a2f9bf4": {
+      "owner": "advisor_halton",
+      "stage": "halton_03",
+      "source": "continuation_halton_328",
+      "quality": "not_assessed"
+    },
+    "069b32b641becb2a81f38dc668020aa33efe47993e3f891ef5bd4b0a99a36a7e": {
+      "owner": "advisor_halton",
+      "stage": "halton_04",
+      "source": "continuation_halton_329",
+      "quality": "not_assessed"
+    },
+    "c4bc0022fdcc263be87e3c9c4aa087b9915a32fe322a6d4ff36c3752efbdb9a8": {
+      "owner": "advisor_halton",
+      "stage": "halton_04",
+      "source": "continuation_halton_330",
+      "quality": "not_assessed"
+    },
+    "29b25f14f9c0228a1b3da0313930fe712049e4dd2e0aca5810ff7ec5130a842a": {
+      "owner": "advisor_halton",
+      "stage": "halton_04",
+      "source": "continuation_halton_331",
+      "quality": "not_assessed"
+    },
+    "1d6eaf703f875fd5e4e129d3a1abfb05b4191ec9a644a1710f83f577ba2ca078": {
+      "owner": "advisor_halton",
+      "stage": "halton_04",
+      "source": "continuation_halton_332",
+      "quality": "not_assessed"
+    },
+    "ba609b9c876d11e8558e14ddb67bd12a39c80e82506d1c1d5c329fc41d97915f": {
+      "owner": "advisor_halton",
+      "stage": "halton_04",
+      "source": "continuation_halton_333",
+      "quality": "not_assessed"
+    },
+    "af203b722df0ebdf2f2f33ec7b53a94b90eab37bb511eead154e132aa1ddb4cf": {
+      "owner": "advisor_halton",
+      "stage": "halton_04",
+      "source": "continuation_halton_334",
+      "quality": "not_assessed"
+    },
+    "76ea969bbfa42beb81742185e00c05f1a388ff77adcb9fbb4c8745c57daf756d": {
+      "owner": "advisor_halton",
+      "stage": "halton_04",
+      "source": "continuation_halton_335",
+      "quality": "not_assessed"
+    },
+    "558b3b6409db70c24bb1d5bf5f37666ba0717e264a33883e358167d788537e5c": {
+      "owner": "advisor_halton",
+      "stage": "halton_04",
+      "source": "continuation_halton_336",
+      "quality": "not_assessed"
+    },
+    "1ae014d3d49e5b841886ec8cd2f7d86b50ee1356145e8c6d572e059f815988d8": {
+      "owner": "advisor_halton",
+      "stage": "halton_04",
+      "source": "continuation_halton_337",
+      "quality": "not_assessed"
+    },
+    "56c36fa7fcdd5e74f71b7b7387b782e7d3e706a56780a9ab97877bf480428ba7": {
+      "owner": "advisor_halton",
+      "stage": "halton_04",
+      "source": "continuation_halton_338",
+      "quality": "not_assessed"
+    },
+    "4edd9d37d7603d0d4a1e03f5c35b5b1e84794df25a61e02698a782b63cb38519": {
+      "owner": "advisor_halton",
+      "stage": "halton_04",
+      "source": "continuation_halton_339",
+      "quality": "not_assessed"
+    },
+    "4de02dcaf1b52e2770a2030e4237952d7da8e7f3b5a9d4acf954612718330052": {
+      "owner": "advisor_halton",
+      "stage": "halton_04",
+      "source": "continuation_halton_340",
+      "quality": "not_assessed"
+    },
+    "5272ba77fbe067d4ecb38a30ba5bf83894561b4861f65acb24dd77299509629f": {
+      "owner": "advisor_halton",
+      "stage": "halton_04",
+      "source": "continuation_halton_341",
+      "quality": "not_assessed"
+    },
+    "60359b9a119762c93d096c0b5b25b0a5ebd909ab8b93e513f983d26a62237039": {
+      "owner": "advisor_halton",
+      "stage": "halton_04",
+      "source": "continuation_halton_342",
+      "quality": "not_assessed"
+    },
+    "9280dd1a7ce7f33b046909dbfffbcbd1d5d087ca14fdebfe8f08320831b64a5d": {
+      "owner": "advisor_halton",
+      "stage": "halton_04",
+      "source": "continuation_halton_343",
+      "quality": "not_assessed"
+    },
+    "5562d4b84fd0915423a5a77c59884738c6e7b0b6ee079f1cdc25bb3c9d2eaf43": {
+      "owner": "advisor_halton",
+      "stage": "halton_04",
+      "source": "continuation_halton_344",
+      "quality": "not_assessed"
+    },
+    "d5729cc9d22383a2e7b877ccb990714a56fbbda96db67dd512265538cc5ac897": {
+      "owner": "advisor_halton",
+      "stage": "halton_04",
+      "source": "continuation_halton_345",
+      "quality": "not_assessed"
+    },
+    "8262a5447aabcbb5b72d1991208088a9c371319cbb9b28f865cebff9ae14cc64": {
+      "owner": "advisor_halton",
+      "stage": "halton_04",
+      "source": "continuation_halton_346",
+      "quality": "not_assessed"
+    },
+    "e0e887db323e77c15a0fec039a9fe8d6dba3fe6792e16aad7086e1cc016ee9ff": {
+      "owner": "advisor_halton",
+      "stage": "halton_04",
+      "source": "continuation_halton_347",
+      "quality": "not_assessed"
+    },
+    "b8ffba4ab2e792fee6b9ee58307f06599a22df6cb5503ca7bec159f8a5b0dc70": {
+      "owner": "advisor_halton",
+      "stage": "halton_04",
+      "source": "continuation_halton_348",
+      "quality": "not_assessed"
+    },
+    "5450e4b88cf9306dfc9d3719b9e2fad7d193bf6f7e5a7d4db3fdea376151f475": {
+      "owner": "advisor_halton",
+      "stage": "halton_04",
+      "source": "continuation_halton_349",
+      "quality": "not_assessed"
+    },
+    "2a2434630d1245ae8b63836d3dead401f6706608cf0f7f217ad10f09f95daa2d": {
+      "owner": "advisor_halton",
+      "stage": "halton_04",
+      "source": "continuation_halton_350",
+      "quality": "not_assessed"
+    },
+    "7f3147b8704bef5971155f950b3a72ccca28763acc15f4aedf8355ab76749483": {
+      "owner": "advisor_halton",
+      "stage": "halton_04",
+      "source": "continuation_halton_351",
+      "quality": "not_assessed"
+    },
+    "f83c0214d0963887b305e092f710bac1d5df5f10c5232af18aca93e336d3cb32": {
+      "owner": "advisor_halton",
+      "stage": "halton_04",
+      "source": "continuation_halton_352",
+      "quality": "not_assessed"
+    },
+    "7e76ee176cc48fc701827d96cc2596dd9993ad7def9dd0026d876f37df4fd521": {
+      "owner": "advisor_halton",
+      "stage": "halton_04",
+      "source": "continuation_halton_353",
+      "quality": "not_assessed"
+    },
+    "8e1a06da4bb0e24b07344bdd3356da6a546d645e80888ba9d18949d04b2d7991": {
+      "owner": "advisor_halton",
+      "stage": "halton_04",
+      "source": "continuation_halton_354",
+      "quality": "not_assessed"
+    },
+    "d876a40c40046b93e522c9f15aca8075f27be38e292c7537184f2593756880a7": {
+      "owner": "advisor_halton",
+      "stage": "halton_04",
+      "source": "continuation_halton_355",
+      "quality": "not_assessed"
+    },
+    "7e4edef68f0113bb612707873ff6b55b60a2895d5dd67e565ed5bc63dea3cbbf": {
+      "owner": "advisor_halton",
+      "stage": "halton_04",
+      "source": "continuation_halton_356",
+      "quality": "not_assessed"
+    },
+    "8314dc600121d18153d91d60f05cbf5f9ddde1c53a764cd1eeb9d9a5700b9d58": {
+      "owner": "advisor_halton",
+      "stage": "halton_04",
+      "source": "continuation_halton_357",
+      "quality": "not_assessed"
+    },
+    "a0673c3ab073056540005873bef4264b39183a677d1d55437c02b64e99d8d6ac": {
+      "owner": "advisor_halton",
+      "stage": "halton_04",
+      "source": "continuation_halton_358",
+      "quality": "not_assessed"
+    },
+    "b801366cedb249f245d319768bf154fc02d0ed9a9af00df13c3add63e20f8b9c": {
+      "owner": "advisor_halton",
+      "stage": "halton_04",
+      "source": "continuation_halton_359",
+      "quality": "not_assessed"
+    },
+    "8f7c9423f55cc42145879d650f5130d25905b59c0939ba4c520d7d45b018b637": {
+      "owner": "advisor_halton",
+      "stage": "halton_04",
+      "source": "continuation_halton_360",
+      "quality": "not_assessed"
+    }
+  },
+  "source_bundle": "kaggle/v2_128/project"
+}

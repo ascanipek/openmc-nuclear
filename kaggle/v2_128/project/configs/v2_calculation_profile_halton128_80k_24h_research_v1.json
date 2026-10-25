@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "profile_id": "beavrs_v2_halton128_80k_24h_research_v1",
+  "status": "approved",
+  "purpose": "Four new 32-case Halton continuation groups only; controlled research",
+  "calculation": {
+    "particles_per_generation": 80000,
+    "batches": 600,
+    "inactive": 300,
+    "generations_per_batch": 1,
+    "threads": 6
+  },
+  "seed_base": 72001,
+  "group_runtime_budget_seconds": 86400,
+  "production_approval": "halton_indices_233_to_360_controlled_research_only",
+  "decision_source": "Advisor user request, 2026-10-24: prepare 128 new Halton Kaggle CPU cases"
+}

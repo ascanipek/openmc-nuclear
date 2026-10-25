@@ -1,0 +1,17 @@
+{
+  "package_id": "v2_halton_02_beavrs_v2_pilot_scope_v1",
+  "model": "beavrs_derived_3d_assembly_v2_proposed",
+  "state": "production_ready",
+  "project_root": ".",
+  "package_path": "student_packages/v2_halton128_v1/halton_02/v2_halton_02_beavrs_v2_pilot_scope_v1",
+  "space_config": "configs/v2_parameter_space_pilot_scope_v1.json",
+  "profile_config": "configs/v2_calculation_profile_halton128_80k_24h_research_v1.json",
+  "notebook_hash_schema": "notebook-inputs-v1",
+  "space_id": "beavrs_v2_pilot_scope_v1",
+  "profile_id": "beavrs_v2_halton128_80k_24h_research_v1",
+  "reference_config_sha256": "834a783ce2ac14cebdc1579e87bd731f0899251e3113c28d46cec42b52c223a6",
+  "manifest_sha256": "22702f4539f0c461a72f109d84c4ec99e3228fc2d0b5f7c74652785c75ee734b",
+  "hashes_sha256": "7bb13d0fd9f92165939cdfd477d9f83c3eb624cdd457b4e6048ff89f8bd7ec13",
+  "owner": "advisor_halton",
+  "stage": "halton_02"
+}

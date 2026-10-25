@@ -7,8 +7,8 @@
     "stage_256": 32
   },
   "files": {
-    "01_kaggle_calistir.ipynb": "fb2c48ba556b72b04ae9d3f8f5c11df5118124fc47e7896a3cc6615a441f7971",
-    "README.md": "dba885cfaff549d0d5a9b6ab612068b954a1c1439448e57d4d48e7ca78a28039",
+    "01_kaggle_calistir.ipynb": "225d0732966532a8bc1e6383aa4ebbc0f56715b509bbcf3abb8755ad7fcd6841",
+    "README.md": "8b4b62f1724838bde2e18654fe6cedc96bbf8beb338ea70fe08d533470d8fe62",
     "kaggle_runner.py": "5935b3a9d46d27a1f81cf85306ca7480231105db0fa4059b57b01a8b7a05d183",
     "project/configs/beavrs_derived_3d_reference.json": "834a783ce2ac14cebdc1579e87bd731f0899251e3113c28d46cec42b52c223a6",
     "project/configs/v2_calculation_profile_128_students_80k_18h_research_v1.json": "0c5b1c2ad120d9e1ada508d117260be105a27b45e19104b010357eaf9954ca37",
@@ -70,6 +70,6 @@
     "project/student_packages/v2_students_portable_v1/stage_32/ogrenci_04/v2_stage_32_ogrenci_04_beavrs_v2_pilot_scope_v1/package.json": "63ea6572f3272e0f7a70682ab353a7847480ee005980e333d3d07cbda3d0c5cd",
     "tests/build_dataset_zip.py": "245df7205095024a1194bf6701400b6ec55183aa982c75d20d1e0f9bbff28034",
     "tests/freeze_bundle.py": "c22258e94076eb4fb9dd91c19060fcccc8de4505d200fa892df98493ee851465",
-    "tests/test_kaggle_runner.py": "5da8b988587beb232c0cda49849465378a386cb98994af08cd7844f1c447c420"
+    "tests/test_kaggle_runner.py": "11a8493e81e1abef0c146898dd62b2eb7a753c2d71d35b77f078106dfe56ca54"
   }
 }

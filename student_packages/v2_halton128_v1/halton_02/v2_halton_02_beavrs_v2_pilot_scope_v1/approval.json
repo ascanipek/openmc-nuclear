@@ -1,0 +1,10 @@
+{
+  "status": "approved",
+  "authorization": "local_v2_halton128_controlled_research_only",
+  "model": "beavrs_derived_3d_assembly_v2_proposed",
+  "group_id": "v2_halton_02_beavrs_v2_pilot_scope_v1",
+  "meaning": "Technical run preparation only; no physical, convergence or training acceptance",
+  "package_sha256": "5259c3a3a0b21ff3a6cd8076233a5e0c36013e7ab6e7e7f5fed8da6877125420",
+  "hashes_sha256": "7bb13d0fd9f92165939cdfd477d9f83c3eb624cdd457b4e6048ff89f8bd7ec13",
+  "decision_source": "Current advisor request, 2026-10-24: adapt four frozen Halton 32-case groups to local WSL V2"
+}

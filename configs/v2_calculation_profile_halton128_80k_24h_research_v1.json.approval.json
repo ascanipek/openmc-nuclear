@@ -1,0 +1,10 @@
+{
+  "status": "approved",
+  "document_sha256": "81a031901bdb7896c1a7f646a09dbdca7ab4014f7dd9a5b0da4704db292fb11c",
+  "reviewer": "danisman: 2026-10-24 local Halton adaptation request",
+  "scope": "only_halton_indices_233_to_360_in_four_local_32_case_research_groups",
+  "physical_acceptance": "not_assessed",
+  "statistical_convergence": "review_required",
+  "training_acceptance": "not_granted",
+  "decision_source": "Current advisor request: adapt frozen Kaggle Halton scenarios to existing local V2 pipeline"
+}

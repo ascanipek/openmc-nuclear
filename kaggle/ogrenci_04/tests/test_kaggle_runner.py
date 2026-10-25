@@ -30,7 +30,7 @@ class KaggleAdapterTests(unittest.TestCase):
             ast.parse(code)
         self.assertEqual(len(codes), 4)
         self.assertIn("SESSION_BUDGET_SECONDS", codes[0])
-        self.assertIn("SELECTED_STAGE = \"stage_128\"", codes[0])
+        self.assertIn("SELECTED_STAGE = \"stage_256\"", codes[0])
         self.assertIn("SESSION_BUDGET_SECONDS = 10 * 3600", codes[0])
         self.assertIn("micromamba-linux-64", codes[1])
         self.assertIn("micromamba_sha256", codes[1])

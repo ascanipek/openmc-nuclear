@@ -1,0 +1,10 @@
+{
+  "status": "approved",
+  "authorization": "stage_32_remaining_24_technical_execution_only",
+  "model": "beavrs_derived_3d_assembly_v2_proposed",
+  "group_id": "v2_stage_32_ogrenci_04_beavrs_v2_pilot_scope_v1",
+  "meaning": "Technical launch approval for this assigned eight-case stage_32 group only; no physical validation, statistical convergence, or training-data acceptance",
+  "package_sha256": "63ea6572f3272e0f7a70682ab353a7847480ee005980e333d3d07cbda3d0c5cd",
+  "hashes_sha256": "d3de3e84e379e3c04d512e7d60bec9603f1fbee8fc7e968ef40569fbfaab0a41",
+  "decision_source": "Explicit user authorization in this task, 2026-10-19"
+}

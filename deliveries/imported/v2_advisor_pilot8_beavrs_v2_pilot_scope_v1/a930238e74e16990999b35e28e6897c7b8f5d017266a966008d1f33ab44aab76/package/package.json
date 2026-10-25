@@ -1,0 +1,14 @@
+{
+  "package_id": "v2_advisor_pilot8_beavrs_v2_pilot_scope_v1",
+  "model": "beavrs_derived_3d_assembly_v2_proposed",
+  "state": "production_ready",
+  "project_root": "/home/ascanipek/openmc-proje",
+  "space_config": "configs/v2_parameter_space_pilot_scope_v1.json",
+  "profile_config": "configs/v2_calculation_profile_pilot_80k_4h_v1.json",
+  "notebook_hash_schema": "notebook-inputs-v1",
+  "space_id": "beavrs_v2_pilot_scope_v1",
+  "profile_id": "beavrs_v2_pilot_80k_4h_v1",
+  "reference_config_sha256": "834a783ce2ac14cebdc1579e87bd731f0899251e3113c28d46cec42b52c223a6",
+  "manifest_sha256": "77891f42ab6924f020ba2b26fa3a0a44fb00222d47b149a1a85a11ff74be00a8",
+  "hashes_sha256": "25e60713643c5b3dad1bef76c1c10b871dfcbac3cf3646f3b97cc68b985fa532"
+}

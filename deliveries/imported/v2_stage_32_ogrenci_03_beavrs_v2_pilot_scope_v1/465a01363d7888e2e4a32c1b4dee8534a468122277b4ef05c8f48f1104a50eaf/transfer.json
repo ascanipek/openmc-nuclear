@@ -1,0 +1,61 @@
+{
+  "hashes_sha256": "b779cede526b624edff4a944992df1d47cea1fbcb2f951568d4c0a2f317ce932",
+  "manifest_sha256": "15ec1754c9c29c7951406a52f6a29991e452f242de73dc86ec15eb6a3a25557c",
+  "model": "beavrs_derived_3d_assembly_v2_proposed",
+  "omitted_statepoints": [
+    {
+      "bytes": 7038048,
+      "relative_path": "group/experiments/V2-STAGE_32_OGRENCI_03-0001/attempt_ba44ed391c3b40f9ac7bf8f2cec238b4/statepoint.600.h5",
+      "retention": "source_machine; transfer separately on request",
+      "sha256": "b8baf2ab8249cee2e20481905ee6c6e107d6f9c844adc133ec05a45ab097c6ff"
+    },
+    {
+      "bytes": 7038048,
+      "relative_path": "group/experiments/V2-STAGE_32_OGRENCI_03-0002/attempt_4f96a0f6f58e4440b120d397852f880a/statepoint.600.h5",
+      "retention": "source_machine; transfer separately on request",
+      "sha256": "797819cf4df0b5068b2cbccfa4eedfb8763319e3f79290f56d380547cbdcaa71"
+    },
+    {
+      "bytes": 7038048,
+      "relative_path": "group/experiments/V2-STAGE_32_OGRENCI_03-0003/attempt_e342624b1c50409d92480b22dfc448d6/statepoint.600.h5",
+      "retention": "source_machine; transfer separately on request",
+      "sha256": "4916720ea8bcb546b090f588469adf502fc8c7630f38d136166d4c137485fa5b"
+    },
+    {
+      "bytes": 7038048,
+      "relative_path": "group/experiments/V2-STAGE_32_OGRENCI_03-0004/attempt_beaecc8b1c3745b3ac58a566b076385e/statepoint.600.h5",
+      "retention": "source_machine; transfer separately on request",
+      "sha256": "77bc09fbfd170478fc5052bdec5ec257cb97c9c05e23479804c0b6401f46c1ea"
+    },
+    {
+      "bytes": 7038048,
+      "relative_path": "group/experiments/V2-STAGE_32_OGRENCI_03-0005/attempt_f4da0966284144bebcd21e42b79880da/statepoint.600.h5",
+      "retention": "source_machine; transfer separately on request",
+      "sha256": "395aabc1b332aec0595c95e1803e8a9a729b6c28c51cc3e7f5cca2228a9d6bd7"
+    },
+    {
+      "bytes": 7038048,
+      "relative_path": "group/experiments/V2-STAGE_32_OGRENCI_03-0006/attempt_a7e2e0206ad548d48ae84869cdec1877/statepoint.600.h5",
+      "retention": "source_machine; transfer separately on request",
+      "sha256": "a8267b1a3056444872a0060298eefd6ba74407287518faeca487ca9aad63720c"
+    },
+    {
+      "bytes": 7038048,
+      "relative_path": "group/experiments/V2-STAGE_32_OGRENCI_03-0007/attempt_c4cfbab14bd14eeaad20ef76ede4a40e/statepoint.600.h5",
+      "retention": "source_machine; transfer separately on request",
+      "sha256": "67d4df27e8a8861ee7fbbce57e2f6776236a3f24b0e6c4795c08e3734af970d5"
+    },
+    {
+      "bytes": 7038048,
+      "relative_path": "group/experiments/V2-STAGE_32_OGRENCI_03-0008/attempt_be6cf7db349848fa8a7beb8253fe89d8/statepoint.600.h5",
+      "retention": "source_machine; transfer separately on request",
+      "sha256": "6d4df7e24daebe72072cc27c3dede95df5853d4e4ded04976ec63ac8f3d0ad50"
+    }
+  ],
+  "package_id": "v2_stage_32_ogrenci_03_beavrs_v2_pilot_scope_v1",
+  "package_sha256": "2d6faffdcca47d6d32157d0b21486b611e2ffdaf51d5ab23387f1de02f9adaba",
+  "physical_acceptance": "not_assessed_by_transfer",
+  "schema": "beavrs_v2_handoff_v1",
+  "statepoint_policy": "omitted_from_lightweight_zip; retain on source machine",
+  "training_acceptance": "not_granted"
+}

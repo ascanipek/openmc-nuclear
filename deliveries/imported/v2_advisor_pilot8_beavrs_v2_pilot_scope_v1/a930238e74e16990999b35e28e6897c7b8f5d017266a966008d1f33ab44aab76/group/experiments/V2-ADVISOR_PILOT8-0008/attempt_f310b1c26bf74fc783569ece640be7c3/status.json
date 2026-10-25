@@ -1,0 +1,11 @@
+{
+  "state": "completed",
+  "scenario_id": "7bb0efe2610e035fd61d9c8b7b824519cfdbf800675569b951677ca8d57ac5ac",
+  "run_id": "affa0232effe8832cb448d5a751fa7272cfea633e4c3608a7c09e2c81dc5d999",
+  "experiment_id": "V2-ADVISOR_PILOT8-0008",
+  "physical_acceptance": "not_assessed",
+  "quality_status": "review_required",
+  "error": null,
+  "elapsed_seconds": 1202.2502018919913,
+  "statepoint": "statepoint.600.h5"
+}

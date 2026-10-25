@@ -1,0 +1,20 @@
+{
+  "state": "completed",
+  "group_id": "v2_stage_32_ogrenci_02_beavrs_v2_pilot_scope_v1",
+  "manifest_sha256": "ed5c5c2c397e26e4d7d1ec85d854238010549b9f7d92cbd21421f21e34d16baf",
+  "physical_acceptance": "not_assessed",
+  "quality_status": "review_required",
+  "completed_experiments": [
+    "V2-STAGE_32_OGRENCI_02-0001",
+    "V2-STAGE_32_OGRENCI_02-0002",
+    "V2-STAGE_32_OGRENCI_02-0003",
+    "V2-STAGE_32_OGRENCI_02-0004",
+    "V2-STAGE_32_OGRENCI_02-0005",
+    "V2-STAGE_32_OGRENCI_02-0006",
+    "V2-STAGE_32_OGRENCI_02-0007",
+    "V2-STAGE_32_OGRENCI_02-0008"
+  ],
+  "budget_consumed_seconds": 9265.968342145,
+  "error": null,
+  "elapsed_seconds": 9265.968342145
+}

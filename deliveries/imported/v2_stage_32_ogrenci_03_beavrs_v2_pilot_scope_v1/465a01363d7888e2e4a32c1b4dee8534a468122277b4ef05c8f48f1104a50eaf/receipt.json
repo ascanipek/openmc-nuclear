@@ -1,0 +1,87 @@
+{
+  "package_id": "v2_stage_32_ogrenci_03_beavrs_v2_pilot_scope_v1",
+  "package_sha256": "2d6faffdcca47d6d32157d0b21486b611e2ffdaf51d5ab23387f1de02f9adaba",
+  "manifest_sha256": "15ec1754c9c29c7951406a52f6a29991e452f242de73dc86ec15eb6a3a25557c",
+  "owner": "ogrenci_03",
+  "stage": "stage_32",
+  "scenario_ids": [
+    "05096649e625515d590bbbae749d470897619017a5180d0d4e3f1230ff88ba76",
+    "2090c7675fa28a6b32316c8872a118d20a2d6120f7de74611b597acc7900d749",
+    "5f83681d03c4285c456595511fc2bcb29f28ba068f24a4d97307291db4edd4ed",
+    "89c2c3003613639255d99c24e117c13e1ea07a9f1e14a598d635d5708842ccd9",
+    "987e58b6e9fa205b127bca7b3908b9d0c36c226c4bea36bded89c383cd060ad5",
+    "d70a0df933ca475bef85ebf871b933dc68e6ed480eaa222a7bd248b39d472bbb",
+    "db66e4fa0c28438575b059aea60b48099c883f8abd79d6a532e13ab06dd084b8",
+    "ef5a12809c1176b22b819c379e42aeab9a3884c37fb66df914646aa004f19b79"
+  ],
+  "completed_experiments": [
+    "V2-STAGE_32_OGRENCI_03-0001",
+    "V2-STAGE_32_OGRENCI_03-0002",
+    "V2-STAGE_32_OGRENCI_03-0003",
+    "V2-STAGE_32_OGRENCI_03-0004",
+    "V2-STAGE_32_OGRENCI_03-0005",
+    "V2-STAGE_32_OGRENCI_03-0006",
+    "V2-STAGE_32_OGRENCI_03-0007",
+    "V2-STAGE_32_OGRENCI_03-0008"
+  ],
+  "runs": [
+    {
+      "scenario_id": "db66e4fa0c28438575b059aea60b48099c883f8abd79d6a532e13ab06dd084b8",
+      "run_id": "93da5ce374738488b80dd79f03d4703fe3681ec4567a3095b087419a8f79a8b7",
+      "attempt_sha256": "730e80caa6ebe682116f298ff7e7ec78604f2fe3a545e96cfe300c4d53cc468a",
+      "state": "completed"
+    },
+    {
+      "scenario_id": "db66e4fa0c28438575b059aea60b48099c883f8abd79d6a532e13ab06dd084b8",
+      "run_id": "93da5ce374738488b80dd79f03d4703fe3681ec4567a3095b087419a8f79a8b7",
+      "attempt_sha256": "cc21e0245cd8bc1e5843972d243733af046ce295702c8bf73f388228f619f721",
+      "state": "failed"
+    },
+    {
+      "scenario_id": "89c2c3003613639255d99c24e117c13e1ea07a9f1e14a598d635d5708842ccd9",
+      "run_id": "aff83a0facaaedc3f4a95454ece6521c148befa34c1ec0dd3155698ddddc1715",
+      "attempt_sha256": "59b53e24d95b3a50126b192e26b1167a497053871cb50d658bd4ce56e536b633",
+      "state": "completed"
+    },
+    {
+      "scenario_id": "d70a0df933ca475bef85ebf871b933dc68e6ed480eaa222a7bd248b39d472bbb",
+      "run_id": "f3670638b0aff82a27d1f1a80b2861a978eb3e7c4ea4f58c79abbdc863c92265",
+      "attempt_sha256": "aea00606b7ef8196185058784ba1e4b0008b0be3edff160608509b878a6b2f94",
+      "state": "completed"
+    },
+    {
+      "scenario_id": "2090c7675fa28a6b32316c8872a118d20a2d6120f7de74611b597acc7900d749",
+      "run_id": "b21eb95627b120420de4661027143d7d26a923d5793d6c305cc8b338054619a9",
+      "attempt_sha256": "a588a6e30c3512fb9a2e33f1b0f27328d2441aab38fe50791c4f039667a171ee",
+      "state": "completed"
+    },
+    {
+      "scenario_id": "ef5a12809c1176b22b819c379e42aeab9a3884c37fb66df914646aa004f19b79",
+      "run_id": "1d39d9278077ec95b76bd3778b3f6d7dea1f3d83cf18af27bd40f922df26149c",
+      "attempt_sha256": "2cc12f05f5886d1a3e90c75b5416499b93f94fb05ef41b0277d7416bcde1a491",
+      "state": "completed"
+    },
+    {
+      "scenario_id": "05096649e625515d590bbbae749d470897619017a5180d0d4e3f1230ff88ba76",
+      "run_id": "8df361e8c16e2f8c029a69a9b485bd361a164452fcd4ec5456890d9b61fc7399",
+      "attempt_sha256": "12cecad123be7bd34d71a617a8837aea98b96ea7067f07b502c5c8abc825e83f",
+      "state": "completed"
+    },
+    {
+      "scenario_id": "987e58b6e9fa205b127bca7b3908b9d0c36c226c4bea36bded89c383cd060ad5",
+      "run_id": "049338da462efc3d32f8455f6e10f779b4e2d3184dff39124349ffc46cdea1f0",
+      "attempt_sha256": "63744b606b51635d108b225ed041caf0cc755d9126b0d2f5d0ce7623318d156f",
+      "state": "completed"
+    },
+    {
+      "scenario_id": "5f83681d03c4285c456595511fc2bcb29f28ba068f24a4d97307291db4edd4ed",
+      "run_id": "00aa371edde0f51023461551a7df953f98f25e2159dad1f0599ced051b7790ff",
+      "attempt_sha256": "4bcc836f86d63d8cb9380645cd83d4203de3531771e417adb57b95346e7203cd",
+      "state": "completed"
+    }
+  ],
+  "group_state": "completed",
+  "physical_acceptance": "not_assessed_by_import",
+  "training_acceptance": "not_granted",
+  "zip_sha256": "465a01363d7888e2e4a32c1b4dee8534a468122277b4ef05c8f48f1104a50eaf"
+}

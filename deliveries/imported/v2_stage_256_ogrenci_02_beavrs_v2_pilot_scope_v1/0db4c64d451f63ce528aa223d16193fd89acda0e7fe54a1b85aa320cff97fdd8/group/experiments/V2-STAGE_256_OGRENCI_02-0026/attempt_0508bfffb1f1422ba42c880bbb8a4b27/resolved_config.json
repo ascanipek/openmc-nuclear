@@ -1,0 +1,893 @@
+{
+  "model": "beavrs_derived_3d_assembly_v2_proposed",
+  "scenario_id": "44792cd3758acf48a425ddf419fc2d0e5d1e2f5f6772e867bee816c23de8b6f8",
+  "run_id": "57c322e637e0e091cadf59bcb475bb160dc6c8009ad2c4a5aeb87283081b600c",
+  "group_id": "v2_stage_256_ogrenci_02_beavrs_v2_pilot_scope_v1",
+  "experiment_id": "V2-STAGE_256_OGRENCI_02-0026",
+  "controls": {
+    "u235_enrichment_wt_percent": 1.7894575407697462,
+    "fuel_temperature_K": 560.1824506205174,
+    "moderator_temperature_K": 561.4109495420113,
+    "coolant_pressure_MPa": 15.055941918498075,
+    "elemental_boron_ppm": 248.76473953162156,
+    "pin_pitch_cm": 1.251551224195843,
+    "pellet_radius_cm": 0.39338066562658613,
+    "insertion_percent": 76.92820685565945
+  },
+  "resolved_config": {
+    "schema_version": 1,
+    "model": "beavrs_derived_3d_assembly_v2_proposed",
+    "beavrs_source_commit": "1ccae04dc3830a5977f08ed7f5f7e1e51ded0d22",
+    "reference_state": "Cycle 1 HZP first detector map; H8-like isolated assembly",
+    "reference_sources": [
+      "docs/specifications/expdata/expdata.tex",
+      "models/openmc/beavrs/core.py"
+    ],
+    "elemental_boron_ppm": 975.0,
+    "operating_temperature_K": 561.4109495420113,
+    "materials": {
+      "helium": {
+        "source": "docs/specifications/specifications/materials/tables/helium_table.tex",
+        "density_g_cm3": 0.0015981,
+        "temperature_K": 561.4109495420113,
+        "atom_density_atom_b_cm": {
+          "He4": 0.00024044,
+          "He3": 4.8089e-10
+        }
+      },
+      "zircaloy": {
+        "source": "docs/specifications/specifications/materials/tables/zirc_table.tex",
+        "density_g_cm3": 6.55,
+        "temperature_K": 561.4109495420113,
+        "atom_density_atom_b_cm": {
+          "Sn120": 0.00015697,
+          "Fe54": 8.6698e-06,
+          "Sn124": 2.7897e-05,
+          "Sn114": 3.1799e-06,
+          "Zr94": 0.0073734,
+          "Sn115": 1.6381e-06,
+          "Cr53": 7.2076e-06,
+          "Sn117": 3.7003e-05,
+          "Cr50": 3.2962e-06,
+          "Zr92": 0.0072759,
+          "O17": 1.168e-07,
+          "Sn122": 2.2308e-05,
+          "Cr52": 6.3564e-05,
+          "Cr54": 1.7941e-06,
+          "Sn112": 4.6735e-06,
+          "Zr96": 0.0011879,
+          "O18": 6.1648e-07,
+          "O16": 0.00030744,
+          "Sn116": 7.0055e-05,
+          "Zr91": 0.0047601,
+          "Zr90": 0.021828,
+          "Sn118": 0.00011669,
+          "Fe57": 3.1431e-06,
+          "Sn119": 4.1387e-05,
+          "Fe58": 4.1829e-07,
+          "Fe56": 0.0001361
+        }
+      },
+      "water": {
+        "source": "docs/specifications/specifications/materials/tables/water_table.tex",
+        "density_g_cm3": 0.7489254493381626,
+        "temperature_K": 561.4109495420113,
+        "atom_density_atom_b_cm": {
+          "H1": 0.05004988286172783,
+          "H2": 7.796005997762059e-06,
+          "O16": 0.024969285365706115,
+          "O17": 9.485960339111974e-06,
+          "O18": 5.006810781757161e-05,
+          "B10": 2.056786594058292e-06,
+          "B11": 8.320395074716833e-06
+        }
+      },
+      "b4c": {
+        "source": "docs/specifications/specifications/materials/tables/b4c_rod_table.tex",
+        "density_g_cm3": 1.76,
+        "temperature_K": 561.4109495420113,
+        "atom_density_atom_b_cm": {
+          "C13": 0.00021252,
+          "C12": 0.018972,
+          "B10": 0.015206,
+          "B11": 0.061514
+        }
+      },
+      "fuel": {
+        "source": "docs/specifications/specifications/materials/tables/fuel16_table.tex",
+        "density_g_cm3": 10.31341,
+        "temperature_K": 560.1824506205174,
+        "atom_density_atom_b_cm": {
+          "U234": 3.3487874810814204e-06,
+          "U235": 0.0004168118446218066,
+          "U238": 0.022583584194623495,
+          "O16": 0.04589801922252587,
+          "O17": 1.74363871966351e-05,
+          "O18": 9.203404373025474e-05
+        },
+        "composition_rule": "U235 mass fraction of uranium; U234/U235 mass ratio pinned to BEAVRS 1.6% table; U238 balance; UO2 stoichiometry; fixed bulk fuel density; proposed interpolation, not source validated"
+      },
+      "ss304": {
+        "source": "docs/specifications/specifications/materials/tables/SS304_table.tex",
+        "density_g_cm3": 8.03,
+        "temperature_K": 561.4109495420113,
+        "atom_density_atom_b_cm": {
+          "Fe54": 0.003462,
+          "Si30": 3.1893e-05,
+          "Si28": 0.00095281,
+          "Ni61": 9.3917e-05,
+          "Cr53": 0.0016789,
+          "Cr50": 0.00076778,
+          "Si29": 4.8381e-05,
+          "Fe57": 0.0012551,
+          "Cr52": 0.014806,
+          "Cr54": 0.00041791,
+          "Ni62": 0.00029945,
+          "Mn55": 0.0017604,
+          "Ni64": 7.6261e-05,
+          "Ni58": 0.0056089,
+          "Fe56": 0.054345,
+          "Fe58": 0.00016703,
+          "Ni60": 0.0021605
+        }
+      },
+      "aic": {
+        "source": "docs/specifications/specifications/materials/tables/aic_rod_table.tex",
+        "density_g_cm3": 10.16,
+        "temperature_K": 561.4109495420113,
+        "atom_density_atom_b_cm": {
+          "Cd116": 0.00020443,
+          "Cd113": 0.00033275,
+          "In115": 0.0076511,
+          "In113": 0.00034219,
+          "Ag107": 0.023523,
+          "Cd111": 0.00034821,
+          "Cd106": 3.3882e-05,
+          "Cd108": 2.4166e-05,
+          "Cd112": 0.00065611,
+          "Ag109": 0.021854,
+          "Cd114": 0.00078252,
+          "Cd110": 0.00033936
+        }
+      }
+    },
+    "geometry": {
+      "n": 17,
+      "pin_pitch_cm": 1.251551224195843,
+      "assembly_pitch_cm": 21.36273081132933,
+      "fuel_bottom_cm": 36.748,
+      "fuel_top_cm": 402.508,
+      "pellet_radius_cm": 0.39338066562658613,
+      "clad_inner_radius_cm": 0.40005,
+      "clad_outer_radius_cm": 0.4572,
+      "guide_inner_radius_cm": 0.56134,
+      "guide_outer_radius_cm": 0.60198,
+      "dashpot_inner_radius_cm": 0.50419,
+      "dashpot_outer_radius_cm": 0.5461,
+      "dashpot_top_cm": 39.958,
+      "aic_radius_cm": 0.38227,
+      "b4c_radius_cm": 0.37338,
+      "rod_helium_outer_radius_cm": 0.38608,
+      "rod_ss_outer_radius_cm": 0.48387,
+      "aic_length_cm": 101.6,
+      "b4c_length_cm": 259.08,
+      "guide_positions_yx_one_based": [
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          9
+        ],
+        [
+          3,
+          12
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          14
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          6,
+          12
+        ],
+        [
+          6,
+          15
+        ],
+        [
+          9,
+          3
+        ],
+        [
+          9,
+          6
+        ],
+        [
+          9,
+          12
+        ],
+        [
+          9,
+          15
+        ],
+        [
+          12,
+          3
+        ],
+        [
+          12,
+          6
+        ],
+        [
+          12,
+          9
+        ],
+        [
+          12,
+          12
+        ],
+        [
+          12,
+          15
+        ],
+        [
+          14,
+          4
+        ],
+        [
+          14,
+          14
+        ],
+        [
+          15,
+          6
+        ],
+        [
+          15,
+          9
+        ],
+        [
+          15,
+          12
+        ]
+      ],
+      "center_instrument_position_yx_one_based": [
+        9,
+        9
+      ]
+    },
+    "boundaries": {
+      "x": "reflective",
+      "y": "reflective",
+      "z_bottom": "vacuum",
+      "z_top": "vacuum",
+      "axial_reflector": false
+    },
+    "omitted_structures": [
+      "center instrument tube: sourced radii missing; center water-filled",
+      "grid spacers",
+      "fuel end fittings and plenum",
+      "nozzles and support plate",
+      "control rod lower fitting, upper spacer and plenum"
+    ],
+    "temperature_method": "interpolation",
+    "mesh_dimension_xyz": [
+      17,
+      17,
+      20
+    ],
+    "array_order": "z,y,x",
+    "rod_insertion_definition": "absorber lower tip z = fuel_top - insertion_percent/100 * active_fuel_height; AIC then B4C above; clipped by active-height vacuum bounds",
+    "resolved_controls": {
+      "u235_enrichment_wt_percent": 1.7894575407697462,
+      "fuel_temperature_K": 560.1824506205174,
+      "moderator_temperature_K": 561.4109495420113,
+      "coolant_pressure_MPa": 15.055941918498075,
+      "elemental_boron_ppm": 248.76473953162156,
+      "pin_pitch_cm": 1.251551224195843,
+      "pellet_radius_cm": 0.39338066562658613,
+      "insertion_percent": 76.92820685565945
+    },
+    "coolant_pressure_MPa": 15.055941918498075,
+    "water_density_method": "OpenMC 0.16 IAPWS-IF97 region 1 pure water; solution mass density = pure/(1-B mass fraction)",
+    "structural_temperature_rule": "equal to moderator temperature; proposed uniform-temperature assumption",
+    "reference_u235_mass_fraction_of_uranium": 0.016100914160685695
+  },
+  "calculation": {
+    "particles_per_generation": 80000,
+    "batches": 600,
+    "inactive": 300,
+    "generations_per_batch": 1,
+    "threads": 6,
+    "seed": 71026
+  },
+  "reference_config_sha256": "834a783ce2ac14cebdc1579e87bd731f0899251e3113c28d46cec42b52c223a6",
+  "nuclear_data": {
+    "cross_sections_xml": "/home/aytunc/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/cross_sections.xml",
+    "cross_sections_xml_sha256": "ba7f6d5a371b5a8de8157356f8ef5d1c17cb0ed60accccfbc3075f46ae13f489",
+    "required_libraries": [
+      "Ag107",
+      "Ag109",
+      "B10",
+      "B11",
+      "C12",
+      "C13",
+      "Cd106",
+      "Cd108",
+      "Cd110",
+      "Cd111",
+      "Cd112",
+      "Cd113",
+      "Cd114",
+      "Cd116",
+      "Cr50",
+      "Cr52",
+      "Cr53",
+      "Cr54",
+      "Fe54",
+      "Fe56",
+      "Fe57",
+      "Fe58",
+      "H1",
+      "H2",
+      "He3",
+      "He4",
+      "In113",
+      "In115",
+      "Mn55",
+      "Ni58",
+      "Ni60",
+      "Ni61",
+      "Ni62",
+      "Ni64",
+      "O16",
+      "O17",
+      "O18",
+      "Si28",
+      "Si29",
+      "Si30",
+      "Sn112",
+      "Sn114",
+      "Sn115",
+      "Sn116",
+      "Sn117",
+      "Sn118",
+      "Sn119",
+      "Sn120",
+      "Sn122",
+      "Sn124",
+      "U234",
+      "U235",
+      "U238",
+      "Zr90",
+      "Zr91",
+      "Zr92",
+      "Zr94",
+      "Zr96",
+      "c_H_in_H2O"
+    ],
+    "temperature_grid_K": {
+      "Ag107": [
+        250.0,
+        294.0,
+        600.0,
+        900.0,
+        1200.0,
+        2500.0
+      ],
+      "Ag109": [
+        250.0,
+        294.0,
+        600.0,
+        900.0,
+        1200.0,
+        2500.0
+      ],
+      "B10": [
+        250.0,
+        294.0,
+        600.0,
+        900.0,
+        1200.0,
+        2500.0
+      ],
+      "B11": [
+        250.0,
+        294.0,
+        600.0,
+        900.0,
+        1200.0,
+        2500.0
+      ],
+      "C12": [
+        250.0,
+        294.0,
+        600.0,
+        900.0,
+        1200.0,
+        2500.0
+      ],
+      "C13": [
+        250.0,
+        294.0,
+        600.0,
+        900.0,
+        1200.0,
+        2500.0
+      ],
+      "Cd106": [
+        250.0,
+        294.0,
+        600.0,
+        900.0,
+        1200.0,
+        2500.0
+      ],
+      "Cd108": [
+        250.0,
+        294.0,
+        600.0,
+        900.0,
+        1200.0,
+        2500.0
+      ],
+      "Cd110": [
+        250.0,
+        294.0,
+        600.0,
+        900.0,
+        1200.0,
+        2500.0
+      ],
+      "Cd111": [
+        250.0,
+        294.0,
+        600.0,
+        900.0,
+        1200.0,
+        2500.0
+      ],
+      "Cd112": [
+        250.0,
+        294.0,
+        600.0,
+        900.0,
+        1200.0,
+        2500.0
+      ],
+      "Cd113": [
+        250.0,
+        294.0,
+        600.0,
+        900.0,
+        1200.0,
+        2500.0
+      ],
+      "Cd114": [
+        250.0,
+        294.0,
+        600.0,
+        900.0,
+        1200.0,
+        2500.0
+      ],
+      "Cd116": [
+        250.0,
+        294.0,
+        600.0,
+        900.0,
+        1200.0,
+        2500.0
+      ],
+      "Cr50": [
+        250.0,
+        294.0,
+        600.0,
+        900.0,
+        1200.0,
+        2500.0
+      ],
+      "Cr52": [
+        250.0,
+        294.0,
+        600.0,
+        900.0,
+        1200.0,
+        2500.0
+      ],
+      "Cr53": [
+        250.0,
+        294.0,
+        600.0,
+        900.0,
+        1200.0,
+        2500.0
+      ],
+      "Cr54": [
+        250.0,
+        294.0,
+        600.0,
+        900.0,
+        1200.0,
+        2500.0
+      ],
+      "Fe54": [
+        250.0,
+        294.0,
+        600.0,
+        900.0,
+        1200.0,
+        2500.0
+      ],
+      "Fe56": [
+        250.0,
+        294.0,
+        600.0,
+        900.0,
+        1200.0,
+        2500.0
+      ],
+      "Fe57": [
+        250.0,
+        294.0,
+        600.0,
+        900.0,
+        1200.0,
+        2500.0
+      ],
+      "Fe58": [
+        250.0,
+        294.0,
+        600.0,
+        900.0,
+        1200.0,
+        2500.0
+      ],
+      "H1": [
+        250.0,
+        294.0,
+        600.0,
+        900.0,
+        1200.0,
+        2500.0
+      ],
+      "H2": [
+        250.0,
+        294.0,
+        600.0,
+        900.0,
+        1200.0,
+        2500.0
+      ],
+      "He3": [
+        250.0,
+        294.0,
+        600.0,
+        900.0,
+        1200.0,
+        2500.0
+      ],
+      "He4": [
+        250.0,
+        294.0,
+        600.0,
+        900.0,
+        1200.0,
+        2500.0
+      ],
+      "In113": [
+        250.0,
+        294.0,
+        600.0,
+        900.0,
+        1200.0,
+        2500.0
+      ],
+      "In115": [
+        250.0,
+        294.0,
+        600.0,
+        900.0,
+        1200.0,
+        2500.0
+      ],
+      "Mn55": [
+        250.0,
+        294.0,
+        600.0,
+        900.0,
+        1200.0,
+        2500.0
+      ],
+      "Ni58": [
+        250.0,
+        294.0,
+        600.0,
+        900.0,
+        1200.0,
+        2500.0
+      ],
+      "Ni60": [
+        250.0,
+        294.0,
+        600.0,
+        900.0,
+        1200.0,
+        2500.0
+      ],
+      "Ni61": [
+        250.0,
+        294.0,
+        600.0,
+        900.0,
+        1200.0,
+        2500.0
+      ],
+      "Ni62": [
+        250.0,
+        294.0,
+        600.0,
+        900.0,
+        1200.0,
+        2500.0
+      ],
+      "Ni64": [
+        250.0,
+        294.0,
+        600.0,
+        900.0,
+        1200.0,
+        2500.0
+      ],
+      "O16": [
+        250.0,
+        294.0,
+        600.0,
+        900.0,
+        1200.0,
+        2500.0
+      ],
+      "O17": [
+        250.0,
+        294.0,
+        600.0,
+        900.0,
+        1200.0,
+        2500.0
+      ],
+      "O18": [
+        250.0,
+        294.0,
+        600.0,
+        900.0,
+        1200.0,
+        2500.0
+      ],
+      "Si28": [
+        250.0,
+        294.0,
+        600.0,
+        900.0,
+        1200.0,
+        2500.0
+      ],
+      "Si29": [
+        250.0,
+        294.0,
+        600.0,
+        900.0,
+        1200.0,
+        2500.0
+      ],
+      "Si30": [
+        250.0,
+        294.0,
+        600.0,
+        900.0,
+        1200.0,
+        2500.0
+      ],
+      "Sn112": [
+        250.0,
+        294.0,
+        600.0,
+        900.0,
+        1200.0,
+        2500.0
+      ],
+      "Sn114": [
+        250.0,
+        294.0,
+        600.0,
+        900.0,
+        1200.0,
+        2500.0
+      ],
+      "Sn115": [
+        250.0,
+        294.0,
+        600.0,
+        900.0,
+        1200.0,
+        2500.0
+      ],
+      "Sn116": [
+        250.0,
+        294.0,
+        600.0,
+        900.0,
+        1200.0,
+        2500.0
+      ],
+      "Sn117": [
+        250.0,
+        294.0,
+        600.0,
+        900.0,
+        1200.0,
+        2500.0
+      ],
+      "Sn118": [
+        250.0,
+        294.0,
+        600.0,
+        900.0,
+        1200.0,
+        2500.0
+      ],
+      "Sn119": [
+        250.0,
+        294.0,
+        600.0,
+        900.0,
+        1200.0,
+        2500.0
+      ],
+      "Sn120": [
+        250.0,
+        294.0,
+        600.0,
+        900.0,
+        1200.0,
+        2500.0
+      ],
+      "Sn122": [
+        250.0,
+        294.0,
+        600.0,
+        900.0,
+        1200.0,
+        2500.0
+      ],
+      "Sn124": [
+        250.0,
+        294.0,
+        600.0,
+        900.0,
+        1200.0,
+        2500.0
+      ],
+      "U234": [
+        250.0,
+        294.0,
+        600.0,
+        900.0,
+        1200.0,
+        2500.0
+      ],
+      "U235": [
+        250.0,
+        294.0,
+        600.0,
+        900.0,
+        1200.0,
+        2500.0
+      ],
+      "U238": [
+        250.0,
+        294.0,
+        600.0,
+        900.0,
+        1200.0,
+        2500.0
+      ],
+      "Zr90": [
+        250.0,
+        294.0,
+        600.0,
+        900.0,
+        1200.0,
+        2500.0
+      ],
+      "Zr91": [
+        250.0,
+        294.0,
+        600.0,
+        900.0,
+        1200.0,
+        2500.0
+      ],
+      "Zr92": [
+        250.0,
+        294.0,
+        600.0,
+        900.0,
+        1200.0,
+        2500.0
+      ],
+      "Zr94": [
+        250.0,
+        294.0,
+        600.0,
+        900.0,
+        1200.0,
+        2500.0
+      ],
+      "Zr96": [
+        250.0,
+        294.0,
+        600.0,
+        900.0,
+        1200.0,
+        2500.0
+      ],
+      "c_H_in_H2O": [
+        284.0,
+        294.0,
+        300.0,
+        324.0,
+        350.0,
+        374.0,
+        400.0,
+        424.0,
+        450.0,
+        474.0,
+        500.0,
+        524.0,
+        550.0,
+        574.0,
+        600.0,
+        624.0,
+        650.0,
+        800.0
+      ]
+    },
+    "requested_material_temperature_K": {
+      "helium": 561.4109495420113,
+      "zircaloy": 561.4109495420113,
+      "water": 561.4109495420113,
+      "b4c": 561.4109495420113,
+      "fuel": 560.1824506205174,
+      "ss304": 561.4109495420113,
+      "aic": 561.4109495420113
+    },
+    "temperature_method": "interpolation",
+    "thermal_scattering": [
+      "c_H_in_H2O"
+    ],
+    "coverage_result": "all required library temperatures bracket requested material temperatures",
+    "scope": "HDF5 temperature metadata and file existence; OpenMC transport still required"
+  },
+  "package_ledger_sha256": "1f33f23cd3e01247c032f34fafc1d700b7cba5f9ab58457a71eb305df4296025",
+  "temperature_method": "interpolation",
+  "openmc_version": "0.16.0",
+  "python_executable": "/home/aytunc/miniconda3/envs/openmc-proje/bin/python"
+}

@@ -1,0 +1,17 @@
+{
+  "package_id": "v2_stage_32_ogrenci_02_beavrs_v2_pilot_scope_v1",
+  "model": "beavrs_derived_3d_assembly_v2_proposed",
+  "state": "production_ready",
+  "project_root": ".",
+  "package_path": "student_packages/v2_students_portable_v1/stage_32/ogrenci_02/v2_stage_32_ogrenci_02_beavrs_v2_pilot_scope_v1",
+  "space_config": "configs/v2_parameter_space_pilot_scope_v1.json",
+  "profile_config": "configs/v2_calculation_profile_pilot_80k_4h_v1.json",
+  "notebook_hash_schema": "notebook-inputs-v1",
+  "space_id": "beavrs_v2_pilot_scope_v1",
+  "profile_id": "beavrs_v2_pilot_80k_4h_v1",
+  "reference_config_sha256": "834a783ce2ac14cebdc1579e87bd731f0899251e3113c28d46cec42b52c223a6",
+  "manifest_sha256": "ed5c5c2c397e26e4d7d1ec85d854238010549b9f7d92cbd21421f21e34d16baf",
+  "hashes_sha256": "17b3546b2bc2b4b5991ebc469c23935975ee18f59de07862e050a2e0b53d3241",
+  "owner": "ogrenci_02",
+  "stage": "stage_32"
+}

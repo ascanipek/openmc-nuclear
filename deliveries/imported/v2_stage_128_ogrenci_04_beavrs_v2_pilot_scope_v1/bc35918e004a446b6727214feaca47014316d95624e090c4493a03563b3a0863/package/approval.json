@@ -1,0 +1,10 @@
+{
+  "status": "approved",
+  "authorization": "stage_128_ogrenci02_03_04_controlled_research_only",
+  "model": "beavrs_derived_3d_assembly_v2_proposed",
+  "group_id": "v2_stage_128_ogrenci_04_beavrs_v2_pilot_scope_v1",
+  "meaning": "Technical approval for this existing package and 64800-second group budget only; no physical validation, convergence, or training-data acceptance",
+  "package_sha256": "427d01ae0e80d9320ed14a19d2796b685bf8ebda07b39f9a93617ffffe59917b",
+  "hashes_sha256": "85f0f98c3cf5dfc39c15f6c6d8216216139ea5001f012f73e509142e544466c8",
+  "decision_source": "Danisman explicit user decision, 2026-10-20"
+}

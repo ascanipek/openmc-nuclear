@@ -1,0 +1,17 @@
+{
+  "manifest.json": "77891f42ab6924f020ba2b26fa3a0a44fb00222d47b149a1a85a11ff74be00a8",
+  "01_calistir.ipynb": "12f9b1c34f8ecff7a17d69bc2b73186bd9309a0e354987edf3e1923d655dba46",
+  "02_sonuclari_incele.ipynb": "0d2c15f4b0f14851ec11946bf255d194a14a9fc7bc7c7e35a936a09c34b5406e",
+  "README.md": "e7fcb203d4f351a40c0700bb5930236d962d62be33b5f539850b8d176ff28755",
+  "src/reactor_pipeline/beavrs3d.py": "1a2fec4b89e7d6d023a8441cbe2479e4feab1041b2c3d18abe02b9b6834a521c",
+  "src/reactor_pipeline/parameter_space.py": "c6387f53d318637f1e1c6ae34aacb8dbaaf649113b41ce6ba0d526f0df4b6270",
+  "src/reactor_pipeline/v2_scenarios.py": "02a8304fa97c58fbeb173f38f9e0d90e46ef1b2081212749d448554dedc91a5f",
+  "src/reactor_pipeline/notebook_content.py": "d883d6b455a07682880156654dec121a6d2c5607b41e68d35c8a0058d076bfbe",
+  "src/reactor_pipeline/v2_runner.py": "3ae1fddb296e6a35b1e7456d76f7d709b9b0f6f841408d1df2040947a0986354",
+  "src/reactor_pipeline/v2_integration.py": "81ac45e595c7ae6de9e1ffeeb8a3b3c3ef92cc09b77407699ebef44009c9b09d",
+  "src/reactor_pipeline/v2_dataset.py": "953b3e4d0fa7cdec01bedf8b34920770fd564ec51ac37f71e67b999e789e0da2",
+  "src/reactor_pipeline/dataset.py": "302c4c5e3fbe1d6f7738f3400b282354b814b7afa7223968d1598be77b7cc3fd",
+  "scripts/v2_production.py": "2b62f4893cfdf1411731c2514cd31c080e6e392e0868306a05c5a92fd34c9b8a",
+  "src/reactor_pipeline/experiments.py": "f473f4a4150185ac8fde3e2042580befdb7a1439a9919b2644004a98cfc0445f",
+  "configs/beavrs_derived_3d_reference.json": "834a783ce2ac14cebdc1579e87bd731f0899251e3113c28d46cec42b52c223a6"
+}

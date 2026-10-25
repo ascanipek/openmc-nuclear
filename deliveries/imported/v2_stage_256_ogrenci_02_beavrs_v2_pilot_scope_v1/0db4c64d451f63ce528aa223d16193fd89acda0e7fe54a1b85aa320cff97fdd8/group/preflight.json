@@ -1,0 +1,487 @@
+{
+  "group_id": "v2_stage_256_ogrenci_02_beavrs_v2_pilot_scope_v1",
+  "cases": [
+    {
+      "experiment_id": "V2-STAGE_256_OGRENCI_02-0001",
+      "scenario_id": "0f7ac421e834150075810f1fb68fa24e1d6adc855e8758f0926de8f8d4867d4b",
+      "geometry_checks": 10,
+      "water_density_g_cm3": 0.7505224069652296,
+      "nuclear_data": "all required library temperatures bracket requested material temperatures",
+      "calculation": {
+        "particles_per_generation": 80000,
+        "batches": 600,
+        "inactive": 300,
+        "generations_per_batch": 1,
+        "threads": 6,
+        "seed": 71001
+      }
+    },
+    {
+      "experiment_id": "V2-STAGE_256_OGRENCI_02-0002",
+      "scenario_id": "a3357d68b194066eb5febdac7fe51f0238525ca8d22b56dcdd575368d3d34a15",
+      "geometry_checks": 10,
+      "water_density_g_cm3": 0.7425642026918144,
+      "nuclear_data": "all required library temperatures bracket requested material temperatures",
+      "calculation": {
+        "particles_per_generation": 80000,
+        "batches": 600,
+        "inactive": 300,
+        "generations_per_batch": 1,
+        "threads": 6,
+        "seed": 71002
+      }
+    },
+    {
+      "experiment_id": "V2-STAGE_256_OGRENCI_02-0003",
+      "scenario_id": "64daeda1412af4cfe0292bc06e40c2d27e619babd1e254adef50959e26932a2d",
+      "geometry_checks": 10,
+      "water_density_g_cm3": 0.7350983212130242,
+      "nuclear_data": "all required library temperatures bracket requested material temperatures",
+      "calculation": {
+        "particles_per_generation": 80000,
+        "batches": 600,
+        "inactive": 300,
+        "generations_per_batch": 1,
+        "threads": 6,
+        "seed": 71003
+      }
+    },
+    {
+      "experiment_id": "V2-STAGE_256_OGRENCI_02-0004",
+      "scenario_id": "56f627e44491c76916ddbc838192727255e9365e80c45fa9dec5d9b18639e40a",
+      "geometry_checks": 10,
+      "water_density_g_cm3": 0.7257633444844419,
+      "nuclear_data": "all required library temperatures bracket requested material temperatures",
+      "calculation": {
+        "particles_per_generation": 80000,
+        "batches": 600,
+        "inactive": 300,
+        "generations_per_batch": 1,
+        "threads": 6,
+        "seed": 71004
+      }
+    },
+    {
+      "experiment_id": "V2-STAGE_256_OGRENCI_02-0005",
+      "scenario_id": "7b7dd9b77f847c4f1eb37a46f692a41951151309d214374fc76fc7d5a8f352f6",
+      "geometry_checks": 10,
+      "water_density_g_cm3": 0.7552840696924326,
+      "nuclear_data": "all required library temperatures bracket requested material temperatures",
+      "calculation": {
+        "particles_per_generation": 80000,
+        "batches": 600,
+        "inactive": 300,
+        "generations_per_batch": 1,
+        "threads": 6,
+        "seed": 71005
+      }
+    },
+    {
+      "experiment_id": "V2-STAGE_256_OGRENCI_02-0006",
+      "scenario_id": "069f92b8d2343c832921d6f3bdea35a0e662d3c7160477a75814f9e321a11108",
+      "geometry_checks": 10,
+      "water_density_g_cm3": 0.7482079024441759,
+      "nuclear_data": "all required library temperatures bracket requested material temperatures",
+      "calculation": {
+        "particles_per_generation": 80000,
+        "batches": 600,
+        "inactive": 300,
+        "generations_per_batch": 1,
+        "threads": 6,
+        "seed": 71006
+      }
+    },
+    {
+      "experiment_id": "V2-STAGE_256_OGRENCI_02-0007",
+      "scenario_id": "052007a465b3e2ac50c98efc6e8cc0193f61ca51bd656e66e34cb5f87d0f9125",
+      "geometry_checks": 10,
+      "water_density_g_cm3": 0.7409109669228064,
+      "nuclear_data": "all required library temperatures bracket requested material temperatures",
+      "calculation": {
+        "particles_per_generation": 80000,
+        "batches": 600,
+        "inactive": 300,
+        "generations_per_batch": 1,
+        "threads": 6,
+        "seed": 71007
+      }
+    },
+    {
+      "experiment_id": "V2-STAGE_256_OGRENCI_02-0008",
+      "scenario_id": "13d9b28b6311801a771efdbcdb3dfb20f0108184ec60001b6c7ceafb0db3acfb",
+      "geometry_checks": 10,
+      "water_density_g_cm3": 0.7333612072628525,
+      "nuclear_data": "all required library temperatures bracket requested material temperatures",
+      "calculation": {
+        "particles_per_generation": 80000,
+        "batches": 600,
+        "inactive": 300,
+        "generations_per_batch": 1,
+        "threads": 6,
+        "seed": 71008
+      }
+    },
+    {
+      "experiment_id": "V2-STAGE_256_OGRENCI_02-0009",
+      "scenario_id": "ad07568520fda8b0dc849b8899a3dd34e33f9fda338a77e0e2685b6bbe6c1e2c",
+      "geometry_checks": 10,
+      "water_density_g_cm3": 0.7238737915546569,
+      "nuclear_data": "all required library temperatures bracket requested material temperatures",
+      "calculation": {
+        "particles_per_generation": 80000,
+        "batches": 600,
+        "inactive": 300,
+        "generations_per_batch": 1,
+        "threads": 6,
+        "seed": 71009
+      }
+    },
+    {
+      "experiment_id": "V2-STAGE_256_OGRENCI_02-0010",
+      "scenario_id": "e349366d1e67caeaf74d4241c4384e4a8cd87742136a04fc4179ce98a2c6e26e",
+      "geometry_checks": 10,
+      "water_density_g_cm3": 0.7552705598915136,
+      "nuclear_data": "all required library temperatures bracket requested material temperatures",
+      "calculation": {
+        "particles_per_generation": 80000,
+        "batches": 600,
+        "inactive": 300,
+        "generations_per_batch": 1,
+        "threads": 6,
+        "seed": 71010
+      }
+    },
+    {
+      "experiment_id": "V2-STAGE_256_OGRENCI_02-0011",
+      "scenario_id": "2743e9a360ad9d4929ab72afb088e6ceef3ef67cd07eb3dcadccd9828216b034",
+      "geometry_checks": 10,
+      "water_density_g_cm3": 0.7480118082998375,
+      "nuclear_data": "all required library temperatures bracket requested material temperatures",
+      "calculation": {
+        "particles_per_generation": 80000,
+        "batches": 600,
+        "inactive": 300,
+        "generations_per_batch": 1,
+        "threads": 6,
+        "seed": 71011
+      }
+    },
+    {
+      "experiment_id": "V2-STAGE_256_OGRENCI_02-0012",
+      "scenario_id": "bb8cdb650217eb68f44bacb0083d48a93dd65bf47c0903eb8042f3f089b4e6ef",
+      "geometry_checks": 10,
+      "water_density_g_cm3": 0.7389821113913541,
+      "nuclear_data": "all required library temperatures bracket requested material temperatures",
+      "calculation": {
+        "particles_per_generation": 80000,
+        "batches": 600,
+        "inactive": 300,
+        "generations_per_batch": 1,
+        "threads": 6,
+        "seed": 71012
+      }
+    },
+    {
+      "experiment_id": "V2-STAGE_256_OGRENCI_02-0013",
+      "scenario_id": "eb3f384a7ac0890c06524cbe9479eb0c856e44b3d91cd1471c39739e6d5f5f63",
+      "geometry_checks": 10,
+      "water_density_g_cm3": 0.7306175540969229,
+      "nuclear_data": "all required library temperatures bracket requested material temperatures",
+      "calculation": {
+        "particles_per_generation": 80000,
+        "batches": 600,
+        "inactive": 300,
+        "generations_per_batch": 1,
+        "threads": 6,
+        "seed": 71013
+      }
+    },
+    {
+      "experiment_id": "V2-STAGE_256_OGRENCI_02-0014",
+      "scenario_id": "90c02cc33c24a067723bccba2f94d93587b9314eb5641c855fbeeda212b994dc",
+      "geometry_checks": 10,
+      "water_density_g_cm3": 0.7289952156445102,
+      "nuclear_data": "all required library temperatures bracket requested material temperatures",
+      "calculation": {
+        "particles_per_generation": 80000,
+        "batches": 600,
+        "inactive": 300,
+        "generations_per_batch": 1,
+        "threads": 6,
+        "seed": 71014
+      }
+    },
+    {
+      "experiment_id": "V2-STAGE_256_OGRENCI_02-0015",
+      "scenario_id": "ad5897b476a75f2eef1c2b602e5f1865f14f151a19c114b53c83ea4dbfed34ee",
+      "geometry_checks": 10,
+      "water_density_g_cm3": 0.7210115435234039,
+      "nuclear_data": "all required library temperatures bracket requested material temperatures",
+      "calculation": {
+        "particles_per_generation": 80000,
+        "batches": 600,
+        "inactive": 300,
+        "generations_per_batch": 1,
+        "threads": 6,
+        "seed": 71015
+      }
+    },
+    {
+      "experiment_id": "V2-STAGE_256_OGRENCI_02-0016",
+      "scenario_id": "cb51b8dfc9bb6679f6562b6c27af942b57a53fa64de7295afd598d46eb4044a6",
+      "geometry_checks": 10,
+      "water_density_g_cm3": 0.7527827623366049,
+      "nuclear_data": "all required library temperatures bracket requested material temperatures",
+      "calculation": {
+        "particles_per_generation": 80000,
+        "batches": 600,
+        "inactive": 300,
+        "generations_per_batch": 1,
+        "threads": 6,
+        "seed": 71016
+      }
+    },
+    {
+      "experiment_id": "V2-STAGE_256_OGRENCI_02-0017",
+      "scenario_id": "d4b668eb435d5c4999d85160e776d81f4d74450cf4aadc4b31fd5ede5382e094",
+      "geometry_checks": 10,
+      "water_density_g_cm3": 0.74564310192414,
+      "nuclear_data": "all required library temperatures bracket requested material temperatures",
+      "calculation": {
+        "particles_per_generation": 80000,
+        "batches": 600,
+        "inactive": 300,
+        "generations_per_batch": 1,
+        "threads": 6,
+        "seed": 71017
+      }
+    },
+    {
+      "experiment_id": "V2-STAGE_256_OGRENCI_02-0018",
+      "scenario_id": "12a2e8ebb440109d7ef4aff60ebbb45cdc43aae1cbacbb7d3fb43226c98e9c22",
+      "geometry_checks": 10,
+      "water_density_g_cm3": 0.7383134947832557,
+      "nuclear_data": "all required library temperatures bracket requested material temperatures",
+      "calculation": {
+        "particles_per_generation": 80000,
+        "batches": 600,
+        "inactive": 300,
+        "generations_per_batch": 1,
+        "threads": 6,
+        "seed": 71018
+      }
+    },
+    {
+      "experiment_id": "V2-STAGE_256_OGRENCI_02-0019",
+      "scenario_id": "3090f8d84875cbdb7d2e5923abe2cc69e2e5b07f6b9908a46fd2e41a7152ba10",
+      "geometry_checks": 10,
+      "water_density_g_cm3": 0.7271774538967432,
+      "nuclear_data": "all required library temperatures bracket requested material temperatures",
+      "calculation": {
+        "particles_per_generation": 80000,
+        "batches": 600,
+        "inactive": 300,
+        "generations_per_batch": 1,
+        "threads": 6,
+        "seed": 71019
+      }
+    },
+    {
+      "experiment_id": "V2-STAGE_256_OGRENCI_02-0020",
+      "scenario_id": "980183b60fab68ae5afab015d64752094809091a2f724a441ee6bba6fa5f9b6f",
+      "geometry_checks": 10,
+      "water_density_g_cm3": 0.758227926257239,
+      "nuclear_data": "all required library temperatures bracket requested material temperatures",
+      "calculation": {
+        "particles_per_generation": 80000,
+        "batches": 600,
+        "inactive": 300,
+        "generations_per_batch": 1,
+        "threads": 6,
+        "seed": 71020
+      }
+    },
+    {
+      "experiment_id": "V2-STAGE_256_OGRENCI_02-0021",
+      "scenario_id": "5ca20b55896a3f87ce4591e1c19c9466e7444fae0eaaeff30988fc7dfdd01144",
+      "geometry_checks": 10,
+      "water_density_g_cm3": 0.7512338941665966,
+      "nuclear_data": "all required library temperatures bracket requested material temperatures",
+      "calculation": {
+        "particles_per_generation": 80000,
+        "batches": 600,
+        "inactive": 300,
+        "generations_per_batch": 1,
+        "threads": 6,
+        "seed": 71021
+      }
+    },
+    {
+      "experiment_id": "V2-STAGE_256_OGRENCI_02-0022",
+      "scenario_id": "21267c675b721f5e50273368bc2e932a4ac98b3c217b7654963ae055bf0b99f4",
+      "geometry_checks": 10,
+      "water_density_g_cm3": 0.7440203745945261,
+      "nuclear_data": "all required library temperatures bracket requested material temperatures",
+      "calculation": {
+        "particles_per_generation": 80000,
+        "batches": 600,
+        "inactive": 300,
+        "generations_per_batch": 1,
+        "threads": 6,
+        "seed": 71022
+      }
+    },
+    {
+      "experiment_id": "V2-STAGE_256_OGRENCI_02-0023",
+      "scenario_id": "883200b0fde7aab6d50e957d699dfa1b2c685de27143455159b229b1c3e99f34",
+      "geometry_checks": 10,
+      "water_density_g_cm3": 0.7365684950721533,
+      "nuclear_data": "all required library temperatures bracket requested material temperatures",
+      "calculation": {
+        "particles_per_generation": 80000,
+        "batches": 600,
+        "inactive": 300,
+        "generations_per_batch": 1,
+        "threads": 6,
+        "seed": 71023
+      }
+    },
+    {
+      "experiment_id": "V2-STAGE_256_OGRENCI_02-0024",
+      "scenario_id": "564eda6e790196c89c022e5fb4ddd9229bc98fa9996573e51af935f69e6e2e10",
+      "geometry_checks": 10,
+      "water_density_g_cm3": 0.7265039487756062,
+      "nuclear_data": "all required library temperatures bracket requested material temperatures",
+      "calculation": {
+        "particles_per_generation": 80000,
+        "batches": 600,
+        "inactive": 300,
+        "generations_per_batch": 1,
+        "threads": 6,
+        "seed": 71024
+      }
+    },
+    {
+      "experiment_id": "V2-STAGE_256_OGRENCI_02-0025",
+      "scenario_id": "f201488c4a5424e1f5ad7213ac9c12ff75b49e9323e69ecf3a0bee6828e1dc49",
+      "geometry_checks": 10,
+      "water_density_g_cm3": 0.7574962599428711,
+      "nuclear_data": "all required library temperatures bracket requested material temperatures",
+      "calculation": {
+        "particles_per_generation": 80000,
+        "batches": 600,
+        "inactive": 300,
+        "generations_per_batch": 1,
+        "threads": 6,
+        "seed": 71025
+      }
+    },
+    {
+      "experiment_id": "V2-STAGE_256_OGRENCI_02-0026",
+      "scenario_id": "44792cd3758acf48a425ddf419fc2d0e5d1e2f5f6772e867bee816c23de8b6f8",
+      "geometry_checks": 10,
+      "water_density_g_cm3": 0.7489254493381626,
+      "nuclear_data": "all required library temperatures bracket requested material temperatures",
+      "calculation": {
+        "particles_per_generation": 80000,
+        "batches": 600,
+        "inactive": 300,
+        "generations_per_batch": 1,
+        "threads": 6,
+        "seed": 71026
+      }
+    },
+    {
+      "experiment_id": "V2-STAGE_256_OGRENCI_02-0027",
+      "scenario_id": "e3fada14ec95c430c739ce5a6bc55d10eb50ba1c105527f2c6e07cfce08e8ed2",
+      "geometry_checks": 10,
+      "water_density_g_cm3": 0.7416429421425519,
+      "nuclear_data": "all required library temperatures bracket requested material temperatures",
+      "calculation": {
+        "particles_per_generation": 80000,
+        "batches": 600,
+        "inactive": 300,
+        "generations_per_batch": 1,
+        "threads": 6,
+        "seed": 71027
+      }
+    },
+    {
+      "experiment_id": "V2-STAGE_256_OGRENCI_02-0028",
+      "scenario_id": "18564a17ee89d1d4d1a51a608374b4055a2b26343e257f17b67d2c571539702e",
+      "geometry_checks": 10,
+      "water_density_g_cm3": 0.7341149996963298,
+      "nuclear_data": "all required library temperatures bracket requested material temperatures",
+      "calculation": {
+        "particles_per_generation": 80000,
+        "batches": 600,
+        "inactive": 300,
+        "generations_per_batch": 1,
+        "threads": 6,
+        "seed": 71028
+      }
+    },
+    {
+      "experiment_id": "V2-STAGE_256_OGRENCI_02-0029",
+      "scenario_id": "9362100cef619904e4f159a778508f3d58e0c7a36fd6bb05a20ca0abc243021a",
+      "geometry_checks": 10,
+      "water_density_g_cm3": 0.7246619984139477,
+      "nuclear_data": "all required library temperatures bracket requested material temperatures",
+      "calculation": {
+        "particles_per_generation": 80000,
+        "batches": 600,
+        "inactive": 300,
+        "generations_per_batch": 1,
+        "threads": 6,
+        "seed": 71029
+      }
+    },
+    {
+      "experiment_id": "V2-STAGE_256_OGRENCI_02-0030",
+      "scenario_id": "4af1fe9866645ecea018e9410aa43f13cd1d4426213099e742bb48fcd525dc6d",
+      "geometry_checks": 10,
+      "water_density_g_cm3": 0.7559674990830324,
+      "nuclear_data": "all required library temperatures bracket requested material temperatures",
+      "calculation": {
+        "particles_per_generation": 80000,
+        "batches": 600,
+        "inactive": 300,
+        "generations_per_batch": 1,
+        "threads": 6,
+        "seed": 71030
+      }
+    },
+    {
+      "experiment_id": "V2-STAGE_256_OGRENCI_02-0031",
+      "scenario_id": "736e9db204f25235b7bff1678c98becd4ca0a2d4dbbe14dcf670d7845962c8ae",
+      "geometry_checks": 10,
+      "water_density_g_cm3": 0.7489211208144751,
+      "nuclear_data": "all required library temperatures bracket requested material temperatures",
+      "calculation": {
+        "particles_per_generation": 80000,
+        "batches": 600,
+        "inactive": 300,
+        "generations_per_batch": 1,
+        "threads": 6,
+        "seed": 71031
+      }
+    },
+    {
+      "experiment_id": "V2-STAGE_256_OGRENCI_02-0032",
+      "scenario_id": "8a3fa5cfc98e217386c821070e886c3d9d1b730a6ab052cec53f07e1f5ae45a1",
+      "geometry_checks": 10,
+      "water_density_g_cm3": 0.7416862629342456,
+      "nuclear_data": "all required library temperatures bracket requested material temperatures",
+      "calculation": {
+        "particles_per_generation": 80000,
+        "batches": 600,
+        "inactive": 300,
+        "generations_per_batch": 1,
+        "threads": 6,
+        "seed": 71032
+      }
+    }
+  ],
+  "production_gate": "production_ready",
+  "transport_started": false
+}

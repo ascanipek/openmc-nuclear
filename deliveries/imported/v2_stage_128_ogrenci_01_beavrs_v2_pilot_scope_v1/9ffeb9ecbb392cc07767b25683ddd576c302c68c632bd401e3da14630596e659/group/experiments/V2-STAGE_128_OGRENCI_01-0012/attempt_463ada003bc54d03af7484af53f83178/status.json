@@ -1,0 +1,11 @@
+{
+  "state": "completed",
+  "scenario_id": "04dd796fa2bc0752d67b3d26b1ee8f45608e7da188d0272de32a4ecee84516ff",
+  "run_id": "41c5b4ad15396a9e2c0ab92bad8c4bcf6d8eb8b72d10aca5cd370a6212203613",
+  "experiment_id": "V2-STAGE_128_OGRENCI_01-0012",
+  "physical_acceptance": "not_assessed",
+  "quality_status": "review_required",
+  "error": null,
+  "elapsed_seconds": 1080.2202013789938,
+  "statepoint": "statepoint.600.h5"
+}

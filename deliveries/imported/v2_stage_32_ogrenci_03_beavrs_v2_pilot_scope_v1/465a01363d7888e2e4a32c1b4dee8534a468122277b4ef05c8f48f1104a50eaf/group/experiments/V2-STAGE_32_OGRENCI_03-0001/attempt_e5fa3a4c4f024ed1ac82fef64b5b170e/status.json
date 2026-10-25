@@ -1,0 +1,10 @@
+{
+  "state": "failed",
+  "scenario_id": "db66e4fa0c28438575b059aea60b48099c883f8abd79d6a532e13ab06dd084b8",
+  "run_id": "93da5ce374738488b80dd79f03d4703fe3681ec4567a3095b087419a8f79a8b7",
+  "experiment_id": "V2-STAGE_32_OGRENCI_03-0001",
+  "physical_acceptance": "not_assessed",
+  "quality_status": "review_required",
+  "error": "FileNotFoundError: [Errno 2] No such file or directory: 'openmc'",
+  "elapsed_seconds": 0.09455455399984203
+}

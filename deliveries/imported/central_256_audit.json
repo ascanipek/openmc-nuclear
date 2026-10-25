@@ -1,0 +1,15 @@
+{
+  "schema": "central_256_audit_v1",
+  "expected_physical_scenarios": 256,
+  "verified_completed_scenarios": 256,
+  "missing_scenarios": 0,
+  "failed_attempts_retained": 2,
+  "scenarios_with_prior_failure_and_success": 2,
+  "legacy_status_table_false_negatives": 1,
+  "statepoints_present_locally": 120,
+  "student_source_statepoints_not_in_lightweight_delivery": 136,
+  "receipt_count": 12,
+  "physical_acceptance": "not_assessed",
+  "statistical_acceptance": "review_required",
+  "training_acceptance": "not_granted"
+}

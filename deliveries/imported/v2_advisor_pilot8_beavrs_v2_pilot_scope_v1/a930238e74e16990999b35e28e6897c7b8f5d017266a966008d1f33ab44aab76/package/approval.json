@@ -1,0 +1,10 @@
+{
+  "status": "approved",
+  "authorization": "advisor_pilot_first_8_technical_only",
+  "model": "beavrs_derived_3d_assembly_v2_proposed",
+  "group_id": "v2_advisor_pilot8_beavrs_v2_pilot_scope_v1",
+  "meaning": "Advisor technical approval for first eight controlled pilot research runs only; no physical validation, source convergence, or training-data acceptance; remaining 24 not authorized",
+  "package_sha256": "a8a16e45dafb3c42781d38d53010129ee931948095e0bcb8300fae96fe23df34",
+  "hashes_sha256": "25e60713643c5b3dad1bef76c1c10b871dfcbac3cf3646f3b97cc68b985fa532",
+  "decision_source": "User authorization in this task, 2026-10-18"
+}

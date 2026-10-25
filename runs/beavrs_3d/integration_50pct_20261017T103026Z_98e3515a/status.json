@@ -1,0 +1,17 @@
+{
+  "state": "completed",
+  "purpose": "single_50pct_integration_and_initial_timing_not_convergence",
+  "physical_validation": "not_assessed",
+  "seed": 41001,
+  "calculation": {
+    "batches": 100,
+    "inactive": 50,
+    "particles_per_generation": 10000,
+    "generations_per_batch": 1,
+    "threads": 6
+  },
+  "elapsed_seconds": 34.430837549998614,
+  "k_mean": 0.9821662968334506,
+  "k_mc_standard_error": 0.0011590601704213554,
+  "statepoint": "statepoint.100.h5"
+}

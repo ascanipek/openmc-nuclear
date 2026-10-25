@@ -1,0 +1,109 @@
+{
+  "experiment_id": "D2-B1",
+  "run_id": "15915d3a0237ebb6",
+  "scenario_id": "79d66821fd25d3af",
+  "completion_state": "completed",
+  "physical_acceptance": "not_assessed",
+  "quality_status": "review_required",
+  "quality_message": "inceleme gerekli",
+  "statistical_convergence": "inceleme gerekli",
+  "meaning": "completed means output integrity, not physics validation",
+  "insertion_percent": 50,
+  "conditions": {
+    "elemental_boron": {
+      "value": 975.0,
+      "unit": "ppm by mass"
+    },
+    "water_density": {
+      "value": 0.740582068,
+      "unit": "g/cm3"
+    },
+    "fuel_density": {
+      "value": 10.31341,
+      "unit": "g/cm3"
+    },
+    "temperature": {
+      "value": 566.483,
+      "unit": "K"
+    },
+    "calculation": {
+      "batches": 600,
+      "inactive": 300,
+      "particles_per_generation": 20000,
+      "generations_per_batch": 1,
+      "threads": 6,
+      "seed": 31001
+    }
+  },
+  "duration": {
+    "value": 268.09833153900036,
+    "unit": "s"
+  },
+  "k_effective": {
+    "mean": 0.9821572311156582,
+    "mc_standard_error": 0.0003534712022756191,
+    "unit": "dimensionless"
+  },
+  "global_leakage_fraction": {
+    "mean": 0.006914666666666663,
+    "mc_standard_error": 4.6047267008582306e-05,
+    "unit": "fraction of source neutrons"
+  },
+  "local_fission_relative_mc_error": {
+    "median": 0.01569287891853694,
+    "p95": 0.16058205956642965,
+    "maximum": 0.19899912584683194
+  },
+  "local_error_reporting_mask": {
+    "fuel_volume_fraction_gt": 0.2,
+    "raw_fission_mean_ge_5_times_standard_error": true,
+    "raw_fission_mean_ge_fraction_of_maximum": 1e-06,
+    "included_voxels": 3395,
+    "fuel_intersecting_voxels": 5280,
+    "excluded_voxels": 2385,
+    "meaning": "descriptive reliability filter; not an acceptance threshold"
+  },
+  "field_units": {
+    "fission": "reactions/source particle",
+    "kappa_fission": "eV/source particle; fission energy generation approximation, not total local heat deposition",
+    "flux": "particle-cm/source particle",
+    "std_dev": "Monte Carlo standard error of raw mean"
+  },
+  "array_order": [
+    "z",
+    "y",
+    "x"
+  ],
+  "mesh_shape_zyx": [
+    20,
+    17,
+    17
+  ],
+  "z_edges_cm": [
+    36.748,
+    55.036,
+    73.324,
+    91.612,
+    109.9,
+    128.188,
+    146.476,
+    164.76399999999998,
+    183.052,
+    201.34,
+    219.628,
+    237.916,
+    256.204,
+    274.492,
+    292.78,
+    311.068,
+    329.356,
+    347.644,
+    365.932,
+    384.21999999999997,
+    402.508
+  ],
+  "statepoint": "statepoint.600.h5",
+  "fields": "fields.npz",
+  "openmc_log": "openmc.log",
+  "error": null
+}

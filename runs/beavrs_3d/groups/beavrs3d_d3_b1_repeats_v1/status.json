@@ -1,0 +1,22 @@
+{
+  "state": "completed",
+  "group_id": "beavrs3d_d3_b1_repeats_v1",
+  "manifest_sha256": "96bae7973cb7382528193ca3b9980bd5f66783713692e25f16bca7e5d915f27f",
+  "created_at": "2026-10-17T22:12:47.318629+00:00",
+  "completed_experiments": [
+    "D3-S32001",
+    "D3-S33001"
+  ],
+  "group_runtime_budget_seconds": 14400,
+  "budget_consumed_seconds": 563.268505,
+  "active_session_started_at": null,
+  "physical_acceptance": "not_assessed",
+  "quality_status": "review_required",
+  "worker_pid": 15913,
+  "started_at": "2026-10-17T22:12:48.078002+00:00",
+  "error": null,
+  "current_experiment": null,
+  "next_experiment_estimated_seconds": 619.755075899975,
+  "completed_at": "2026-10-17T22:22:11.339294+00:00",
+  "budget_reason": null
+}

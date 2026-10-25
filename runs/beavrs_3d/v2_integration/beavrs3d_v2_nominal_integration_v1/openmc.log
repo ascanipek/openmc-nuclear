@@ -1,0 +1,347 @@
+                                %%%%%%%%%%%%%%%
+                           %%%%%%%%%%%%%%%%%%%%%%%%
+                        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                                    %%%%%%%%%%%%%%%%%%%%%%%%
+                                     %%%%%%%%%%%%%%%%%%%%%%%%
+                 ###############      %%%%%%%%%%%%%%%%%%%%%%%%
+                ##################     %%%%%%%%%%%%%%%%%%%%%%%
+                ###################     %%%%%%%%%%%%%%%%%%%%%%%
+                ####################     %%%%%%%%%%%%%%%%%%%%%%
+                #####################     %%%%%%%%%%%%%%%%%%%%%
+                ######################     %%%%%%%%%%%%%%%%%%%%
+                #######################     %%%%%%%%%%%%%%%%%%
+                 #######################     %%%%%%%%%%%%%%%%%
+                 ######################     %%%%%%%%%%%%%%%%%
+                  ####################     %%%%%%%%%%%%%%%%%
+                    #################     %%%%%%%%%%%%%%%%%
+                     ###############     %%%%%%%%%%%%%%%%
+                       ############     %%%%%%%%%%%%%%%
+                          ########     %%%%%%%%%%%%%%
+                                      %%%%%%%%%%%
+
+                 | The OpenMC Monte Carlo Code
+       Copyright | 2011-2026 MIT, UChicago Argonne LLC, and contributors
+         License | https://docs.openmc.org/en/latest/license.html
+         Version | 0.16.0
+     Commit Hash | 617d35a5063c57796b43428bc401e627d2011046
+       Date/Time | 2026-10-18 13:39:17
+  OpenMP Threads | 6
+
+ Reading model XML file 'model.xml' ...
+ WARNING: Other XML file input(s) are present. These files may be ignored in
+          favor of the model.xml file.
+ Reading cross sections XML file...
+ Reading He4 from
+ /home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/neutron/He4.h5
+ Reading He3 from
+ /home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/neutron/He3.h5
+ Reading Sn120 from
+ /home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/neutron/Sn120.h
+ 5
+ Reading Fe54 from
+ /home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/neutron/Fe54.h5
+  Reading Sn124 from
+ /home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/neutron/Sn124.h
+ 5
+ Reading Sn114 from
+ /home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/neutron/Sn114.h
+ 5
+ Reading Zr94 from
+ /home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/neutron/Zr94.h5
+  Reading Sn115 from
+ /home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/neutron/Sn115.h
+ 5
+ Reading Cr53 from
+ /home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/neutron/Cr53.h5
+  Reading Sn117 from
+ /home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/neutron/Sn117.h
+ 5
+ Reading Cr50 from
+ /home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/neutron/Cr50.h5
+  Reading Zr92 from
+ /home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/neutron/Zr92.h5
+  Reading O17 from
+ /home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/neutron/O17.h5
+ Reading Sn122 from
+ /home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/neutron/Sn122.h
+ 5
+ Reading Cr52 from
+ /home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/neutron/Cr52.h5
+  Reading Cr54 from
+ /home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/neutron/Cr54.h5
+  Reading Sn112 from
+ /home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/neutron/Sn112.h
+ 5
+ Reading Zr96 from
+ /home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/neutron/Zr96.h5
+  WARNING: Negative value(s) found on probability table for nuclide Zr96 at 294K
+ WARNING: Negative value(s) found on probability table for nuclide Zr96 at 600K
+ Reading O18 from
+ /home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/neutron/O18.h5
+ Reading O16 from
+ /home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/neutron/O16.h5
+ Reading Sn116 from
+ /home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/neutron/Sn116.h
+ 5
+ Reading Zr91 from
+ /home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/neutron/Zr91.h5
+  Reading Zr90 from
+ /home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/neutron/Zr90.h5
+  Reading Sn118 from
+ /home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/neutron/Sn118.h
+ 5
+ Reading Fe57 from
+ /home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/neutron/Fe57.h5
+  Reading Sn119 from
+ /home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/neutron/Sn119.h
+ 5
+ Reading Fe58 from
+ /home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/neutron/Fe58.h5
+  Reading Fe56 from
+ /home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/neutron/Fe56.h5
+  Reading H1 from
+ /home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/neutron/H1.h5
+ Reading H2 from
+ /home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/neutron/H2.h5
+ Reading B10 from
+ /home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/neutron/B10.h5
+ Reading B11 from
+ /home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/neutron/B11.h5
+ Reading C13 from
+ /home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/neutron/C13.h5
+ Reading C12 from
+ /home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/neutron/C12.h5
+ Reading U234 from
+ /home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/neutron/U234.h5
+  Reading U238 from
+ /home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/neutron/U238.h5
+  Reading U235 from
+ /home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/neutron/U235.h5
+  Reading Si30 from
+ /home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/neutron/Si30.h5
+  Reading Si28 from
+ /home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/neutron/Si28.h5
+  Reading Ni61 from
+ /home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/neutron/Ni61.h5
+  Reading Si29 from
+ /home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/neutron/Si29.h5
+  Reading Ni62 from
+ /home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/neutron/Ni62.h5
+  Reading Mn55 from
+ /home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/neutron/Mn55.h5
+  Reading Ni64 from
+ /home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/neutron/Ni64.h5
+  Reading Ni58 from
+ /home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/neutron/Ni58.h5
+  Reading Ni60 from
+ /home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/neutron/Ni60.h5
+  Reading Cd116 from
+ /home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/neutron/Cd116.h
+ 5
+ Reading Cd113 from
+ /home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/neutron/Cd113.h
+ 5
+ Reading In115 from
+ /home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/neutron/In115.h
+ 5
+ Reading In113 from
+ /home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/neutron/In113.h
+ 5
+ Reading Ag107 from
+ /home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/neutron/Ag107.h
+ 5
+ Reading Cd111 from
+ /home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/neutron/Cd111.h
+ 5
+ Reading Cd106 from
+ /home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/neutron/Cd106.h
+ 5
+ WARNING: Negative value(s) found on probability table for nuclide Cd106 at 294K
+ WARNING: Negative value(s) found on probability table for nuclide Cd106 at 600K
+ Reading Cd108 from
+ /home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/neutron/Cd108.h
+ 5
+ Reading Cd112 from
+ /home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/neutron/Cd112.h
+ 5
+ Reading Ag109 from
+ /home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/neutron/Ag109.h
+ 5
+ Reading Cd114 from
+ /home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/neutron/Cd114.h
+ 5
+ Reading Cd110 from
+ /home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/neutron/Cd110.h
+ 5
+ Reading c_H_in_H2O from
+ /home/ascanipek/openmc-proje/data/endfb-viii.0/endfb-viii.0-hdf5/thermal/c_H_in_
+ H2O.h5
+ Minimum neutron data temperature: 294 K
+ Maximum neutron data temperature: 600 K
+ Preparing distributed cell instances...
+ Writing summary.h5 file...
+ WARNING: Cell overlap checking is ON.
+ Maximum neutron transport energy: 20000000 eV for He4
+ Initializing source particles...
+
+ ====================>     K EIGENVALUE SIMULATION     <====================
+
+  Bat./Gen.      k       Entropy         Average k 
+  =========   ========   ========   ====================
+        1/1    0.79964   11.36153
+        2/1    0.84575   11.31790
+        3/1    0.87613   11.25250
+        4/1    0.89307   11.19317
+        5/1    0.91443   11.12388
+        6/1    0.94022   11.06209
+        7/1    0.96360   11.04134
+        8/1    0.96400   10.99219
+        9/1    0.96903   10.98669
+       10/1    0.98417   10.94871
+       11/1    0.97812   10.95846
+       12/1    0.95544   10.93523
+       13/1    0.94859   10.91958
+       14/1    0.98611   10.92694
+       15/1    0.97711   10.90943
+       16/1    0.99330   10.90018
+       17/1    0.98445   10.88822
+       18/1    0.97084   10.88066
+       19/1    0.97909   10.87027
+       20/1    0.98559   10.88125
+       21/1    0.98579   10.86795
+       22/1    0.98957   10.86222
+       23/1    0.98355   10.87571
+       24/1    0.97541   10.87695
+       25/1    0.97134   10.88154
+       26/1    0.97770   10.88349
+       27/1    0.96705   10.86988
+       28/1    0.98491   10.88334
+       29/1    0.97172   10.87196
+       30/1    0.98297   10.88152
+       31/1    0.99648   10.84822
+       32/1    0.95965   10.86929
+       33/1    1.00978   10.85965
+       34/1    0.97896   10.88317
+       35/1    0.98150   10.85751
+       36/1    0.99079   10.86852
+       37/1    0.98324   10.87817
+       38/1    0.97298   10.88732
+       39/1    0.98562   10.87865
+       40/1    0.97950   10.89801
+       41/1    0.99850   10.87609
+       42/1    0.99478   10.89321
+       43/1    0.97968   10.89781
+       44/1    0.98880   10.88006
+       45/1    1.02552   10.89094
+       46/1    0.98487   10.87164
+       47/1    0.97318   10.89720
+       48/1    0.97169   10.90799
+       49/1    0.97194   10.88566
+       50/1    0.98844   10.88242
+       51/1    0.98345   10.88620
+       52/1    0.98142   10.88263    0.98244 +/- 0.00102
+       53/1    0.97497   10.89118    0.97995 +/- 0.00256
+       54/1    0.98381   10.88295    0.98091 +/- 0.00205
+       55/1    0.98693   10.86627    0.98212 +/- 0.00199
+       56/1    1.00301   10.87217    0.98560 +/- 0.00384
+       57/1    0.98077   10.87685    0.98491 +/- 0.00332
+       58/1    0.99352   10.86266    0.98599 +/- 0.00307
+       59/1    0.97901   10.85968    0.98521 +/- 0.00282
+       60/1    0.97060   10.88016    0.98375 +/- 0.00291
+       61/1    0.97914   10.87222    0.98333 +/- 0.00267
+       62/1    0.98464   10.86229    0.98344 +/- 0.00244
+       63/1    0.97678   10.87226    0.98293 +/- 0.00230
+       64/1    0.96684   10.87659    0.98178 +/- 0.00242
+       65/1    0.99062   10.85679    0.98237 +/- 0.00233
+       66/1    0.98710   10.89387    0.98266 +/- 0.00220
+       67/1    0.98258   10.87612    0.98266 +/- 0.00206
+       68/1    0.95642   10.87623    0.98120 +/- 0.00243
+       69/1    0.97143   10.87504    0.98069 +/- 0.00236
+       70/1    0.98685   10.86538    0.98099 +/- 0.00226
+       71/1    0.97563   10.85702    0.98074 +/- 0.00216
+       72/1    0.99039   10.89122    0.98118 +/- 0.00211
+       73/1    0.96583   10.87544    0.98051 +/- 0.00212
+       74/1    0.99823   10.89167    0.98125 +/- 0.00216
+       75/1    0.95916   10.87671    0.98037 +/- 0.00225
+       76/1    0.97993   10.89150    0.98035 +/- 0.00217
+       77/1    0.96879   10.87284    0.97992 +/- 0.00213
+       78/1    0.95007   10.87010    0.97885 +/- 0.00231
+       79/1    0.98331   10.89820    0.97901 +/- 0.00223
+       80/1    0.97853   10.87991    0.97899 +/- 0.00216
+       81/1    0.97622   10.89250    0.97890 +/- 0.00209
+       82/1    0.97745   10.86136    0.97886 +/- 0.00202
+       83/1    0.98368   10.89998    0.97900 +/- 0.00197
+       84/1    0.98849   10.91236    0.97928 +/- 0.00193
+       85/1    0.98440   10.89401    0.97943 +/- 0.00188
+       86/1    0.98352   10.88696    0.97954 +/- 0.00183
+       87/1    0.96941   10.88427    0.97927 +/- 0.00180
+       88/1    0.98241   10.86751    0.97935 +/- 0.00175
+       89/1    0.99213   10.89431    0.97968 +/- 0.00174
+       90/1    0.98282   10.89483    0.97976 +/- 0.00170
+       91/1    0.97246   10.86280    0.97958 +/- 0.00166
+       92/1    0.96116   10.86681    0.97914 +/- 0.00168
+       93/1    1.00380   10.87300    0.97971 +/- 0.00174
+       94/1    0.99991   10.89134    0.98017 +/- 0.00176
+       95/1    0.97599   10.87919    0.98008 +/- 0.00172
+       96/1    0.97524   10.90722    0.97997 +/- 0.00169
+       97/1    0.98175   10.88736    0.98001 +/- 0.00165
+       98/1    0.98437   10.88079    0.98010 +/- 0.00162
+       99/1    0.98842   10.87957    0.98027 +/- 0.00160
+      100/1    0.97587   10.86009    0.98019 +/- 0.00157
+ Creating state point statepoint.100.h5...
+
+ =======================>     TIMING STATISTICS     <=======================
+
+ Total time for initialization     = 4.6101e+00 seconds
+   Reading cross sections          = 4.5971e+00 seconds
+ Total time in simulation          = 2.7710e+01 seconds
+   Time in transport only          = 2.7621e+01 seconds
+   Time in inactive batches        = 1.2531e+01 seconds
+   Time in active batches          = 1.5179e+01 seconds
+   Time synchronizing fission bank = 4.4794e-02 seconds
+     Sampling source sites         = 3.8932e-02 seconds
+     SEND/RECV source sites        = 5.8472e-03 seconds
+   Time accumulating tallies       = 6.7784e-04 seconds
+   Time writing statepoints        = 5.3749e-03 seconds
+ Total time for finalization       = 5.6135e-03 seconds
+ Total time elapsed                = 3.2341e+01 seconds
+ Calculation Rate (inactive)       = 39901.7 particles/second
+ Calculation Rate (active)         = 32940.6 particles/second
+
+ ============================>     RESULTS     <============================
+
+ k-effective (Collision)     = 0.97970 +/- 0.00152
+ k-effective (Track-length)  = 0.98019 +/- 0.00157
+ k-effective (Absorption)    = 0.98209 +/- 0.00142
+ Combined k-effective        = 0.98121 +/- 0.00131
+ Leakage Fraction            = 0.00669 +/- 0.00016
+
+
+ ==================>     CELL OVERLAP CHECK SUMMARY     <===================
+
+ Cell ID      No. Overlap Checks
+        1          22635438
+        2          33679311
+        3          37683742
+        4          77688504
+        5              7565
+        6           4586105
+        7             50361
+        8              9530
+        9             72401
+       10             14104
+       11            112710
+       12              7308
+       13           4583697
+       14             12493
+       15           6498665
+       16            291812
+       17           4920283
+       18         192854029
+
+ There were 0 cells with less than 10 overlap checks
+
+null

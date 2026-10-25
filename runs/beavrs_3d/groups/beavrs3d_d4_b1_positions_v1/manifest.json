@@ -1,0 +1,40 @@
+{
+  "reference_config": "configs/beavrs_derived_3d_reference.json",
+  "title": "Zero and full insertion at recorded D2-B1 calculation budget",
+  "group_id": "beavrs3d_d4_b1_positions_v1",
+  "model": "beavrs_derived_3d_assembly_v1",
+  "experiments": [
+    {
+      "insertion_percent": 0,
+      "experiment_id": "D4-P0",
+      "calculation": {
+        "threads": 6,
+        "generations_per_batch": 1,
+        "particles_per_generation": 20000,
+        "batches": 600,
+        "seed": 45001,
+        "inactive": 300
+      }
+    },
+    {
+      "insertion_percent": 100,
+      "experiment_id": "D4-P100",
+      "calculation": {
+        "threads": 6,
+        "generations_per_batch": 1,
+        "particles_per_generation": 20000,
+        "batches": 600,
+        "seed": 45101,
+        "inactive": 300
+      }
+    }
+  ],
+  "physical_acceptance": "review_required",
+  "schema_version": 1,
+  "reference_config_sha256": "834a783ce2ac14cebdc1579e87bd731f0899251e3113c28d46cec42b52c223a6",
+  "group_runtime_budget_seconds": 14400,
+  "phase": "D4",
+  "depends_on": [
+    "beavrs3d_d3_b1_repeats_v1"
+  ]
+}

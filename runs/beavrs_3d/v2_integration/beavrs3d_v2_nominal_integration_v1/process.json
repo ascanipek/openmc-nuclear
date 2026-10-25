@@ -1,0 +1,7 @@
+{
+  "pid": 26332,
+  "started_at": "2026-10-18T10:39:16.206290+00:00",
+  "start_ticks": 6194520,
+  "launcher": "/home/ascanipek/openmc-proje/scripts/v2_integration.py",
+  "worker_folder": "/home/ascanipek/openmc-proje/runs/beavrs_3d/v2_integration/beavrs3d_v2_nominal_integration_v1"
+}

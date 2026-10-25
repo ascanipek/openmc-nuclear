@@ -1,0 +1,14 @@
+{
+  "state": "completed",
+  "group_id": "beavrs3d_d3_b1_repeats_v1",
+  "experiment_id": "D3-S32001",
+  "scenario_id": "79d66821fd25d3af",
+  "run_id": "f8798b256adb88fa",
+  "started_at": "2026-10-17T22:12:48.097328+00:00",
+  "physical_acceptance": "not_assessed",
+  "quality_status": "review_required",
+  "error": null,
+  "completed_at": "2026-10-17T22:17:27.933328+00:00",
+  "elapsed_seconds": 279.83592288199725,
+  "statepoint": "statepoint.600.h5"
+}

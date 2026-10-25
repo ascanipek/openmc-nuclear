@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<settings>
+  <run_mode>eigenvalue</run_mode>
+  <particles>20000</particles>
+  <batches>600</batches>
+  <inactive>300</inactive>
+  <generations_per_batch>1</generations_per_batch>
+  <source type="independent" strength="1.0" particle="neutron">
+    <space type="box">
+      <parameters>-10.75182 -10.75182 36.748 10.75182 10.75182 402.508</parameters>
+    </space>
+    <constraints>
+      <fissionable>true</fissionable>
+    </constraints>
+  </source>
+  <seed>33001</seed>
+  <entropy_mesh>3</entropy_mesh>
+  <mesh id="3" name="assembly_xyz">
+    <dimension>17 17 20</dimension>
+    <lower_left>-10.75182 -10.75182 36.748</lower_left>
+    <upper_right>10.75182 10.75182 402.508</upper_right>
+  </mesh>
+  <temperature_default>566.483</temperature_default>
+  <temperature_method>interpolation</temperature_method>
+</settings>

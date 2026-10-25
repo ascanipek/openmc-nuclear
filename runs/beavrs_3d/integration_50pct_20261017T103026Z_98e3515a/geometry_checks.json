@@ -1,0 +1,75 @@
+{
+  "fuel": {
+    "xyz_cm": [
+      -10.07872,
+      10.07872,
+      219.628
+    ],
+    "material": "fuel"
+  },
+  "fuel_gap": {
+    "xyz_cm": [
+      -9.682605,
+      10.07872,
+      219.628
+    ],
+    "material": "helium"
+  },
+  "fuel_clad": {
+    "xyz_cm": [
+      -9.650095,
+      10.07872,
+      219.628
+    ],
+    "material": "zircaloy"
+  },
+  "moderator": {
+    "xyz_cm": [
+      -9.378720000000001,
+      10.07872,
+      219.628
+    ],
+    "material": "water"
+  },
+  "guide_wall": {
+    "xyz_cm": [
+      -3.19952,
+      7.55904,
+      219.628
+    ],
+    "material": "zircaloy"
+  },
+  "center": {
+    "xyz_cm": [
+      0,
+      0,
+      219.628
+    ],
+    "material": "water"
+  },
+  "rod_aic": {
+    "xyz_cm": [
+      -3.77952,
+      7.55904,
+      220.628
+    ],
+    "material": "aic"
+  },
+  "rod_sleeve": {
+    "xyz_cm": [
+      -3.34952,
+      7.55904,
+      220.628
+    ],
+    "material": "ss304"
+  },
+  "rod_water": {
+    "xyz_cm": [
+      -3.28552,
+      7.55904,
+      220.628
+    ],
+    "material": "water"
+  },
+  "sampled_pin_centers": 1734
+}

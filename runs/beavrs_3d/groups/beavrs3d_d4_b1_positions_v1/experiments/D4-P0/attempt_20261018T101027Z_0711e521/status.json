@@ -1,0 +1,14 @@
+{
+  "state": "completed",
+  "group_id": "beavrs3d_d4_b1_positions_v1",
+  "experiment_id": "D4-P0",
+  "scenario_id": "7fab858bc3a6761a",
+  "run_id": "3aa9be298e9a491a",
+  "started_at": "2026-10-18T10:10:27.790978+00:00",
+  "physical_acceptance": "not_assessed",
+  "quality_status": "review_required",
+  "error": null,
+  "completed_at": "2026-10-18T10:14:55.949342+00:00",
+  "elapsed_seconds": 268.1582387330054,
+  "statepoint": "statepoint.600.h5"
+}

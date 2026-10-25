@@ -1,0 +1,13 @@
+{
+  "state": "budget_exhausted",
+  "group_id": "v2_stage_32_ogrenci_04_beavrs_v2_pilot_scope_v1",
+  "manifest_sha256": "e4f80b7863b4bafb295e0ef0d4b5af1746bdfae213da1228416e5bcc7f60904b",
+  "physical_acceptance": "not_assessed",
+  "quality_status": "review_required",
+  "completed_experiments": [
+    "V2-STAGE_32_OGRENCI_04-0001"
+  ],
+  "budget_consumed_seconds": 7851.483376016,
+  "error": "Next case estimate exceeds remaining approved group budget; estimate is not a guarantee",
+  "session_budget_seconds": 14400.0
+}

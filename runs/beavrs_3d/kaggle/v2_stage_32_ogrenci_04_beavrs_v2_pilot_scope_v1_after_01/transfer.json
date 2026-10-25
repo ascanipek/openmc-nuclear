@@ -1,0 +1,19 @@
+{
+  "hashes_sha256": "d3de3e84e379e3c04d512e7d60bec9603f1fbee8fc7e968ef40569fbfaab0a41",
+  "manifest_sha256": "e4f80b7863b4bafb295e0ef0d4b5af1746bdfae213da1228416e5bcc7f60904b",
+  "model": "beavrs_derived_3d_assembly_v2_proposed",
+  "omitted_statepoints": [
+    {
+      "bytes": 7038048,
+      "relative_path": "group/experiments/V2-STAGE_32_OGRENCI_04-0001/attempt_8823ea0d707c43378809e776d68fdad2/statepoint.600.h5",
+      "retention": "source_machine; transfer separately on request",
+      "sha256": "3976586905d9ac3b9547beee5f7293de47b8b11f1887b1cc2d79dc2918a0e37b"
+    }
+  ],
+  "package_id": "v2_stage_32_ogrenci_04_beavrs_v2_pilot_scope_v1",
+  "package_sha256": "63ea6572f3272e0f7a70682ab353a7847480ee005980e333d3d07cbda3d0c5cd",
+  "physical_acceptance": "not_assessed_by_transfer",
+  "schema": "beavrs_v2_handoff_v1",
+  "statepoint_policy": "omitted_from_lightweight_zip; retain on source machine",
+  "training_acceptance": "not_granted"
+}

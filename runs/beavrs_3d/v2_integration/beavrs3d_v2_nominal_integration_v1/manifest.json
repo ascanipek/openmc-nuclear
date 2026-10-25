@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "group_id": "beavrs3d_v2_nominal_integration_v1",
+  "model": "beavrs_derived_3d_assembly_v2_proposed",
+  "purpose": "single_small_code_integration_not_physical_acceptance",
+  "reference_config": "configs/beavrs_derived_3d_reference.json",
+  "reference_config_sha256": "834a783ce2ac14cebdc1579e87bd731f0899251e3113c28d46cec42b52c223a6",
+  "beavrs_source_commit": "1ccae04dc3830a5977f08ed7f5f7e1e51ded0d22",
+  "pressure_source": "docs/specifications/specifications/specifications.tex:84; Performance / Operating Pressure",
+  "pressure_original": {"value": 2250, "unit": "psia", "kind": "absolute"},
+  "psi_to_MPa": 0.006894757,
+  "controls": {
+    "u235_enrichment_wt_percent": 1.6,
+    "fuel_temperature_K": 566.483,
+    "moderator_temperature_K": 566.483,
+    "coolant_pressure_MPa": 15.51320325,
+    "elemental_boron_ppm": 975,
+    "pin_pitch_cm": 1.25984,
+    "pellet_radius_cm": 0.39218,
+    "insertion_percent": 50
+  },
+  "calculation": {
+    "batches": 100,
+    "inactive": 50,
+    "particles_per_generation": 10000,
+    "generations_per_batch": 1,
+    "threads": 6,
+    "seed": 61001
+  },
+  "physical_acceptance": "not_assessed",
+  "convergence": "review_required"
+}

@@ -1,0 +1,19 @@
+{
+  "state": "completed",
+  "scenario_id": "a8dcefcfa92726fbdd3245358b53cac853f67b7e36b503a778c6d15c770c26a2",
+  "run_id": "c8590dd4a270f49e0dbbb1e84c157990952bf60779a01ad653dbc00012fc20de",
+  "experiment_id": "V2-STAGE_256_OGRENCI_04-0003",
+  "physical_acceptance": "not_assessed",
+  "quality_status": "review_required",
+  "error": null,
+  "elapsed_seconds": 5232.367018409999,
+  "statepoint": "statepoint.600.h5",
+  "execution_environment": {
+    "platform": "kaggle_cpu",
+    "approved_threads": 6,
+    "actual_openmc_threads": 4,
+    "visible_cpu_count": 4,
+    "memory_limit_bytes": 32212254720,
+    "note": "calculation is the immutable approved profile; actual thread count is recorded here"
+  }
+}

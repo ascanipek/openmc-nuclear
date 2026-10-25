@@ -1,0 +1,3 @@
+group_id,phase,experiment_id,attempt,state,insertion_percent,batches,inactive,active_batches,particles_per_generation,total_histories,active_histories,seed,k_mean,k_mc_standard_error,leakage_fraction,elapsed_seconds,quality_status,physical_acceptance,error
+beavrs3d_d4_b1_positions_v1,D4,D4-P0,experiments/D4-P0/attempt_20261018T101027Z_0711e521,completed,0,600,300,300,20000,12000000,6000000,45001,0.9922543084939328,0.00034402661760434276,0.003977666666666665,268.1582387330054,review_required,not_assessed,
+beavrs3d_d4_b1_positions_v1,D4,D4-P100,experiments/D4-P100/attempt_20261018T101455Z_1efad0b1,completed,100,600,300,300,20000,12000000,6000000,45101,0.6366696525757679,0.00028545613766693635,0.012503499999999997,253.7452467969997,review_required,not_assessed,

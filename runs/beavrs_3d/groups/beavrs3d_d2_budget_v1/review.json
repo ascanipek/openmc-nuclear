@@ -1,0 +1,7 @@
+{
+  "reviewed_at": "2026-10-17T21:22:51.555696+00:00",
+  "operator_acknowledged": true,
+  "meaning": "operator acknowledged saved outputs before launching dependent group",
+  "statistical_convergence": "review_required",
+  "physical_acceptance": "not_assessed"
+}

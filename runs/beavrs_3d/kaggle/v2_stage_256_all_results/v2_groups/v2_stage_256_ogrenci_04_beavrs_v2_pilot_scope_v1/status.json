@@ -1,0 +1,18 @@
+{
+  "state": "stopped",
+  "group_id": "v2_stage_256_ogrenci_04_beavrs_v2_pilot_scope_v1",
+  "manifest_sha256": "2b14906c2cf6e624868c16071a668745fccbe8ebd2ce8d9999f6a9e179cb1c1f",
+  "physical_acceptance": "not_assessed",
+  "quality_status": "review_required",
+  "completed_experiments": [
+    "V2-STAGE_256_OGRENCI_04-0001",
+    "V2-STAGE_256_OGRENCI_04-0002",
+    "V2-STAGE_256_OGRENCI_04-0003",
+    "V2-STAGE_256_OGRENCI_04-0004",
+    "V2-STAGE_256_OGRENCI_04-0005",
+    "V2-STAGE_256_OGRENCI_04-0006"
+  ],
+  "budget_consumed_seconds": 34231.427441861,
+  "error": "Next case estimate exceeds remaining configured session budget; estimate is not a guarantee",
+  "session_budget_seconds": 36000.0
+}

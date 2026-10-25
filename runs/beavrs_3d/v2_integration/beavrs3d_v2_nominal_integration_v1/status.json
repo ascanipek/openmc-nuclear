@@ -1,0 +1,13 @@
+{
+  "state": "completed",
+  "purpose": "code_integration_only",
+  "manifest_sha256": "15b9c683272488270fab005b6a4e4ae16d1154b1041e93cdd1e621a39d22f2f9",
+  "physical_acceptance": "not_assessed",
+  "convergence": "review_required",
+  "created_at": "2026-10-18T10:39:16.204989+00:00",
+  "error": null,
+  "started_at": "2026-10-18T10:39:16.953056+00:00",
+  "completed_at": "2026-10-18T10:39:50.366176+00:00",
+  "elapsed_seconds": 32.48510864600394,
+  "statepoint": "statepoint.100.h5"
+}

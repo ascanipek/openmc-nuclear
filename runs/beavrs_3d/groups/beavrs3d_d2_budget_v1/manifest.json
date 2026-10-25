@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "model": "beavrs_derived_3d_assembly_v1",
+  "reference_config": "configs/beavrs_derived_3d_reference.json",
+  "reference_config_sha256": "834a783ce2ac14cebdc1579e87bd731f0899251e3113c28d46cec42b52c223a6",
+  "physical_acceptance": "review_required",
+  "group_id": "beavrs3d_d2_budget_v1",
+  "phase": "D2",
+  "title": "Single 50 percent physical state; 600 batches per case at increasing particle budgets",
+  "depends_on": [],
+  "experiments": [
+    {
+      "experiment_id": "D2-B1",
+      "insertion_percent": 50,
+      "calculation": {
+        "batches": 600,
+        "inactive": 300,
+        "particles_per_generation": 20000,
+        "generations_per_batch": 1,
+        "threads": 6,
+        "seed": 31001
+      }
+    },
+    {
+      "experiment_id": "D2-B2",
+      "insertion_percent": 50,
+      "calculation": {
+        "batches": 600,
+        "inactive": 300,
+        "particles_per_generation": 80000,
+        "generations_per_batch": 1,
+        "threads": 6,
+        "seed": 41001
+      }
+    },
+    {
+      "experiment_id": "D2-B3",
+      "insertion_percent": 50,
+      "calculation": {
+        "batches": 600,
+        "inactive": 300,
+        "particles_per_generation": 320000,
+        "generations_per_batch": 1,
+        "threads": 6,
+        "seed": 51001
+      }
+    }
+  ],
+  "group_runtime_budget_seconds": 14400
+}

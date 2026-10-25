@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<geometry>
+  <cell id="1" name="fuel pellet" material="5" region="-1" universe="1"/>
+  <cell id="2" name="fuel helium gap" material="1" region="1 -2" universe="1"/>
+  <cell id="3" name="fuel Zircaloy clad" material="2" region="2 -3" universe="1"/>
+  <cell id="4" name="fuel-pin water" material="3" region="3" universe="1"/>
+  <cell id="5" name="dashpot Zircaloy" material="2" region="7 -8 -4" universe="2"/>
+  <cell id="6" name="normal guide Zircaloy" material="2" region="5 -6 4" universe="2"/>
+  <cell id="7" name="Ag-In-Cd absorber" material="7" region="-9 13 -14" universe="2"/>
+  <cell id="8" name="B4C absorber" material="4" region="-10 14 -15" universe="2"/>
+  <cell id="9" name="Ag-In-Cd helium annulus" material="1" region="9 -11 13 -14" universe="2"/>
+  <cell id="10" name="B4C helium annulus" material="1" region="10 -11 14 -15" universe="2"/>
+  <cell id="11" name="SS304 rod sleeve" material="6" region="11 -12 ((13 -14) | (14 -15))" universe="2"/>
+  <cell id="12" name="dashpot water" material="3" region="-7 -4 (12 | ((-13 | 14) (-14 | 15)))" universe="2"/>
+  <cell id="13" name="normal guide water" material="3" region="-5 4 (12 | ((-13 | 14) (-14 | 15)))" universe="2"/>
+  <cell id="14" name="outside dashpot water" material="3" region="8 -4" universe="2"/>
+  <cell id="15" name="outside guide water" material="3" region="6 4" universe="2"/>
+  <cell id="16" name="center water" material="3" universe="3"/>
+  <cell id="17" name="edge water" material="3" universe="4"/>
+  <cell id="18" name="bounded active assembly" fill="5" region="16 -17 18 -19 20 -21" universe="6"/>
+  <lattice id="5" name="17x17 BEAVRS-derived active assembly">
+    <pitch>1.25984 1.25984</pitch>
+    <outer>4</outer>
+    <dimension>17 17</dimension>
+    <lower_left>-10.70864 -10.70864</lower_left>
+    <universes>
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 2 1 1 2 1 1 2 1 1 1 1 1 
+1 1 1 2 1 1 1 1 1 1 1 1 1 2 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 2 1 1 2 1 1 2 1 1 2 1 1 2 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 2 1 1 2 1 1 3 1 1 2 1 1 2 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 2 1 1 2 1 1 2 1 1 2 1 1 2 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 2 1 1 1 1 1 1 1 1 1 2 1 1 1 
+1 1 1 1 1 2 1 1 2 1 1 2 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </universes>
+  </lattice>
+  <surface id="1" type="z-cylinder" coeffs="0.0 0.0 0.39218"/>
+  <surface id="2" type="z-cylinder" coeffs="0.0 0.0 0.40005"/>
+  <surface id="3" type="z-cylinder" coeffs="0.0 0.0 0.4572"/>
+  <surface id="4" type="z-plane" coeffs="39.958"/>
+  <surface id="5" type="z-cylinder" coeffs="0.0 0.0 0.56134"/>
+  <surface id="6" type="z-cylinder" coeffs="0.0 0.0 0.60198"/>
+  <surface id="7" type="z-cylinder" coeffs="0.0 0.0 0.50419"/>
+  <surface id="8" type="z-cylinder" coeffs="0.0 0.0 0.5461"/>
+  <surface id="9" type="z-cylinder" coeffs="0.0 0.0 0.38227"/>
+  <surface id="10" type="z-cylinder" coeffs="0.0 0.0 0.37338"/>
+  <surface id="11" type="z-cylinder" coeffs="0.0 0.0 0.38608"/>
+  <surface id="12" type="z-cylinder" coeffs="0.0 0.0 0.48387"/>
+  <surface id="13" type="z-plane" coeffs="219.628"/>
+  <surface id="14" type="z-plane" coeffs="321.22799999999995"/>
+  <surface id="15" type="z-plane" coeffs="580.308"/>
+  <surface id="16" type="x-plane" boundary="reflective" coeffs="-10.75182"/>
+  <surface id="17" type="x-plane" boundary="reflective" coeffs="10.75182"/>
+  <surface id="18" type="y-plane" boundary="reflective" coeffs="-10.75182"/>
+  <surface id="19" type="y-plane" boundary="reflective" coeffs="10.75182"/>
+  <surface id="20" type="z-plane" boundary="vacuum" coeffs="36.748"/>
+  <surface id="21" type="z-plane" boundary="vacuum" coeffs="402.508"/>
+</geometry>

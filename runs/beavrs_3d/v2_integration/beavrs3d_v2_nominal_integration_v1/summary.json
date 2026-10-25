@@ -1,0 +1,27 @@
+{
+  "model": "beavrs_derived_3d_assembly_v2_proposed",
+  "completion_state": "completed",
+  "physical_acceptance": "not_assessed",
+  "convergence": "review_required",
+  "k_effective": {
+    "mean": 0.9812065544688646,
+    "mc_standard_error": 0.0013072433952757117,
+    "unit": "dimensionless"
+  },
+  "duration": {
+    "value": 32.48510864600394,
+    "unit": "s"
+  },
+  "water_density": {
+    "value": 0.7405808602612968,
+    "unit": "g/cm3"
+  },
+  "array_order": [
+    "z",
+    "y",
+    "x"
+  ],
+  "fields": "fields.npz",
+  "statepoint": "statepoint.100.h5",
+  "quality_message": "integration complete; physical/statistical review required"
+}

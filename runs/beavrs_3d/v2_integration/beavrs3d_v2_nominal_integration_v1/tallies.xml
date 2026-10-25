@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tallies>
+  <!--assembly_xyz-->
+  <mesh id="1" name="assembly_xyz">
+    <dimension>17 17 20</dimension>
+    <lower_left>-10.75182 -10.75182 36.748</lower_left>
+    <upper_right>10.75182 10.75182 402.508</upper_right>
+  </mesh>
+  <filter id="1" type="mesh">
+    <bins>1</bins>
+  </filter>
+  <tally id="1" name="assembly_3d">
+    <filters>1</filters>
+    <scores>fission kappa-fission flux</scores>
+    <estimator>tracklength</estimator>
+  </tally>
+</tallies>

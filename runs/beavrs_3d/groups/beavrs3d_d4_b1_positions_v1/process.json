@@ -1,0 +1,8 @@
+{
+  "pid": 24718,
+  "started_at": "2026-10-18T10:10:27.002845+00:00",
+  "start_ticks": 6021600,
+  "launcher": "/home/ascanipek/openmc-proje/scripts/experiments.py",
+  "worker_folder": "/home/ascanipek/openmc-proje/runs/beavrs_3d/groups/beavrs3d_d4_b1_positions_v1",
+  "session_leader": true
+}

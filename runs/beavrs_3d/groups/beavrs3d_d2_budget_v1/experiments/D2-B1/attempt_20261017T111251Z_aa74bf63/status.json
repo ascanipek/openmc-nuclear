@@ -1,0 +1,14 @@
+{
+  "state": "completed",
+  "group_id": "beavrs3d_d2_budget_v1",
+  "experiment_id": "D2-B1",
+  "scenario_id": "79d66821fd25d3af",
+  "run_id": "15915d3a0237ebb6",
+  "started_at": "2026-10-17T11:12:51.624169+00:00",
+  "physical_acceptance": "not_assessed",
+  "quality_status": "review_required",
+  "error": null,
+  "completed_at": "2026-10-17T11:17:19.722631+00:00",
+  "elapsed_seconds": 268.09833153900036,
+  "statepoint": "statepoint.600.h5"
+}

@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<geometry>
+  <cell id="37" name="fuel pellet" material="19" region="-43" universe="13"/>
+  <cell id="38" name="fuel helium gap" material="15" region="43 -44" universe="13"/>
+  <cell id="39" name="fuel Zircaloy clad" material="16" region="44 -45" universe="13"/>
+  <cell id="40" name="fuel-pin water" material="17" region="45" universe="13"/>
+  <cell id="41" name="dashpot Zircaloy" material="16" region="49 -50 -46" universe="14"/>
+  <cell id="42" name="normal guide Zircaloy" material="16" region="47 -48 46" universe="14"/>
+  <cell id="43" name="Ag-In-Cd absorber" material="21" region="-51 55 -56" universe="14"/>
+  <cell id="44" name="B4C absorber" material="18" region="-52 56 -57" universe="14"/>
+  <cell id="45" name="Ag-In-Cd helium annulus" material="15" region="51 -53 55 -56" universe="14"/>
+  <cell id="46" name="B4C helium annulus" material="15" region="52 -53 56 -57" universe="14"/>
+  <cell id="47" name="SS304 rod sleeve" material="20" region="53 -54 ((55 -56) | (56 -57))" universe="14"/>
+  <cell id="48" name="dashpot water" material="17" region="-49 -46 (54 | ((-55 | 56) (-56 | 57)))" universe="14"/>
+  <cell id="49" name="normal guide water" material="17" region="-47 46 (54 | ((-55 | 56) (-56 | 57)))" universe="14"/>
+  <cell id="50" name="outside dashpot water" material="17" region="50 -46" universe="14"/>
+  <cell id="51" name="outside guide water" material="17" region="48 46" universe="14"/>
+  <cell id="52" name="center water" material="17" universe="15"/>
+  <cell id="53" name="edge water" material="17" universe="16"/>
+  <cell id="54" name="bounded active assembly" fill="17" region="58 -59 60 -61 62 -63" universe="18"/>
+  <lattice id="17" name="17x17 BEAVRS-derived active assembly">
+    <pitch>1.25984 1.25984</pitch>
+    <outer>16</outer>
+    <dimension>17 17</dimension>
+    <lower_left>-10.70864 -10.70864</lower_left>
+    <universes>
+13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 
+13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 
+13 13 13 13 13 14 13 13 14 13 13 14 13 13 13 13 13 
+13 13 13 14 13 13 13 13 13 13 13 13 13 14 13 13 13 
+13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 
+13 13 14 13 13 14 13 13 14 13 13 14 13 13 14 13 13 
+13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 
+13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 
+13 13 14 13 13 14 13 13 15 13 13 14 13 13 14 13 13 
+13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 
+13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 
+13 13 14 13 13 14 13 13 14 13 13 14 13 13 14 13 13 
+13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 
+13 13 13 14 13 13 13 13 13 13 13 13 13 14 13 13 13 
+13 13 13 13 13 14 13 13 14 13 13 14 13 13 13 13 13 
+13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 
+13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 </universes>
+  </lattice>
+  <surface id="43" type="z-cylinder" coeffs="0.0 0.0 0.39218"/>
+  <surface id="44" type="z-cylinder" coeffs="0.0 0.0 0.40005"/>
+  <surface id="45" type="z-cylinder" coeffs="0.0 0.0 0.4572"/>
+  <surface id="46" type="z-plane" coeffs="39.958"/>
+  <surface id="47" type="z-cylinder" coeffs="0.0 0.0 0.56134"/>
+  <surface id="48" type="z-cylinder" coeffs="0.0 0.0 0.60198"/>
+  <surface id="49" type="z-cylinder" coeffs="0.0 0.0 0.50419"/>
+  <surface id="50" type="z-cylinder" coeffs="0.0 0.0 0.5461"/>
+  <surface id="51" type="z-cylinder" coeffs="0.0 0.0 0.38227"/>
+  <surface id="52" type="z-cylinder" coeffs="0.0 0.0 0.37338"/>
+  <surface id="53" type="z-cylinder" coeffs="0.0 0.0 0.38608"/>
+  <surface id="54" type="z-cylinder" coeffs="0.0 0.0 0.48387"/>
+  <surface id="55" type="z-plane" coeffs="36.74799999999999"/>
+  <surface id="56" type="z-plane" coeffs="138.34799999999998"/>
+  <surface id="57" type="z-plane" coeffs="397.428"/>
+  <surface id="58" type="x-plane" boundary="reflective" coeffs="-10.75182"/>
+  <surface id="59" type="x-plane" boundary="reflective" coeffs="10.75182"/>
+  <surface id="60" type="y-plane" boundary="reflective" coeffs="-10.75182"/>
+  <surface id="61" type="y-plane" boundary="reflective" coeffs="10.75182"/>
+  <surface id="62" type="z-plane" boundary="vacuum" coeffs="36.748"/>
+  <surface id="63" type="z-plane" boundary="vacuum" coeffs="402.508"/>
+</geometry>

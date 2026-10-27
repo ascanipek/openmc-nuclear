@@ -1,0 +1,95 @@
+{
+  "schema": "halton_384_signal_quality_review_v1",
+  "scientific_status": "PROVISIONAL_EXPLORATORY; not physical/training acceptance",
+  "mask": "fuel_volume_fraction > 0, fixed by geometry for each scenario",
+  "low_signal_rule": "fuel and (fission_mean == 0 or fission_mean < 5*fission_std_dev or fission_mean < 1e-6 * max(fission_mean))",
+  "zero_policy": "Measured zero is neither proven physical zero nor zero uncertainty",
+  "groups": {
+    "old_256": {
+      "scenarios": 256,
+      "fuel_voxels_total": 1351680,
+      "measured_zero_fuel_voxels": 180434,
+      "measured_zero_fraction": 0.13348869554924242,
+      "low_signal_fuel_voxels": 380837,
+      "low_signal_fraction": 0.28175085819128787,
+      "upper_four_fuel_voxels": 270336,
+      "upper_four_measured_zero": 130944,
+      "upper_four_low_signal": 203127,
+      "positive_signal_relative_mc_error_median": 0.011805768274655308,
+      "positive_signal_relative_mc_error_p95": 0.7449884614654735
+    },
+    "new_halton_128": {
+      "scenarios": 128,
+      "fuel_voxels_total": 675840,
+      "measured_zero_fuel_voxels": 91747,
+      "measured_zero_fraction": 0.1357525449810606,
+      "low_signal_fuel_voxels": 190176,
+      "low_signal_fraction": 0.28139204545454544,
+      "upper_four_fuel_voxels": 135168,
+      "upper_four_measured_zero": 65485,
+      "upper_four_low_signal": 97796,
+      "positive_signal_relative_mc_error_median": 0.011963610028693254,
+      "positive_signal_relative_mc_error_p95": 0.7389782075681245
+    }
+  },
+  "by_halton_stage": {
+    "halton_01": {
+      "scenarios": 32,
+      "measured_zero_fuel_voxels": 25733,
+      "low_signal_fuel_voxels": 50863
+    },
+    "halton_02": {
+      "scenarios": 32,
+      "measured_zero_fuel_voxels": 24262,
+      "low_signal_fuel_voxels": 50689
+    },
+    "halton_03": {
+      "scenarios": 32,
+      "measured_zero_fuel_voxels": 17766,
+      "low_signal_fuel_voxels": 40814
+    },
+    "halton_04": {
+      "scenarios": 32,
+      "measured_zero_fuel_voxels": 23986,
+      "low_signal_fuel_voxels": 47810
+    }
+  },
+  "new_halton_by_insertion_band": {
+    "low": {
+      "scenarios": 43,
+      "measured_zero_fraction": 0.00021141649048625792,
+      "low_signal_fraction": 0.04520789288231149
+    },
+    "middle": {
+      "scenarios": 39,
+      "measured_zero_fraction": 0.13665501165501165,
+      "low_signal_fraction": 0.3234071484071484
+    },
+    "high": {
+      "scenarios": 46,
+      "measured_zero_fraction": 0.26168889986824767,
+      "low_signal_fraction": 0.4665513833992095
+    }
+  },
+  "failed_attempts_not_used": [
+    {
+      "package_id": "v2_halton_03_beavrs_v2_pilot_scope_v1",
+      "experiment_id": "V2-HALTON_03-0011",
+      "attempt": "deliveries/imported_halton128/v2_halton_03_beavrs_v2_pilot_scope_v1/f967a7065f61dcdf947e0a9511c5f082dab7c969c1401e5115d19eec1fab727a/group/experiments/V2-HALTON_03-0011/attempt_14d39d7c258e4e08a04692e3f78e3171",
+      "state": "failed"
+    },
+    {
+      "package_id": "v2_halton_03_beavrs_v2_pilot_scope_v1",
+      "experiment_id": "V2-HALTON_03-0011",
+      "attempt": "deliveries/imported_halton128/v2_halton_03_beavrs_v2_pilot_scope_v1/f967a7065f61dcdf947e0a9511c5f082dab7c969c1401e5115d19eec1fab727a/group/experiments/V2-HALTON_03-0011/attempt_a003b3a97da649d19dc4f968ab2d218c",
+      "state": "failed"
+    }
+  ],
+  "nuclear_index_hash_counts": {
+    "ba7f6d5a371b5a8de8157356f8ef5d1c17cb0ed60accccfbc3075f46ae13f489": 373,
+    "b47cef3ac4a48d66d75fa412b68d497d59c9daac52a403fe18133ad7ba683055": 11
+  },
+  "statepoints": "lightweight ZIP omits them; 01/02 original local group outputs retain them, 03/04 require student source copies",
+  "source_convergence": "not_assessed",
+  "physical_validation": "not_assessed"
+}

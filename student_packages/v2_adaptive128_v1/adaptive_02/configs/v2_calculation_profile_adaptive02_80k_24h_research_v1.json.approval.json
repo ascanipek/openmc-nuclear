@@ -1,0 +1,10 @@
+{
+  "status": "approved",
+  "document_sha256": "43e54392db003cbd7a561a9b291b832d28d1b73048ed7f638c1d033db7333667",
+  "reviewer": "danisman: Advisor's 2026-10-27 ADAPTIVE-02 32-case student package request",
+  "scope": "only_adaptive_02_first_32_controlled_research",
+  "physical_acceptance": "not_assessed",
+  "statistical_convergence": "review_required",
+  "training_acceptance": "not_granted",
+  "decision_source": "Advisor's 2026-10-27 ADAPTIVE-02 32-case student package request"
+}

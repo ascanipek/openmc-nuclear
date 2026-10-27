@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "profile_id": "beavrs_v2_adaptive02_80k_24h_research_v1",
+  "status": "approved",
+  "purpose": "ADAPTIVE-02 32-case student research only; no later adaptive groups",
+  "calculation": {
+    "particles_per_generation": 80000,
+    "batches": 600,
+    "inactive": 300,
+    "generations_per_batch": 1,
+    "threads": 6
+  },
+  "seed_base": 74001,
+  "group_runtime_budget_seconds": 86400,
+  "production_approval": "adaptive02_first32_equal_halton_transport_budget_only",
+  "decision_source": "Advisor's 2026-10-27 ADAPTIVE-02 32-case student package request"
+}

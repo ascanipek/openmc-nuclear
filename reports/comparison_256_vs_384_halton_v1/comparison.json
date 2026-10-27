@@ -1,0 +1,83 @@
+{
+  "schema": "halton_256_vs_384_comparison_v1",
+  "scientific_status": "PROVISIONAL_EXPLORATORY; no physical/statistical training acceptance",
+  "branch": "halton",
+  "split_counts": {
+    "train_256": 208,
+    "train_384": 336,
+    "calibration": 25,
+    "test": 23
+  },
+  "test_identity": {
+    "same_ids": true,
+    "same_k_targets": true,
+    "same_3d_targets": true,
+    "test_examined_previously": true
+  },
+  "keff": {
+    "published_256_xgboost_3_4_1": {
+      "mae": 0.012307194714280921,
+      "rmse": 0.015662339956220447,
+      "r2": 0.9846378384393405,
+      "max_absolute_error": 0.037442505196250475
+    },
+    "same_env_256_xgboost_3_2_0": {
+      "mae": 0.012307193176307763,
+      "rmse": 0.015662335680739117,
+      "r2": 0.9846378468264175,
+      "max_absolute_error": 0.03744250128237103
+    },
+    "halton_384_xgboost_3_2_0": {
+      "mae": 0.007398586622718538,
+      "rmse": 0.008543024570137895,
+      "r2": 0.9954295143834827,
+      "max_absolute_error": 0.015299591171783922
+    },
+    "criticality_side_errors_same_env_256": 3,
+    "criticality_side_errors_384": 0,
+    "near_critical_five_ids": [
+      "ad07568520fda8b0dc849b8899a3dd34e33f9fda338a77e0e2685b6bbe6c1e2c",
+      "21db1c93d81dfdca4ac0c6cb6ffec214b0bb06e48a82ed60cd63c7a89ae41714",
+      "a8dcefcfa92726fbdd3245358b53cac853f67b7e36b503a778c6d15c770c26a2",
+      "e2cfb44b7838f3b89ceb7e39e52dd67826e2201119bbfc852d99deadc13d7e3d",
+      "99e8f3f83961486deb426a48c8e27fc15b8be6716ed94cd8bb13b96a546c435d"
+    ]
+  },
+  "field3d": {
+    "baseline_256_mean_relative_l2": 0.048522003708677486,
+    "halton_384_mean_relative_l2": 0.04192626575218072,
+    "baseline_256_pca_reconstruction_l2": 0.014747179994638112,
+    "halton_384_pca_reconstruction_l2": 0.014862746221702798
+  },
+  "sparse_top_quartile_descriptive": {
+    "count": 6,
+    "k_mae_256": 0.01326275902087933,
+    "k_mae_384": 0.005123738766520354,
+    "field_l2_256": 0.055434657472320965,
+    "field_l2_384": 0.03955344925570075
+  },
+  "input_sha256": {
+    "old_dataset_manifest": "db5ee990c6163264a3c5bb1980c7baa2479c89b30230876af844e185d9495a8c",
+    "new_dataset_manifest": "1536ed01165637cf96421b13e31de63135d717de91d8494534e984b090b462f3",
+    "keff_384_report": "42ed5e24d67593848d7f6c2c713d65e6fe4b05a8ba461ec97af3ea41ae5ba0d4",
+    "field3d_384_report": "385b915fde2bfbec9cd7ac03e212f8e1a834d19ca6e707c7e6cab0a26d0efcbc"
+  },
+  "quality": {
+    "new_halton_failed_attempts_unused": 2,
+    "nuclear_index_hash_counts": {
+      "ba7f6d5a371b5a8de8157356f8ef5d1c17cb0ed60accccfbc3075f46ae13f489": 373,
+      "b47cef3ac4a48d66d75fa412b68d497d59c9daac52a403fe18133ad7ba683055": 11
+    },
+    "training_acceptance": "not_granted"
+  },
+  "software": {
+    "sklearn": "1.9.0",
+    "xgboost": "3.2.0"
+  },
+  "warnings": [
+    "The original 23 test cases were examined during prior research; this is not a final untouched test.",
+    "The published 256 k model used XGBoost 3.4.1. Same-environment 256 baseline uses 3.2.0 for primary data-size comparison.",
+    "Original 256 and new 128 scenarios remain provisional; completed does not establish physics or source convergence.",
+    "Future adaptive selection must not use the 128 Halton outcomes."
+  ]
+}

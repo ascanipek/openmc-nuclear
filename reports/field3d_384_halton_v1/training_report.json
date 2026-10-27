@@ -1,0 +1,110 @@
+{
+  "schema": "field3d_384_halton_exploratory_v1",
+  "scientific_status": "PROVISIONAL_EXPLORATORY; no physical/statistical training acceptance",
+  "features": [
+    "u235_enrichment_wt_percent",
+    "fuel_temperature_K",
+    "moderator_temperature_K",
+    "coolant_pressure_MPa",
+    "elemental_boron_ppm",
+    "pin_pitch_cm",
+    "pellet_radius_cm",
+    "insertion_percent"
+  ],
+  "rank": 12,
+  "model": "XGBoost",
+  "hyperparameters": {
+    "max_depth": 4,
+    "n_estimators": 120,
+    "learning_rate": 0.05
+  },
+  "cv": {
+    "folds": 5,
+    "seed": 20261025,
+    "pca_fit": "each fold training subset only",
+    "fold_metrics": [
+      {
+        "fold": 1,
+        "fit_count": 268,
+        "validation_count": 68,
+        "pca_relative_l2_mean": 0.012475700820084243,
+        "total_relative_l2_mean": 0.05419632817450368
+      },
+      {
+        "fold": 2,
+        "fit_count": 269,
+        "validation_count": 67,
+        "pca_relative_l2_mean": 0.014889369012017423,
+        "total_relative_l2_mean": 0.047464411473587195
+      },
+      {
+        "fold": 3,
+        "fit_count": 269,
+        "validation_count": 67,
+        "pca_relative_l2_mean": 0.014354885619986008,
+        "total_relative_l2_mean": 0.05143555679798839
+      },
+      {
+        "fold": 4,
+        "fit_count": 269,
+        "validation_count": 67,
+        "pca_relative_l2_mean": 0.014069213929580765,
+        "total_relative_l2_mean": 0.0449309964525023
+      },
+      {
+        "fold": 5,
+        "fit_count": 269,
+        "validation_count": 67,
+        "pca_relative_l2_mean": 0.013730645247499947,
+        "total_relative_l2_mean": 0.05080727401663726
+      }
+    ],
+    "mean_pca_relative_l2": 0.013903962925833676,
+    "mean_total_relative_l2": 0.049766913383043766
+  },
+  "test_count": 23,
+  "test": {
+    "baseline_256_relative_l2_mean": 0.048522003708677486,
+    "halton_384_relative_l2_mean": 0.04192626575218076,
+    "absolute_change": -0.006595737956496726,
+    "percent_change": -13.593292635021935,
+    "pca_reconstruction_relative_l2_mean": 0.014862746221702843,
+    "ml_half_l1_share_error_mean": 0.020503675154741646,
+    "ml_axial_half_l1_share_error_mean": 0.01975559998755605,
+    "ml_negative_fuel_voxels_total": 22809,
+    "ml_negative_fuel_voxel_fraction": 0.1878211462450593,
+    "ml_negative_fuel_share_magnitude_total": 0.05051736164940273,
+    "raw_predicted_fuel_sum_min": 0.9999999999999999,
+    "raw_predicted_fuel_sum_max": 1.0,
+    "post_relative_l2_mean": 0.042099698753005926,
+    "post_half_l1_share_error_mean": 0.01977357014242437
+  },
+  "sparse_top_quartile_descriptive": {
+    "count": 6,
+    "old_relative_l2": 0.055434657472320965,
+    "new_relative_l2": 0.03955344925570078
+  },
+  "axis_order": [
+    "sample",
+    "z",
+    "y",
+    "x"
+  ],
+  "mesh_shape": [
+    20,
+    17,
+    17
+  ],
+  "source_dataset_manifest_sha256": "1536ed01165637cf96421b13e31de63135d717de91d8494534e984b090b462f3",
+  "baseline_test_metrics_sha256": "9878df276bbd2dfc127271a8d1c012a66d323c70f63df0f6e005fac295937998",
+  "software": {
+    "sklearn": "1.9.0",
+    "xgboost": "3.2.0"
+  },
+  "warnings": [
+    "XY coordinates vary with pin pitch; common array indices are not identical physical coordinates.",
+    "Normalized target uncertainty covariance is unavailable; raw MC tally standard errors are retained.",
+    "Raw negative values are reported; clipping and fuel renormalization are separate descriptive postprocessing.",
+    "These 23 test cases were examined previously and are not a fully untouched final validation set."
+  ]
+}

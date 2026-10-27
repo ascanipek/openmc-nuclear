@@ -1,0 +1,27 @@
+{
+  "schema": "beavrs_v2_fixed23_reference_v1",
+  "source_sha256": "f4aac44d9df7f107e7dada3569d87aabfbe5c81d2446d1cef8cb6d150cdf3f01",
+  "role": "previously recorded fixed-23 test comparison; no retraining",
+  "not_combined_with_cv_ranking": true,
+  "test_examined_previously": true,
+  "keff_published_256": {
+    "mae": 0.012307194714280921,
+    "rmse": 0.015662339956220447,
+    "r2": 0.9846378384393405,
+    "max_absolute_error": 0.037442505196250475
+  },
+  "keff_same_env_256": {
+    "mae": 0.012307193176307763,
+    "rmse": 0.015662335680739117,
+    "r2": 0.9846378468264175,
+    "max_absolute_error": 0.03744250128237103
+  },
+  "keff_384": {
+    "mae": 0.007398586622718538,
+    "rmse": 0.008543024570137895,
+    "r2": 0.9954295143834827,
+    "max_absolute_error": 0.015299591171783922
+  },
+  "field3d_256_relative_l2": 0.048522003708677486,
+  "field3d_384_relative_l2": 0.04192626575218072
+}

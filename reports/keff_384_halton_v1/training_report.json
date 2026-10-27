@@ -1,0 +1,185 @@
+{
+  "schema": "keff_384_halton_exploratory_v1",
+  "scientific_status": "PROVISIONAL_EXPLORATORY; no physical/statistical training acceptance",
+  "features": [
+    "u235_enrichment_wt_percent",
+    "fuel_temperature_K",
+    "moderator_temperature_K",
+    "coolant_pressure_MPa",
+    "elemental_boron_ppm",
+    "pin_pitch_cm",
+    "pellet_radius_cm",
+    "insertion_percent"
+  ],
+  "model": "XGBoost",
+  "hyperparameters": {
+    "objective": "reg:squarederror",
+    "tree_method": "hist",
+    "random_state": 20261025,
+    "n_jobs": 4,
+    "subsample": 1.0,
+    "colsample_bytree": 1.0,
+    "n_estimators": 400,
+    "max_depth": 2,
+    "learning_rate": 0.05
+  },
+  "cv": {
+    "folds": 5,
+    "seed": 20261025,
+    "fold_metrics": [
+      {
+        "fold": 1,
+        "fit_count": 268,
+        "validation_count": 68,
+        "mae": 0.014315176915755078,
+        "rmse": 0.020849813860999,
+        "r2": 0.9762796617024465
+      },
+      {
+        "fold": 2,
+        "fit_count": 269,
+        "validation_count": 67,
+        "mae": 0.009623994349454656,
+        "rmse": 0.013344878124434896,
+        "r2": 0.9892580111408631
+      },
+      {
+        "fold": 3,
+        "fit_count": 269,
+        "validation_count": 67,
+        "mae": 0.009713276986633993,
+        "rmse": 0.01296017872594238,
+        "r2": 0.9877121321213582
+      },
+      {
+        "fold": 4,
+        "fit_count": 269,
+        "validation_count": 67,
+        "mae": 0.011114620962466423,
+        "rmse": 0.01696680325412374,
+        "r2": 0.983973513941004
+      },
+      {
+        "fold": 5,
+        "fit_count": 269,
+        "validation_count": 67,
+        "mae": 0.00823312905741756,
+        "rmse": 0.011639405261035692,
+        "r2": 0.9939807585670429
+      }
+    ],
+    "mean_mae": 0.010600039654345543,
+    "mean_rmse": 0.015152215845307137
+  },
+  "test_count": 23,
+  "baseline_256": {
+    "mae": 0.012307194714280921,
+    "rmse": 0.015662339956220447,
+    "r2": 0.9846378384393405,
+    "max_absolute_error": 0.037442505196250475
+  },
+  "halton_384": {
+    "mae": 0.0073985877775567775,
+    "rmse": 0.008543024690179821,
+    "r2": 0.9954295142550388,
+    "max_absolute_error": 0.015299543729156984
+  },
+  "change": {
+    "mae": {
+      "absolute_new_minus_old": -0.004908606936724144,
+      "percent_change": -39.884043851425666
+    },
+    "rmse": {
+      "absolute_new_minus_old": -0.007119315266040626,
+      "percent_change": -45.454991309987
+    },
+    "max_absolute_error": {
+      "absolute_new_minus_old": -0.02214296146709349,
+      "percent_change": -59.13856818883718
+    }
+  },
+  "near_critical_five": [
+    {
+      "scenario_id": "ad07568520fda8b0dc849b8899a3dd34e33f9fda338a77e0e2685b6bbe6c1e2c",
+      "k_actual": 1.0060935175756658,
+      "k_mc_standard_error": 0.0001821583391589,
+      "k_predicted_384": 1.006598949432373,
+      "k_predicted_256": 0.97721815,
+      "insertion_percent": 87.17751433488384,
+      "abs_error_384": 0.0005054318567072613,
+      "abs_error_256": 0.028875367575665778,
+      "insertion_band": "high",
+      "distance_to_critical": 0.0060935175756657856,
+      "distance_to_old_train_nearest": 0.5625058747398443,
+      "sparse_region_top_quartile_old_train": true
+    },
+    {
+      "scenario_id": "21db1c93d81dfdca4ac0c6cb6ffec214b0bb06e48a82ed60cd63c7a89ae41714",
+      "k_actual": 0.9846841909548972,
+      "k_mc_standard_error": 0.0001755333174963,
+      "k_predicted_384": 0.9793328046798706,
+      "k_predicted_256": 0.9834935,
+      "insertion_percent": 50.0,
+      "abs_error_384": 0.005351386275026626,
+      "abs_error_256": 0.001190690954897211,
+      "insertion_band": "middle",
+      "distance_to_critical": 0.015315809045102768,
+      "distance_to_old_train_nearest": 0.43365248560506997,
+      "sparse_region_top_quartile_old_train": false
+    },
+    {
+      "scenario_id": "a8dcefcfa92726fbdd3245358b53cac853f67b7e36b503a778c6d15c770c26a2",
+      "k_actual": 0.9844720695694662,
+      "k_mc_standard_error": 0.0001919940210865,
+      "k_predicted_384": 0.9798988699913025,
+      "k_predicted_256": 1.0129242,
+      "insertion_percent": 93.2716971603686,
+      "abs_error_384": 0.004573199578163711,
+      "abs_error_256": 0.02845213043053385,
+      "insertion_band": "high",
+      "distance_to_critical": 0.015527930430533798,
+      "distance_to_old_train_nearest": 0.6263262535156748,
+      "sparse_region_top_quartile_old_train": true
+    },
+    {
+      "scenario_id": "e2cfb44b7838f3b89ceb7e39e52dd67826e2201119bbfc852d99deadc13d7e3d",
+      "k_actual": 0.9639239948037496,
+      "k_mc_standard_error": 0.0001706189641048,
+      "k_predicted_384": 0.9773132801055908,
+      "k_predicted_256": 1.0013665,
+      "insertion_percent": 85.23845616313868,
+      "abs_error_384": 0.013389285301841247,
+      "abs_error_256": 0.037442505196250475,
+      "insertion_band": "high",
+      "distance_to_critical": 0.03607600519625043,
+      "distance_to_old_train_nearest": 0.4370127245734795,
+      "sparse_region_top_quartile_old_train": false
+    },
+    {
+      "scenario_id": "99e8f3f83961486deb426a48c8e27fc15b8be6716ed94cd8bb13b96a546c435d",
+      "k_actual": 1.0501890582330344,
+      "k_mc_standard_error": 0.0001723859240744,
+      "k_predicted_384": 1.040439486503601,
+      "k_predicted_256": 1.0476536,
+      "insertion_percent": 19.0334700135542,
+      "abs_error_384": 0.00974957172943336,
+      "abs_error_256": 0.00253545823303436,
+      "insertion_band": "low",
+      "distance_to_critical": 0.050189058233034434,
+      "distance_to_old_train_nearest": 0.6558769779395073,
+      "sparse_region_top_quartile_old_train": true
+    }
+  ],
+  "sparse_top_quartile_descriptive": {
+    "count": 6,
+    "old_mae": 0.013262753639358712,
+    "new_mae": 0.005123738457199267
+  },
+  "source_dataset_sha256": "1536ed01165637cf96421b13e31de63135d717de91d8494534e984b090b462f3",
+  "baseline_predictions_sha256": "04cb63d24fa9f487280cd5d165b06bf02107b2582f08ffc87af76ec819c5538d",
+  "software": {
+    "sklearn": "1.9.0",
+    "xgboost": "3.2.0"
+  },
+  "warning": "Baseline XGBoost was trained with 3.4.1 on 256 samples; 384 model uses 3.2.0. Same fixed hyperparameters; version difference limits pure sample-count attribution. Test set was examined before and is not fully untouched."
+}

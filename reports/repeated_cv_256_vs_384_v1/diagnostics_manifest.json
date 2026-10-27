@@ -1,0 +1,28 @@
+{
+  "schema": "beavrs_v2_repeated_cv_diagnostics_v1",
+  "source_oof_sha256": "ccde9b274dd58fbe1141f033a0bbe53cdfc61c6b5f6798bd84ea44dbdf4dc9ab",
+  "source_main_cv_manifest_sha256": "20865969092b70daebf211477ef1ef8bb6e5daba88382ae2d25748e8c09b9c3a",
+  "fold_metric_rows": 50,
+  "band_metric_rows": 60,
+  "halton_only_repeats": 5,
+  "fold_error_ranges": {
+    "A_233": {
+      "k_mae_min": 0.009605136825890467,
+      "k_mae_max": 0.02023611082516774,
+      "field_l2_min": 0.045860067828151364,
+      "field_l2_max": 0.09547295065473999
+    },
+    "B_361": {
+      "k_mae_min": 0.00838881723341413,
+      "k_mae_max": 0.013229508778899989,
+      "field_l2_min": 0.04248788664609234,
+      "field_l2_max": 0.055406658096315314
+    }
+  },
+  "note": "Derived from saved OOF without model refitting; repeated predictions of a scenario are not independent observations",
+  "output_sha256": {
+    "fold_metrics.csv": "50f269c2b6022d1a005a7af94a543cdcf96e3cfbd0a858461deb5ec288034046",
+    "insertion_band_metrics.csv": "03797b194d412b2b02194e92352a454cfb19987e51206d2acf208e46bb0f928d",
+    "halton_only_repeat_metrics.csv": "77abe15d1d651f1635881fd2baf1ce5bd76a6f799da0e0b21c6586a9de3ba922"
+  }
+}

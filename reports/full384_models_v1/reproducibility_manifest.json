@@ -1,0 +1,89 @@
+{
+  "schema": "beavrs_v2_full384_candidate_v1",
+  "status": "RESEARCH_APPLICATION_PROTOTYPE; PROVISIONAL_EXPLORATORY; not physics validated",
+  "fit_count": 384,
+  "fit_membership": "all 384, including old 23 test scenarios",
+  "independent_test_count_for_this_model": 0,
+  "source_dataset_manifest_sha256": "1536ed01165637cf96421b13e31de63135d717de91d8494534e984b090b462f3",
+  "source_cv_manifest_sha256": "20865969092b70daebf211477ef1ef8bb6e5daba88382ae2d25748e8c09b9c3a",
+  "features": [
+    "u235_enrichment_wt_percent",
+    "fuel_temperature_K",
+    "moderator_temperature_K",
+    "coolant_pressure_MPa",
+    "elemental_boron_ppm",
+    "pin_pitch_cm",
+    "pellet_radius_cm",
+    "insertion_percent"
+  ],
+  "model_settings": {
+    "k": {
+      "objective": "reg:squarederror",
+      "tree_method": "hist",
+      "random_state": 20261025,
+      "n_jobs": 4,
+      "subsample": 1.0,
+      "colsample_bytree": 1.0,
+      "n_estimators": 400,
+      "max_depth": 2,
+      "learning_rate": 0.05
+    },
+    "field_pca_rank": 12,
+    "field_xgboost": {
+      "max_depth": 4,
+      "n_estimators": 120,
+      "learning_rate": 0.05
+    }
+  },
+  "array_order": [
+    "sample",
+    "z",
+    "y",
+    "x"
+  ],
+  "mesh_shape": [
+    20,
+    17,
+    17
+  ],
+  "target": "normalized kappa-fission energy-generation approximation",
+  "apparent_fit": {
+    "label": "APPARENT_IN_SAMPLE_ONLY; NOT independent generalization or physical accuracy",
+    "keff_mae": 0.002950654657501156,
+    "keff_rmse": 0.003862156320273481,
+    "field_raw_relative_l2_mean": 0.03747699550659173,
+    "field_pca_reconstruction_relative_l2_mean": 0.013440574657052793,
+    "field_raw_half_l1_mean": 0.01894114022490224,
+    "field_raw_axial_half_l1_mean": 0.018040960914350593,
+    "field_negative_fuel_voxel_fraction": 0.1907754300820707,
+    "field_post_relative_l2_mean": 0.03761169015079396
+  },
+  "software": {
+    "python": "3.11.16",
+    "numpy": "2.1.3",
+    "pandas": "3.0.5",
+    "sklearn": "1.9.0",
+    "xgboost": "3.2.0",
+    "joblib": "1.6.0"
+  },
+  "runtime_seconds": 1.594674860010855,
+  "warnings": [
+    "Apparent fit errors are in-sample and cannot be used as independent test performance.",
+    "The original 23 test scenarios are now in this model's training set.",
+    "Generalization of this candidate requires new independent OpenMC scenarios.",
+    "The first 256 and Halton 128 remain review_required/provisional; no physical or statistical acceptance.",
+    "11 old cases use an alternate nuclear-index hash; HDF5 byte equivalence remains unassessed.",
+    "Measured-zero and low-signal voxels remain; raw MC standard errors are in the source dataset.",
+    "Do not use Halton 128 physical outcomes for future adaptive scenario selection."
+  ],
+  "output_sha256": {
+    "apparent_fit.png": "6af949214a32e1d4b37c41d03074c28a0a93f7add871ddb0e5b809eb42dfdf38",
+    "keff_apparent_fit.csv": "a6a4b6e931b9325c4fd0ca08556488e7ebab1576517c2d98d738d61d2f4c8ba0",
+    "field3d_apparent_fit.npz": "581bd659cc814ed21a14eca9a620cf8146d86dbbe127c96b094db77352c0b740",
+    "keff_model.joblib": "34a9eefb5f85651fc643d9998458d4679285c9d6cd4549c2971f890cb1a6fbdc",
+    "field3d_pca.npz": "ec4d02935e0022218f5a86927e290f7e55b91f058b00383a2c67ecda4e65bdc6",
+    "apparent_fit_metrics.json": "03c82a5d8c13094f0213e6569274cac805f8ee9438b4c3960a4c3704bdf218dc",
+    "field3d_coefficient_model.joblib": "c10fc21bedf14ec872cef1bb1f81900cc952be3d282e15faae06f3eef00d184b",
+    "README.md": "2043fd1ef7786405e8fcd31ae11e2793a81c7aab609b6913270b719dd2df8296"
+  }
+}

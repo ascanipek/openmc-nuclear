@@ -1,0 +1,94 @@
+{
+  "schema": "beavrs_v2_384_halton_preview_v1",
+  "branch": "halton",
+  "state": "PROVISIONAL_EXPLORATORY; no physical/statistical/training acceptance",
+  "scenario_count": 384,
+  "source_256_count": 256,
+  "new_halton_count": 128,
+  "split_counts": {
+    "train": 336,
+    "calibration": 25,
+    "test": 23
+  },
+  "old_dataset_sha256": {
+    "fields.npz": "6eb99691d5ffd6dbc522a23d4fb5aa37881dcd7f91bd6aeb7a256e8f36d02bc0",
+    "targets_keff.csv": "b8cc127180a39162b7000d9a40bc2257791c14c1bcb5f88da40a7402afa4c4a7",
+    "splits.json": "7017f569a8fb7610fe3919c83138bc380c73067801cc1c645508b78ccf967cbd",
+    "quality_report.csv": "0cfa79ca555e9fafd9492a1aac968b90fbbdad22e6574da0f0dc9672c6be33f3",
+    "dataset_manifest.json": "db5ee990c6163264a3c5bb1980c7baa2479c89b30230876af844e185d9495a8c",
+    "scenarios.csv": "74b368d1d770fe76680e5990b6c1b5d357248deca2fb3000a6128969d36fcdea"
+  },
+  "old_256_row_order_and_values": "Preserved exactly in first 256 rows/array slices",
+  "source_groups": [
+    {
+      "package_id": "v2_halton_01_beavrs_v2_pilot_scope_v1",
+      "receipt_sha256": "ee5c37bbceec68a24d93e9e2b97acc7ce7305f9df0edeac63bd693ecfcdbbb10",
+      "zip_sha256": "9e04e63ff5d3ac0859e9d584ab3f9919ce47fe5aa81e802a59b0044515d386f8",
+      "catalogue_sha256": "56f9188a687e39640164b375b3ee3c4ad94dd82e45e1f411f0e5b37ecc65e002"
+    },
+    {
+      "package_id": "v2_halton_02_beavrs_v2_pilot_scope_v1",
+      "receipt_sha256": "e24c1edfe5bccbcfe6d14523c307c697d6bf047b63824ebfbdcaf7c8f59c035a",
+      "zip_sha256": "827107f6f6bad782297e1fa332c12d04cdd517785591727bd45be22100167729",
+      "catalogue_sha256": "5e65d0ed6158a3cc0e0593f3bd0dcce06531da94db90c07fbc613af22be1f57a"
+    },
+    {
+      "package_id": "v2_halton_03_beavrs_v2_pilot_scope_v1",
+      "receipt_sha256": "7a90e929a636af8d7d0ff2884960e1a0e288e86dd48c8fbc4e4275e6d819c4c7",
+      "zip_sha256": "f967a7065f61dcdf947e0a9511c5f082dab7c969c1401e5115d19eec1fab727a",
+      "catalogue_sha256": "f8d74d6b12139b09a52553492a202d04c1a331c91f958618f43893dfa5b24434"
+    },
+    {
+      "package_id": "v2_halton_04_beavrs_v2_pilot_scope_v1",
+      "receipt_sha256": "3524373abe32398d2f4876a1bc50240cb62b35dab5efda99a53cbb67477e9b89",
+      "zip_sha256": "11195c022994cfe57a312af45c48daeab08cdd47eb9d7114303fe0ac77fcd49c",
+      "catalogue_sha256": "5e4ff443a5121f58c74a565f7c0e4a142bbc834fff35500dd119569a22eb037d"
+    }
+  ],
+  "failed_or_incomplete_attempts_not_used": [
+    {
+      "package_id": "v2_halton_03_beavrs_v2_pilot_scope_v1",
+      "experiment_id": "V2-HALTON_03-0011",
+      "attempt": "deliveries/imported_halton128/v2_halton_03_beavrs_v2_pilot_scope_v1/f967a7065f61dcdf947e0a9511c5f082dab7c969c1401e5115d19eec1fab727a/group/experiments/V2-HALTON_03-0011/attempt_14d39d7c258e4e08a04692e3f78e3171",
+      "state": "failed"
+    },
+    {
+      "package_id": "v2_halton_03_beavrs_v2_pilot_scope_v1",
+      "experiment_id": "V2-HALTON_03-0011",
+      "attempt": "deliveries/imported_halton128/v2_halton_03_beavrs_v2_pilot_scope_v1/f967a7065f61dcdf947e0a9511c5f082dab7c969c1401e5115d19eec1fab727a/group/experiments/V2-HALTON_03-0011/attempt_a003b3a97da649d19dc4f968ab2d218c",
+      "state": "failed"
+    }
+  ],
+  "source_assignment_sha256": "ded4a6af63a3ccda07e8124cfc227456ff2461c9a1ea4d841f04d2c65c955e54",
+  "array_order": [
+    "sample",
+    "z",
+    "y",
+    "x"
+  ],
+  "mesh_shape_zyx": [
+    20,
+    17,
+    17
+  ],
+  "field_units": {
+    "fission": "reactions/source particle",
+    "kappa_fission": "eV/source particle; fission energy generation approximation, not total local heat deposition",
+    "flux": "particle-cm/source particle"
+  },
+  "normalized_target": "kappa_fission_mean / sum(kappa_fission_mean over fuel_volume_fraction > 0); no second volume weighting",
+  "normalized_target_uncertainty": "not estimated; covariance with common denominator unavailable",
+  "nuclear_index_hash_counts": {
+    "ba7f6d5a371b5a8de8157356f8ef5d1c17cb0ed60accccfbc3075f46ae13f489": 373,
+    "b47cef3ac4a48d66d75fa412b68d497d59c9daac52a403fe18133ad7ba683055": 11
+  },
+  "nuclear_hdf5_byte_equivalence": "not_assessed_for_alternate_index",
+  "quality_warning": "Zero/low-signal voxels and source convergence require separate review; completion is not validation",
+  "output_sha256": {
+    "fields.npz": "c4c6273528ee3e252871091f827d1df0b89787295b3f3e3c44676764b0f27156",
+    "targets_keff.csv": "0076cb374ac987ccaee120a603a7f5c4fa4704f1ee4c762e171d1f219fee762c",
+    "splits.json": "8621077d7d807a8438da13209b8abd8ca8ffd255871c81aa71b6ed220920e0ca",
+    "quality_report.csv": "916e40ba02348ce2e8502a325c6be5649e7ef0017001f2375dc8a4eb251284d4",
+    "scenarios.csv": "d00280d03436d6cb0fd25176525fb45312815d0d91822138ce5d674b7953c0eb"
+  }
+}

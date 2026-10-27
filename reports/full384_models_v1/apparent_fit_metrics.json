@@ -1,0 +1,11 @@
+{
+  "label": "APPARENT_IN_SAMPLE_ONLY; NOT independent generalization or physical accuracy",
+  "keff_mae": 0.002950654657501156,
+  "keff_rmse": 0.003862156320273481,
+  "field_raw_relative_l2_mean": 0.03747699550659173,
+  "field_pca_reconstruction_relative_l2_mean": 0.013440574657052793,
+  "field_raw_half_l1_mean": 0.01894114022490224,
+  "field_raw_axial_half_l1_mean": 0.018040960914350593,
+  "field_negative_fuel_voxel_fraction": 0.1907754300820707,
+  "field_post_relative_l2_mean": 0.03761169015079396
+}

@@ -1,0 +1,10 @@
+{
+  "status": "approved",
+  "document_sha256": "ce01da6b45ea42e42dcfa0664eca9b22269063cc8fa18ed73ae8f7d95d621eef",
+  "reviewer": "danisman: Advisor's ADAPTIVE-01 request, 2026-10-27; first 32 only",
+  "scope": "only_adaptive_01_first_32_controlled_research",
+  "physical_acceptance": "not_assessed",
+  "statistical_convergence": "review_required",
+  "training_acceptance": "not_granted",
+  "decision_source": "Advisor's ADAPTIVE-01 request, 2026-10-27; first 32 only"
+}

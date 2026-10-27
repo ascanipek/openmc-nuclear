@@ -1,0 +1,31 @@
+{
+  "schema": "beavrs_v2_paired_fold_common233_v1",
+  "source_oof_sha256": "ccde9b274dd58fbe1141f033a0bbe53cdfc61c6b5f6798bd84ea44dbdf4dc9ab",
+  "matched_fold_count": 25,
+  "unit": "one validation fold of 46 or 47 common physical scenarios",
+  "note": "Folds and repeated predictions are correlated; these 25 rows are not independent experiments",
+  "metrics": {
+    "k_mae": {
+      "improved_folds": 25,
+      "worsened_folds": 0,
+      "mean_fold_difference": -0.003929901827768943,
+      "minimum_fold_difference": -0.00805714857708408,
+      "maximum_fold_difference": -0.0010550132886392033
+    },
+    "k_rmse": {
+      "improved_folds": 24,
+      "worsened_folds": 1,
+      "mean_fold_difference": -0.00521908807091277,
+      "minimum_fold_difference": -0.01306564538186446,
+      "maximum_fold_difference": 0.0023775736131614843
+    },
+    "field_relative_l2_mean": {
+      "improved_folds": 25,
+      "worsened_folds": 0,
+      "mean_fold_difference": -0.013283573201078267,
+      "minimum_fold_difference": -0.04220870134142383,
+      "maximum_fold_difference": -0.0034685322173101593
+    }
+  },
+  "table_sha256": "847e4a5de686fe22ffb5afc001a1db91e7530f29d70529b81ac6315773d4dc97"
+}

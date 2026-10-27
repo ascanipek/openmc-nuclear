@@ -1,0 +1,3 @@
+# ADAPTIVE-01 seçimi — yalnız ilk 32
+
+İlk 256'nın 208 eğitim/25 kalibrasyon verisi kullanıldı; 23 test ve Halton fiziksel çıktıları kullanılmadı. 4096 scrambled Sobol adayının fizik/geometri geçerliliği kontrol edildi. Beşli alt örnek ensemble k ve 3B fiziksel alan anlaşmazlığını üretti. 35/35/20/10 puan bileşenleri aday havuzunda yüzdelik sıraya dönüştürülerek toplandı. Greedy seçimde 8B minimum uzaklık ve çubuk konumu üst sınırı uygulandı. Bu sayılar araştırmacı tasarım tercihidir; fiziksel doğruluk ya da belirsizlik garantisi değildir. İlk 32 tamamlandıktan sonra sonraki grup yalnız yeni adaptif sonuçlar eklenerek yeniden seçilmelidir.

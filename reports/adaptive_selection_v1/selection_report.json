@@ -1,0 +1,239 @@
+{
+  "schema": "beavrs_v2_adaptive01_selection_v1",
+  "status": "selection_complete_technical_research_only",
+  "data_firewall": {
+    "fit_scenario_count": 208,
+    "calibration_count": 25,
+    "excluded_test_count": 23,
+    "training_source": "datasets/v2_256_preview_v1 only",
+    "halton_outcomes_read": false,
+    "halton_models_read": false,
+    "full384_models_read": false,
+    "halton_input_ids_read_only_after_selection_for_collision_audit": true
+  },
+  "source_sha256": {
+    "old_dataset_manifest": "db5ee990c6163264a3c5bb1980c7baa2479c89b30230876af844e185d9495a8c",
+    "old_splits": "7017f569a8fb7610fe3919c83138bc380c73067801cc1c645508b78ccf967cbd",
+    "old_scenarios": "74b368d1d770fe76680e5990b6c1b5d357248deca2fb3000a6128969d36fcdea",
+    "old_targets": "b8cc127180a39162b7000d9a40bc2257791c14c1bcb5f88da40a7402afa4c4a7",
+    "old_fields": "6eb99691d5ffd6dbc522a23d4fb5aa37881dcd7f91bd6aeb7a256e8f36d02bc0",
+    "space": "637e3fc2fb7ec5eb9be4b152fdb247dd82757119b4551db72fa3e1f80abb3b8a",
+    "physics_validator": "7da4040d6c7c00aef1cf89b617aa6c90acb8637e5d6b097b05ad24ea1ad03720",
+    "halton_input_catalogue_collision_audit_only": "a75805ef073b8a358168de7e329d5dcb197858bb8c248c3769268387cf5e9f44"
+  },
+  "candidate_generation": {
+    "method": "scrambled Sobol",
+    "seed": 20261121,
+    "power": 12,
+    "requested": 4096,
+    "valid": 4096,
+    "rejected": 0,
+    "parameter_order": [
+      "u235_enrichment_wt_percent",
+      "fuel_temperature_K",
+      "moderator_temperature_K",
+      "coolant_pressure_MPa",
+      "elemental_boron_ppm",
+      "pin_pitch_cm",
+      "pellet_radius_cm",
+      "insertion_percent"
+    ],
+    "bounds": {
+      "u235_enrichment_wt_percent": {
+        "lower": 1.6,
+        "upper": 3.1,
+        "basis": "Researcher proposal; BEAVRS endpoint labels are not validation of interpolation"
+      },
+      "fuel_temperature_K": {
+        "lower": 556.0,
+        "upper": 576.0,
+        "basis": "Researcher proposal around HZP nominal"
+      },
+      "moderator_temperature_K": {
+        "lower": 556.0,
+        "upper": 576.0,
+        "basis": "Researcher proposal; liquid phase and data guards apply"
+      },
+      "coolant_pressure_MPa": {
+        "lower": 15.0,
+        "upper": 16.0,
+        "basis": "Researcher proposal around general BEAVRS operating pressure"
+      },
+      "elemental_boron_ppm": {
+        "lower": 0.0,
+        "upper": 975.0,
+        "basis": "Researcher proposal; 975 ppm is sourced HZP point"
+      },
+      "pin_pitch_cm": {
+        "lower": 1.25,
+        "upper": 1.27,
+        "basis": "Researcher geometry perturbation; not design tolerance"
+      },
+      "pellet_radius_cm": {
+        "lower": 0.39,
+        "upper": 0.395,
+        "basis": "Researcher geometry perturbation; not design tolerance"
+      },
+      "insertion_percent": {
+        "lower": 0.0,
+        "upper": 100.0,
+        "basis": "Researcher active-height definition; not source step scale"
+      }
+    },
+    "validation": "resolve_proposed controls and IF97 water phase before scoring"
+  },
+  "ensemble": {
+    "members": 5,
+    "member_base_seeds": [
+      20261110,
+      20261111,
+      20261112,
+      20261113,
+      20261114
+    ],
+    "training_fraction_without_replacement": 0.8,
+    "k_model_parameters": {
+      "objective": "reg:squarederror",
+      "tree_method": "hist",
+      "random_state": 20261025,
+      "n_jobs": 4,
+      "subsample": 1.0,
+      "colsample_bytree": 1.0,
+      "n_estimators": 400,
+      "max_depth": 2,
+      "learning_rate": 0.05
+    },
+    "field_model_parameters": {
+      "objective": "reg:squarederror",
+      "tree_method": "hist",
+      "multi_strategy": "one_output_per_tree",
+      "random_state": 20261025,
+      "n_jobs": 4,
+      "max_depth": 4,
+      "n_estimators": 120,
+      "learning_rate": 0.05,
+      "subsample": 1.0,
+      "colsample_bytree": 1.0
+    },
+    "pca_rank": 12,
+    "pca_fit": "each member's own training subset; OOF uses fold training only",
+    "field_uncertainty": "sqrt(sum of mean squared member deviations over geometric fuel voxels) / L2 norm of ensemble mean field on fuel",
+    "k_uncertainty": "sample standard deviation of member k predictions"
+  },
+  "calibration": {
+    "k_rms_error_over_rms_disagreement": 1.4694678786491273,
+    "k_median_absolute_error_floor": 0.009333408412955269,
+    "field_rms_error_over_rms_disagreement": 4.963946054431415,
+    "training_only_oof_k_uncertainty_error_spearman": 0.2908112101475946,
+    "training_only_oof_field_uncertainty_error_spearman": 0.5420927280195015,
+    "calibration_k_uncertainty_error_spearman": 0.24769230769230768,
+    "calibration_field_uncertainty_error_spearman": 0.51,
+    "calibration_field_disagreement_vs_raw_MC_relative_error_spearman": 0.20153846153846153,
+    "interpretation": "Disagreement is a heuristic; correlations do not guarantee true error or physical validity"
+  },
+  "scoring": {
+    "weights": {
+      "k_uncertainty": 0.35,
+      "field_uncertainty": 0.35,
+      "sparsity": 0.2,
+      "criticality": 0.1
+    },
+    "weight_rationale": "Advisor-prescribed 35/35/20/10 balance; fixed before evaluating candidate outcomes",
+    "normalization": "empirical percentile rank within valid Sobol candidate pool, [0,1], per component",
+    "sparsity": "minimum Euclidean distance to 208 training inputs in fixed approved [0,1]^8 bounds",
+    "criticality": "4p(1-p), p=NormalCDF((mean_k-1)/sqrt((calibration_scale*k_ensemble_sd)^2+median_calibration_abs_error^2)); then percentile rank",
+    "total": "0.35*k_percentile + 0.35*field_percentile + 0.20*sparsity_percentile + 0.10*criticality_percentile"
+  },
+  "diversity": {
+    "method": "greedy descending total score with hard normalized 8D minimum distance and insertion-band cap",
+    "minimum_pairwise_distance_requirement": 0.35,
+    "maximum_per_insertion_band": 12,
+    "selected_pairwise_minimum": 0.4340179905712431,
+    "selected_band_counts": {
+      "low": 9,
+      "middle": 11,
+      "high": 12
+    },
+    "heuristic_notice": "Distance and band cap are precommitted researcher choices; not validated physical thresholds"
+  },
+  "selected_count": 32,
+  "collision_audit": {
+    "initial_256": 0,
+    "halton_128_input_only": 0
+  },
+  "selected_scenario_ids": [
+    "9028b7295c739d853d71b7d6173e599bef69b1ee5330f4828c8bf4c026fdf29a",
+    "6d39dd5aa456432c54da84d66be015d7750d97174e8bfc1e4a4cae4e6d3d55be",
+    "469c4c0b1d40c03c02c32d77c817be587fa114c5cc42ef17be5739a6d8946da2",
+    "0990d4b52240500819a219035895072e99eb5badc87bffa046d6f40d2ef23c79",
+    "1ab7966f09e24c195bd40f7dd773c469184869fc16016b68bed81b765c13459a",
+    "63171a0571a4bc6fc9ec7bfd0a10537ec034118d71217bd8391525877362da7f",
+    "dd29bbd7440bc5d0c2cd0e57c65b02698afa761d44c0d23ab025616f7646e3d4",
+    "5dafef91b7467fff34031b466e0d9d3874ee6f657fbf25d205b13691216be742",
+    "0e293b3430cfc421645466cf85a77842210e88a60da9faf697547d8f0a39b016",
+    "c8e551fbdb02ea44cd444b8c8061877ca5bfa1fa92aecd806900a335151b5341",
+    "2360ff1980a7a7151582f6348b619ff6c5adaaea9b9acd4c374621dbe62ec8d1",
+    "bc616d1b59ea864de12e4845738fc23203d77ca51786d56ebb0a4ed7c5e8d8bb",
+    "569b27168078f83837664b7a3c3602e2c18d4f33d3e42266cf8d945b531d7200",
+    "7246de127443da61aa77386af54ef2d586448a7abf25bb19749f906651bf1a41",
+    "f9c120d8b22f6153935df02ca12d573912719fe5b5fd2d3faf9e4e809d19eb82",
+    "62f7330e4308a2a4531f583f43d192832c44229487150e9794a8b76d61b30161",
+    "720a83ddf5fda962d491419ead5e10ccbe919434a20b8f78e2025b6ddb595010",
+    "65d82003318ac673f86f987a915366871fef92e63b189b1f17145f3147f3dba1",
+    "718e89888988100e699511362ede87a74e4c25f45827c56c2b3baf6f31217b00",
+    "75436a599bf21063bca4b2dcac14d7442f569c3dcd2c70a45221a23f3c069d2f",
+    "76b63be8708a889dd70578d1c3b34d9c4a875bdab87dee163781c36b22757331",
+    "06d9ed0798c548826d4b97c3e5858961bc155dfcb9e7f324696ad5bdca1d46b1",
+    "fd9872efe108cc8a4b48122e60561ff649945bd61b45188425143a9dae1001f7",
+    "de089cabf43326f001b6360b8a4f164aa2c08bc2c59ebcf43788d383ff6ed849",
+    "ae25e02a0810fd592fca514ccd30622b6e92eacf461ebdd7c82ce8192af47d2b",
+    "fe43917a60cfee25fde5419314587db542fb87396af4775f6464cfe12aee1c11",
+    "4a29866e94a8bf0b4274cebd2916fef08734fa913f80d81d4639ab9a8448b112",
+    "30439f0af1f9ce299df703e80e2cca83493aaa02e7da74989c6d374591b525b1",
+    "d3236f3422d484bafcbcbbb23f54c351f8f2c29d398bae476cefc893568e81ef",
+    "5278cd234f5b2a3f1e16eb78df6c0bc97bc8fc272b82741525efedc4c74ce42a",
+    "d5c94dcfb57f99f90631cc289e963a107fd401188ae9951e06ffb1e74ed3ed25",
+    "4cdd50d43e68e825ab380476005d7f8aada9c2f0d818543d155804bfe6110d01"
+  ],
+  "scientific_warnings": [
+    "Uncertainty disagreement can be affected by MC tally noise and model bias; it does not bound true error.",
+    "The 256 preview has review_required physics/field quality; source convergence and nuclear HDF5 equivalence remain unassessed.",
+    "No Halton physical outcome, 384 model or old test outcome was used in fitting or scoring.",
+    "Adaptive sampling is not presumed better than Halton; compare at equal transport budget later."
+  ],
+  "software": {
+    "python": "3.11.16",
+    "numpy": "2.1.3",
+    "pandas": "3.0.5",
+    "scipy": "1.17.1",
+    "sklearn": "1.9.0",
+    "xgboost": "3.2.0"
+  },
+  "runtime_seconds": 10.595025149988942,
+  "output_sha256": {
+    "calibration_diagnostics.csv": "c2915c72c8d5a271d67527d8f3b511f46ca5927a8e5b5b9a349591c55f0c9c81",
+    "parameter_coverage.png": "c53d4065e4b86917e121a93842785a259433d2b8f710ab7a7b27e6379bc55133",
+    "rejected_candidates.csv": "bbf666b0045b5761ec9e4c3d212bee4c003b3ab670a99fd9bb40765461121aba",
+    "selected_scores.csv": "d167df42c3d141c64c4099b4a2aa80f48f94419cae1238bdd2660a781a0cdf8f",
+    "candidate_scores.csv": "c94c5a37c5ccbe2c9fc35a0c454139793ff64b95067a36a029ca626d103e12f5",
+    "training_only_oof_uncertainty.csv": "e5113f0a4fb587fcb8722aed426ff02ac364a430ff716ca2fdd9172bbabd8f76",
+    "oof_folds.json": "e26422d69d8d496e1d0d25f9bb5287dfd764e2d4da87f4873985dcf7963287a2",
+    "selected_32.json": "5e0063bd72535d37e134cfdaebd78b3de48f859576b3c8b4e86b4ded1aebfdc1",
+    "candidate_selection.png": "37306c5dfce532995f65d16f93975fd3264566f773aec4bb6f63d6fac5102820",
+    "ensemble/member_0_keff.joblib": "33fc6ef301974e8408400ed56213a3c75273ea08ad30688cbb6573b87f734143",
+    "ensemble/member_4_field.joblib": "6ea62f60a59eacb12bd740e914c56ed276c184687ec7cf8c1a88676740b6d299",
+    "ensemble/member_3_field.joblib": "6d2e6c4dff0cb581aca428f7a2eb42fae7678be9e5b941c1c6ec28c866ed9f9f",
+    "ensemble/member_1_keff.joblib": "02b13118a1e18f96f94ad9fbc80015852499afcf1bc7086e968f58a96bf76237",
+    "ensemble/member_1_field.joblib": "6ed284ecebfccc125a18ba001618fea61a30e4710aeebc286ef196a4305a350b",
+    "ensemble/member_3_pca.npz": "797c57a51ccca88602f22ff9ea9068701261ed621e723534725102470b6a6a38",
+    "ensemble/member_0_field.joblib": "4a0fb4fddae1bb34189d36a7a6e04f6b459f15848a1e00a02313422909afe908",
+    "ensemble/member_4_pca.npz": "6e535327d51b6579d3b0f321e547fcc707fa19a846713fbe3a02cf9e2e458f8f",
+    "ensemble/member_4_keff.joblib": "a486f29e8aa12558ff358a3e30be6a9cd60ea9b877b9606e47e4e48ba1d05d7b",
+    "ensemble/member_1_pca.npz": "a004a564210349dd00d6310cf128eba025a0b5634f9e956c301eaedf9cda936c",
+    "ensemble/member_2_field.joblib": "b6b091faa4482e47aa82ddc1271558fd26faca6ed56a175fcfab1ff2d49d092a",
+    "ensemble/member_3_keff.joblib": "fb23cbd78d38d24a9863739fcedde0a7b378e0cc1cb9923acf135f04a79e4c4d",
+    "ensemble/member_2_pca.npz": "d3e2a11a1eb6ab2fbf4f3cce94f484a8a9d724770c989d710d417960ffb15ae8",
+    "ensemble/member_2_keff.joblib": "d21b4ddce6aac2c038e06e8669076a50288f4b7cbca9e6b15b656839ca836516",
+    "ensemble/member_0_pca.npz": "8f325604355a048d7cf703f68fcfa41b1a4b7efa75d78147f86a853f13cc73cf"
+  }
+}

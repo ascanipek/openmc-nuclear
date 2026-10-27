@@ -1,0 +1,200 @@
+<?xml version='1.0' encoding='utf-8'?>
+<model>
+  <materials>
+    <material id="211" name="helium" temperature="568.8094554692507">
+      <density value="0.0015981" units="g/cm3"/>
+      <nuclide name="He4" ao="0.00024044"/>
+      <nuclide name="He3" ao="4.8089e-10"/>
+    </material>
+    <material id="212" name="zircaloy" temperature="568.8094554692507">
+      <density value="6.55" units="g/cm3"/>
+      <nuclide name="Sn120" ao="0.00015697"/>
+      <nuclide name="Fe54" ao="8.6698e-06"/>
+      <nuclide name="Sn124" ao="2.7897e-05"/>
+      <nuclide name="Sn114" ao="3.1799e-06"/>
+      <nuclide name="Zr94" ao="0.0073734"/>
+      <nuclide name="Sn115" ao="1.6381e-06"/>
+      <nuclide name="Cr53" ao="7.2076e-06"/>
+      <nuclide name="Sn117" ao="3.7003e-05"/>
+      <nuclide name="Cr50" ao="3.2962e-06"/>
+      <nuclide name="Zr92" ao="0.0072759"/>
+      <nuclide name="O17" ao="1.168e-07"/>
+      <nuclide name="Sn122" ao="2.2308e-05"/>
+      <nuclide name="Cr52" ao="6.3564e-05"/>
+      <nuclide name="Cr54" ao="1.7941e-06"/>
+      <nuclide name="Sn112" ao="4.6735e-06"/>
+      <nuclide name="Zr96" ao="0.0011879"/>
+      <nuclide name="O18" ao="6.1648e-07"/>
+      <nuclide name="O16" ao="0.00030744"/>
+      <nuclide name="Sn116" ao="7.0055e-05"/>
+      <nuclide name="Zr91" ao="0.0047601"/>
+      <nuclide name="Zr90" ao="0.021828"/>
+      <nuclide name="Sn118" ao="0.00011669"/>
+      <nuclide name="Fe57" ao="3.1431e-06"/>
+      <nuclide name="Sn119" ao="4.1387e-05"/>
+      <nuclide name="Fe58" ao="4.1829e-07"/>
+      <nuclide name="Fe56" ao="0.0001361"/>
+    </material>
+    <material id="213" name="water" temperature="568.8094554692507">
+      <density value="0.7356428914627383" units="g/cm3"/>
+      <nuclide name="H1" ao="0.04912934661263666"/>
+      <nuclide name="H2" ao="7.652618926529572e-06"/>
+      <nuclide name="O16" ao="0.024510040888420622"/>
+      <nuclide name="O17" ao="9.311490992725728e-06"/>
+      <nuclide name="O18" ao="4.914723636824553e-05"/>
+      <nuclide name="B10" ao="7.450109050496089e-06"/>
+      <nuclide name="B11" ao="3.0138202392471508e-05"/>
+      <sab name="c_H_in_H2O"/>
+    </material>
+    <material id="214" name="b4c" temperature="568.8094554692507">
+      <density value="1.76" units="g/cm3"/>
+      <nuclide name="C13" ao="0.00021252"/>
+      <nuclide name="C12" ao="0.018972"/>
+      <nuclide name="B10" ao="0.015206"/>
+      <nuclide name="B11" ao="0.061514"/>
+    </material>
+    <material id="215" name="fuel" depletable="true" temperature="562.5056367404759">
+      <density value="10.31341" units="g/cm3"/>
+      <nuclide name="U234" ao="3.8913932906790804e-06"/>
+      <nuclide name="U235" ao="0.0004843480886141766"/>
+      <nuclide name="U238" ao="0.022516265382483348"/>
+      <nuclide name="O16" ao="0.045899535680975344"/>
+      <nuclide name="O17" ao="1.7436963290269217e-05"/>
+      <nuclide name="O18" ao="9.203708451078554e-05"/>
+    </material>
+    <material id="216" name="ss304" temperature="568.8094554692507">
+      <density value="8.03" units="g/cm3"/>
+      <nuclide name="Fe54" ao="0.003462"/>
+      <nuclide name="Si30" ao="3.1893e-05"/>
+      <nuclide name="Si28" ao="0.00095281"/>
+      <nuclide name="Ni61" ao="9.3917e-05"/>
+      <nuclide name="Cr53" ao="0.0016789"/>
+      <nuclide name="Cr50" ao="0.00076778"/>
+      <nuclide name="Si29" ao="4.8381e-05"/>
+      <nuclide name="Fe57" ao="0.0012551"/>
+      <nuclide name="Cr52" ao="0.014806"/>
+      <nuclide name="Cr54" ao="0.00041791"/>
+      <nuclide name="Ni62" ao="0.00029945"/>
+      <nuclide name="Mn55" ao="0.0017604"/>
+      <nuclide name="Ni64" ao="7.6261e-05"/>
+      <nuclide name="Ni58" ao="0.0056089"/>
+      <nuclide name="Fe56" ao="0.054345"/>
+      <nuclide name="Fe58" ao="0.00016703"/>
+      <nuclide name="Ni60" ao="0.0021605"/>
+    </material>
+    <material id="217" name="aic" temperature="568.8094554692507">
+      <density value="10.16" units="g/cm3"/>
+      <nuclide name="Cd116" ao="0.00020443"/>
+      <nuclide name="Cd113" ao="0.00033275"/>
+      <nuclide name="In115" ao="0.0076511"/>
+      <nuclide name="In113" ao="0.00034219"/>
+      <nuclide name="Ag107" ao="0.023523"/>
+      <nuclide name="Cd111" ao="0.00034821"/>
+      <nuclide name="Cd106" ao="3.3882e-05"/>
+      <nuclide name="Cd108" ao="2.4166e-05"/>
+      <nuclide name="Cd112" ao="0.00065611"/>
+      <nuclide name="Ag109" ao="0.021854"/>
+      <nuclide name="Cd114" ao="0.00078252"/>
+      <nuclide name="Cd110" ao="0.00033936"/>
+    </material>
+  </materials>
+  <geometry>
+    <cell id="541" name="fuel pellet" material="215" region="-631" universe="181"/>
+    <cell id="542" name="fuel helium gap" material="211" region="631 -632" universe="181"/>
+    <cell id="543" name="fuel Zircaloy clad" material="212" region="632 -633" universe="181"/>
+    <cell id="544" name="fuel-pin water" material="213" region="633" universe="181"/>
+    <cell id="545" name="dashpot Zircaloy" material="212" region="637 -638 -634" universe="182"/>
+    <cell id="546" name="normal guide Zircaloy" material="212" region="635 -636 634" universe="182"/>
+    <cell id="547" name="Ag-In-Cd absorber" material="217" region="-639 643 -644" universe="182"/>
+    <cell id="548" name="B4C absorber" material="214" region="-640 644 -645" universe="182"/>
+    <cell id="549" name="Ag-In-Cd helium annulus" material="211" region="639 -641 643 -644" universe="182"/>
+    <cell id="550" name="B4C helium annulus" material="211" region="640 -641 644 -645" universe="182"/>
+    <cell id="551" name="SS304 rod sleeve" material="216" region="641 -642 ((643 -644) | (644 -645))" universe="182"/>
+    <cell id="552" name="dashpot water" material="213" region="-637 -634 (642 | ((-643 | 644) (-644 | 645)))" universe="182"/>
+    <cell id="553" name="normal guide water" material="213" region="-635 634 (642 | ((-643 | 644) (-644 | 645)))" universe="182"/>
+    <cell id="554" name="outside dashpot water" material="213" region="638 -634" universe="182"/>
+    <cell id="555" name="outside guide water" material="213" region="636 634" universe="182"/>
+    <cell id="556" name="center water" material="213" universe="183"/>
+    <cell id="557" name="edge water" material="213" universe="184"/>
+    <cell id="558" name="bounded active assembly" fill="185" region="646 -647 648 -649 650 -651" universe="186"/>
+    <lattice id="185" name="17x17 BEAVRS-derived active assembly">
+      <pitch>1.2566945622488856 1.2566945622488856</pitch>
+      <outer>184</outer>
+      <dimension>17 17</dimension>
+      <lower_left>-10.681903779115528 -10.681903779115528</lower_left>
+      <universes>
+181 181 181 181 181 181 181 181 181 181 181 181 181 181 181 181 181 
+181 181 181 181 181 181 181 181 181 181 181 181 181 181 181 181 181 
+181 181 181 181 181 182 181 181 182 181 181 182 181 181 181 181 181 
+181 181 181 182 181 181 181 181 181 181 181 181 181 182 181 181 181 
+181 181 181 181 181 181 181 181 181 181 181 181 181 181 181 181 181 
+181 181 182 181 181 182 181 181 182 181 181 182 181 181 182 181 181 
+181 181 181 181 181 181 181 181 181 181 181 181 181 181 181 181 181 
+181 181 181 181 181 181 181 181 181 181 181 181 181 181 181 181 181 
+181 181 182 181 181 182 181 181 183 181 181 182 181 181 182 181 181 
+181 181 181 181 181 181 181 181 181 181 181 181 181 181 181 181 181 
+181 181 181 181 181 181 181 181 181 181 181 181 181 181 181 181 181 
+181 181 182 181 181 182 181 181 182 181 181 182 181 181 182 181 181 
+181 181 181 181 181 181 181 181 181 181 181 181 181 181 181 181 181 
+181 181 181 182 181 181 181 181 181 181 181 181 181 182 181 181 181 
+181 181 181 181 181 182 181 181 182 181 181 182 181 181 181 181 181 
+181 181 181 181 181 181 181 181 181 181 181 181 181 181 181 181 181 
+181 181 181 181 181 181 181 181 181 181 181 181 181 181 181 181 181 </universes>
+    </lattice>
+    <surface id="631" type="z-cylinder" coeffs="0.0 0.0 0.39047371901571754"/>
+    <surface id="632" type="z-cylinder" coeffs="0.0 0.0 0.40005"/>
+    <surface id="633" type="z-cylinder" coeffs="0.0 0.0 0.4572"/>
+    <surface id="634" type="z-plane" coeffs="39.958"/>
+    <surface id="635" type="z-cylinder" coeffs="0.0 0.0 0.56134"/>
+    <surface id="636" type="z-cylinder" coeffs="0.0 0.0 0.60198"/>
+    <surface id="637" type="z-cylinder" coeffs="0.0 0.0 0.50419"/>
+    <surface id="638" type="z-cylinder" coeffs="0.0 0.0 0.5461"/>
+    <surface id="639" type="z-cylinder" coeffs="0.0 0.0 0.38227"/>
+    <surface id="640" type="z-cylinder" coeffs="0.0 0.0 0.37338"/>
+    <surface id="641" type="z-cylinder" coeffs="0.0 0.0 0.38608"/>
+    <surface id="642" type="z-cylinder" coeffs="0.0 0.0 0.48387"/>
+    <surface id="643" type="z-plane" coeffs="337.248166504085"/>
+    <surface id="644" type="z-plane" coeffs="438.84816650408504"/>
+    <surface id="645" type="z-plane" coeffs="697.9281665040851"/>
+    <surface id="646" type="x-plane" boundary="reflective" coeffs="-10.725083779115527"/>
+    <surface id="647" type="x-plane" boundary="reflective" coeffs="10.725083779115527"/>
+    <surface id="648" type="y-plane" boundary="reflective" coeffs="-10.725083779115527"/>
+    <surface id="649" type="y-plane" boundary="reflective" coeffs="10.725083779115527"/>
+    <surface id="650" type="z-plane" boundary="vacuum" coeffs="36.748"/>
+    <surface id="651" type="z-plane" boundary="vacuum" coeffs="402.508"/>
+  </geometry>
+  <settings>
+    <run_mode>eigenvalue</run_mode>
+    <particles>80000</particles>
+    <batches>600</batches>
+    <inactive>300</inactive>
+    <generations_per_batch>1</generations_per_batch>
+    <source type="independent" strength="1.0" particle="neutron">
+      <space type="box">
+        <parameters>-10.725083779115527 -10.725083779115527 36.748 10.725083779115527 10.725083779115527 402.508</parameters>
+      </space>
+      <constraints>
+        <fissionable>true</fissionable>
+      </constraints>
+    </source>
+    <seed>73031</seed>
+    <entropy_mesh>31</entropy_mesh>
+    <mesh id="31" name="assembly_xyz">
+      <dimension>17 17 20</dimension>
+      <lower_left>-10.725083779115527 -10.725083779115527 36.748</lower_left>
+      <upper_right>10.725083779115527 10.725083779115527 402.508</upper_right>
+    </mesh>
+    <temperature_default>568.8094554692507</temperature_default>
+    <temperature_method>interpolation</temperature_method>
+  </settings>
+  <tallies>
+    <filter id="31" type="mesh">
+      <bins>31</bins>
+    </filter>
+    <tally id="31" name="assembly_3d">
+      <filters>31</filters>
+      <scores>fission kappa-fission flux</scores>
+      <estimator>tracklength</estimator>
+    </tally>
+  </tallies>
+</model>

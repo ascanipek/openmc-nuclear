@@ -1,0 +1,10 @@
+{
+  "status": "approved",
+  "authorization": "adaptive02_first32_controlled_research_student_only",
+  "model": "beavrs_derived_3d_assembly_v2_proposed",
+  "group_id": "v2_adaptive_02_beavrs_v2_pilot_scope_v1",
+  "meaning": "Technical run preparation only; no physical, convergence or training acceptance",
+  "package_sha256": "2a852e2bb368230fbc31ab16b4b8d38ce206d5f9f455b3b83cc1fa4cc753a0a3",
+  "hashes_sha256": "4b12fcfc16a873bf0042d103951cb13422b413275be59a990fca096aa603bcc1",
+  "decision_source": "Advisor's 2026-10-27 ADAPTIVE-02 32-case student package request"
+}

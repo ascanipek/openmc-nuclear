@@ -1,0 +1,1154 @@
+[
+  {
+    "selection_rank": 1,
+    "candidate_index": 3269,
+    "scenario_id": "528ff630e4656c90742a8b290d32a7fe5af5ad9d6b7b2c060b0b25005a0e0750",
+    "controls": {
+      "u235_enrichment_wt_percent": 2.5207083908841015,
+      "fuel_temperature_K": 557.4628917351365,
+      "moderator_temperature_K": 558.2906659170985,
+      "coolant_pressure_MPa": 15.35412263777107,
+      "elemental_boron_ppm": 131.75836263690144,
+      "pin_pitch_cm": 1.255716875344515,
+      "pellet_radius_cm": 0.3949826348247007,
+      "insertion_percent": 94.18140407651663
+    },
+    "insertion_band": "high",
+    "source_model_version": "adaptive01_vs_256_v1: 240 train",
+    "predicted_k_saved_model": 0.9327259659767151,
+    "predicted_k_ensemble_mean": 0.945636761188507,
+    "raw_k_ensemble_sd": 0.026004588841248687,
+    "raw_field_ensemble_relative_spread": 0.04220916533502497,
+    "nearest_training_distance_normalized_8d": 0.6503438203738104,
+    "criticality_probability_above_one_approx": 0.10696875772603964,
+    "component_percentiles": {
+      "k_uncertainty": 0.9914529914529915,
+      "field_uncertainty": 0.9755799755799756,
+      "sparsity": 0.9807081807081807,
+      "criticality": 0.9555555555555556
+    },
+    "component_weighted": {
+      "k_uncertainty": 0.347008547008547,
+      "field_uncertainty": 0.3414529914529914,
+      "sparsity": 0.19614163614163616,
+      "criticality": 0.09555555555555556
+    },
+    "total_score": 0.9801587301587302
+  },
+  {
+    "selection_rank": 2,
+    "candidate_index": 2630,
+    "scenario_id": "42e7ab2b3d854673f1f858dfa94e04b11c4db0716e1c61d7598414a6aec5119f",
+    "controls": {
+      "u235_enrichment_wt_percent": 2.81738859731704,
+      "fuel_temperature_K": 575.4109805673361,
+      "moderator_temperature_K": 557.3003293424845,
+      "coolant_pressure_MPa": 15.07120534684509,
+      "elemental_boron_ppm": 446.5428470168263,
+      "pin_pitch_cm": 1.2664200626686215,
+      "pellet_radius_cm": 0.3900041797710583,
+      "insertion_percent": 94.08598328009248
+    },
+    "insertion_band": "high",
+    "source_model_version": "adaptive01_vs_256_v1: 240 train",
+    "predicted_k_saved_model": 0.9344580769538879,
+    "predicted_k_ensemble_mean": 0.9414605140686035,
+    "raw_k_ensemble_sd": 0.02127266107979641,
+    "raw_field_ensemble_relative_spread": 0.04208847682262468,
+    "nearest_training_distance_normalized_8d": 0.6386367324475409,
+    "criticality_probability_above_one_approx": 0.052458960219690674,
+    "component_percentiles": {
+      "k_uncertainty": 0.9802197802197802,
+      "field_uncertainty": 0.9750915750915751,
+      "sparsity": 0.9753357753357753,
+      "criticality": 0.9435897435897436
+    },
+    "component_weighted": {
+      "k_uncertainty": 0.34307692307692306,
+      "field_uncertainty": 0.34128205128205125,
+      "sparsity": 0.19506715506715508,
+      "criticality": 0.09435897435897436
+    },
+    "total_score": 0.9737851037851037
+  },
+  {
+    "selection_rank": 3,
+    "candidate_index": 643,
+    "scenario_id": "18465acdefbd4180202300614a6058713ab92b7bbebf097f286a642aa6c5e169",
+    "controls": {
+      "u235_enrichment_wt_percent": 2.0364930111914874,
+      "fuel_temperature_K": 559.6777043715119,
+      "moderator_temperature_K": 557.5578994713724,
+      "coolant_pressure_MPa": 15.163975241594017,
+      "elemental_boron_ppm": 688.8332897331566,
+      "pin_pitch_cm": 1.250515114031732,
+      "pellet_radius_cm": 0.3913570448709652,
+      "insertion_percent": 95.7266547717154
+    },
+    "insertion_band": "high",
+    "source_model_version": "adaptive01_vs_256_v1: 240 train",
+    "predicted_k_saved_model": 0.7664360404014587,
+    "predicted_k_ensemble_mean": 0.771806788444519,
+    "raw_k_ensemble_sd": 0.029216353784730816,
+    "raw_field_ensemble_relative_spread": 0.12105284249244501,
+    "nearest_training_distance_normalized_8d": 0.6157478435883492,
+    "criticality_probability_above_one_approx": 1.573849476363856e-06,
+    "component_percentiles": {
+      "k_uncertainty": 0.9948717948717949,
+      "field_uncertainty": 1.0,
+      "sparsity": 0.9548229548229549,
+      "criticality": 0.8444444444444444
+    },
+    "component_weighted": {
+      "k_uncertainty": 0.34820512820512817,
+      "field_uncertainty": 0.35,
+      "sparsity": 0.19096459096459098,
+      "criticality": 0.08444444444444445
+    },
+    "total_score": 0.9736141636141635
+  },
+  {
+    "selection_rank": 4,
+    "candidate_index": 3011,
+    "scenario_id": "3e2adeb87e0719906b6eb2dd082cbf9584036feeb7b1845a4b8132dd0f216728",
+    "controls": {
+      "u235_enrichment_wt_percent": 2.0616975323297084,
+      "fuel_temperature_K": 565.2129983194172,
+      "moderator_temperature_K": 574.8273822516203,
+      "coolant_pressure_MPa": 15.04063288681209,
+      "elemental_boron_ppm": 553.8096869364381,
+      "pin_pitch_cm": 1.2652298634871841,
+      "pellet_radius_cm": 0.39170683616306634,
+      "insertion_percent": 95.64153803512454
+    },
+    "insertion_band": "high",
+    "source_model_version": "adaptive01_vs_256_v1: 240 train",
+    "predicted_k_saved_model": 0.7772727608680725,
+    "predicted_k_ensemble_mean": 0.7879850745201111,
+    "raw_k_ensemble_sd": 0.029034614456179088,
+    "raw_field_ensemble_relative_spread": 0.12012948121753116,
+    "nearest_training_distance_normalized_8d": 0.5938602035384417,
+    "criticality_probability_above_one_approx": 6.598790627109034e-06,
+    "component_percentiles": {
+      "k_uncertainty": 0.9943833943833944,
+      "field_uncertainty": 0.9997557997557998,
+      "sparsity": 0.9272283272283273,
+      "criticality": 0.8566544566544566
+    },
+    "component_weighted": {
+      "k_uncertainty": 0.348034188034188,
+      "field_uncertainty": 0.34991452991452987,
+      "sparsity": 0.18544566544566546,
+      "criticality": 0.08566544566544566
+    },
+    "total_score": 0.9690598290598289
+  },
+  {
+    "selection_rank": 5,
+    "candidate_index": 2095,
+    "scenario_id": "21696915f6b40504fbe1d133d83d8b5126b62a6c273fd3df357ce46058127133",
+    "controls": {
+      "u235_enrichment_wt_percent": 1.6106555335223676,
+      "fuel_temperature_K": 557.6415566392243,
+      "moderator_temperature_K": 572.6818299144506,
+      "coolant_pressure_MPa": 15.499900584109128,
+      "elemental_boron_ppm": 652.1493625128642,
+      "pin_pitch_cm": 1.2523118388466536,
+      "pellet_radius_cm": 0.39029380958527327,
+      "insertion_percent": 94.6090872399509
+    },
+    "insertion_band": "high",
+    "source_model_version": "adaptive01_vs_256_v1: 240 train",
+    "predicted_k_saved_model": 0.7471921443939209,
+    "predicted_k_ensemble_mean": 0.7821168065071106,
+    "raw_k_ensemble_sd": 0.027361051902265312,
+    "raw_field_ensemble_relative_spread": 0.03634852622997107,
+    "nearest_training_distance_normalized_8d": 0.6730021383889987,
+    "criticality_probability_above_one_approx": 1.0555833243916021e-06,
+    "component_percentiles": {
+      "k_uncertainty": 0.9929181929181929,
+      "field_uncertainty": 0.9658119658119658,
+      "sparsity": 0.9894993894993895,
+      "criticality": 0.8417582417582418
+    },
+    "component_weighted": {
+      "k_uncertainty": 0.34752136752136753,
+      "field_uncertainty": 0.338034188034188,
+      "sparsity": 0.19789987789987792,
+      "criticality": 0.08417582417582418
+    },
+    "total_score": 0.9676312576312576
+  },
+  {
+    "selection_rank": 6,
+    "candidate_index": 3025,
+    "scenario_id": "8de396290cfe4f0d0e432010527586d4e56512f40bf0549c48d62545d1e86a4c",
+    "controls": {
+      "u235_enrichment_wt_percent": 3.091897637490183,
+      "fuel_temperature_K": 561.3121830150485,
+      "moderator_temperature_K": 571.6582600623369,
+      "coolant_pressure_MPa": 15.885735956951976,
+      "elemental_boron_ppm": 238.8471886748448,
+      "pin_pitch_cm": 1.2697943934425713,
+      "pellet_radius_cm": 0.394525905745104,
+      "insertion_percent": 89.30158754810691
+    },
+    "insertion_band": "high",
+    "source_model_version": "adaptive01_vs_256_v1: 240 train",
+    "predicted_k_saved_model": 1.0879818201065063,
+    "predicted_k_ensemble_mean": 1.078417420387268,
+    "raw_k_ensemble_sd": 0.025868801471010047,
+    "raw_field_ensemble_relative_spread": 0.026630178592209116,
+    "nearest_training_distance_normalized_8d": 0.619782346409829,
+    "criticality_probability_above_one_approx": 0.9642103495940303,
+    "component_percentiles": {
+      "k_uncertainty": 0.990964590964591,
+      "field_uncertainty": 0.947008547008547,
+      "sparsity": 0.958974358974359,
+      "criticality": 0.9391941391941392
+    },
+    "component_weighted": {
+      "k_uncertainty": 0.34683760683760684,
+      "field_uncertainty": 0.3314529914529914,
+      "sparsity": 0.1917948717948718,
+      "criticality": 0.09391941391941393
+    },
+    "total_score": 0.964004884004884
+  },
+  {
+    "selection_rank": 7,
+    "candidate_index": 3258,
+    "scenario_id": "7f9057dd0d93c3b9cec45f74ecb48d1b0705c49f99adf77a405768fac1824207",
+    "controls": {
+      "u235_enrichment_wt_percent": 2.532230128441006,
+      "fuel_temperature_K": 574.1397725455463,
+      "moderator_temperature_K": 570.1134252212942,
+      "coolant_pressure_MPa": 15.760525550693274,
+      "elemental_boron_ppm": 298.4624097123742,
+      "pin_pitch_cm": 1.2537884527258576,
+      "pellet_radius_cm": 0.39405257240869107,
+      "insertion_percent": 93.07778896763921
+    },
+    "insertion_band": "high",
+    "source_model_version": "adaptive01_vs_256_v1: 240 train",
+    "predicted_k_saved_model": 0.9343801140785217,
+    "predicted_k_ensemble_mean": 0.9295350074768066,
+    "raw_k_ensemble_sd": 0.020743181648307407,
+    "raw_field_ensemble_relative_spread": 0.028834788019178974,
+    "nearest_training_distance_normalized_8d": 0.6317958039350369,
+    "criticality_probability_above_one_approx": 0.022812331365147244,
+    "component_percentiles": {
+      "k_uncertainty": 0.9768009768009768,
+      "field_uncertainty": 0.9548229548229549,
+      "sparsity": 0.9694749694749695,
+      "criticality": 0.9340659340659341
+    },
+    "component_weighted": {
+      "k_uncertainty": 0.34188034188034183,
+      "field_uncertainty": 0.33418803418803417,
+      "sparsity": 0.1938949938949939,
+      "criticality": 0.09340659340659341
+    },
+    "total_score": 0.9633699633699633
+  },
+  {
+    "selection_rank": 8,
+    "candidate_index": 1413,
+    "scenario_id": "ac9b7228a27f575c6ba6662970f21c4b57ae4b27fcc794f2a6677b654485deb4",
+    "controls": {
+      "u235_enrichment_wt_percent": 2.4999442248605193,
+      "fuel_temperature_K": 561.6468673236668,
+      "moderator_temperature_K": 575.8728774674237,
+      "coolant_pressure_MPa": 15.473562555387616,
+      "elemental_boron_ppm": 27.33970123808831,
+      "pin_pitch_cm": 1.261038767248392,
+      "pellet_radius_cm": 0.39462926777545365,
+      "insertion_percent": 94.04669590294361
+    },
+    "insertion_band": "high",
+    "source_model_version": "adaptive01_vs_256_v1: 240 train",
+    "predicted_k_saved_model": 0.9420762658119202,
+    "predicted_k_ensemble_mean": 0.9511325478553772,
+    "raw_k_ensemble_sd": 0.02481898121491084,
+    "raw_field_ensemble_relative_spread": 0.04205291215783916,
+    "nearest_training_distance_normalized_8d": 0.5737523039906433,
+    "criticality_probability_above_one_approx": 0.12131035173617499,
+    "component_percentiles": {
+      "k_uncertainty": 0.9894993894993895,
+      "field_uncertainty": 0.9748473748473748,
+      "sparsity": 0.8962148962148963,
+      "criticality": 0.958974358974359
+    },
+    "component_weighted": {
+      "k_uncertainty": 0.3463247863247863,
+      "field_uncertainty": 0.3411965811965812,
+      "sparsity": 0.17924297924297927,
+      "criticality": 0.0958974358974359
+    },
+    "total_score": 0.9626617826617827
+  },
+  {
+    "selection_rank": 9,
+    "candidate_index": 3334,
+    "scenario_id": "f9e0d187da69b86387edf7ff10a4ff37d8fc2aa59a0d7253b4a3958f3908f1be",
+    "controls": {
+      "u235_enrichment_wt_percent": 2.7949565247632564,
+      "fuel_temperature_K": 572.2494097650051,
+      "moderator_temperature_K": 572.2193552777171,
+      "coolant_pressure_MPa": 15.05597987305373,
+      "elemental_boron_ppm": 744.7213472798467,
+      "pin_pitch_cm": 1.2688064982928335,
+      "pellet_radius_cm": 0.3921027726121247,
+      "insertion_percent": 93.16468266770244
+    },
+    "insertion_band": "high",
+    "source_model_version": "adaptive01_vs_256_v1: 240 train",
+    "predicted_k_saved_model": 0.9621232748031616,
+    "predicted_k_ensemble_mean": 0.9471043348312378,
+    "raw_k_ensemble_sd": 0.022585267279922917,
+    "raw_field_ensemble_relative_spread": 0.028443093464931922,
+    "nearest_training_distance_normalized_8d": 0.608623865958197,
+    "criticality_probability_above_one_approx": 0.08315409062274426,
+    "component_percentiles": {
+      "k_uncertainty": 0.9838827838827838,
+      "field_uncertainty": 0.9516483516483516,
+      "sparsity": 0.9465201465201465,
+      "criticality": 0.9516483516483516
+    },
+    "component_weighted": {
+      "k_uncertainty": 0.34435897435897433,
+      "field_uncertainty": 0.33307692307692305,
+      "sparsity": 0.18930402930402931,
+      "criticality": 0.09516483516483516
+    },
+    "total_score": 0.9619047619047619
+  },
+  {
+    "selection_rank": 10,
+    "candidate_index": 3081,
+    "scenario_id": "5338e5b31d3c57aefe1614d1281fadf0446869ae964fa48925209e9ae0d11f7e",
+    "controls": {
+      "u235_enrichment_wt_percent": 2.904172558244318,
+      "fuel_temperature_K": 557.2525459378958,
+      "moderator_temperature_K": 575.0058313123882,
+      "coolant_pressure_MPa": 15.090905355289578,
+      "elemental_boron_ppm": 616.6535496013239,
+      "pin_pitch_cm": 1.2669194095395506,
+      "pellet_radius_cm": 0.393432607264258,
+      "insertion_percent": 87.68499689176679
+    },
+    "insertion_band": "high",
+    "source_model_version": "adaptive01_vs_256_v1: 240 train",
+    "predicted_k_saved_model": 1.0929341316223145,
+    "predicted_k_ensemble_mean": 1.081392526626587,
+    "raw_k_ensemble_sd": 0.0332020347052093,
+    "raw_field_ensemble_relative_spread": 0.025835096571512582,
+    "nearest_training_distance_normalized_8d": 0.6008239711612793,
+    "criticality_probability_above_one_approx": 0.9289101277350799,
+    "component_percentiles": {
+      "k_uncertainty": 0.9975579975579976,
+      "field_uncertainty": 0.9382173382173382,
+      "sparsity": 0.938949938949939,
+      "criticality": 0.9482295482295482
+    },
+    "component_weighted": {
+      "k_uncertainty": 0.3491452991452991,
+      "field_uncertainty": 0.32837606837606836,
+      "sparsity": 0.1877899877899878,
+      "criticality": 0.09482295482295483
+    },
+    "total_score": 0.96013431013431
+  },
+  {
+    "selection_rank": 11,
+    "candidate_index": 2028,
+    "scenario_id": "7c29af38441e9294def5b1184b3e3dadd70c7b9ee1ecbca3f8eeebb53d7d5814",
+    "controls": {
+      "u235_enrichment_wt_percent": 2.112744049075991,
+      "fuel_temperature_K": 568.9056698828936,
+      "moderator_temperature_K": 560.6474069543183,
+      "coolant_pressure_MPa": 15.081918366253376,
+      "elemental_boron_ppm": 827.0831496454775,
+      "pin_pitch_cm": 1.2552300944365562,
+      "pellet_radius_cm": 0.39441844479180876,
+      "insertion_percent": 94.60031446069479
+    },
+    "insertion_band": "high",
+    "source_model_version": "adaptive01_vs_256_v1: 240 train",
+    "predicted_k_saved_model": 0.7947902679443359,
+    "predicted_k_ensemble_mean": 0.8254995942115784,
+    "raw_k_ensemble_sd": 0.02361114795182082,
+    "raw_field_ensemble_relative_spread": 0.03658864827849413,
+    "nearest_training_distance_normalized_8d": 0.6070081190216873,
+    "criticality_probability_above_one_approx": 6.0226298977122955e-06,
+    "component_percentiles": {
+      "k_uncertainty": 0.9868131868131869,
+      "field_uncertainty": 0.9672771672771673,
+      "sparsity": 0.9457875457875458,
+      "criticality": 0.8551892551892551
+    },
+    "component_weighted": {
+      "k_uncertainty": 0.3453846153846154,
+      "field_uncertainty": 0.33854700854700853,
+      "sparsity": 0.18915750915750917,
+      "criticality": 0.08551892551892552
+    },
+    "total_score": 0.9586080586080586
+  },
+  {
+    "selection_rank": 12,
+    "candidate_index": 1094,
+    "scenario_id": "5c02f2d2c996738052a4fa26f8c3b106eb81205929bd99d2d36c56592020c6c7",
+    "controls": {
+      "u235_enrichment_wt_percent": 2.8144705075770617,
+      "fuel_temperature_K": 567.6406795941293,
+      "moderator_temperature_K": 559.4835545904934,
+      "coolant_pressure_MPa": 15.178834011778235,
+      "elemental_boron_ppm": 876.876707514748,
+      "pin_pitch_cm": 1.2541308518685401,
+      "pellet_radius_cm": 0.3923768374696374,
+      "insertion_percent": 93.49461058154702
+    },
+    "insertion_band": "high",
+    "source_model_version": "adaptive01_vs_256_v1: 240 train",
+    "predicted_k_saved_model": 0.9553033113479614,
+    "predicted_k_ensemble_mean": 0.9395205974578857,
+    "raw_k_ensemble_sd": 0.022856339122329296,
+    "raw_field_ensemble_relative_spread": 0.028020893016320908,
+    "nearest_training_distance_normalized_8d": 0.5836858108504642,
+    "criticality_probability_above_one_approx": 0.05882384682744714,
+    "component_percentiles": {
+      "k_uncertainty": 0.9853479853479854,
+      "field_uncertainty": 0.9506715506715506,
+      "sparsity": 0.9133089133089133,
+      "criticality": 0.9448107448107448
+    },
+    "component_weighted": {
+      "k_uncertainty": 0.34487179487179487,
+      "field_uncertainty": 0.3327350427350427,
+      "sparsity": 0.18266178266178268,
+      "criticality": 0.09448107448107448
+    },
+    "total_score": 0.9547496947496947
+  },
+  {
+    "selection_rank": 13,
+    "candidate_index": 2079,
+    "scenario_id": "8c14fdf51691f301457e1c8f23df105ba285ee59d8c1bf4b1e69b74f505fddb0",
+    "controls": {
+      "u235_enrichment_wt_percent": 1.706119453907013,
+      "fuel_temperature_K": 558.9982279613614,
+      "moderator_temperature_K": 560.933125320822,
+      "coolant_pressure_MPa": 15.346557851880789,
+      "elemental_boron_ppm": 829.0723972488195,
+      "pin_pitch_cm": 1.251105183493346,
+      "pellet_radius_cm": 0.3923844701470807,
+      "insertion_percent": 58.39895186945796
+    },
+    "insertion_band": "middle",
+    "source_model_version": "adaptive01_vs_256_v1: 240 train",
+    "predicted_k_saved_model": 1.0187275409698486,
+    "predicted_k_ensemble_mean": 1.0197856664657592,
+    "raw_k_ensemble_sd": 0.010714903443306337,
+    "raw_field_ensemble_relative_spread": 0.020351204340654593,
+    "nearest_training_distance_normalized_8d": 0.5329297130686185,
+    "criticality_probability_above_one_approx": 0.844113809440026,
+    "component_percentiles": {
+      "k_uncertainty": 0.85006105006105,
+      "field_uncertainty": 0.9035409035409036,
+      "sparsity": 0.7782661782661783,
+      "criticality": 0.9633699633699634
+    },
+    "component_weighted": {
+      "k_uncertainty": 0.2975213675213675,
+      "field_uncertainty": 0.3162393162393162,
+      "sparsity": 0.15565323565323566,
+      "criticality": 0.09633699633699634
+    },
+    "total_score": 0.8657509157509157
+  },
+  {
+    "selection_rank": 14,
+    "candidate_index": 119,
+    "scenario_id": "079490c2e9e94fec25bc6355ea70c1819681fd2ae906aa4c2a3cc3c056bb71f2",
+    "controls": {
+      "u235_enrichment_wt_percent": 1.8106612464413048,
+      "fuel_temperature_K": 556.3423378430307,
+      "moderator_temperature_K": 557.4716842025518,
+      "coolant_pressure_MPa": 15.968046201393008,
+      "elemental_boron_ppm": 583.4421198349446,
+      "pin_pitch_cm": 1.256448458172381,
+      "pellet_radius_cm": 0.3947619824204594,
+      "insertion_percent": 57.49214868992567
+    },
+    "insertion_band": "middle",
+    "source_model_version": "adaptive01_vs_256_v1: 240 train",
+    "predicted_k_saved_model": 1.1026676893234253,
+    "predicted_k_ensemble_mean": 1.1010941028594972,
+    "raw_k_ensemble_sd": 0.010246212975209305,
+    "raw_field_ensemble_relative_spread": 0.017354197342943682,
+    "nearest_training_distance_normalized_8d": 0.5950845393297528,
+    "criticality_probability_above_one_approx": 0.9999999582212987,
+    "component_percentiles": {
+      "k_uncertainty": 0.8356532356532357,
+      "field_uncertainty": 0.8463980463980464,
+      "sparsity": 0.9294261294261295,
+      "criticality": 0.8207570207570207
+    },
+    "component_weighted": {
+      "k_uncertainty": 0.2924786324786325,
+      "field_uncertainty": 0.2962393162393162,
+      "sparsity": 0.1858852258852259,
+      "criticality": 0.08207570207570208
+    },
+    "total_score": 0.8566788766788767
+  },
+  {
+    "selection_rank": 15,
+    "candidate_index": 2735,
+    "scenario_id": "1ad83163920ee7bedd029771db2c4954aa5f2702abad31a5c0d74f7de1288d4d",
+    "controls": {
+      "u235_enrichment_wt_percent": 1.613841228093952,
+      "fuel_temperature_K": 556.9038084000349,
+      "moderator_temperature_K": 561.9464997425675,
+      "coolant_pressure_MPa": 15.68973720818758,
+      "elemental_boron_ppm": 83.42016600072384,
+      "pin_pitch_cm": 1.2529632107913493,
+      "pellet_radius_cm": 0.39248777072876695,
+      "insertion_percent": 2.252287417650223
+    },
+    "insertion_band": "low",
+    "source_model_version": "adaptive01_vs_256_v1: 240 train",
+    "predicted_k_saved_model": 1.1528739929199219,
+    "predicted_k_ensemble_mean": 1.153973388671875,
+    "raw_k_ensemble_sd": 0.010580711748162478,
+    "raw_field_ensemble_relative_spread": 0.014666924874071606,
+    "nearest_training_distance_normalized_8d": 0.6749581347338803,
+    "criticality_probability_above_one_approx": 0.9999999999999991,
+    "component_percentiles": {
+      "k_uncertainty": 0.8454212454212454,
+      "field_uncertainty": 0.8046398046398047,
+      "sparsity": 0.98998778998779,
+      "criticality": 0.7181929181929182
+    },
+    "component_weighted": {
+      "k_uncertainty": 0.2958974358974359,
+      "field_uncertainty": 0.2816239316239316,
+      "sparsity": 0.19799755799755803,
+      "criticality": 0.07181929181929182
+    },
+    "total_score": 0.8473382173382173
+  },
+  {
+    "selection_rank": 16,
+    "candidate_index": 3231,
+    "scenario_id": "e7b903d3b7f77600b2a69bb8a23c6bf787a5c21d3d3c2d6ecc6576353bd4e671",
+    "controls": {
+      "u235_enrichment_wt_percent": 1.700880399812013,
+      "fuel_temperature_K": 557.9842086918652,
+      "moderator_temperature_K": 556.4721199721098,
+      "coolant_pressure_MPa": 15.179619139060378,
+      "elemental_boron_ppm": 662.5285183545202,
+      "pin_pitch_cm": 1.2567193796858191,
+      "pellet_radius_cm": 0.39438897356856617,
+      "insertion_percent": 3.999036457389593
+    },
+    "insertion_band": "low",
+    "source_model_version": "adaptive01_vs_256_v1: 240 train",
+    "predicted_k_saved_model": 1.076093077659607,
+    "predicted_k_ensemble_mean": 1.0720556735992433,
+    "raw_k_ensemble_sd": 0.01119832783650891,
+    "raw_field_ensemble_relative_spread": 0.014021060623918339,
+    "nearest_training_distance_normalized_8d": 0.5855626550371341,
+    "criticality_probability_above_one_approx": 0.9998089117503289,
+    "component_percentiles": {
+      "k_uncertainty": 0.8627594627594628,
+      "field_uncertainty": 0.7776556776556777,
+      "sparsity": 0.9169719169719169,
+      "criticality": 0.8818070818070818
+    },
+    "component_weighted": {
+      "k_uncertainty": 0.30196581196581196,
+      "field_uncertainty": 0.27217948717948715,
+      "sparsity": 0.1833943833943834,
+      "criticality": 0.08818070818070818
+    },
+    "total_score": 0.8457203907203907
+  },
+  {
+    "selection_rank": 17,
+    "candidate_index": 2625,
+    "scenario_id": "b6b5f00854fa3662f710d2b5324d8e7694bbe3edb1ce3e42e51e9e1137faed29",
+    "controls": {
+      "u235_enrichment_wt_percent": 2.926849496923387,
+      "fuel_temperature_K": 556.9619511291385,
+      "moderator_temperature_K": 564.7681706622243,
+      "coolant_pressure_MPa": 15.19886453077197,
+      "elemental_boron_ppm": 288.9374620746821,
+      "pin_pitch_cm": 1.261898260768503,
+      "pellet_radius_cm": 0.3945746293105185,
+      "insertion_percent": 38.81805008277297
+    },
+    "insertion_band": "middle",
+    "source_model_version": "adaptive01_vs_256_v1: 240 train",
+    "predicted_k_saved_model": 1.2935863733291626,
+    "predicted_k_ensemble_mean": 1.289185881614685,
+    "raw_k_ensemble_sd": 0.009227683010112148,
+    "raw_field_ensemble_relative_spread": 0.028949701288511653,
+    "nearest_training_distance_normalized_8d": 0.6231773360910356,
+    "criticality_probability_above_one_approx": 1.0,
+    "component_percentiles": {
+      "k_uncertainty": 0.8,
+      "field_uncertainty": 0.9573870573870574,
+      "sparsity": 0.9623931623931624,
+      "criticality": 0.33833943833943836
+    },
+    "component_weighted": {
+      "k_uncertainty": 0.27999999999999997,
+      "field_uncertainty": 0.33508547008547007,
+      "sparsity": 0.1924786324786325,
+      "criticality": 0.033833943833943836
+    },
+    "total_score": 0.8413980463980464
+  },
+  {
+    "selection_rank": 18,
+    "candidate_index": 1779,
+    "scenario_id": "ce4fb1323a8ea783d12d460509f86e7f111cf92f2f5e575cada37ec34574cf10",
+    "controls": {
+      "u235_enrichment_wt_percent": 2.142799289338291,
+      "fuel_temperature_K": 558.0728306286037,
+      "moderator_temperature_K": 565.9804463982582,
+      "coolant_pressure_MPa": 15.623518881388009,
+      "elemental_boron_ppm": 915.8165553817526,
+      "pin_pitch_cm": 1.260306235421449,
+      "pellet_radius_cm": 0.3945108561171219,
+      "insertion_percent": 0.554612185806036
+    },
+    "insertion_band": "low",
+    "source_model_version": "adaptive01_vs_256_v1: 240 train",
+    "predicted_k_saved_model": 1.104726791381836,
+    "predicted_k_ensemble_mean": 1.1063987016677856,
+    "raw_k_ensemble_sd": 0.010077304330733906,
+    "raw_field_ensemble_relative_spread": 0.013897980413823374,
+    "nearest_training_distance_normalized_8d": 0.6742204081604773,
+    "criticality_probability_above_one_approx": 0.9999999945522441,
+    "component_percentiles": {
+      "k_uncertainty": 0.8310134310134311,
+      "field_uncertainty": 0.768986568986569,
+      "sparsity": 0.9897435897435898,
+      "criticality": 0.8053724053724054
+    },
+    "component_weighted": {
+      "k_uncertainty": 0.29085470085470083,
+      "field_uncertainty": 0.26914529914529917,
+      "sparsity": 0.19794871794871796,
+      "criticality": 0.08053724053724054
+    },
+    "total_score": 0.8384859584859585
+  },
+  {
+    "selection_rank": 19,
+    "candidate_index": 10,
+    "scenario_id": "d43a5eea479259ed393543312701a7d712dc8c465c6fff534bcec7105c08192f",
+    "controls": {
+      "u235_enrichment_wt_percent": 2.4428479451686145,
+      "fuel_temperature_K": 569.1801390275359,
+      "moderator_temperature_K": 575.6623204834759,
+      "coolant_pressure_MPa": 15.083645046688616,
+      "elemental_boron_ppm": 65.07920078001916,
+      "pin_pitch_cm": 1.2697864024154841,
+      "pellet_radius_cm": 0.39350956203415993,
+      "insertion_percent": 38.09774350374937
+    },
+    "insertion_band": "middle",
+    "source_model_version": "adaptive01_vs_256_v1: 240 train",
+    "predicted_k_saved_model": 1.2836503982543945,
+    "predicted_k_ensemble_mean": 1.2860275268554688,
+    "raw_k_ensemble_sd": 0.008889278474097857,
+    "raw_field_ensemble_relative_spread": 0.02372405937455904,
+    "nearest_training_distance_normalized_8d": 0.6333921909132987,
+    "criticality_probability_above_one_approx": 1.0,
+    "component_percentiles": {
+      "k_uncertainty": 0.7829059829059829,
+      "field_uncertainty": 0.9213675213675213,
+      "sparsity": 0.9709401709401709,
+      "criticality": 0.33833943833943836
+    },
+    "component_weighted": {
+      "k_uncertainty": 0.274017094017094,
+      "field_uncertainty": 0.32247863247863245,
+      "sparsity": 0.1941880341880342,
+      "criticality": 0.033833943833943836
+    },
+    "total_score": 0.8245177045177046
+  },
+  {
+    "selection_rank": 20,
+    "candidate_index": 659,
+    "scenario_id": "b5f38ba0f610a34a4701d266a4763f1a3bf719720c0a8b2845ee295867d115c9",
+    "controls": {
+      "u235_enrichment_wt_percent": 2.0935508430935443,
+      "fuel_temperature_K": 562.2000484205782,
+      "moderator_temperature_K": 564.4320897422731,
+      "coolant_pressure_MPa": 15.732621937058866,
+      "elemental_boron_ppm": 974.5358628686517,
+      "pin_pitch_cm": 1.2687224703282118,
+      "pellet_radius_cm": 0.39260989417787645,
+      "insertion_percent": 3.3935880288481712
+    },
+    "insertion_band": "low",
+    "source_model_version": "adaptive01_vs_256_v1: 240 train",
+    "predicted_k_saved_model": 1.0949627161026,
+    "predicted_k_ensemble_mean": 1.0988933801651002,
+    "raw_k_ensemble_sd": 0.008948265542170972,
+    "raw_field_ensemble_relative_spread": 0.01464971839679016,
+    "nearest_training_distance_normalized_8d": 0.604451450879275,
+    "criticality_probability_above_one_approx": 0.9999999972012336,
+    "component_percentiles": {
+      "k_uncertainty": 0.7858363858363858,
+      "field_uncertainty": 0.7998778998778999,
+      "sparsity": 0.944078144078144,
+      "criticality": 0.8021978021978022
+    },
+    "component_weighted": {
+      "k_uncertainty": 0.275042735042735,
+      "field_uncertainty": 0.279957264957265,
+      "sparsity": 0.18881562881562883,
+      "criticality": 0.08021978021978023
+    },
+    "total_score": 0.8240354090354091
+  },
+  {
+    "selection_rank": 21,
+    "candidate_index": 1959,
+    "scenario_id": "89ed50cb1bf494be008492c2bac28fac8357731bb0a0c5b46b564ec191e7b01e",
+    "controls": {
+      "u235_enrichment_wt_percent": 1.944655293505639,
+      "fuel_temperature_K": 558.1254783496261,
+      "moderator_temperature_K": 575.8531944863498,
+      "coolant_pressure_MPa": 15.292162011377513,
+      "elemental_boron_ppm": 711.7883514845744,
+      "pin_pitch_cm": 1.2508698066323996,
+      "pellet_radius_cm": 0.39470223736017945,
+      "insertion_percent": 27.440505474805832
+    },
+    "insertion_band": "low",
+    "source_model_version": "adaptive01_vs_256_v1: 240 train",
+    "predicted_k_saved_model": 1.1060819625854492,
+    "predicted_k_ensemble_mean": 1.1014999628067017,
+    "raw_k_ensemble_sd": 0.0071716456126983295,
+    "raw_field_ensemble_relative_spread": 0.021508100166599167,
+    "nearest_training_distance_normalized_8d": 0.6020464681130077,
+    "criticality_probability_above_one_approx": 0.9999999999987847,
+    "component_percentiles": {
+      "k_uncertainty": 0.6637362637362637,
+      "field_uncertainty": 0.9089133089133089,
+      "sparsity": 0.9401709401709402,
+      "criticality": 0.7536019536019536
+    },
+    "component_weighted": {
+      "k_uncertainty": 0.23230769230769227,
+      "field_uncertainty": 0.3181196581196581,
+      "sparsity": 0.18803418803418803,
+      "criticality": 0.07536019536019536
+    },
+    "total_score": 0.8138217338217337
+  },
+  {
+    "selection_rank": 22,
+    "candidate_index": 640,
+    "scenario_id": "edfec386acafbfbe60793f1cd571b12d47be72b998a9e471ffb9f7650e027a62",
+    "controls": {
+      "u235_enrichment_wt_percent": 1.7607373082078994,
+      "fuel_temperature_K": 569.5037275403738,
+      "moderator_temperature_K": 575.1683704964817,
+      "coolant_pressure_MPa": 15.907421835698187,
+      "elemental_boron_ppm": 943.1813321309164,
+      "pin_pitch_cm": 1.2587317921407521,
+      "pellet_radius_cm": 0.39486222857609393,
+      "insertion_percent": 66.57736543565989
+    },
+    "insertion_band": "middle",
+    "source_model_version": "adaptive01_vs_256_v1: 240 train",
+    "predicted_k_saved_model": 1.0159118175506592,
+    "predicted_k_ensemble_mean": 1.0190612077713013,
+    "raw_k_ensemble_sd": 0.009250560078762777,
+    "raw_field_ensemble_relative_spread": 0.014264821977005534,
+    "nearest_training_distance_normalized_8d": 0.5422299451834854,
+    "criticality_probability_above_one_approx": 0.8632895294653102,
+    "component_percentiles": {
+      "k_uncertainty": 0.8002442002442003,
+      "field_uncertainty": 0.7838827838827839,
+      "sparsity": 0.8073260073260073,
+      "criticality": 0.9611721611721612
+    },
+    "component_weighted": {
+      "k_uncertainty": 0.2800854700854701,
+      "field_uncertainty": 0.27435897435897433,
+      "sparsity": 0.1614652014652015,
+      "criticality": 0.09611721611721613
+    },
+    "total_score": 0.812026862026862
+  },
+  {
+    "selection_rank": 23,
+    "candidate_index": 992,
+    "scenario_id": "cbf27b3aa314c7de6aff1e5ecdcf4d5a9c207639027e1885dcd91b6b9a79a8eb",
+    "controls": {
+      "u235_enrichment_wt_percent": 1.7081300810910762,
+      "fuel_temperature_K": 574.274533636868,
+      "moderator_temperature_K": 557.9083531759679,
+      "coolant_pressure_MPa": 15.98139491584152,
+      "elemental_boron_ppm": 678.8359390804544,
+      "pin_pitch_cm": 1.266840163655579,
+      "pellet_radius_cm": 0.39399158195592465,
+      "insertion_percent": 27.50827744603157
+    },
+    "insertion_band": "low",
+    "source_model_version": "adaptive01_vs_256_v1: 240 train",
+    "predicted_k_saved_model": 1.0710798501968384,
+    "predicted_k_ensemble_mean": 1.0722049236297608,
+    "raw_k_ensemble_sd": 0.008359099933259964,
+    "raw_field_ensemble_relative_spread": 0.0215174870284155,
+    "nearest_training_distance_normalized_8d": 0.515695460415103,
+    "criticality_probability_above_one_approx": 0.9999962171030012,
+    "component_percentiles": {
+      "k_uncertainty": 0.7523809523809524,
+      "field_uncertainty": 0.9091575091575091,
+      "sparsity": 0.7013431013431013,
+      "criticality": 0.852014652014652
+    },
+    "component_weighted": {
+      "k_uncertainty": 0.2633333333333333,
+      "field_uncertainty": 0.3182051282051282,
+      "sparsity": 0.14026862026862028,
+      "criticality": 0.08520146520146521
+    },
+    "total_score": 0.8070085470085471
+  },
+  {
+    "selection_rank": 24,
+    "candidate_index": 2084,
+    "scenario_id": "bc62cc06554a67967269c00f53f624e11eb8b040c5383df27ce1b8539c57b2c9",
+    "controls": {
+      "u235_enrichment_wt_percent": 2.2205990081653,
+      "fuel_temperature_K": 573.0638133585453,
+      "moderator_temperature_K": 573.8757208585739,
+      "coolant_pressure_MPa": 15.963611399754882,
+      "elemental_boron_ppm": 323.0006074765697,
+      "pin_pitch_cm": 1.2506748837791384,
+      "pellet_radius_cm": 0.394874686812982,
+      "insertion_percent": 48.71924705803394
+    },
+    "insertion_band": "middle",
+    "source_model_version": "adaptive01_vs_256_v1: 240 train",
+    "predicted_k_saved_model": 1.215355396270752,
+    "predicted_k_ensemble_mean": 1.2126070737838746,
+    "raw_k_ensemble_sd": 0.007942106854522433,
+    "raw_field_ensemble_relative_spread": 0.030861003881662904,
+    "nearest_training_distance_normalized_8d": 0.5841299607331679,
+    "criticality_probability_above_one_approx": 1.0,
+    "component_percentiles": {
+      "k_uncertainty": 0.7230769230769231,
+      "field_uncertainty": 0.9604395604395605,
+      "sparsity": 0.914041514041514,
+      "criticality": 0.33833943833943836
+    },
+    "component_weighted": {
+      "k_uncertainty": 0.25307692307692303,
+      "field_uncertainty": 0.33615384615384614,
+      "sparsity": 0.18280830280830282,
+      "criticality": 0.033833943833943836
+    },
+    "total_score": 0.8058730158730159
+  },
+  {
+    "selection_rank": 25,
+    "candidate_index": 3059,
+    "scenario_id": "edf119c9fae063f7c35a4b9d7e0bf31412bc17946bcf38d10ed8a6b4b39c3604",
+    "controls": {
+      "u235_enrichment_wt_percent": 2.1450646900571884,
+      "fuel_temperature_K": 561.5123106017709,
+      "moderator_temperature_K": 558.0600231923163,
+      "coolant_pressure_MPa": 15.176385245285928,
+      "elemental_boron_ppm": 868.3221680810675,
+      "pin_pitch_cm": 1.2663486273214222,
+      "pellet_radius_cm": 0.3906736303959042,
+      "insertion_percent": 57.57593987509608
+    },
+    "insertion_band": "middle",
+    "source_model_version": "adaptive01_vs_256_v1: 240 train",
+    "predicted_k_saved_model": 1.0959116220474243,
+    "predicted_k_ensemble_mean": 1.0985304594039917,
+    "raw_k_ensemble_sd": 0.012700809731002837,
+    "raw_field_ensemble_relative_spread": 0.017051689566891057,
+    "nearest_training_distance_normalized_8d": 0.47857381387532594,
+    "criticality_probability_above_one_approx": 0.9999936601534181,
+    "component_percentiles": {
+      "k_uncertainty": 0.9008547008547009,
+      "field_uncertainty": 0.8409035409035409,
+      "sparsity": 0.5409035409035409,
+      "criticality": 0.8556776556776556
+    },
+    "component_weighted": {
+      "k_uncertainty": 0.31529914529914527,
+      "field_uncertainty": 0.2943162393162393,
+      "sparsity": 0.10818070818070818,
+      "criticality": 0.08556776556776557
+    },
+    "total_score": 0.8033638583638583
+  },
+  {
+    "selection_rank": 26,
+    "candidate_index": 3879,
+    "scenario_id": "37e06491fc6a5ebaf01d0c0e942718353a3219ff408f703f789b1c0c8840e48e",
+    "controls": {
+      "u235_enrichment_wt_percent": 1.9377709724009038,
+      "fuel_temperature_K": 558.4436694569886,
+      "moderator_temperature_K": 559.237324282527,
+      "coolant_pressure_MPa": 15.98465646058321,
+      "elemental_boron_ppm": 233.25669814366847,
+      "pin_pitch_cm": 1.252461971603334,
+      "pellet_radius_cm": 0.3939823807124049,
+      "insertion_percent": 2.7377989143133163
+    },
+    "insertion_band": "low",
+    "source_model_version": "adaptive01_vs_256_v1: 240 train",
+    "predicted_k_saved_model": 1.1802235841751099,
+    "predicted_k_ensemble_mean": 1.181269598007202,
+    "raw_k_ensemble_sd": 0.01170981044150547,
+    "raw_field_ensemble_relative_spread": 0.014634821026762872,
+    "nearest_training_distance_normalized_8d": 0.5924571205773457,
+    "criticality_probability_above_one_approx": 1.0,
+    "component_percentiles": {
+      "k_uncertainty": 0.8764346764346764,
+      "field_uncertainty": 0.7927960927960928,
+      "sparsity": 0.926007326007326,
+      "criticality": 0.33833943833943836
+    },
+    "component_weighted": {
+      "k_uncertainty": 0.30675213675213675,
+      "field_uncertainty": 0.27747863247863247,
+      "sparsity": 0.18520146520146522,
+      "criticality": 0.033833943833943836
+    },
+    "total_score": 0.8032661782661783
+  },
+  {
+    "selection_rank": 27,
+    "candidate_index": 2639,
+    "scenario_id": "7901befbc8f96bdc497c3c92edd0343b4f6a923d9ac893fef3be61adf6bdf5ea",
+    "controls": {
+      "u235_enrichment_wt_percent": 1.6582173787988723,
+      "fuel_temperature_K": 563.5978919304907,
+      "moderator_temperature_K": 563.6083406805992,
+      "coolant_pressure_MPa": 15.881880417466164,
+      "elemental_boron_ppm": 419.56384086515754,
+      "pin_pitch_cm": 1.2513684234768152,
+      "pellet_radius_cm": 0.3926301568932831,
+      "insertion_percent": 57.67199071124196
+    },
+    "insertion_band": "middle",
+    "source_model_version": "adaptive01_vs_256_v1: 240 train",
+    "predicted_k_saved_model": 1.0954550504684448,
+    "predicted_k_ensemble_mean": 1.0889790773391723,
+    "raw_k_ensemble_sd": 0.008633166418453221,
+    "raw_field_ensemble_relative_spread": 0.017319313977640215,
+    "nearest_training_distance_normalized_8d": 0.5309746045622603,
+    "criticality_probability_above_one_approx": 0.9999999642335343,
+    "component_percentiles": {
+      "k_uncertainty": 0.7670329670329671,
+      "field_uncertainty": 0.8461538461538461,
+      "sparsity": 0.76996336996337,
+      "criticality": 0.8188034188034188
+    },
+    "component_weighted": {
+      "k_uncertainty": 0.2684615384615385,
+      "field_uncertainty": 0.29615384615384616,
+      "sparsity": 0.15399267399267402,
+      "criticality": 0.08188034188034188
+    },
+    "total_score": 0.8004884004884005
+  },
+  {
+    "selection_rank": 28,
+    "candidate_index": 3882,
+    "scenario_id": "458b2e494eebdef868a2184dcf1ec2b73810364a74f6db516598d6c0b51a1921",
+    "controls": {
+      "u235_enrichment_wt_percent": 2.3684963094070555,
+      "fuel_temperature_K": 574.8762397319078,
+      "moderator_temperature_K": 573.3836115375161,
+      "coolant_pressure_MPa": 15.93186697177589,
+      "elemental_boron_ppm": 349.2570293834433,
+      "pin_pitch_cm": 1.2699294828996062,
+      "pellet_radius_cm": 0.3905271564843133,
+      "insertion_percent": 65.82236187532544
+    },
+    "insertion_band": "middle",
+    "source_model_version": "adaptive01_vs_256_v1: 240 train",
+    "predicted_k_saved_model": 1.1915078163146973,
+    "predicted_k_ensemble_mean": 1.2035378217697144,
+    "raw_k_ensemble_sd": 0.011778273227423168,
+    "raw_field_ensemble_relative_spread": 0.013610831261575005,
+    "nearest_training_distance_normalized_8d": 0.6473321504408706,
+    "criticality_probability_above_one_approx": 1.0,
+    "component_percentiles": {
+      "k_uncertainty": 0.8793650793650793,
+      "field_uncertainty": 0.7501831501831502,
+      "sparsity": 0.978998778998779,
+      "criticality": 0.33833943833943836
+    },
+    "component_weighted": {
+      "k_uncertainty": 0.30777777777777776,
+      "field_uncertainty": 0.26256410256410256,
+      "sparsity": 0.1957997557997558,
+      "criticality": 0.033833943833943836
+    },
+    "total_score": 0.7999755799755799
+  },
+  {
+    "selection_rank": 29,
+    "candidate_index": 2313,
+    "scenario_id": "aba06d1620d60ea98d3f4feadf2c14973164842278e8d04a9840b2be9f014593",
+    "controls": {
+      "u235_enrichment_wt_percent": 2.9071447852998973,
+      "fuel_temperature_K": 556.0722409784794,
+      "moderator_temperature_K": 556.7910992205143,
+      "coolant_pressure_MPa": 15.125581627711654,
+      "elemental_boron_ppm": 898.4375027474016,
+      "pin_pitch_cm": 1.2509834968484939,
+      "pellet_radius_cm": 0.39484918988775464,
+      "insertion_percent": 2.2365091368556023
+    },
+    "insertion_band": "low",
+    "source_model_version": "adaptive01_vs_256_v1: 240 train",
+    "predicted_k_saved_model": 1.2217801809310913,
+    "predicted_k_ensemble_mean": 1.2259414434432983,
+    "raw_k_ensemble_sd": 0.010206175498156384,
+    "raw_field_ensemble_relative_spread": 0.014021060623918337,
+    "nearest_training_distance_normalized_8d": 0.8122288692481654,
+    "criticality_probability_above_one_approx": 1.0,
+    "component_percentiles": {
+      "k_uncertainty": 0.8346764346764347,
+      "field_uncertainty": 0.7769230769230769,
+      "sparsity": 1.0,
+      "criticality": 0.33833943833943836
+    },
+    "component_weighted": {
+      "k_uncertainty": 0.2921367521367521,
+      "field_uncertainty": 0.27192307692307693,
+      "sparsity": 0.2,
+      "criticality": 0.033833943833943836
+    },
+    "total_score": 0.797893772893773
+  },
+  {
+    "selection_rank": 30,
+    "candidate_index": 3027,
+    "scenario_id": "720ffe15ed23bfb91b9db1e2ed23e66bbf5fe8e9646ba6fa310d51bedd15a448",
+    "controls": {
+      "u235_enrichment_wt_percent": 2.072020545974374,
+      "fuel_temperature_K": 557.690193079412,
+      "moderator_temperature_K": 566.6943436712027,
+      "coolant_pressure_MPa": 15.594020770862699,
+      "elemental_boron_ppm": 831.5409516915679,
+      "pin_pitch_cm": 1.25341890566051,
+      "pellet_radius_cm": 0.39296331364195797,
+      "insertion_percent": 3.6755401641130447
+    },
+    "insertion_band": "low",
+    "source_model_version": "adaptive01_vs_256_v1: 240 train",
+    "predicted_k_saved_model": 1.0969229936599731,
+    "predicted_k_ensemble_mean": 1.1027625322341919,
+    "raw_k_ensemble_sd": 0.008506806875297628,
+    "raw_field_ensemble_relative_spread": 0.013897980413823374,
+    "nearest_training_distance_normalized_8d": 0.58267710965592,
+    "criticality_probability_above_one_approx": 0.99999999984153,
+    "component_percentiles": {
+      "k_uncertainty": 0.7609279609279609,
+      "field_uncertainty": 0.768986568986569,
+      "sparsity": 0.9111111111111111,
+      "criticality": 0.7841269841269841
+    },
+    "component_weighted": {
+      "k_uncertainty": 0.2663247863247863,
+      "field_uncertainty": 0.26914529914529917,
+      "sparsity": 0.18222222222222223,
+      "criticality": 0.07841269841269842
+    },
+    "total_score": 0.796105006105006
+  },
+  {
+    "selection_rank": 31,
+    "candidate_index": 2846,
+    "scenario_id": "8d19b49365d5a02d833677b676190b2afc3aee1ca8b72d74d4c0ec707e4f8556",
+    "controls": {
+      "u235_enrichment_wt_percent": 2.9841033005155624,
+      "fuel_temperature_K": 571.1968796178699,
+      "moderator_temperature_K": 571.0643083639443,
+      "coolant_pressure_MPa": 15.433277511037886,
+      "elemental_boron_ppm": 970.2202271204442,
+      "pin_pitch_cm": 1.250444781370461,
+      "pellet_radius_cm": 0.39020656230393796,
+      "insertion_percent": 66.6022970341146
+    },
+    "insertion_band": "middle",
+    "source_model_version": "adaptive01_vs_256_v1: 240 train",
+    "predicted_k_saved_model": 1.1777409315109253,
+    "predicted_k_ensemble_mean": 1.1766228675842285,
+    "raw_k_ensemble_sd": 0.009693334782936307,
+    "raw_field_ensemble_relative_spread": 0.015050909548511304,
+    "nearest_training_distance_normalized_8d": 0.606656633064572,
+    "criticality_probability_above_one_approx": 1.0,
+    "component_percentiles": {
+      "k_uncertainty": 0.8175824175824176,
+      "field_uncertainty": 0.8129426129426129,
+      "sparsity": 0.9452991452991453,
+      "criticality": 0.33833943833943836
+    },
+    "component_weighted": {
+      "k_uncertainty": 0.28615384615384615,
+      "field_uncertainty": 0.2845299145299145,
+      "sparsity": 0.18905982905982907,
+      "criticality": 0.033833943833943836
+    },
+    "total_score": 0.7935775335775337
+  },
+  {
+    "selection_rank": 32,
+    "candidate_index": 2851,
+    "scenario_id": "5da7f925419ecb6757d6a4b8854f7e841f8e80004dd732c42332909385606e83",
+    "controls": {
+      "u235_enrichment_wt_percent": 2.0070644355379046,
+      "fuel_temperature_K": 558.4403332173824,
+      "moderator_temperature_K": 573.3058887943625,
+      "coolant_pressure_MPa": 15.356302192434669,
+      "elemental_boron_ppm": 893.706514290534,
+      "pin_pitch_cm": 1.269265407063067,
+      "pellet_radius_cm": 0.3934098520083353,
+      "insertion_percent": 38.55022322386503
+    },
+    "insertion_band": "middle",
+    "source_model_version": "adaptive01_vs_256_v1: 240 train",
+    "predicted_k_saved_model": 1.0802838802337646,
+    "predicted_k_ensemble_mean": 1.0826016187667846,
+    "raw_k_ensemble_sd": 0.007829078256467024,
+    "raw_field_ensemble_relative_spread": 0.02483629874818457,
+    "nearest_training_distance_normalized_8d": 0.4975716049118911,
+    "criticality_probability_above_one_approx": 0.9999999603923049,
+    "component_percentiles": {
+      "k_uncertainty": 0.715995115995116,
+      "field_uncertainty": 0.9267399267399268,
+      "sparsity": 0.6285714285714286,
+      "criticality": 0.8192918192918193
+    },
+    "component_weighted": {
+      "k_uncertainty": 0.2505982905982906,
+      "field_uncertainty": 0.3243589743589744,
+      "sparsity": 0.12571428571428572,
+      "criticality": 0.08192918192918193
+    },
+    "total_score": 0.7826007326007326
+  }
+]

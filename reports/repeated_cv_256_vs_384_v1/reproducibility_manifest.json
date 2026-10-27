@@ -1,0 +1,362 @@
+{
+  "schema": "beavrs_v2_repeated_cv_256_vs_384_v1",
+  "scientific_status": "PROVISIONAL_EXPLORATORY; no physical/statistical acceptance",
+  "design": {
+    "repeats": 5,
+    "folds_each": 5,
+    "seeds": [
+      20261027,
+      20261028,
+      20261029,
+      20261030,
+      20261031
+    ],
+    "common_fold_policy": "KFold over frozen 233; same old scenario validation fold in A and B",
+    "halton_fold_policy": "seeded permutation then round-robin balanced across B validation folds",
+    "pool_A": "208 old train + 25 old calibration = 233",
+    "pool_B": "same 233 + 128 Halton = 361",
+    "excluded": "same frozen 23 old test cases",
+    "validation_exposure": "each scenario exactly once per repeat per relevant arm",
+    "fold_fit_policy": "all models and PCA refit from scratch on fold training only",
+    "calibration": "none; no outer validation target used for tuning"
+  },
+  "model_settings": {
+    "features": [
+      "u235_enrichment_wt_percent",
+      "fuel_temperature_K",
+      "moderator_temperature_K",
+      "coolant_pressure_MPa",
+      "elemental_boron_ppm",
+      "pin_pitch_cm",
+      "pellet_radius_cm",
+      "insertion_percent"
+    ],
+    "k": {
+      "objective": "reg:squarederror",
+      "tree_method": "hist",
+      "random_state": 20261025,
+      "n_jobs": 4,
+      "subsample": 1.0,
+      "colsample_bytree": 1.0,
+      "n_estimators": 400,
+      "max_depth": 2,
+      "learning_rate": 0.05
+    },
+    "field": {
+      "pca_rank": 12,
+      "xgboost": {
+        "max_depth": 4,
+        "n_estimators": 120,
+        "learning_rate": 0.05
+      }
+    }
+  },
+  "paired_comparison": "A and B OOF for identical 233 scenario IDs and validation fold per repeat",
+  "full_B_comparison": "B_all361 describes a different validation population; do not interpret as paired 233",
+  "aggregate_metric_summary": [
+    {
+      "metric": "k_mae",
+      "evaluation": "A_common233",
+      "mean_over_5_repeats": 0.014192767075791129,
+      "sd_over_5_repeats": 0.0009414984348027559
+    },
+    {
+      "metric": "k_mae",
+      "evaluation": "B_common233",
+      "mean_over_5_repeats": 0.010258840045703665,
+      "sd_over_5_repeats": 0.0007354786019230875
+    },
+    {
+      "metric": "k_mae",
+      "evaluation": "B_all361",
+      "mean_over_5_repeats": 0.010762275357077345,
+      "sd_over_5_repeats": 0.0007851203093241999
+    },
+    {
+      "metric": "k_mae",
+      "evaluation": "B_common_minus_A_paired",
+      "mean_over_5_repeats": -0.003933927030087466,
+      "sd_over_5_repeats": 0.0007330489828060094
+    },
+    {
+      "metric": "k_rmse",
+      "evaluation": "A_common233",
+      "mean_over_5_repeats": 0.020625988263640378,
+      "sd_over_5_repeats": 0.0015611622380341337
+    },
+    {
+      "metric": "k_rmse",
+      "evaluation": "B_common233",
+      "mean_over_5_repeats": 0.015388209654791613,
+      "sd_over_5_repeats": 0.0011825954735177186
+    },
+    {
+      "metric": "k_rmse",
+      "evaluation": "B_all361",
+      "mean_over_5_repeats": 0.01564168046008288,
+      "sd_over_5_repeats": 0.00109823916324082
+    },
+    {
+      "metric": "k_rmse",
+      "evaluation": "B_common_minus_A_paired",
+      "mean_over_5_repeats": -0.005237778608848767,
+      "sd_over_5_repeats": 0.001099154922165182
+    },
+    {
+      "metric": "k_r2",
+      "evaluation": "A_common233",
+      "mean_over_5_repeats": 0.9768378991232813,
+      "sd_over_5_repeats": 0.0035619694677911833
+    },
+    {
+      "metric": "k_r2",
+      "evaluation": "B_common233",
+      "mean_over_5_repeats": 0.9871060528477333,
+      "sd_over_5_repeats": 0.00195831609342697
+    },
+    {
+      "metric": "k_r2",
+      "evaluation": "B_all361",
+      "mean_over_5_repeats": 0.9862949894856605,
+      "sd_over_5_repeats": 0.0019417924396670668
+    },
+    {
+      "metric": "k_r2",
+      "evaluation": "B_common_minus_A_paired",
+      "mean_over_5_repeats": 0.010268153724452023,
+      "sd_over_5_repeats": 0.0025532153867603206
+    },
+    {
+      "metric": "k_max_absolute_error",
+      "evaluation": "A_common233",
+      "mean_over_5_repeats": 0.09154813489224596,
+      "sd_over_5_repeats": 0.015347044828660507
+    },
+    {
+      "metric": "k_max_absolute_error",
+      "evaluation": "B_common233",
+      "mean_over_5_repeats": 0.07477502524525026,
+      "sd_over_5_repeats": 0.008023598716801366
+    },
+    {
+      "metric": "k_max_absolute_error",
+      "evaluation": "B_all361",
+      "mean_over_5_repeats": 0.07571416005396434,
+      "sd_over_5_repeats": 0.0063437580737595155
+    },
+    {
+      "metric": "k_max_absolute_error",
+      "evaluation": "B_common_minus_A_paired",
+      "mean_over_5_repeats": -0.016773109646995698,
+      "sd_over_5_repeats": 0.020826787751467363
+    },
+    {
+      "metric": "k_side_mismatch",
+      "evaluation": "A_common233",
+      "mean_over_5_repeats": 6.0,
+      "sd_over_5_repeats": 1.0
+    },
+    {
+      "metric": "k_side_mismatch",
+      "evaluation": "B_common233",
+      "mean_over_5_repeats": 3.6,
+      "sd_over_5_repeats": 0.5477225575051661
+    },
+    {
+      "metric": "k_side_mismatch",
+      "evaluation": "B_all361",
+      "mean_over_5_repeats": 6.8,
+      "sd_over_5_repeats": 0.44721359549995787
+    },
+    {
+      "metric": "k_side_mismatch",
+      "evaluation": "B_common_minus_A_paired",
+      "mean_over_5_repeats": -2.4,
+      "sd_over_5_repeats": 1.140175425099138
+    },
+    {
+      "metric": "field_relative_l2_mean",
+      "evaluation": "A_common233",
+      "mean_over_5_repeats": 0.06022978375821127,
+      "sd_over_5_repeats": 0.0018076949829345166
+    },
+    {
+      "metric": "field_relative_l2_mean",
+      "evaluation": "B_common233",
+      "mean_over_5_repeats": 0.04693071124486427,
+      "sd_over_5_repeats": 0.0009295312717401353
+    },
+    {
+      "metric": "field_relative_l2_mean",
+      "evaluation": "B_all361",
+      "mean_over_5_repeats": 0.048149985356162786,
+      "sd_over_5_repeats": 0.0006027553059087522
+    },
+    {
+      "metric": "field_relative_l2_mean",
+      "evaluation": "B_common_minus_A_paired",
+      "mean_over_5_repeats": -0.013299072513346994,
+      "sd_over_5_repeats": 0.0014708044996543492
+    },
+    {
+      "metric": "field_half_l1_mean",
+      "evaluation": "A_common233",
+      "mean_over_5_repeats": 0.030594872403051088,
+      "sd_over_5_repeats": 0.0007954751626420511
+    },
+    {
+      "metric": "field_half_l1_mean",
+      "evaluation": "B_common233",
+      "mean_over_5_repeats": 0.02377428599542956,
+      "sd_over_5_repeats": 0.0005885595055253944
+    },
+    {
+      "metric": "field_half_l1_mean",
+      "evaluation": "B_all361",
+      "mean_over_5_repeats": 0.02463327429178145,
+      "sd_over_5_repeats": 0.00035414216314909
+    },
+    {
+      "metric": "field_half_l1_mean",
+      "evaluation": "B_common_minus_A_paired",
+      "mean_over_5_repeats": -0.006820586407621523,
+      "sd_over_5_repeats": 0.0005861208215224622
+    },
+    {
+      "metric": "field_axial_half_l1_mean",
+      "evaluation": "A_common233",
+      "mean_over_5_repeats": 0.029860000228705802,
+      "sd_over_5_repeats": 0.0008337690295103622
+    },
+    {
+      "metric": "field_axial_half_l1_mean",
+      "evaluation": "B_common233",
+      "mean_over_5_repeats": 0.02302542808031923,
+      "sd_over_5_repeats": 0.0006288546211261565
+    },
+    {
+      "metric": "field_axial_half_l1_mean",
+      "evaluation": "B_all361",
+      "mean_over_5_repeats": 0.02390104783046072,
+      "sd_over_5_repeats": 0.00037970813540969363
+    },
+    {
+      "metric": "field_axial_half_l1_mean",
+      "evaluation": "B_common_minus_A_paired",
+      "mean_over_5_repeats": -0.006834572148386575,
+      "sd_over_5_repeats": 0.0006021592018362764
+    },
+    {
+      "metric": "pca_relative_l2_mean",
+      "evaluation": "A_common233",
+      "mean_over_5_repeats": 0.014341775682702177,
+      "sd_over_5_repeats": 0.0001233749385927609
+    },
+    {
+      "metric": "pca_relative_l2_mean",
+      "evaluation": "B_common233",
+      "mean_over_5_repeats": 0.01419496432700893,
+      "sd_over_5_repeats": 8.371940678942471e-05
+    },
+    {
+      "metric": "pca_relative_l2_mean",
+      "evaluation": "B_all361",
+      "mean_over_5_repeats": 0.013902950302615883,
+      "sd_over_5_repeats": 6.161885256143068e-05
+    },
+    {
+      "metric": "pca_relative_l2_mean",
+      "evaluation": "B_common_minus_A_paired",
+      "mean_over_5_repeats": -0.00014681135569324794,
+      "sd_over_5_repeats": 4.815191919961842e-05
+    },
+    {
+      "metric": "negative_fuel_voxel_fraction",
+      "evaluation": "A_common233",
+      "mean_over_5_repeats": 0.1854332487969827,
+      "sd_over_5_repeats": 0.005316115520534179
+    },
+    {
+      "metric": "negative_fuel_voxel_fraction",
+      "evaluation": "B_common233",
+      "mean_over_5_repeats": 0.19625796592534792,
+      "sd_over_5_repeats": 0.002316502539328869
+    },
+    {
+      "metric": "negative_fuel_voxel_fraction",
+      "evaluation": "B_all361",
+      "mean_over_5_repeats": 0.19301435406698564,
+      "sd_over_5_repeats": 0.0023696409482092434
+    },
+    {
+      "metric": "negative_fuel_voxel_fraction",
+      "evaluation": "B_common_minus_A_paired",
+      "mean_over_5_repeats": 0.010824717128365208,
+      "sd_over_5_repeats": 0.005633005834582805
+    },
+    {
+      "metric": "post_relative_l2_mean",
+      "evaluation": "A_common233",
+      "mean_over_5_repeats": 0.06054213449685952,
+      "sd_over_5_repeats": 0.0018199526136168285
+    },
+    {
+      "metric": "post_relative_l2_mean",
+      "evaluation": "B_common233",
+      "mean_over_5_repeats": 0.0471903817241872,
+      "sd_over_5_repeats": 0.0009184733393430369
+    },
+    {
+      "metric": "post_relative_l2_mean",
+      "evaluation": "B_all361",
+      "mean_over_5_repeats": 0.04841300699017844,
+      "sd_over_5_repeats": 0.0006087479072837614
+    },
+    {
+      "metric": "post_relative_l2_mean",
+      "evaluation": "B_common_minus_A_paired",
+      "mean_over_5_repeats": -0.01335175277267232,
+      "sd_over_5_repeats": 0.0015011817663607829
+    }
+  ],
+  "paired_common233_scenario_count": 233,
+  "source_dataset_manifest_sha256": "1536ed01165637cf96421b13e31de63135d717de91d8494534e984b090b462f3",
+  "source_old_splits_sha256": "7017f569a8fb7610fe3919c83138bc380c73067801cc1c645508b78ccf967cbd",
+  "source_new_splits_sha256": "8621077d7d807a8438da13209b8abd8ca8ffd255871c81aa71b6ed220920e0ca",
+  "source_quality": {
+    "original_training_acceptance": "not_granted",
+    "halton_training_acceptance": "not_granted",
+    "alternate_nuclear_index_cases": 11,
+    "zero_and_low_signal": "retained; see quality_summary.json in prior comparison report",
+    "source_convergence": "not_assessed"
+  },
+  "software": {
+    "python": "3.11.16",
+    "numpy": "2.1.3",
+    "pandas": "3.0.5",
+    "sklearn": "1.9.0",
+    "xgboost": "3.2.0"
+  },
+  "runtime_seconds": 17.476685111992992,
+  "warnings": [
+    "Five repeated OOF predictions of the same physical scenario are correlated; repeat-level summaries are the unit of variability.",
+    "A and B training sizes and B validation population differ. Paired old-scenario comparison is primary.",
+    "Old 23 test cases remain excluded from all CV, but were examined in prior work and are not a pristine final test.",
+    "Halton outcomes must not enter future adaptive selection or its tuning.",
+    "No new independent physical validation or nuclear HDF5 byte-equivalence review is performed."
+  ],
+  "output_sha256": {
+    "fold_sizes.csv": "6dfbd3f9c464d7f4b4e836edb84d9b780e1cdf5601ba8605b9f1a454d45ab78a",
+    "repeat_metrics.csv": "24c91f4521ee20403be945dea8e79bf81e5819e4839e51ebeb23ef3b420c9d39",
+    "field_oof_B_361.npz": "4df1ffb7e0d02d11b71020455b416ca08212dd2d928960cefb3e0eb3f18909a7",
+    "metric_summary.csv": "b0dff9965505d6c0b26d39780d413a8494017cd48340826610412d9bd6e6a2a5",
+    "fold_membership.csv": "e9dcec241a6e98ae38982cf73c0f9cd9b60c7ecdf89b889109a756a8254012a7",
+    "field_oof_A_233.npz": "14832720940131eb4c63e8588f8ecbaf8332f45accef8bdcffb5fcc75b6d303f",
+    "paired_common233.png": "12d0bf126e56c06a65219aac4c6e2b2201be741916972df47f7cfc9f4b8a7da3",
+    "paired_repeat_differences.csv": "c162cd989c0a748d5ce6d6da0364e429db7daaa029055dd91f4e867aa9609519",
+    "repeat_metrics.png": "87df277f83a4a931d38ebd3a3749463a117d1c02833da901f39b3fd259c3ba6e",
+    "paired_common233_by_scenario.csv": "31b43bbbb738774cf21ef6b3d4a3a68f9df71ad8261be90099e4ea93d0e9e8b7",
+    "README.md": "e411e8115f68a1dcb4ea8e93690f66a99fcae8f20145fe1f5e4fbd9a58a2aeec",
+    "oof_predictions_and_metrics.csv": "ccde9b274dd58fbe1141f033a0bbe53cdfc61c6b5f6798bd84ea44dbdf4dc9ab"
+  }
+}

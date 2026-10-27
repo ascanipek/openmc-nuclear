@@ -1,0 +1,14 @@
+{
+  "python": "3.11.16",
+  "executable": "/home/ascanipek/miniconda3/envs/teknofest26/bin/python",
+  "prefix": "/home/ascanipek/miniconda3/envs/teknofest26",
+  "numpy": "2.1.3",
+  "pandas": "3.0.5",
+  "scipy": "1.17.1",
+  "sklearn": "1.9.0",
+  "xgboost": "3.2.0",
+  "xgboost_module": "/tmp/openmc_xgboost_320/xgboost/__init__.py",
+  "joblib": "1.6.0",
+  "matplotlib": "3.11.1",
+  "note": "XGBoost 3.2.0 was reused from a temporary /tmp target; the original Conda environments were not modified; reproduce with the recorded version in an isolated environment"
+}

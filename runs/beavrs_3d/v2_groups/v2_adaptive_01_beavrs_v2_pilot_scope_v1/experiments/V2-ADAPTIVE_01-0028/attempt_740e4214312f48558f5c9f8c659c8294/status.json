@@ -1,0 +1,11 @@
+{
+  "state": "completed",
+  "scenario_id": "30439f0af1f9ce299df703e80e2cca83493aaa02e7da74989c6d374591b525b1",
+  "run_id": "0ae018871f152e4fc15e3fdb3a88769c6c5bb815d3fc69698ba0b4639d8a9c81",
+  "experiment_id": "V2-ADAPTIVE_01-0028",
+  "physical_acceptance": "not_assessed",
+  "quality_status": "review_required",
+  "error": null,
+  "elapsed_seconds": 1185.8738660059753,
+  "statepoint": "statepoint.600.h5"
+}

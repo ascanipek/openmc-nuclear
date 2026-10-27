@@ -1,0 +1,160 @@
+{
+  "schema": "adaptive01_vs_256_exploratory_v1",
+  "scientific_status": "PROVISIONAL_EXPLORATORY; neither source dataset is physically/statistically accepted",
+  "data": {
+    "old_dataset_manifest_sha256": "db5ee990c6163264a3c5bb1980c7baa2479c89b30230876af844e185d9495a8c",
+    "new_dataset_manifest_sha256": "cdf2aa0424bf7ba51af32bd6b6e472aea1c1b2261af08ddc0da89709e8a91418",
+    "old_train": 208,
+    "adaptive_additions": 32,
+    "new_train": 240,
+    "calibration_unchanged_excluded": 25,
+    "test_unchanged": 23,
+    "test_policy": "No test sample in fit/CV/PCA/scaling/hyperparameter choice; test evaluated only after fixed training"
+  },
+  "models": {
+    "keff": {
+      "algorithm": "XGBoost",
+      "params": {
+        "objective": "reg:squarederror",
+        "tree_method": "hist",
+        "random_state": 20261025,
+        "n_jobs": 4,
+        "subsample": 1.0,
+        "colsample_bytree": 1.0,
+        "n_estimators": 400,
+        "max_depth": 2,
+        "learning_rate": 0.05
+      }
+    },
+    "field": {
+      "algorithm": "PCA(12) + XGBoost",
+      "rank": 12,
+      "params": {
+        "max_depth": 4,
+        "n_estimators": 120,
+        "learning_rate": 0.05
+      },
+      "axis_order": [
+        "sample",
+        "z",
+        "y",
+        "x"
+      ]
+    },
+    "hyperparameter_policy": "Frozen from previous successful 256/384 research models; no new search",
+    "scaling_policy": "No learned feature scaling for tree models; PCA centered and fit only within training folds"
+  },
+  "cv": {
+    "seed": 20261025,
+    "folds": 5,
+    "mean_k_mae": 0.012656993561663093,
+    "mean_k_rmse": 0.018183014853793006,
+    "mean_field_relative_l2": 0.06220886951599079,
+    "mean_pca_reconstruction_relative_l2": 0.014136592864301184
+  },
+  "same_23_test": {
+    "initial_256_same_env": {
+      "k": {
+        "mae": 0.012307193176307763,
+        "rmse": 0.015662335680739117,
+        "r2": 0.9846378468264175,
+        "max_absolute_error": 0.03744250128237103,
+        "k_one_threshold_disagreements": 3
+      },
+      "field_raw_relative_l2_mean": 0.048522003708677534
+    },
+    "adaptive01_288": {
+      "k": {
+        "mae": 0.009032196509272531,
+        "rmse": 0.011290236717631394,
+        "r2": 0.992017385969553,
+        "max_absolute_error": 0.024404062130378268,
+        "k_one_threshold_disagreements": 0
+      },
+      "field_raw_relative_l2_mean": 0.04623784292977725,
+      "field_pca_reconstruction_relative_l2_mean": 0.01482531482232432,
+      "field_half_l1_share_error_mean": 0.02328167769246658,
+      "field_axial_half_l1_share_error_mean": 0.022459185805601134,
+      "field_negative_fuel_voxels_total": 21636,
+      "field_negative_fuel_voxel_fraction": 0.17816205533596838,
+      "field_raw_sum_min": 0.9999999999999999,
+      "field_raw_sum_max": 1.0,
+      "field_post_relative_l2_mean": 0.046586140334443076,
+      "field_post_half_l1_share_error_mean": 0.02237884014074641
+    },
+    "archived_256": {
+      "k": {
+        "mae": 0.012307194714280921,
+        "rmse": 0.015662339956220447,
+        "r2": 0.9846378384393405,
+        "max_absolute_error": 0.037442505196250475,
+        "k_one_threshold_disagreements": 3
+      },
+      "field_raw_relative_l2_mean": 0.048522003708677486
+    }
+  },
+  "change_same_environment": {
+    "k_mae": {
+      "initial_256_same_env": 0.012307193176307763,
+      "adaptive01_288": 0.009032196509272531,
+      "absolute_new_minus_old": -0.0032749966670352314,
+      "percent_change": -26.610427090230747
+    },
+    "k_rmse": {
+      "initial_256_same_env": 0.015662335680739117,
+      "adaptive01_288": 0.011290236717631394,
+      "absolute_new_minus_old": -0.004372098963107723,
+      "percent_change": -27.914731571513606
+    },
+    "field_relative_l2": {
+      "initial_256_same_env": 0.048522003708677534,
+      "adaptive01_288": 0.04623784292977725,
+      "absolute_new_minus_old": -0.002284160778900285,
+      "percent_change": -4.707474144337098
+    }
+  },
+  "physical_consistency_same_test": {
+    "initial_256": {
+      "pca_reconstruction_relative_l2_mean": 0.01474717999463816,
+      "raw_half_l1_share_error_mean": 0.02408918761831491,
+      "raw_axial_half_l1_share_error_mean": 0.023350656563444313,
+      "raw_upper4_low_signal_absolute_share_error_mean": 0.0009748336178155527,
+      "raw_negative_fuel_voxels_total": 24471,
+      "raw_negative_fuel_voxel_fraction": 0.20150691699604742,
+      "raw_negative_fuel_share_magnitude_total": 0.0593141840491161,
+      "raw_fuel_sum_min": 0.9999999999999999,
+      "raw_fuel_sum_max": 1.0000000000000002,
+      "post_relative_l2_mean": 0.04883537186980296,
+      "post_half_l1_share_error_mean": 0.02332056559055075
+    },
+    "adaptive01_288": {
+      "pca_reconstruction_relative_l2_mean": 0.01482531482232432,
+      "raw_half_l1_share_error_mean": 0.02328167769246658,
+      "raw_axial_half_l1_share_error_mean": 0.022459185805601134,
+      "raw_upper4_low_signal_absolute_share_error_mean": 0.0011642317308749996,
+      "raw_negative_fuel_voxels_total": 21636,
+      "raw_negative_fuel_voxel_fraction": 0.17816205533596838,
+      "raw_negative_fuel_share_magnitude_total": 0.06639257620394705,
+      "raw_fuel_sum_min": 0.9999999999999999,
+      "raw_fuel_sum_max": 1.0,
+      "post_relative_l2_mean": 0.046586140334443076,
+      "post_half_l1_share_error_mean": 0.02237884014074641
+    }
+  },
+  "warnings": [
+    "Source 256 is preview_not_accepted_for_training; Adaptive-01 summary records physical_acceptance=not_assessed and review_required.",
+    "OpenMC completion and MC standard error do not establish physical accuracy or source convergence.",
+    "11 original 256 cases use an alternate nuclear index; HDF5 byte equivalence remains unassessed.",
+    "Zero/low signal fuel voxels are measurements with sampling limits, not proven zero physics.",
+    "XY coordinates change with pitch even though [z,y,x] mesh index shape is fixed.",
+    "These same 23 test cases were examined in earlier work, so they are not a fully untouched external test set.",
+    "Training set is not formally accepted; these surrogate models are research prototypes only."
+  ],
+  "software": {
+    "python": "3.11.16",
+    "numpy": "2.1.3",
+    "scipy": "1.17.1",
+    "sklearn": "1.9.0",
+    "xgboost": "3.2.0"
+  }
+}

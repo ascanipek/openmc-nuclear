@@ -6,7 +6,7 @@ import tempfile
 import unittest
 from unittest.mock import patch
 
-from reactor_pipeline import v2_students, v2_student_runner
+from reactor_pipeline import notebook_content, v2_students, v2_student_runner
 
 ROOT = v2_students.PROJECT
 STAGES = tuple(f"halton_{i:02d}" for i in range(1, 5))
@@ -32,8 +32,11 @@ class LocalHaltonPackages(unittest.TestCase):
         for stage in STAGES:
             local = package(stage)
             frozen = ROOT / "kaggle/v2_128/project" / local.relative_to(ROOT)
-            for name in ("manifest.json", "01_calistir.ipynb", "02_sonuclari_incele.ipynb"):
-                self.assertEqual((local / name).read_bytes(), (frozen / name).read_bytes())
+            self.assertEqual((local / "manifest.json").read_bytes(),
+                             (frozen / "manifest.json").read_bytes())
+            for name in ("01_calistir.ipynb", "02_sonuclari_incele.ipynb"):
+                self.assertEqual(notebook_content.content_digest(local / name),
+                                 notebook_content.content_digest(frozen / name))
             info = v2_students.verify_package(local, require_approval=True)
             self.assertEqual(info["stage"], stage)
             self.assertEqual(read(local / "approval.json")["authorization"],

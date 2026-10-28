@@ -1,5 +1,6 @@
 """Checks for the imported 256-scenario preview without transport."""
 import csv
+from contextlib import contextmanager
 import importlib.util
 import json
 from pathlib import Path
@@ -17,6 +18,23 @@ CAT = ROOT / "scenarios/v2_students_portable_v1/catalogue_total_256.json"
 IMP = ROOT / "deliveries/imported"
 AUD = IMP / "central_256_audit.csv"
 OUT = ROOT / "datasets/v2_256_preview_v1"
+
+
+@contextmanager
+def frozen_256_import_view():
+    """Present the original audited deliveries despite later adaptive imports."""
+    with AUD.open(encoding="utf-8") as stream:
+        allowed = {row["package_id"] for row in csv.DictReader(stream)}
+    original_glob = Path.glob
+
+    def scoped_glob(path, pattern):
+        found = original_glob(path, pattern)
+        if path == IMP and pattern == "*/*/receipt.json":
+            return (item for item in found if item.parent.parent.name in allowed)
+        return found
+
+    with patch.object(Path, "glob", scoped_glob):
+        yield
 
 
 class Imported256DatasetTests(unittest.TestCase):
@@ -63,12 +81,12 @@ class Imported256DatasetTests(unittest.TestCase):
             if str(path).endswith("fields.npz"):
                 return "0" * 64
             return actual(path)
-        with patch.object(mod, "sha", side_effect=bad_sha):
+        with frozen_256_import_view(), patch.object(mod, "sha", side_effect=bad_sha):
             with self.assertRaisesRegex(ValueError, "Source checksum mismatch"):
                 mod.collect(CAT, IMP, AUD)
 
     def test_repeat_build_deterministic(self):
-        with tempfile.TemporaryDirectory() as temp:
+        with frozen_256_import_view(), tempfile.TemporaryDirectory() as temp:
             result = mod.build(CAT, IMP, AUD, Path(temp) / "dataset")
             self.assertEqual(result["scenarios"], 256)
             for filename in ("scenarios.csv", "targets_keff.csv", "quality_report.csv",

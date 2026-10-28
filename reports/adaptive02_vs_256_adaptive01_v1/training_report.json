@@ -1,0 +1,159 @@
+{
+  "schema": "adaptive02_vs_256_adaptive01_exploratory_v1",
+  "scientific_status": "PROVISIONAL_EXPLORATORY",
+  "data": {
+    "source_dataset_manifest_sha256": "550d7522e6a8ea4a98983cd35dd4e62678f59613c801901c695f22f9d51c863c",
+    "baseline_test_predictions_sha256": "d1f56e469d3d8876435e407b672fc004ef3916e66de0289b36b94be8221eb61a",
+    "train_count": 272,
+    "calibration_excluded": 25,
+    "same_test_count": 23,
+    "test_policy": "Held out of fitting, PCA, CV and hyperparameter choice; previously inspected, not external"
+  },
+  "models": {
+    "keff": {
+      "algorithm": "XGBoost",
+      "params": {
+        "objective": "reg:squarederror",
+        "tree_method": "hist",
+        "random_state": 20261025,
+        "n_jobs": 4,
+        "subsample": 1.0,
+        "colsample_bytree": 1.0,
+        "n_estimators": 400,
+        "max_depth": 2,
+        "learning_rate": 0.05
+      }
+    },
+    "field": {
+      "algorithm": "PCA(12)+XGBoost",
+      "rank": 12,
+      "params": {
+        "max_depth": 4,
+        "n_estimators": 120,
+        "learning_rate": 0.05
+      }
+    },
+    "feature_order": [
+      "u235_enrichment_wt_percent",
+      "fuel_temperature_K",
+      "moderator_temperature_K",
+      "coolant_pressure_MPa",
+      "elemental_boron_ppm",
+      "pin_pitch_cm",
+      "pellet_radius_cm",
+      "insertion_percent"
+    ],
+    "cv_seed": 20261025,
+    "hyperparameter_policy": "Frozen from prior model; no search"
+  },
+  "cv": {
+    "folds": 5,
+    "mean_k_mae": 0.013105553709017486,
+    "mean_k_rmse": 0.01844632065078192,
+    "mean_field_relative_l2": 0.059432477656498416,
+    "mean_pca_reconstruction_relative_l2": 0.013483299492608004
+  },
+  "same_23_test": [
+    {
+      "stage": "initial_256",
+      "training_count": 208,
+      "mae": 0.012307193176307796,
+      "rmse": 0.015662335680739152,
+      "r2": 0.9846378468264174,
+      "max_absolute_error": 0.03744250128237103,
+      "k_one_threshold_disagreements": 3,
+      "field_relative_l2_mean": 0.048522003708677486,
+      "field_relative_l2_p95": 0.0661847082511526,
+      "field_post_relative_l2_mean": 0.04883537186980291,
+      "field_post_minus_raw_relative_l2": 0.00031336816112542687,
+      "negative_fuel_voxels_total": 24471,
+      "negative_fuel_voxel_fraction": 0.20150691699604742,
+      "negative_fuel_share_magnitude_total": 0.059314184049115246,
+      "raw_fuel_sum_min": 1.0,
+      "raw_fuel_sum_max": 1.0000000000000002
+    },
+    {
+      "stage": "adaptive01_288",
+      "training_count": 240,
+      "mae": 0.009032196509272493,
+      "rmse": 0.01129023671763137,
+      "r2": 0.992017385969553,
+      "max_absolute_error": 0.024404062130378268,
+      "k_one_threshold_disagreements": 0,
+      "field_relative_l2_mean": 0.0462378429297772,
+      "field_relative_l2_p95": 0.06453071857733834,
+      "field_post_relative_l2_mean": 0.04658614033444305,
+      "field_post_minus_raw_relative_l2": 0.00034829740466584685,
+      "negative_fuel_voxels_total": 21636,
+      "negative_fuel_voxel_fraction": 0.17816205533596838,
+      "negative_fuel_share_magnitude_total": 0.0663925762039464,
+      "raw_fuel_sum_min": 1.0,
+      "raw_fuel_sum_max": 1.0
+    },
+    {
+      "stage": "adaptive02_320",
+      "training_count": 272,
+      "mae": 0.011058127583238566,
+      "rmse": 0.012766240496837914,
+      "r2": 0.9897937763940577,
+      "max_absolute_error": 0.025112492930067676,
+      "k_one_threshold_disagreements": 0,
+      "field_relative_l2_mean": 0.04671648349303726,
+      "field_relative_l2_p95": 0.0690979203615685,
+      "field_post_relative_l2_mean": 0.046929528253945446,
+      "field_post_minus_raw_relative_l2": 0.0002130447609081862,
+      "negative_fuel_voxels_total": 20131,
+      "negative_fuel_voxel_fraction": 0.16576910408432147,
+      "negative_fuel_share_magnitude_total": 0.05421531543681819,
+      "raw_fuel_sum_min": 0.9999999999999999,
+      "raw_fuel_sum_max": 1.0
+    }
+  ],
+  "insertion_bands": [
+    {
+      "insertion_band": "low",
+      "test_count": 7,
+      "initial_256_k_mae": 0.01126472159027579,
+      "initial_256_field_l2": 0.044002218822700605,
+      "adaptive01_288_k_mae": 0.008596111051899375,
+      "adaptive01_288_field_l2": 0.04208763713220866,
+      "adaptive02_320_k_mae": 0.011515171895230911,
+      "adaptive02_320_field_l2": 0.04181511810046733
+    },
+    {
+      "insertion_band": "middle",
+      "test_count": 10,
+      "initial_256_k_mae": 0.008680253804672555,
+      "initial_256_field_l2": 0.04485842755536883,
+      "adaptive01_288_k_mae": 0.007385420382965346,
+      "adaptive01_288_field_l2": 0.04572301930910079,
+      "adaptive02_320_k_mae": 0.006826614917267137,
+      "adaptive02_320_field_l2": 0.04488571053094163
+    },
+    {
+      "insertion_band": "high",
+      "test_count": 6,
+      "initial_256_k_mae": 0.01956830897940387,
+      "initial_256_field_l2": 0.05990104633116491,
+      "adaptive01_288_k_mae": 0.012285589753386375,
+      "adaptive01_288_field_l2": 0.051937789061401174,
+      "adaptive02_320_k_mae": 0.017577430329199877,
+      "adaptive02_320_field_l2": 0.055486031387861595
+    }
+  ],
+  "warnings": [
+    "All datasets are exploratory and lack physical/statistical/training acceptance.",
+    "Thirty-two ADAPTIVE-02 source statepoints were omitted from the lightweight handoff.",
+    "Eleven original scenarios use an alternate nuclear index; HDF5 byte equivalence is unassessed.",
+    "Source convergence and zero/low-signal fuel voxels need independent review.",
+    "The same 23 test scenarios have been examined repeatedly; they are not untouched external validation.",
+    "Pitch changes physical XY coordinates despite fixed [z,y,x] mesh indices."
+  ],
+  "software": {
+    "python": "3.11.16",
+    "numpy": "2.1.3",
+    "scipy": "1.17.1",
+    "sklearn": "1.9.0",
+    "xgboost": "3.2.0"
+  }
+}

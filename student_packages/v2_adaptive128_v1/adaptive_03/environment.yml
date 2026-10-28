@@ -1,0 +1,15 @@
+name: openmc-proje
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - openmc=0.16
+  - numpy
+  - matplotlib
+  - pandas
+  - h5py
+  - ipython
+  - ipykernel
+  - pip
+  - pip:
+      - -e .

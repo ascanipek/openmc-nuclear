@@ -1,0 +1,15 @@
+{
+  "package_id": "v2_adaptive_03_beavrs_v2_pilot_scope_v1",
+  "model": "beavrs_derived_3d_assembly_v2_proposed",
+  "state": "production_ready",
+  "project_root": ".",
+  "package_path": "student_packages/v2_adaptive128_v1/adaptive_03/v2_adaptive_03_beavrs_v2_pilot_scope_v1",
+  "space_config": "configs/v2_parameter_space_pilot_scope_v1.json",
+  "profile_config": "configs/v2_calculation_profile_adaptive03_80k_24h_research_v1.json",
+  "notebook_hash_schema": "notebook-inputs-v1",
+  "space_id": "beavrs_v2_pilot_scope_v1",
+  "profile_id": "beavrs_v2_adaptive03_80k_24h_research_v1",
+  "reference_config_sha256": "834a783ce2ac14cebdc1579e87bd731f0899251e3113c28d46cec42b52c223a6",
+  "manifest_sha256": "73f89abe622696e47a61c4efed0ee4e428e8eecb3160ec9693cedbda7d381a10",
+  "hashes_sha256": "a32b00c3880f1b7d30f63a578415c0e9acd8111add70eb2c248ec8c9bf92a389"
+}

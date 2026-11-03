@@ -1,0 +1,37 @@
+{
+  "scientific_status": "PROVISIONAL_EXPLORATORY",
+  "dataset_manifest_sha256": "5ed72d1b4a14970402f4a4036603fd00c2ad1d917048bd698e4d36556daccd5e",
+  "scenarios": 512,
+  "k_mc_se_median": 0.00018379487806469998,
+  "k_mc_se_p95": 0.000198098525700775,
+  "k_mc_se_max": 0.0002086918247543,
+  "k_late_minus_early_median": 6.126818919427457e-05,
+  "k_late_minus_early_p95_abs": 0.0015120036663533454,
+  "entropy_last100_slope_median": 3.5252310232398566e-06,
+  "statepoint_direct_source_attempt_count": 64,
+  "statepoint_same_experiment_name_count": 248,
+  "statepoint_total_files_locally": 266,
+  "quality_status_counts": {
+    "NOT_ASSESSED": 1600,
+    "PASS": 1358,
+    "WARNING": 1010
+  },
+  "nuclear_index_hash_counts": {
+    "ba7f6d5a371b5a8de8157356f8ef5d1c17cb0ed60accccfbc3075f46ae13f489": 501,
+    "b47cef3ac4a48d66d75fa412b68d497d59c9daac52a403fe18133ad7ba683055": 11
+  },
+  "nuclear_index_comparison": {
+    "local_xml_sha256": "ba7f6d5a371b5a8de8157356f8ef5d1c17cb0ed60accccfbc3075f46ae13f489",
+    "alternate_xml_sha256": "b47cef3ac4a48d66d75fa412b68d497d59c9daac52a403fe18133ad7ba683055",
+    "index_entry_count": 690,
+    "logical_material_type_suffix_entries_equal": true,
+    "alternate_hdf5_paths_existing_here": 0,
+    "hdf5_byte_equivalence": "NOT_ASSESSED; source Kaggle HDF5 payloads unavailable locally"
+  },
+  "warnings": [
+    "Histories permit descriptive source diagnostics, not convergence acceptance without predeclared criterion",
+    "Same experiment-name statepoint may come from a different attempt; metadata/tally identity unverified",
+    "Zero tally SE=0 does not prove zero uncertainty",
+    "Alternate index HDF5 byte equivalence not established"
+  ]
+}

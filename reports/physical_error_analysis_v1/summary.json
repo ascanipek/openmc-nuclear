@@ -1,0 +1,153 @@
+{
+  "scientific_status": "PROVISIONAL_EXPLORATORY",
+  "method": "Frozen 5-fold OOF; PCA and XGBoost fitted inside training fold",
+  "scenario_counts": {
+    "combined": 464,
+    "halton": 336,
+    "adaptive": 336,
+    "initial": 208
+  },
+  "signal_definition": "zero: fuel and raw kappa=0; low: positive raw kappa<5 raw MC SE or normalized share<1e-6 max; strong: other fuel",
+  "mc_uncertainty_note": "Raw kappa SE/raw fuel total is a descriptive scale proxy; normalized covariance unavailable",
+  "band_metrics": [
+    {
+      "branch": "adaptive",
+      "insertion_band": "high",
+      "count": 117,
+      "k_mae": 0.017043667648517318,
+      "field_l2": 0.06399689970474254,
+      "pca_l2": 0.009352875209096629,
+      "low_fraction": 0.2153506216006216,
+      "zero_fraction": 0.24151288526288525,
+      "negative_fraction": 0.22685508935508936
+    },
+    {
+      "branch": "adaptive",
+      "insertion_band": "low",
+      "count": 97,
+      "k_mae": 0.0069370075404363825,
+      "field_l2": 0.044202368084812815,
+      "pca_l2": 0.01653581112731236,
+      "low_fraction": 0.050103483286472975,
+      "zero_fraction": 0.0007829584504842236,
+      "negative_fraction": 0.03423539518900344
+    },
+    {
+      "branch": "adaptive",
+      "insertion_band": "middle",
+      "count": 122,
+      "k_mae": 0.006714498545378945,
+      "field_l2": 0.044301643524159925,
+      "pca_l2": 0.014612353563561229,
+      "low_fraction": 0.18702651515151514,
+      "zero_fraction": 0.14244287133631395,
+      "negative_fraction": 0.2988015399900646
+    },
+    {
+      "branch": "combined",
+      "insertion_band": "high",
+      "count": 163,
+      "k_mae": 0.014297051099738417,
+      "field_l2": 0.0589033820993977,
+      "pca_l2": 0.008903904892919102,
+      "low_fraction": 0.21235243539691392,
+      "zero_fraction": 0.24720672987544154,
+      "negative_fraction": 0.2482849972113776
+    },
+    {
+      "branch": "combined",
+      "insertion_band": "low",
+      "count": 140,
+      "k_mae": 0.006136504173152047,
+      "field_l2": 0.03914448452071304,
+      "pca_l2": 0.01685553935566973,
+      "low_fraction": 0.04852408008658009,
+      "zero_fraction": 0.0006074134199134199,
+      "negative_fraction": 0.040012175324675325
+    },
+    {
+      "branch": "combined",
+      "insertion_band": "middle",
+      "count": 161,
+      "k_mae": 0.006002712885383382,
+      "field_l2": 0.03896596325406794,
+      "pca_l2": 0.014867749043962472,
+      "low_fraction": 0.1869353472614342,
+      "zero_fraction": 0.14104084321475627,
+      "negative_fraction": 0.28400974025974024
+    },
+    {
+      "branch": "halton",
+      "insertion_band": "high",
+      "count": 115,
+      "k_mae": 0.01777035602581782,
+      "field_l2": 0.060393710689426665,
+      "pca_l2": 0.008320515359120468,
+      "low_fraction": 0.20088438735177866,
+      "zero_fraction": 0.2681389986824769,
+      "negative_fraction": 0.2377256258234519
+    },
+    {
+      "branch": "halton",
+      "insertion_band": "low",
+      "count": 106,
+      "k_mae": 0.0068799112565322805,
+      "field_l2": 0.04327246195370484,
+      "pca_l2": 0.017432005257858936,
+      "low_fraction": 0.04707868782161235,
+      "zero_fraction": 0.00043596340766152085,
+      "negative_fraction": 0.02974378216123499
+    },
+    {
+      "branch": "halton",
+      "insertion_band": "middle",
+      "count": 115,
+      "k_mae": 0.006891016738782962,
+      "field_l2": 0.045164822740151184,
+      "pca_l2": 0.01622305615080404,
+      "low_fraction": 0.1864542160737813,
+      "zero_fraction": 0.12930171277997365,
+      "negative_fraction": 0.29536396574440055
+    },
+    {
+      "branch": "initial",
+      "insertion_band": "high",
+      "count": 69,
+      "k_mae": 0.024083834467713467,
+      "field_l2": 0.09522141575617626,
+      "pca_l2": 0.009387994383020183,
+      "low_fraction": 0.19832290294246815,
+      "zero_fraction": 0.27243906455862976,
+      "negative_fraction": 0.28298473869126045
+    },
+    {
+      "branch": "initial",
+      "insertion_band": "low",
+      "count": 63,
+      "k_mae": 0.008836350053012705,
+      "field_l2": 0.05152932150904017,
+      "pca_l2": 0.017797649281340446,
+      "low_fraction": 0.048523929773929775,
+      "zero_fraction": 0.0005892255892255892,
+      "negative_fraction": 0.02319925444925445
+    },
+    {
+      "branch": "initial",
+      "insertion_band": "middle",
+      "count": 76,
+      "k_mae": 0.009116017317338932,
+      "field_l2": 0.053403783165441254,
+      "pca_l2": 0.016120180857394927,
+      "low_fraction": 0.186353668261563,
+      "zero_fraction": 0.12552830940988835,
+      "negative_fraction": 0.24138257575757577
+    }
+  ],
+  "source_manifest_sha256": {
+    "initial": "5ed72d1b4a14970402f4a4036603fd00c2ad1d917048bd698e4d36556daccd5e",
+    "halton": "1536ed01165637cf96421b13e31de63135d717de91d8494534e984b090b462f3",
+    "adaptive": "90d468a8e153fd0fab8b456a9874d011a0c25fae16d826a8c44e96e7e2008a7b",
+    "combined": "5ed72d1b4a14970402f4a4036603fd00c2ad1d917048bd698e4d36556daccd5e"
+  },
+  "test_policy": "23 previously examined test cases used only for explanation, not selection or tuning"
+}

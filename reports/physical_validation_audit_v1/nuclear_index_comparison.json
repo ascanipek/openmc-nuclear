@@ -1,0 +1,8 @@
+{
+  "local_xml_sha256": "ba7f6d5a371b5a8de8157356f8ef5d1c17cb0ed60accccfbc3075f46ae13f489",
+  "alternate_xml_sha256": "b47cef3ac4a48d66d75fa412b68d497d59c9daac52a403fe18133ad7ba683055",
+  "index_entry_count": 690,
+  "logical_material_type_suffix_entries_equal": true,
+  "alternate_hdf5_paths_existing_here": 0,
+  "hdf5_byte_equivalence": "NOT_ASSESSED; source Kaggle HDF5 payloads unavailable locally"
+}

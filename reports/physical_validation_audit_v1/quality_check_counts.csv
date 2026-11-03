@@ -1,0 +1,14 @@
+check,status,count
+fuel_zero_signal,PASS,162
+fuel_zero_signal,WARNING,350
+low_signal,PASS,63
+low_signal,WARNING,449
+nuclear_index,PASS,373
+nuclear_index,WARNING,11
+physical_validation,NOT_ASSESSED,512
+source_convergence,NOT_ASSESSED,512
+statepoint_local,NOT_ASSESSED,64
+statepoint_local,PASS,248
+statepoint_local,WARNING,200
+structure_and_identity,PASS,512
+training_acceptance,NOT_ASSESSED,512

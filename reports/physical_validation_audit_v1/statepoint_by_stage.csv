@@ -1,0 +1,12 @@
+stage,direct_source_attempt_statepoint,any_same_experiment_statepoint
+adaptive_01,32,32
+adaptive_02,0,0
+adaptive_03,0,0
+adaptive_04,32,32
+halton_01,0,32
+halton_02,0,32
+halton_03,0,0
+halton_04,0,0
+stage_128,0,48
+stage_256,0,64
+stage_32,0,8
